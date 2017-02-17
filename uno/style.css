@@ -1,0 +1,524 @@
+/*
+Theme Name: Uno
+Theme URI: http://www.woothemes.com/
+Version: 1.0.4
+Description: Designed by <a href="http://www.woothemes.com">WooThemes</a>.
+Author: WooThemes
+Author URI: http://www.woothemes.com
+Template: canvas
+Tags: canvas, woothemes, store, woocommerce
+
+	Copyright: (c) 2009-2011 WooThemes.
+	License: GNU General Public License v2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+@import url(../canvas/style.css);
+
+@import url(css/font-style.css);
+
+h1, h2, h3 {
+	font-family: 'Museo300', sans-serif !important;
+}
+
+
+h4, h5, h6 {
+	font-family: 'Museo300', sans-serif !important;
+}
+
+/*  HEADER */
+
+#header {
+	background: url('/~juliec16/wp-content/uploads/2015/05/logotree.png') 10px 21px no-repeat !important;
+}
+
+#logo {
+   margin-left: 5.5em !important;
+}
+
+#logo .site-title, #logo .site-title a {
+  text-transform: capitalize !important;
+  margin-left: 10px;
+	/*color: #4C5567 !important;*/
+	font-family: 'DearJoe5CASUAL', script, sans-serif !important;
+}
+
+#logo .site-title a:hover {
+	text-decoration: none;
+}
+
+#logo .site-description {
+   margin-left: 60px;
+	 font-family: 'DearJoe5CASUAL', sans-serif !important;
+}
+
+.hide-small {
+    float: right;
+}
+
+.hide-small #connect {
+	border: 0;
+	padding: 1rem 0 00rem;
+	margin-bottom: 0;
+}
+
+.hide-small #connect h3, .hide-small #connect p {
+	display: none;
+}
+
+@media all and (max-width: 640px) {
+	.hide-small {
+		display: none;
+	}
+}
+
+/* Custom Header IMage */
+
+section.home-section.custom-header {
+    min-height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+		background-position: 60% 50%;
+}
+
+body.custom-header #nav-container {
+	margin: 0;
+}
+
+body.page.custom-header #content header {
+	margin: -60px 0 60px;
+}
+
+body.page.custom-header #content header h1 {
+	color: #fff;
+}
+
+.mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+    background: #CACACA !important;
+}
+
+/* Homepage */
+
+.home .threecol-one {
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.home .threecol-one:hover {
+		opacity: 0.6;
+}
+
+.home .threecol-one a:hover, .home .threecol-one h3:hover {
+	text-decoration: none;
+	color: #747D90;
+}
+
+
+.hero, .full-width .hero {
+   padding: 9.505em 5.874em 5em;
+}
+
+.home-section .section-title {
+   text-transform: capitalize !important;
+   line-height: 5.2rem;
+}
+
+.hero .section-title {
+    font: normal 3em/2.8em 'DearJoe5CASUAL', script !important;
+    color: #fff;
+}
+
+.hero {
+	background-position: center center !important;
+}
+
+.subscribe {
+   padding: 1.5em 1em 1em;
+   background: #FFFFFF;
+}
+
+h3.signup {
+  display: inline-block;
+  float: left;
+  padding: 0 2em;
+}
+
+body.home article.page h2.title.entry-title {
+  display: none;
+}
+
+body.home .block h2.title.entry-title {
+   font-size: 1.25rem;
+}
+
+body.home .entry {
+  font: 400 .8em/1.45 "Open Sans", sans-serif;
+}
+
+body.home .has-post-thumbnail img {
+  display: none;
+}
+
+.homepage-blog {
+    float: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 4rem;
+}
+
+article.post {
+   margin-bottom: 3rem;
+   padding-bottom: 0;
+   border-bottom: 0;
+	 float: left;
+}
+
+.woo-pagination {
+   margin: 1rem 0 2rem;
+   text-align: right;
+}
+
+ul.media {
+   list-style-type: none;
+}
+
+ul.media + ul.media {
+	margin-bottom: 3rem;
+}
+
+@media all and (min-width: 1200px) {
+	ul.media + ul.media {
+		padding-left: 150px;
+	}
+}
+
+ul.media li {
+    display: inline-block;
+    padding: 2% 1% 2%;
+}
+
+a.woo-sc-button.custom.medium.blog {
+    clear: both;
+    float: right;
+}
+
+/* TESTIMONIALS */
+
+.testimonials-text img.avatar.wp-post-image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+/* SIDEBAR */
+
+.widget h3 {
+	margin-bottom: .5rem !important;
+}
+
+#sidebar .widget {
+	float: left;
+}
+
+.widget_categories select#cat {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+  padding: 0.5rem 1rem !important;
+	color: #8E8E8E;
+	background: #fff;
+	border-radius: 0;
+	border: 0;
+	border-bottom: 4px solid #f1f1f1;
+	float: left;
+}
+
+.widget_categories select#cat:hover {
+	border-bottom: 4px solid #4c5567;
+	background: #f1f1f1;
+}
+
+span.downarrow {
+	float: left;
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 5px solid #4c5567;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin-left: -20px;
+	margin-top: 13px;
+}
+
+
+label.screen-reader-text, #connect p {
+	display: none;
+}
+
+.widget_tag_cloud h3 {
+	display: none;
+}
+
+.widget_recent_entries ul {
+    list-style-type: none;
+}
+
+.widget_recent_entries li {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-left: 10px solid #f1f1f1;
+}
+
+.widget_recent_entries li:hover {
+	border-left: 10px solid #4C5567;
+	background-color: #f2f2f2;
+}
+
+
+/* LARGE DEVICES */
+@media all and (min-width: 1024px) {
+
+   .js.csstransitions.csstransforms3d .hero .hero-container {
+     opacity: 0;
+     margin-top: 300px;
+   }
+
+   .inside {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+.inside:after {
+     clear: both;
+     display: block;
+     content: '';
+  }
+
+ .home .threecol-one h3 {
+	 margin: -20px 0 0;
+		background-color: #fff;
+		padding: .5rem 1rem;
+		z-index: 5;
+		position: relative;
+		color: #4C5567;
+		font-size: 1.75rem;
+   }
+
+   body.home .block {
+      float: left;
+      width: 22%;
+      margin-right: 3%;
+   }
+
+}
+
+/* MEDIUM DEVICES */
+@media all and (min-width: 640px)
+and (max-width:1024px) {
+     .js.csstransitions.csstransforms3d .hero .hero-container {
+     opacity: 0;
+     margin-top: 200px;
+   }
+
+   .inside {
+      width: 90%;
+      text-align: center;
+   }
+
+   .home .threecol-one h3 {
+     margin-top: -20px;
+     background-color: #fff;
+     padding: .5rem 1rem;
+     z-index: 5;
+     position: relative;
+     color: #4C5567;
+     font-size: 1.2rem;
+   }
+
+   body.home .block {
+      float: left;
+      width: 45%;
+      margin-right: 3%;
+   }
+}
+
+/* SMALL DEVICES */
+@media all and (min-width: 320px) and
+(max-width: 640px) {
+
+  .inside {
+      width: 90%;
+      text-align: center;
+   }
+
+   body.home .block {
+      float: left;
+      width: 90%;
+      margin-right: 3%;
+   }
+
+   .js.csstransitions.csstransforms3d .hero         .hero-container {
+      margin-top: 40px;
+   }
+
+   .hero, .full-width .hero {
+      padding: 5em 2em 0em;
+   }
+
+   .hero .section-title {
+     font: normal 1.2em/2.2em 'Pacifico', arial, sans-serif;
+   }
+
+   .threecol-one img {
+     width: 100%;
+   }
+
+    .home .threecol-one h3 {
+        margin-top: -30px;
+        background-color: #fff;
+        padding: .5rem 1rem;
+        z-index: 5;
+        position: relative;
+        color: #4C5567;
+        font-size: 1.5rem;
+     }
+
+   .js.csstransitions.csstransforms3d .hero .hero-container {
+     margin-top: 100px;
+   }
+
+} /* End Small Devices*/
+
+
+/*  Custom Headers on Full Width Pages */
+.chi_display_header + #main-sidebar-container h1.title.entry-title {
+  margin-top: -90px;
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Contact Page */
+
+div#contact-page h1.title {
+  padding: 2rem 0 0 2rem;
+  margin-top: -100px;
+  color: #fff;
+}
+
+.subscribe {
+  background: transparent;
+}
+
+.page-template-template-contact-php .location-twitter {
+  padding: 1em 0 1em;
+}
+
+/* BLOG */
+.page-title, .post .title, .page .title {
+    text-transform: capitalize !important;
+}
+
+body.blog .fix:after {
+	clear: none;
+}
+
+body.blog .post-more {
+	clear: none;
+}
+
+/* MEDIA PAGE */
+
+ul.medialist li {
+  float: left;
+  width: 50%;
+  list-style-type: none;
+	min-height: 120px;
+}
+
+ul.medialist-4 li {
+  float: left;
+  width: 25%;
+  list-style-type: none;
+	min-height: 305px;
+  margin-bottom: 2rem;
+}
+
+ul.medialist-4 li:nth-child(4) img {
+	padding: 21px 5px;
+}
+
+
+ul.medialist-4 li img {
+    background: #fff;
+    padding: 5px;
+}
+
+@media all and (min-width: 320px) and
+(max-width: 640px) {
+	ul.medialist li {
+		width: 100%;
+	}
+	ul.medialist-4 li {
+		width: 50%;
+	}
+}
+
+/*  POCAST */
+
+body.category-podcast article {
+	width: 20%;
+	float: left;
+	margin: 0 1.5rem 2rem;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+body.category-podcast article:hover {
+	opacity: 0.6;
+}
+
+
+body.category-podcast article section.entry p {
+	display: none;
+}
+
+body.category-podcast article header {
+    display: block;
+		margin-top: -130px;
+		float: left;
+		width: 100%;
+}
+
+abbr.date.time.published.updated {
+	display: none;
+}
+
+body.category-podcast article header h2.entry-title {
+	margin-bottom: 0;
+	text-align: center;
+}
+body.category-podcast article header h2.entry-title a {
+	padding: .5rem 1rem .5rem;
+	display: inline-block;
+}
+
+body.category-podcast article header h2.entry-title a:hover {
+	text-decoration: none;
+}
+
+article.category-podcast header h2.title a, article.category-podcast header .post .title a:link {
+	color: #fff !important;
+	font-weight: 400;
+}
+
+article.category-podcast .post-meta .small, article.category-podcast .post-meta .author,
+article.category-podcast .post-meta .categories, article.category-podcast .post-more {
+	display: none;
+}
+
+/* FOOTER */
+#footer-widgets .widget h3 {
+	font-family: 'DearJoe5CASUAL',cursive !important;
+}
