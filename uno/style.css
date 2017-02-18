@@ -72,7 +72,7 @@ h4, h5, h6 {
 	}
 }
 
-/* Custom Header IMage */
+/* Custom Header Image */
 
 section.home-section.custom-header {
     min-height: 320px;
@@ -99,21 +99,48 @@ body.page.custom-header #content header h1 {
 
 /* Homepage */
 
+.home .twocol-wrapper,
 .home .threecol-one {
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 }
 
+.home .twocol-wrapper:hover,
 .home .threecol-one:hover {
 		opacity: 0.6;
 }
 
+.home .twocol-wrapper a:hover, .home .twocol-wrapper h3:hover,
 .home .threecol-one a:hover, .home .threecol-one h3:hover {
 	text-decoration: none;
 	color: #747D90;
 }
 
+.home .twocol-one {
+	margin: 20px 1%;
+}
+
+.home .twocol-wrapper {
+	margin: 0 auto;
+}
+
+.home .threecol-one h3{
+	text-align: center;
+	border: 1px solid blue;
+}
+
+.twocol-wrapper {
+	max-width: 375px;
+	/*border: 1px solid red;*/
+}
+
+.home .twocol-one h3{
+	background-color: #fff;
+	margin: -21px 0;
+	padding: .5rem 1rem;
+	text-align: center;
+}
 
 .hero, .full-width .hero {
    padding: 9.505em 5.874em 5em;
@@ -154,6 +181,7 @@ body.home .block h2.title.entry-title {
 
 body.home .entry {
   font: 400 .8em/1.45 "Open Sans", sans-serif;
+	margin: 50px 0;
 }
 
 body.home .has-post-thumbnail img {
@@ -295,15 +323,31 @@ label.screen-reader-text, #connect p {
      content: '';
   }
 
- .home .threecol-one h3 {
-	 margin: -20px 0 0;
+	.home .threecol-one h3 {
+		margin: -20px 0 0;
 		background-color: #fff;
 		padding: .5rem 1rem;
 		z-index: 5;
 		position: relative;
 		color: #4C5567;
 		font-size: 1.75rem;
-   }
+	}
+
+	/*.home .twocol-one h3 {
+		display: inline-block;
+		margin: -20px 0 0;
+		background-color: #fff;
+		padding: .5rem 1rem;
+		z-index: 5;
+		position: relative;
+		color: #4C5567;
+		font-size: 1.75rem;
+		max-width: 375px;
+	}
+	.home .twocol-one {
+		width: 32%;
+		margin: 0 9%;
+	}*/
 
    body.home .block {
       float: left;
@@ -327,6 +371,16 @@ and (max-width:1024px) {
    }
 
    .home .threecol-one h3 {
+     margin-top: -20px;
+     background-color: #fff;
+     padding: .5rem 1rem;
+     z-index: 5;
+     position: relative;
+     color: #4C5567;
+     font-size: 1.2rem;
+   }
+
+   .home .twocol-one h3 {
      margin-top: -20px;
      background-color: #fff;
      padding: .5rem 1rem;
@@ -374,7 +428,28 @@ and (max-width:1024px) {
      width: 100%;
    }
 
+   .twocol-one img {
+     width: 100%;
+   }
+
+	 .twocol-wrapper {
+	 	max-width: 100%;
+	 	/*border: 1px solid red;*/
+	 }
+
     .home .threecol-one h3 {
+				max-width: 365px;
+				text-align: center;
+        margin-top: -30px;
+        background-color: #fff;
+        padding: .5rem 1rem;
+        z-index: 5;
+        position: relative;
+        color: #4C5567;
+        font-size: 1.5rem;
+     }
+
+    .home .twocol-one h3 {
         margin-top: -30px;
         background-color: #fff;
         padding: .5rem 1rem;
