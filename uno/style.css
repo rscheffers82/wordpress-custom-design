@@ -118,7 +118,7 @@ body.page.custom-header #content header h1 {
 }
 
 .home .twocol-one {
-	margin: 20px 1%;
+	margin: 0px 1% 50px 1%;
 }
 
 .home .twocol-wrapper {
@@ -181,7 +181,7 @@ body.home .block h2.title.entry-title {
 
 body.home .entry {
   font: 400 .8em/1.45 "Open Sans", sans-serif;
-	margin: 50px 0;
+	margin: 0 0 100px;
 }
 
 body.home .has-post-thumbnail img {
