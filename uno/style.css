@@ -97,6 +97,16 @@ body.page.custom-header #content header h1 {
     background: #CACACA !important;
 }
 
+
+/* navigation */
+
+/*Ensure the blog menu item is not highlighted when podcast and workshops categories are displayed*/
+body.category-podcast #navigation ul.nav > li#menu-item-3565 a,
+body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
+    background: inherit !important;
+}
+
+
 /* Homepage */
 
 .home .twocol-wrapper,
