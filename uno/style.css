@@ -17,13 +17,17 @@ Tags: canvas, woothemes, store, woocommerce
 
 @import url(css/font-style.css);
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400i');
+
 h1, h2, h3 {
-	font-family: 'Museo300', sans-serif !important;
+	/*font-family: 'Museo300', sans-serif !important;*/
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 
 h4, h5, h6 {
-	font-family: 'Museo300', sans-serif !important;
+	/*font-family: 'Museo300', sans-serif !important;*/
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 /*  HEADER */
@@ -181,17 +185,41 @@ h3.signup {
   padding: 0 2em;
 }
 
+/* Featured blog on the home page */
+
 body.home article.page h2.title.entry-title {
   display: none;
+
 }
 
 body.home .block h2.title.entry-title {
-   font-size: 1.25rem;
+	 font-size: 1.25rem;
+	 background-color: inherit;
+	 padding: 20px 0px;
 }
 
-body.home .entry {
-  font: 400 .8em/1.45 "Open Sans", sans-serif;
+body.home .block h2.title.entry-title a {
+	color: #6EC095;
+	transition: all .5s ease-out;
+	line-height: 25px;
+}
+
+body.home .block h2.title.entry-title a:hover {
+	text-decoration: none;
+	color: #C0766E;
+}
+
+body.home .homepage-blog .entry {
 	margin: 0 0 100px;
+	background-color: #fff;
+	padding: 10px;
+	border-top: 2px solid #6EC095;
+	box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
+}
+
+body.home .homepage-blog .entry p {
+	font: 15px/1.5em 'montserrat',arial, sans-serif;
+	line-height: 25px;
 }
 
 body.home .has-post-thumbnail img {
