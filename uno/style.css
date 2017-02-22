@@ -223,7 +223,7 @@ body.home .homepage-blog .entry p {
 }
 
 body.home .has-post-thumbnail img {
-  display: none;
+  /*display: none;*/
 }
 
 .homepage-blog {

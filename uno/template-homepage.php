@@ -61,7 +61,7 @@ get_header(); ?>
       ?>
         <div class="block">
         <?php
-        woo_get_template_part(  'content', 'post' );
+        woo_get_template_part(  'homefeatured', 'post' );
         ?>
       </div><!--/.block-->
     <?php
