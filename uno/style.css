@@ -17,7 +17,7 @@ Tags: canvas, woothemes, store, woocommerce
 
 @import url(css/font-style.css);
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500');
 
 h1, h2, h3 {
 	/*font-family: 'Museo300', sans-serif !important;*/
@@ -111,13 +111,42 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 }
 
 
-/* Homepage */
+/* Homepage top part - Hero */
+
+.hero, .full-width .hero {
+   padding: 9.505em 5.874em 5em;
+}
+
+.home-section .section-title {
+   text-transform: capitalize !important;
+   line-height: 5.2rem;
+}
+
+.hero .section-title {
+    font: normal 3em/2.8em 'DearJoe5CASUAL', script !important;
+    color: #fff;
+}
+
+.hero {
+	background-position: center center !important;
+}
+
+.subscribe {
+   padding: 1.5em 1em 1em;
+   background: #FFFFFF;
+}
+
+h3.signup {
+  display: inline-block;
+  float: left;
+  padding: 0 2em;
+}
 
 .home .twocol-wrapper,
 .home .threecol-one {
-	transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
 }
 
 .home .twocol-wrapper:hover,
@@ -156,46 +185,17 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 	text-align: center;
 }
 
-.hero, .full-width .hero {
-   padding: 9.505em 5.874em 5em;
-}
-
-.home-section .section-title {
-   text-transform: capitalize !important;
-   line-height: 5.2rem;
-}
-
-.hero .section-title {
-    font: normal 3em/2.8em 'DearJoe5CASUAL', script !important;
-    color: #fff;
-}
-
-.hero {
-	background-position: center center !important;
-}
-
-.subscribe {
-   padding: 1.5em 1em 1em;
-   background: #FFFFFF;
-}
-
-h3.signup {
-  display: inline-block;
-  float: left;
-  padding: 0 2em;
-}
 
 /* Featured blog on the home page */
 
 body.home article.page h2.title.entry-title {
   display: none;
-
 }
 
 body.home .block h2.title.entry-title {
 	 font-size: 1.25rem;
 	 background-color: inherit;
-	 padding: 20px 0px;
+	 padding: 10px 0px;
 }
 
 body.home .block h2.title.entry-title a {
@@ -206,14 +206,15 @@ body.home .block h2.title.entry-title a {
 
 body.home .block h2.title.entry-title a:hover {
 	text-decoration: none;
-	color: #C0766E;
+	color: #60DC9B;
 }
 
-body.home .homepage-blog .entry {
+body.home .homepage-blog .post-box {
+	display: flex;
 	margin: 0 0 100px;
 	background-color: #fff;
-	padding: 10px;
-	border-top: 2px solid #6EC095;
+	padding: 20px;
+	border-bottom: 2px solid #6EC095;
 	box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
 }
 
@@ -223,13 +224,26 @@ body.home .homepage-blog .entry p {
 }
 
 body.home .has-post-thumbnail img {
-  /*display: none;*/
+	transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+}
+
+body.home .has-post-thumbnail img:hover {
+	opacity: 0.6;
 }
 
 .homepage-blog {
     float: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     margin-bottom: 4rem;
+}
+
+body.home article.post {
+   margin-bottom: 1em;
+   padding-bottom: 0;
+   border-bottom: 0;
+	 float: left;
 }
 
 article.post {
