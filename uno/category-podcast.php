@@ -58,8 +58,26 @@
 		</div><!-- /#main-sidebar-container -->
 
 		<?php// get_sidebar( 'alt' ); ?>
-
     </div><!-- /#content -->
+    <div class="col-full archives" style="width: 100%">
+      <h1 class="title entry-title">Getting Married Consciously</h1>
+      <iframe
+        class="soundcloud"
+        width="90%"
+        height="450"
+        scrolling="no"
+        frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/304164859&amp;color=d72844&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false">
+    </iframe>
+
+    <h1 class="title entry-title">Conscious Pregnancy</h1>
+    <iframe
+      class="soundcloud"
+      width="90%"
+      height="450"
+      scrolling="no"
+      frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/304161208&amp;color=d72844&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false">
+    </iframe>
+  </div>
 	<?php woo_content_after(); ?>
 
 <?php get_footer(); ?>

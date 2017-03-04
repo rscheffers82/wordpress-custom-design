@@ -591,7 +591,7 @@ ul.medialist-4 li img {
 	}
 }
 
-/*  POCAST */
+/*  POCAST STYLES */
 
 body.category-podcast article {
 	width: 20%;
@@ -625,10 +625,21 @@ abbr.date.time.published.updated {
 body.category-podcast article header h2.entry-title {
 	margin-bottom: 0;
 	text-align: center;
+	display: flex;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 5px;
+	left: 0;
+	bottom: 20px;
+	right: 0;
 }
 body.category-podcast article header h2.entry-title a {
-	padding: .5rem 1rem .5rem;
-	display: inline-block;
+	display: block;
+	font-size: calc(2vw);
+	margin: auto 0 1vw;
+	/*border: 1px solid red;*/
+	width: 100%;
+	line-height: 2.2vw;
 }
 
 body.category-podcast article header h2.entry-title a:hover {
@@ -643,6 +654,16 @@ article.category-podcast header h2.title a, article.category-podcast header .pos
 article.category-podcast .post-meta .small, article.category-podcast .post-meta .author,
 article.category-podcast .post-meta .categories, article.category-podcast .post-more {
 	display: none;
+}
+
+/* soundcloud section */
+
+body.category-podcast .archives {
+	padding: 0 1.618em 40px 1.618em;
+}
+
+body.category-podcast .soundcloud{
+	margin: 0 1.4rem 5rem 1.4rem;
 }
 
 /* FOOTER */
