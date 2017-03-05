@@ -89,9 +89,6 @@ section.home-section.custom-header {
 		background-position: 60% 50%;
 }
 
-body.custom-header #nav-container {
-	margin: 0;
-}
 
 body.page.custom-header #content header {
 	margin: -60px 0 60px;
@@ -108,12 +105,19 @@ body.page.custom-header #content header h1 {
 
 /* navigation */
 
+body.custom-header #nav-container {
+	margin: 0;
+}
+
 /*Ensure the blog menu item is not highlighted when podcast and workshops categories are displayed*/
 body.category-podcast #navigation ul.nav > li#menu-item-3565 a,
 body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
     background: inherit !important;
 }
 
+#navigation ul.nav > li a{
+	transition: none;
+}
 
 /* Homepage top part - Hero */
 
@@ -134,6 +138,9 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 .hero {
 	background-position: center center !important;
 }
+
+
+
 
 .home .mail-subscribe {
    padding: 1.5em 1em 1em;
