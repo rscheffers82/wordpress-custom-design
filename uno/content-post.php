@@ -39,11 +39,11 @@ woo_post_before();
 <?php
 woo_post_inside_before();
 if ( 'content' != $settings['post_content'] && ! is_singular() ) ?>
-	<!-- <div class="img-flex"> -->
+	<div class="img-flex">
 		<?php woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) ); ?>
-	<!-- </div> -->
+	</div>
 
-	<!-- <div class="text-flex"> -->
+	<div class="text-wrapper">
 
 		<header>
 		<?php the_title( $title_before, $title_after ); ?>
@@ -60,7 +60,7 @@ if ( 'content' != $settings['post_content'] && ! is_singular() ) ?>
 
 		<div class="fix"></div>
 		<?php woo_post_inside_after(); ?>
-	<!-- </div> -->
+	</div>
 </article><!-- /.post -->
 <?php
 woo_post_after();

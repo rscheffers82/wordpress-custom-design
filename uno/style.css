@@ -610,25 +610,26 @@ body.blog .post-more {
 	clear: none;
 }
 
-/*body.blog article{
+body.blog article{
 	display: flex;
-	border: 1px solid yellow;
+	/*border: 1px solid yellow;*/
 	align-items: stretch;
-}*/
+}
 
 body.blog .img-flex{
-	height: 100%;
-	border: 1px solid red;
-	margin-right: 20px;
+	/*border: 1px solid red;*/
 }
 
-body.blog .text-flex{
-	border: 1px solid blue;
+
+body.blog .text-wrapper{
+	/*border: 1px solid blue;*/
 }
 
-body.blog .content a img{
+body.blog article img.thumbnail {
 	width: 200px;
 	height: 200px;
+	max-width: 200px;
+	max-height: 200px;
 }
 
 body.blog article.post {
