@@ -17,12 +17,12 @@ get_header(); ?>
 
 		<?php do_action( 'homepage' ); ?>
 
-    <div class="subscribe">
+    <div class="mail-subscribe">
       <div class="inside">
-        <h3 class="signup">Lorem Seculor Oris!</h3>
+        <h3 class="signup">Subscribe to Julie's newsletter!</h3>
         <form>
           <input type="email" name="email" placeholder="Email">
-          <input type="submit" value="Sign Up">
+          <input type="submit" value="Sign Up" class="pulse">
         </form>
       </div> <!--.inside -->
     </div> <!-- .subscribe -->
@@ -47,8 +47,9 @@ get_header(); ?>
 
     // Magazine Grid
     ?>
+    <h3 class="elegant">From the Blog</h3>
+    <h3 class="thin center">LATEST NEWS AND EVENTS</h3>
     <div class="homepage-blog">
-    <h2>From the Blog</h2>
     <?php
 
     $query = new WP_Query( 'showposts=4&cat=-108' );
@@ -74,9 +75,11 @@ get_header(); ?>
 
     // Magazine Grid end
     ?>
-  <a href="<?php echo site_url();?>/blog" class="woo-sc-button custom medium blog" style="background:#6EC095;border-color:#6EC095">More from the Blog</a>
+    <div class="button-wrapper">
+      <a href="<?php echo site_url();?>/blog" class="woo-sc-button custom medium blog home-blog-button">View all posts</a>
+    </div>
   </div>
-    <h2>Featured by</h2>
+    <h3 class="thin">Featured by</h3>
     <ul class="media">
       <li><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/09/gazette-logo.png" alt="The Montreal Gazette"/></li>
       <li><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/09/vitamindaily-logo.png" alt="Vitamin Daily Magazine"/></li>

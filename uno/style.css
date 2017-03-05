@@ -14,20 +14,20 @@ Tags: canvas, woothemes, store, woocommerce
 
 */
 @import url(../canvas/style.css);
-
 @import url(css/font-style.css);
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500');
+body {
+	font-family: 'Montserrat', sans-serif !important;
+}
 
 h1, h2, h3 {
-	/*font-family: 'Museo300', sans-serif !important;*/
-	font-family: 'Montserrat', sans-serif !important;
+	font-family: 'Open Sans', sans-serif !important;
 }
 
 
 h4, h5, h6 {
 	/*font-family: 'Museo300', sans-serif !important;*/
-	font-family: 'Montserrat', sans-serif !important;
+	font-family: 'Open Sans', sans-serif !important;
 }
 
 /*  HEADER */
@@ -131,15 +131,38 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 	background-position: center center !important;
 }
 
-.subscribe {
+.home .mail-subscribe {
    padding: 1.5em 1em 1em;
    background: #FFFFFF;
 }
 
+.home .subscribe {
+  background: transparent;
+}
+
 h3.signup {
-  display: inline-block;
-  float: left;
-  padding: 0 2em;
+	display: inline-block;
+	float: left;
+	padding: 0 5vw;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 36px;
+}
+
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	46% { transform: scale(1); }
+	50% { transform: scale(1.05); }
+	54% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .home .twocol-wrapper,
@@ -188,6 +211,21 @@ h3.signup {
 
 /* Featured blog on the home page */
 
+body.home h3.elegant {
+	font-family: 'DearJoe5CASUAL',cursive !important;
+	text-align: center;
+	color: #60DC9B;
+	margin-top: 50px;
+}
+
+body.home h3.thin {
+	font-weight: 300;
+}
+
+.center {
+	text-align: center;
+}
+
 body.home article.page h2.title.entry-title {
   display: none;
 }
@@ -219,7 +257,8 @@ body.home .homepage-blog .post-box {
 }
 
 body.home .homepage-blog .entry p {
-	font: 15px/1.5em 'montserrat',arial, sans-serif;
+	/*font: 15px/1.5em 'montserrat',arial, sans-serif;*/
+	font: 15px/1.5em 	'Open Sans', sans-serif !important;;
 	line-height: 25px;
 }
 
@@ -236,7 +275,7 @@ body.home .has-post-thumbnail img:hover {
 .homepage-blog {
     float: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-    margin-bottom: 4rem;
+    margin: 4rem 0;
 }
 
 body.home article.post {
@@ -281,6 +320,21 @@ a.woo-sc-button.custom.medium.blog {
     clear: both;
     float: right;
 }
+
+.button-wrapper {
+	display: flex;
+	width: 100%;
+}
+
+a.woo-sc-button.custom.medium.blog.home-blog-button {
+    clear: both;
+    /*float: right;*/
+		background:#6EC095 !important;
+		border-color:#6EC095 !important;
+		text-transform: uppercase;
+		margin: 0 auto 1.5rem;
+}
+
 
 /* TESTIMONIALS */
 
@@ -409,6 +463,9 @@ label.screen-reader-text, #connect p {
 
 }
 
+/* Additional blog styles */
+ 
+
 /* MEDIUM DEVICES */
 @media all and (min-width: 640px)
 and (max-width:1024px) {
@@ -472,9 +529,9 @@ and (max-width:1024px) {
       padding: 5em 2em 0em;
    }
 
-   .hero .section-title {
+   /*.hero .section-title {
      font: normal 1.2em/2.2em 'Pacifico', arial, sans-serif;
-   }
+   }*/
 
    .threecol-one img {
      width: 100%;
@@ -531,10 +588,6 @@ div#contact-page h1.title {
   padding: 2rem 0 0 2rem;
   margin-top: -100px;
   color: #fff;
-}
-
-.subscribe {
-  background: transparent;
 }
 
 .page-template-template-contact-php .location-twitter {
@@ -669,4 +722,12 @@ body.category-podcast .soundcloud{
 /* FOOTER */
 #footer-widgets .widget h3 {
 	font-family: 'DearJoe5CASUAL',cursive !important;
+}
+
+body.two-col-left-1200 #main-sidebar-container #main {
+	width: 67% !important;
+}
+
+body.two-col-left-1200 #main-sidebar-container #sidebar {
+    width: 27%;
 }
