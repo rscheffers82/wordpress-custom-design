@@ -17,17 +17,17 @@ Tags: canvas, woothemes, store, woocommerce
 @import url(css/font-style.css);
 
 body {
-	font-family: 'Montserrat', sans-serif !important;
+	/*font-family: 'Montserrat', sans-serif !important;*/
 }
 
 h1, h2, h3 {
-	font-family: 'Open Sans', sans-serif !important;
+	/*font-family: 'Open Sans', sans-serif !important;*/
 }
 
 
 h4, h5, h6 {
 	/*font-family: 'Museo300', sans-serif !important;*/
-	font-family: 'Open Sans', sans-serif !important;
+	/*font-family: 'Open Sans', sans-serif !important;*/
 }
 
 a {
@@ -623,6 +623,7 @@ body.blog .post-more {
 
 body.blog article{
 	display: flex;
+	flex-flow: row nowrap;
 	/*border: 1px solid yellow;*/
 	align-items: stretch;
 }
@@ -642,6 +643,7 @@ body.blog article img.thumbnail {
 	max-width: 200px;
 	max-height: 200px;
 	margin-top: 0px;
+	margin-bottom: 10px;
 	transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;
 	-webkit-transition: opacity .5s ease-in-out;
@@ -666,11 +668,20 @@ body.blog .post .title a:hover {
 
 
 body.two-col-left-1200 #main-sidebar-container #main {
-	width: 67% !important;
+	width: 67%;
 }
 
 body.two-col-left-1200 #main-sidebar-container #sidebar {
     width: 27%;
+}
+
+@media all and (max-width: 640px) {
+	body.blog article {
+		flex-flow: row wrap;
+	}
+	/*body.blog article img.thumbnail {
+		text-align: center;
+	}*/
 }
 
 /*  POCAST STYLES */
@@ -790,4 +801,14 @@ ul.medialist-4 li img {
 /* FOOTER */
 #footer-widgets .widget h3 {
 	font-family: 'DearJoe5CASUAL',cursive !important;
+}
+
+/* media queries for 2 columns as show on main blog and individual blog posts */
+@media all and (max-width: 980px) {
+	body.two-col-left-1200 #main-sidebar-container #main {
+		width: 100%;
+	}
+	body.two-col-left-1200 #main-sidebar-container #sidebar {
+		width: 100%;
+	}
 }
