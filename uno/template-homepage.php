@@ -20,7 +20,18 @@ get_header(); ?>
     <div class="mail-subscribe">
       <div class="inside">
         <h3 class="signup">Subscribe to Julie's newsletter!</h3>
-        <form>
+        <form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
+          <input type="hidden" name="meta_web_form_id" value="305744">
+          <input type="hidden" name="meta_split_id" value="">
+          <input type="hidden" name="unit" value="intuitiontips">
+
+          <input type="hidden" name="redirect" value="http://www.aweber.com/form/thankyou_vo.html">
+          <input type="hidden" name="meta_redirect_onlist" value="">
+          <input type="hidden" name="meta_adtracking" value="">
+          <input type="hidden" name="meta_message" value="1">
+          <input type="hidden" name="meta_required" value="email">
+          <input type="hidden" name="meta_forward_vars" value="0">
+
           <input type="email" name="email" placeholder="Email">
           <input type="submit" value="Sign Up" class="pulse">
         </form>
@@ -55,18 +66,9 @@ get_header(); ?>
     $query = new WP_Query( 'showposts=4&cat=-108' );
 
     if ( $query->have_posts() ) {
-    ?>
-
-    <?php
       while ( $query->have_posts() ) { $query->the_post();
-      ?>
-        <div class="block">
-        <?php
         woo_get_template_part(  'homefeatured', 'post' );
-        ?>
-      </div><!--/.block-->
-    <?php
-      } // End WHILE Loop
+      }
     } else {
       get_template_part( 'content', 'noposts' );
     }

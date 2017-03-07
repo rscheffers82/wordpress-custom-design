@@ -244,28 +244,30 @@ body.home h3.thin {
 body.home article.page h2.title.entry-title {
   display: none;
 }
-
-body.home .block h2.title.entry-title {
+/*here-block*/
+body.home .post-box h2.title.entry-title {
 	 font-size: 1.25rem;
 	 background-color: inherit;
-	 padding: 10px 0px;
+	 padding: 15px 0px;
+	 margin: 0;
 }
 
-body.home .block h2.title.entry-title a {
+body.home .post-box h2.title.entry-title a {
 	color: #6EC095;
 	transition: all .5s ease-out;
 	line-height: 25px;
 }
 
-body.home .block h2.title.entry-title a:hover,
+body.home .post-box h2.title.entry-title a:hover,
 body.home .post-box a:hover {
 	text-decoration: none;
 	color: #60DC9B;
 }
 
-body.home .homepage-blog .post-box {
+body.home .post-box {
 	display: flex;
-	margin: 0 0 100px;
+	margin: 0 auto 50px auto;
+	width: 19%;
 	background-color: #fff;
 	padding: 20px;
 	border-bottom: 2px solid #6EC095;
@@ -279,6 +281,7 @@ body.home .homepage-blog .entry p {
 }
 
 body.home .has-post-thumbnail img {
+	margin: 0;
 	transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;
 	-webkit-transition: opacity .5s ease-in-out;
@@ -289,16 +292,24 @@ body.home .has-post-thumbnail img:hover {
 }
 
 .homepage-blog {
-    float: left;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-    margin: 3.5rem 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+	margin: 3.5rem auto;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	justify-content: center;
 }
 
 body.home article.post {
-   margin-bottom: 1em;
-   padding-bottom: 0;
-   border-bottom: 0;
-	 float: left;
+	margin-bottom: .5em;
+	padding-bottom: 0;
+	border-bottom: 0;
+	float: left;
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
 }
 
 article.post {
@@ -471,18 +482,22 @@ label.screen-reader-text, #connect p {
 		margin: 0 9%;
 	}*/
 
-   body.home .block {
-      float: left;
-      width: 22%;
-      margin-right: 3%;
-   }
+}
 
+
+@media all and (min-width: 768px) and (max-width:1023px){
+	/*here-block*/
+	body.home .post-box {
+		width: 42%;
+ 	}
+	body.home .post-box img {
+		width: 100%;
+	}
 }
 
 /* MEDIUM DEVICES */
-@media all and (min-width: 640px)
-and (max-width:1024px) {
-     .js.csstransitions.csstransforms3d .hero .hero-container {
+@media all and (min-width: 640px) and (max-width:1024px) {
+	.js.csstransitions.csstransforms3d .hero .hero-container {
      opacity: 0;
      margin-top: 200px;
    }
@@ -511,28 +526,27 @@ and (max-width:1024px) {
      color: #4C5567;
      font-size: 1.2rem;
    }
-
-   body.home .block {
-      float: left;
-      width: 45%;
-      margin-right: 3%;
-   }
 }
 
 /* SMALL DEVICES */
-@media all and (min-width: 320px) and
-(max-width: 640px) {
+@media all and (min-width: 320px) and (max-width: 640px) {
 
-  .inside {
-      width: 90%;
-      text-align: center;
-   }
+		body.home h1.section-title{
+			font-size: 7vw !important;
+		}
 
-   body.home .block {
-      float: left;
-      width: 90%;
-      margin-right: 3%;
-   }
+	.inside {
+	  width: 90%;
+	  text-align: center;
+	 }
+	 /*here-block*/
+	body.home .post-box {
+		width: 100%;
+	}
+
+	 body.home .post-box img {
+		 width: 100%;
+	 }
 
    .js.csstransitions.csstransforms3d .hero         .hero-container {
       margin-top: 40px;
