@@ -36,15 +36,15 @@ $page_link_args = apply_filters( 'woothemes_pagelinks_args', array( 'before' => 
 woo_post_before();
 ?>
 <article <?php post_class(); ?>>
-<?php
-woo_post_inside_before();
-if ( 'content' != $settings['post_content'] && ! is_singular() ) ?>
+<?php woo_post_inside_before(); ?>
 
 	<header>
 		<?php the_title( $title_before, $title_after ); ?>
 	</header>
 
-	<?php woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) ); ?>
+	<!--  Only display the image when ! singular or when it's within the podcast category -->
+	<?php if ( ( 'content' != $settings['post_content'] && ! is_singular() ) || in_category('podcast') )
+		woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) ); ?>
 
 	<?php //woo_post_meta(); ?>
 	<section class="entry">
