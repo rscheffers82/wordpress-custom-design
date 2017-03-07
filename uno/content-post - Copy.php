@@ -39,24 +39,28 @@ woo_post_before();
 <?php
 woo_post_inside_before();
 if ( 'content' != $settings['post_content'] && ! is_singular() ) ?>
+	<div class="img-flex">
+		<?php woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) ); ?>
+	</div>
 
-	<header>
+	<div class="text-wrapper">
+
+		<header>
 		<?php the_title( $title_before, $title_after ); ?>
-	</header>
-
-	<?php woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) ); ?>
-
-	<?php //woo_post_meta(); ?>
-	<section class="entry">
+		</header>
+		<?php
+		//woo_post_meta();
+		?>
+		<section class="entry">
 		<?php
 			if ( 'content' == $settings['post_content'] || is_single() ) { the_content( __( 'Continue Reading &rarr;', 'woothemes' ) ); } else { the_excerpt(); }
 			if ( 'content' == $settings['post_content'] || is_singular() ) wp_link_pages( $page_link_args );
-		?>
-	</section><!-- /.entry -->
+			?>
+		</section><!-- /.entry -->
 
-	<div class="fix"></div>
-	<?php woo_post_inside_after(); ?>
-
+		<div class="fix"></div>
+		<?php woo_post_inside_after(); ?>
+	</div>
 </article><!-- /.post -->
 <?php
 woo_post_after();
