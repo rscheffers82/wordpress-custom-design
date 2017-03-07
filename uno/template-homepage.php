@@ -41,23 +41,22 @@ get_header(); ?>
         <!-- #content Starts -->
     <?php woo_content_before(); ?>
     <div id="content" class="col-full">
-
       <div id="main-sidebar-container">
+          <!-- #main Starts -->
+          <?php woo_main_before(); ?>
+          <section id="main">
 
-            <!-- #main Starts -->
-            <?php woo_main_before(); ?>
-            <section id="main">
     <?php
     woo_loop_before();
 
     if (have_posts()) { $count = 0;
-    while (have_posts()) { the_post(); $count++;
-      woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
+      while (have_posts()) { the_post(); $count++;
+        woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
+      }
     }
-    }
-
-    // Magazine Grid
     ?>
+
+     <!-- Featured blog post rendering -->
     <h3 class="elegant">From the Blog</h3>
     <h3 class="thin center">LATEST NEWS AND EVENTS</h3>
     <div class="homepage-blog">
@@ -74,13 +73,15 @@ get_header(); ?>
     }
     //woo_pagenav( $query );
     //wp_reset_query();
-
-    // Magazine Grid end
     ?>
+
     <div class="button-wrapper">
       <a href="<?php echo site_url();?>/blog" class="woo-sc-button custom medium blog home-blog-button">View all posts</a>
     </div>
   </div>
+
+    <!-- Magazine Grid end -->
+    <!-- Magazine Grid -->
     <h3 class="thin">Featured by</h3>
     <ul class="media">
       <li><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/09/gazette-logo.png" alt="The Montreal Gazette"/></li>
@@ -96,22 +97,19 @@ get_header(); ?>
       <li><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/11/watchmojo.png" alt="Watch Mojo TV"/></li>
     </ul>
 
-    <?php
-    woo_loop_after();
-    ?>
-            </section><!-- /#main -->
-            <?php woo_main_after(); ?>
+    <?php woo_loop_after(); ?>
+      </section><!-- /#main -->
+      <?php woo_main_after(); ?>
 
-            <?php get_sidebar(); ?>
+      <?php get_sidebar(); ?>
 
     </div><!-- /#main-sidebar-container -->
 
-    <?php get_sidebar( 'alt' ); ?>
-
-    </div><!-- /#content -->
+      <?php get_sidebar( 'alt' ); ?>
+      </div><!-- /#content -->
 
 		<?php woo_main_after(); ?>
 
-    </div><!-- /.content -->
+  </div><!-- /.content -->
 
 <?php get_footer(); ?>
