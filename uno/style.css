@@ -16,20 +16,6 @@ Tags: canvas, woothemes, store, woocommerce
 @import url(../canvas/style.css);
 @import url(css/font-style.css);
 
-body {
-	/*font-family: 'Montserrat', sans-serif !important;*/
-}
-
-h1, h2, h3 {
-	/*font-family: 'Open Sans', sans-serif !important;*/
-}
-
-
-h4, h5, h6 {
-	/*font-family: 'Museo300', sans-serif !important;*/
-	/*font-family: 'Open Sans', sans-serif !important;*/
-}
-
 a {
 	transition: color .75s ease-out;
 }
@@ -47,7 +33,6 @@ a {
 #logo .site-title, #logo .site-title a {
   text-transform: capitalize !important;
   margin-left: 10px;
-	/*color: #4C5567 !important;*/
 	font-family: 'DearJoe5CASUAL', script, sans-serif !important;
 }
 
@@ -138,9 +123,6 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 .hero {
 	background-position: center center !important;
 }
-
-
-
 
 .home .mail-subscribe {
    padding: 1.5em 1em 1em;
@@ -412,7 +394,6 @@ span.downarrow {
 	margin-top: 13px;
 }
 
-
 label.screen-reader-text, #connect p {
 	display: none;
 }
@@ -469,24 +450,8 @@ body.blog .post-more {
 	clear: none;
 }
 
-body.blog article{
-	/*display: flex;
-	flex-flow: row nowrap;
-	align-items: stretch;*/
-	/*border: 1px solid yellow;*/
-}
-
 body.blog .post .title a {
 	line-height: 1.3em;
-}
-
-body.blog .img-flex{
-	/*border: 1px solid red;*/
-}
-
-
-body.blog .text-wrapper{
-	/*border: 1px solid blue;*/
 }
 
 body.blog article img.thumbnail {
@@ -530,24 +495,10 @@ body.two-col-left-1200 #main-sidebar-container #sidebar {
 /*  Default post template styles */
 
 body.post-template-default .entry img {
-	/*max-width: 200px;
-	max-height: 200px;*/
 	float: left;
 	margin-right: 20px;
 	border-radius: 3px;
 }
-
-@media all and (max-width: 640px) {
-	body.post-template-default .entry img,
-	body.blog article img.thumbnail {
-		width: 100%;
-		height: 100%;
-		max-width: 100%;
-		max-height: 100%;
-		float: none;
-	}
-}
-
 
 /*  POCAST STYLES */
 
@@ -605,45 +556,6 @@ abbr.date.time.published.updated {
 	display: none;
 }
 
-/*body.category-podcast article header h2.entry-title {
-	margin-bottom: 0;
-	text-align: center;
-	display: flex;
-	border: 1px solid blue;
-	position: absolute;
-	top: 5px;
-	left: 0;
-	bottom: 20px;
-	right: 0;
-}
-
-body.category-podcast article header h2.entry-title a {
-	display: block;
-	font-size: calc(2vw);
-	margin: auto 0 1vw;
-	border: 1px solid red;
-	width: 100%;
-	line-height: 2.2vw;
-}
-
-body.category-podcast article header h2.entry-title a:after {
-	cursor: pointer;
-	position: absolute;
-	content: '';
-	top: 0; left: 0: bottom: 0; right: 0;
-	background-color: red;
-	display: flex;
-}*/
-
-/*body.category-podcast article header h2.entry-title a:hover {
-	text-decoration: none;
-}
-
-article.category-podcast header h2.title a, article.category-podcast header .post .title a:link {
-	color: #fff !important;
-	font-weight: 400;
-}*/
-
 article.category-podcast .post-meta .small, article.category-podcast .post-meta .author,
 article.category-podcast .post-meta .categories, article.category-podcast .post-more {
 	display: none;
@@ -687,8 +599,7 @@ ul.medialist-4 li img {
     padding: 5px;
 }
 
-@media all and (min-width: 320px) and
-(max-width: 640px) {
+@media all and (min-width: 320px) and (max-width: 640px) {
 	ul.medialist li {
 		width: 100%;
 	}
@@ -757,13 +668,6 @@ ul.medialist-4 li img {
 
 /* MEDIUM DEVICES */
 @media all and (min-width: 640px) and (max-width:1024px) {
-	/*here-block*/
-	/*body.home .post-box {
-		width: 42%;
- 	}
-	body.home .post-box img {
-		width: 100%;
-	}*/
 
 	.js.csstransitions.csstransforms3d .hero .hero-container {
      opacity: 0;
@@ -794,11 +698,13 @@ ul.medialist-4 li img {
      color: #4C5567;
      font-size: 1.2rem;
    }
+	 body.category-podcast article a h2.title {
+		 font-size: 160%;
+	 }
 }
 
 /* SMALL DEVICES */
 @media all and (max-width: 640px) { /* and (min-width: 320px) */
-
 		body.home h1.section-title{
 			font-size: 7vw !important;
 		}
@@ -807,7 +713,7 @@ ul.medialist-4 li img {
 	  width: 90%;
 	  text-align: center;
 	 }
-	 /*here-block*/
+
 	body.home .post-box {
 		width: 100%;
 	}
@@ -816,7 +722,7 @@ ul.medialist-4 li img {
 		 width: 100%;
 	 }
 
-   .js.csstransitions.csstransforms3d .hero         .hero-container {
+   .js.csstransitions.csstransforms3d .hero .hero-container {
       margin-top: 40px;
    }
 
@@ -824,61 +730,81 @@ ul.medialist-4 li img {
       padding: 5em 2em 0em;
    }
 
-   /*.hero .section-title {
-     font: normal 1.2em/2.2em 'Pacifico', arial, sans-serif;
-   }*/
-
-   .threecol-one img {
-     width: 100%;
-   }
-
-   .twocol-one img {
-     width: 100%;
-   }
-
-	 .twocol-wrapper {
-	 	max-width: 100%;
-	 	/*border: 1px solid red;*/
-	 }
-
-    .home .threecol-one h3 {
-				max-width: 365px;
-				text-align: center;
-        margin-top: -30px;
-        background-color: #fff;
-        padding: .5rem 1rem;
-        z-index: 5;
-        position: relative;
-        color: #4C5567;
-        font-size: 1.5rem;
-     }
-
-    .home .twocol-one h3 {
-        margin-top: -30px;
-        background-color: #fff;
-        padding: .5rem 1rem;
-        z-index: 5;
-        position: relative;
-        color: #4C5567;
-        font-size: 1.5rem;
-     }
-
    .js.csstransitions.csstransforms3d .hero .hero-container {
      margin-top: 100px;
    }
 
-	 body.category-podcast article {
-	 	width: 45%;
-	}
-
-	body.category-podcast article a h2.title {
-		font-size: 300%;
-	}
-
 } /* End Small Devices*/
 
 
+@media all and (max-width: 640px) and (min-width: 480px){
+	body.home .post-box {
+		width: 40%;
+	}
+	body.post-template-default .entry img,
+	body.blog article img.thumbnail {
+		width: inherit;
+		height: inherit;
+		max-width: inherit;
+		max-height: inherit;
+		float: left;
+	}
+	body.category-podcast article a h2.title {
+	 font-size: 2.75vw;
+ }
 
+}
+
+	@media all and (max-width: 479px) {
+		body.post-template-default .entry img {
+			width: 100%;
+			height: 100%;
+			max-width: 100%;
+			max-height: 100%;
+			float: none;
+		}
+		.threecol-one img {
+			width: 100%;
+		}
+
+		.twocol-one img {
+			width: 100%;
+		}
+
+		.twocol-wrapper {
+		 max-width: 100%;
+		 /*border: 1px solid red;*/
+		}
+
+	 .home .threecol-one h3 {
+			 max-width: 365px;
+			 text-align: center;
+			 margin-top: -30px;
+			 background-color: #fff;
+			 padding: .5rem 1rem;
+			 z-index: 5;
+			 position: relative;
+			 color: #4C5567;
+			 font-size: 1.5rem;
+		}
+
+	 .home .twocol-one h3 {
+			 margin-top: -30px;
+			 background-color: #fff;
+			 padding: .5rem 1rem;
+			 z-index: 5;
+			 position: relative;
+			 color: #4C5567;
+			 font-size: 1.5rem;
+		}
+		body.category-podcast article {
+		 width: 45%;
+	 }
+
+	 body.category-podcast article a h2.title {
+ 		font-size: 275%;
+ 	}
+}
 /* media queries for 2 columns as show on main blog and individual blog posts */
 @media all and (max-width: 980px) {
 	body.two-col-left-1200 #main-sidebar-container #main {
