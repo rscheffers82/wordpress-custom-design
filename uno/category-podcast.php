@@ -26,21 +26,17 @@
 			<?php global $more; $more = 0;
 
      woo_loop_before();
-     if (have_posts()) { $count = 0;
-       ?>
+     if (have_posts()) { $count = 0; ?>
     <h1 class="title entry-title">Podcast</h1>
-    <?php
-     	// Display the description for this archive, if it's available.
-     	woo_archive_description();
-     ?>
+
+    <!-- Display the description for this archive, if it's available. -->
+    <?php woo_archive_description(); ?>
 
      <div class="fix"></div>
 
      <?php
      	while (have_posts()) { the_post(); $count++;
-
-     		woo_get_template_part( 'content', get_post_type() );
-
+     		woo_get_template_part( 'content-podcast', get_post_type() );
      	} // End WHILE Loop
      } else {
      	get_template_part( 'content', 'noposts' );
