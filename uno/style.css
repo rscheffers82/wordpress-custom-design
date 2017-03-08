@@ -143,6 +143,15 @@ h3.signup {
 	line-height: 36px;
 }
 
+.home .mail-subscribe input[type=email] {
+	padding: 8px;
+	border: 1px solid #e2e6f3;
+}
+
+.home .mail-subscribe input[type=email]:focus {
+	box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.1 )
+}
+
 @keyframes pulse_animation {
 	0% { transform: scale(1); }
 	45% { transform: scale(1); }
@@ -424,18 +433,6 @@ label.screen-reader-text, #connect p {
   padding: 2rem;
 }
 
-/* Contact Page */
-
-div#contact-page h1.title {
-  padding: 2rem 0 0 2rem;
-  margin-top: -100px;
-  color: #fff;
-}
-
-.page-template-template-contact-php .location-twitter {
-  padding: 1em 0 1em;
-}
-
 /* Additional blog styles */
 
 .page-title, .post .title, .page .title {
@@ -599,6 +596,49 @@ ul.medialist-4 li img {
     padding: 5px;
 }
 
+/* CONTACT PAGE STYLES */
+
+body.page-template-template-contact .entry {
+	margin-top: 40px;
+}
+
+.page-template-template-contact-php .location-twitter {
+	padding: 1em 0 1em;
+}
+
+div#contact-page h1.title {
+  padding: 2rem 0 0 2rem;
+  margin-top: -100px;
+  color: #fff;
+}
+
+#contact-page .above-contact-form {
+	margin-top: 25px;
+}
+
+#contact-page ol.forms textarea,
+#contact-page ol.forms input.txt {
+	padding: 10px;
+	border: 1px solid #e2e6f3;
+}
+
+#contact-page ol.forms textarea:focus,
+#contact-page ol.forms input.txt:focus {
+	border: 1px solid #60DC9B;
+}
+
+#contact-page ol.forms label {
+	margin: 9px 0;
+}
+#contact-page ol.forms li:nth-child(3) label{
+	margin: 0;
+}
+
+/* FOOTER */
+#footer-widgets .widget h3 {
+	font-family: 'DearJoe5CASUAL',cursive !important;
+}
+
 @media all and (min-width: 320px) and (max-width: 640px) {
 	ul.medialist li {
 		width: 100%;
@@ -607,12 +647,6 @@ ul.medialist-4 li img {
 		width: 50%;
 	}
 }
-
-/* FOOTER */
-#footer-widgets .widget h3 {
-	font-family: 'DearJoe5CASUAL',cursive !important;
-}
-
 
 /* LARGE DEVICES */
 @media all and (min-width: 1024px) {
@@ -804,6 +838,18 @@ ul.medialist-4 li img {
 	 body.category-podcast article a h2.title {
  		font-size: 275%;
  	}
+
+	#contact-page .above-contact-form {
+		margin-top: 40px;
+	}
+
+	#contact-page ol.forms textarea,
+	#contact-page ol.forms input.txt {
+		width: 92%;
+	}
+	#contact-page ol.forms li:nth-child(3) label{
+		margin: 9px 0;
+	}
 }
 /* media queries for 2 columns as show on main blog and individual blog posts */
 @media all and (max-width: 980px) {
