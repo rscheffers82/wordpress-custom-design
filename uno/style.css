@@ -571,29 +571,41 @@ body.category-podcast .soundcloud{
 
 /* MEDIA PAGE */
 
+
 ul.medialist li {
-  float: left;
-  width: 50%;
-  list-style-type: none;
+	float: left;
+	width: 50%;
+	list-style-type: none;
 	min-height: 120px;
 }
 
+ul.medialist-4 {
+	display: flex;
+	flex-flow: row wrap;
+}
+
 ul.medialist-4 li {
-  float: left;
-  width: 25%;
-  list-style-type: none;
+	float: left;
+	width: 21%;
+	list-style-type: none;
 	min-height: 305px;
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
+	background-color: #fff;
+	border: 1px solid #aeb5dd66;
+	margin-right: 1%;
+	padding: 5px 5px;
+	border-radius: 3px;
+	text-align: center;
 }
 
-ul.medialist-4 li:nth-child(4) img {
-	padding: 21px 5px;
+.post-3761 li:nth-child(6) img { 			/* Media page CSS fix */
+  display: inline-block;
 }
 
-
-ul.medialist-4 li img {
-    background: #fff;
-    padding: 5px;
+.medialist-4 .magazine,
+.medialist-4 .date {
+	margin-bottom: 10px;
+	color: inherit;
 }
 
 /* CONTACT PAGE STYLES */
@@ -644,7 +656,8 @@ div#contact-page h1.title {
 		width: 100%;
 	}
 	ul.medialist-4 li {
-		width: 50%;
+		width: 43%;
+		margin-right: 2%;
 	}
 }
 
@@ -838,6 +851,10 @@ div#contact-page h1.title {
 	 body.category-podcast article a h2.title {
  		font-size: 275%;
  	}
+
+	ul.medialist-4 li {
+		width: 90%;
+	}
 
 	#contact-page .above-contact-form {
 		margin-top: 40px;
