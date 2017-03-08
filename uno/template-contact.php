@@ -175,7 +175,7 @@ if($wearelive !== "") { ?>
                 <?php while ( have_posts() ) { the_post(); ?>
 
                         <section class="entry">
-	                        <?php the_content(); ?>
+	                        <!-- <?php the_content(); ?> -->
 
                 			<div class="location-twitter">
     							<?php if ( isset( $woo_options['woo_contact_panel'] ) && $woo_options['woo_contact_panel'] == 'true' ) { ?>
@@ -207,6 +207,10 @@ if($wearelive !== "") { ?>
                     <?php if ( get_option( 'woo_contactform_email' ) == '' ) { ?>
                         <?php echo do_shortcode( '[box type="alert"]' . __( 'Please <strong>add your e-mail</strong> in <em>Contact Page > Contact Form E-mail</em>.', 'woothemes' ) . '[/box]' );  ?>
                     <?php } ?>
+
+										<div class="above-contact-form">
+											<?php the_content(); ?>
+										</div>
 
 
                     <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
