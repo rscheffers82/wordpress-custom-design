@@ -20,7 +20,30 @@ get_header(); ?>
     <div class="mail-subscribe">
       <div class="inside">
         <h3 class="signup">Subscribe to Julie's newsletter!</h3>
-        <form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
+        <form
+          method="post"
+          class="af-form-wrapper"
+          accept-charset="UTF-8"
+          action="https://www.aweber.com/scripts/addlead.pl"
+          target="_blank"
+        >
+          <div style="display: none;">
+            <input type="hidden" name="meta_web_form_id" value="1377243306" />
+            <input type="hidden" name="meta_split_id" value="" />
+            <input type="hidden" name="listname" value="intuitiontips" />
+            <input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=text" id="redirect_42622a16a4f3bbebb668f4198696d367" />
+
+            <input type="hidden" name="meta_adtracking" value="Email_Only" />
+            <input type="hidden" name="meta_message" value="1" />
+            <input type="hidden" name="meta_required" value="email" />
+
+            <input type="hidden" name="meta_tooltip" value="" />
+          </div>
+          
+          <input type="email" name="email" placeholder="Email">
+          <input type="submit" name="submit" value="Sign Up" class="pulse" alt="Sign Up">
+        </form>
+        <!-- <form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
           <input type="hidden" name="meta_web_form_id" value="305744">
           <input type="hidden" name="meta_split_id" value="">
           <input type="hidden" name="unit" value="intuitiontips">
@@ -34,7 +57,7 @@ get_header(); ?>
 
           <input type="email" name="email" placeholder="Email">
           <input type="submit" value="Sign Up" class="pulse">
-        </form>
+        </form> -->
       </div> <!--.inside -->
     </div> <!-- .subscribe -->
 
