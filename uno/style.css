@@ -650,6 +650,12 @@ div#contact-page h1.title {
 #footer-widgets .widget h3 {
 	font-family: 'DearJoe5CASUAL',cursive !important;
 }
+#footer .col-left{
+	float: none;
+}
+#footer p {
+	text-align: center;
+}
 
 @media all and (min-width: 320px) and (max-width: 640px) {
 	ul.medialist li {

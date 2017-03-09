@@ -487,3 +487,16 @@ function header_socnets_init() {
 		'after_title'   => '</h2>',
 	 ) );
 }
+
+add_filter('post_limits', 'nopodcast_limits' );
+
+function nopodcast_limits( $limits )
+{
+  if( is_category( 'Podcast' )) {
+     // remove limits
+     return "";
+  }
+
+  // not in the podcast category, return default limits
+  return $limits;
+}
