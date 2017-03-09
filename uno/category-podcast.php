@@ -55,8 +55,26 @@
 
 		<?php// get_sidebar( 'alt' ); ?>
     </div><!-- /#content -->
+
+    <?php
+    $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
+    $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/03/conscious-pregnancy-1.jpg';
+
+    $link_marriage = get_site_url() . '/getting-married-consciously';
+    $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
+    ?>
     <div class="col-full archives" style="width: 100%">
+
+      <h1 class="title entry-title">Conscious Pregnancy</h1>
+      <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
+        <img src=<?php echo $img_pregnancy; ?> alt="Conscious Pregnancy" />
+      </a>
+
       <h1 class="title entry-title">Getting Married Consciously</h1>
+      <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
+        <img src=<?php echo $img_marriage; ?> alt="Getting Married Consciously" />
+      </a>
+      <!--
       <iframe
         class="soundcloud"
         width="90%"
@@ -65,14 +83,13 @@
         frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/304164859&amp;color=d72844&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false">
     </iframe>
 
-    <h1 class="title entry-title">Conscious Pregnancy</h1>
     <iframe
       class="soundcloud"
       width="90%"
       height="450"
       scrolling="no"
       frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/304161208&amp;color=d72844&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false">
-    </iframe>
+    </iframe> -->
   </div>
 	<?php woo_content_after(); ?>
 

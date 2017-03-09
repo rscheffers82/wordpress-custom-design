@@ -497,7 +497,7 @@ body.post-template-default .entry img {
 	border-radius: 3px;
 }
 
-/*  POCAST STYLES */
+/*  PODCAST STYLES */
 
 body.category-podcast article {
 	width: 25%;
@@ -510,9 +510,9 @@ body.category-podcast article {
 	position: relative;
 	margin: 2%;
 	opacity: 1;
-	transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
 }
 body.category-podcast article:hover {
 	opacity: 0.6;
@@ -556,6 +556,23 @@ abbr.date.time.published.updated {
 article.category-podcast .post-meta .small, article.category-podcast .post-meta .author,
 article.category-podcast .post-meta .categories, article.category-podcast .post-more {
 	display: none;
+}
+
+.podcast-radioshow {
+	display: flex;
+	margin: 0 0 35px 10px;
+	transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+}
+
+.podcast-radioshow:hover{
+	opacity: 0.6;
+}
+
+.podcast-radioshow img {
+	max-width: 500px;
+	width: 80vw;
 }
 
 /* soundcloud section */
