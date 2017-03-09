@@ -137,15 +137,19 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 h3.signup {
 	display: inline-block;
 	float: left;
-	padding: 0 5vw;
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 36px;
+	padding: 0 5vw;
 }
 
 .home .mail-subscribe input[type=email] {
+	color: #555;
 	padding: 8px;
-	border: 1px solid #e2e6f3;
+}
+
+.home .mail-subscribe input[type=submit] {
+	border: 2px solid #6EC09580;
 }
 
 .home .mail-subscribe input[type=email]:focus {
@@ -499,6 +503,35 @@ body.post-template-default .entry img {
 
 /*  PODCAST STYLES */
 
+body.category-podcast a.podcast-link:hover {
+	border-left: 5px solid;
+	margin-left: 0px;
+	box-shadow: 0px 0px 7px 0px rgba( 0, 0, 0, 0.1 );
+	padding-right: 2em;
+}
+body.category-podcast a.podcast-link{
+	display: inline-flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	text-decoration: none;
+	margin: 2em 0;
+	border-left: 2px solid;
+	margin-left: 3px;
+	transition: all 0.5s ease-in-out;
+}
+
+body.category-podcast .podcast-icon {
+	display: inline-block;
+	margin: 0 2em;
+}
+
+body.category-podcast .podcast-text {
+	display: inline-block;
+	margin: 0;
+	font-size: 1.15em;
+	color: #333;
+}
+
 body.category-podcast article {
 	width: 25%;
 	min-width: 100px;
@@ -559,7 +592,7 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 }
 
 .podcast-radioshow {
-	display: flex;
+	display: inline-flex;
 	margin: 0 0 35px 10px;
 	transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;

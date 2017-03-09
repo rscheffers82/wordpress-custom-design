@@ -29,6 +29,15 @@
      if (have_posts()) { $count = 0; ?>
     <h1 class="title entry-title">Podcast</h1>
 
+    <?php $img_itunes = get_site_url() . '/wp-content/uploads/2017/03/julie-cusmariu-available-on-itunes2.png'; ?>
+    <a class="podcast-link" href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" target="_blank">
+      <div class="podcast-icon">
+        <img src=<?php echo $img_itunes; ?> alt="Julie Cusmariu on iTunes" />
+      </div>
+      <div class="podcast-text">
+        Click to subscribe to Julie Cusmariu, Intuitive Consultant, Life Coach and host of Heart Beat radio
+      </div>
+    </a>
     <!-- Display the description for this archive, if it's available. -->
     <?php woo_archive_description(); ?>
 
