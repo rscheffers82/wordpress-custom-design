@@ -696,6 +696,41 @@ div#contact-page h1.title {
 	margin: 0;
 }
 
+/* Widgets */
+
+#sidebar .subscribe-widget {
+	font: 300 15px/1.4em 'Lora', arial, sans-serif;
+	color: #333;
+	border: 1px solid #DBDBEC;
+	padding: 20px 15px;
+	background-color: #ececec;
+	border-radius: .1em;
+}
+
+#sidebar .subscribe-widget table {
+	margin: 20px 0 10px 0;
+}
+
+#sidebar .subscribe-widget input[type=text] {
+	padding: 5px;
+	border: 1px solid #e2e6f3;
+	width: 90%;
+	max-width: 500px;
+}
+
+#sidebar .subscribe-widget input[type=text]:focus {
+	border: 1px solid #60DC9B;
+}
+
+#sidebar .subscribe-widget input[type=submit]{
+	background: #6EC095;
+	color: #fff !important;
+	transition: all 0.5 ease-in-out;
+}
+#sidebar .subscribe-widget input[type=submit]:hover{
+	opacity: 0.85;
+}
+
 /* FOOTER */
 #footer-widgets .widget h3 {
 	font-family: 'DearJoe5CASUAL',cursive !important;
