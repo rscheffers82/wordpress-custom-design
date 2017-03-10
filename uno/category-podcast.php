@@ -80,7 +80,7 @@
       </a>
 
       <h1 class="title entry-title">Getting Married Consciously</h1>
-      <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
+      <a class="podcast-radioshow" href=<?php echo $link_marriage; ?>>
         <img src=<?php echo $img_marriage; ?> alt="Getting Married Consciously" />
       </a>
       <!--
