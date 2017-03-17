@@ -968,3 +968,90 @@ div#contact-page h1.title {
 		width: 100%;
 	}
 }
+
+/* Services page */
+
+.page-id-3956 h1.title {
+	text-align: center;
+  margin-top: -15px;
+}
+
+.page-id-3956 .service-wrapper {
+	max-width: 880px;
+	/*border: 1px solid blue;*/
+	margin: 25px auto 25px;
+}
+
+.page-id-3956 .col {
+	display: inline-block;
+	padding: 20px;
+	height: 250px;
+	width: 250px;
+	max-height: 250px;
+	max-width: 250px;
+	overflow: hidden;
+}
+
+.page-id-3956 .col:hover .box,
+.page-id-3956 .col:focus .box {
+	opacity: 0.6;
+}
+
+
+.page-id-3956 .box {
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover !important;
+	/*border: 1px solid red;*/
+	transition: all .5s ease-in-out;
+}
+
+.page-id-3956 .box a {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	font-size: 1.6em;
+	line-height: 1.2em;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fafafc;
+	background-color: rgba(76, 85, 103, 0.15);
+	text-shadow: 1px 1px 1px #15173666;
+	font-family: 'Open Sans', arial, sans-serif;
+	font-weight: 500;
+}
+
+.page-id-3956 .box a span {
+	display: block;
+	text-transform: capitalize;
+	font-size: 0.75em;
+	font-style: italic;
+	font-weight: 300;
+}
+
+/* Images */
+.one { background: url(http://lorempixel.com/250/250/nature/7) no-repeat; }
+.two { background: url(http://lorempixel.com/250/250/nature/5) no-repeat; }
+.three { background: url(http://lorempixel.com/250/250/nature/1) no-repeat; }
+.four { background: url(http://lorempixel.com/250/250/cats/4) no-repeat; }
+.five { background: url(http://lorempixel.com/250/250/animals/3) no-repeat; }
+.six { background: url(http://lorempixel.com/250/250/cats/3) no-repeat; }
+
+
+@media (max-width: 950px){
+	.page-id-3956 .service-wrapper {
+		max-width: 585px;
+	}
+}
+
+@media (max-width: 650px){
+	.page-id-3956 .service-wrapper {
+		max-width: 290px;
+	}
+}
