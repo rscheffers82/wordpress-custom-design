@@ -116,7 +116,7 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 }
 
 .hero .section-title {
-    font: normal 3em/2.8em 'DearJoe5CASUAL', script !important;
+    font: normal 2.6em/2.4em 'DearJoe5CASUAL', script !important;
     color: #fff;
 }
 
@@ -217,6 +217,46 @@ h3.signup {
 	text-align: center;
 }
 
+/* HOME underneath the hero */
+
+.page-id-3548 .quote {
+	text-align: center;
+	padding: 30px 0 40px;
+	font: 300 italic 2em/1.25em "Open Sans", sans-serif;
+	margin-bottom: 1em;
+}
+
+
+.page-id-3548 .testimonials {
+	margin: 1em 0;
+	/*text-align: center;*/
+}
+
+.page-id-3548 .entry blockquote p {
+	font: 300 italic 16px/1.5em 'Lora', arial, sans-serif;
+}
+
+.page-id-3548 .widget_woothemes_testimonials .quote .author {
+	display: flex;
+	font-size: .5em;
+	justify-content: space-around;
+}
+
+.page-id-3548 .CTAs {
+	margin: 30px 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+}
+
+.page-id-3548 .call-to-action {
+	background-color: #6EC095 !important;
+}
+
+.page-id-3548 .call-to-action:hover,
+.page-id-3548 .call-to-action:focus {
+	opacity: 0.8;
+}
 
 /* Featured blog on the home page */
 
@@ -976,13 +1016,15 @@ div#contact-page h1.title {
   margin-top: -15px;
 }
 
-.page-id-3956 .service-wrapper {
+.page-id-3956 .service-wrapper,   /* on services */
+.page-id-3548 .service-wrapper {  /* on home */
 	max-width: 880px;
 	/*border: 1px solid blue;*/
 	margin: 25px auto 25px;
 }
 
-.page-id-3956 .col {
+.page-id-3956 .col,
+.page-id-3548 .col {
 	display: inline-block;
 	padding: 20px;
 	height: 250px;
@@ -992,13 +1034,21 @@ div#contact-page h1.title {
 	overflow: hidden;
 }
 
+/* allow on the home additional text underneath the service boxes */
+.page-id-3548 .col {
+	max-height: none;
+	height: auto;
+}
+
 .page-id-3956 .col:hover .box,
-.page-id-3956 .col:focus .box {
+.page-id-3956 .col:focus .box,
+.page-id-3548 .col:hover .box,
+.page-id-3548 .col:focus .box {
 	opacity: 0.6;
 }
 
-
-.page-id-3956 .box {
+.page-id-3956 .box,
+.page-id-3548 .box {
 	display: table;
 	position: relative;
 	width: 100%;
@@ -1010,7 +1060,14 @@ div#contact-page h1.title {
 	transition: all .5s ease-in-out;
 }
 
-.page-id-3956 .box a {
+/* allow on the home additional text underneath the service boxes */
+.page-id-3548 .box {
+	height: 250px;
+	margin-bottom: 20px;
+}
+
+.page-id-3956 .box a,
+.page-id-3548 .box a {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -1027,7 +1084,8 @@ div#contact-page h1.title {
 	font-weight: 500;
 }
 
-.page-id-3956 .box a span {
+.page-id-3956 .box a span,
+.page-id-3548 .box a span {
 	display: block;
 	text-transform: capitalize;
 	font-size: 0.75em;

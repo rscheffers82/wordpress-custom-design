@@ -39,7 +39,7 @@ get_header(); ?>
 
             <input type="hidden" name="meta_tooltip" value="" />
           </div>
-          
+
           <input type="email" name="email" placeholder="Email">
           <input type="submit" name="submit" value="Sign Up" class="pulse" alt="Sign Up">
         </form>
@@ -80,7 +80,7 @@ get_header(); ?>
     ?>
 
      <!-- Featured blog post rendering -->
-    <h3 class="elegant">From the Blog</h3>
+    <!-- <h3 class="elegant">From the Blog</h3> -->
     <h3 class="thin center">LATEST NEWS AND EVENTS</h3>
     <div class="homepage-blog">
     <?php
@@ -105,7 +105,7 @@ get_header(); ?>
 
     <!-- Magazine Grid end -->
     <!-- Magazine Grid -->
-    <h3 class="thin">Featured by</h3>
+    <!-- <h3 class="thin">Featured by</h3> -->
     <ul class="media">
       <li><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/09/gazette-logo.png" alt="The Montreal Gazette"/></li>
       <li><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/09/vitamindaily-logo.png" alt="Vitamin Daily Magazine"/></li>
