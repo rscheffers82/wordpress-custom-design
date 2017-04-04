@@ -16,6 +16,10 @@ Tags: canvas, woothemes, store, woocommerce
 @import url(../canvas/style.css);
 @import url(css/font-style.css);
 
+body {
+	background-color: #ffffff;
+}
+
 a {
 	transition: color .75s ease-out;
 }
