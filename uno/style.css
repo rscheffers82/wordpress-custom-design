@@ -218,43 +218,65 @@ h3.signup {
 }
 
 /* HOME underneath the hero */
-
-.page-id-3548 .quote {
+/*.home .quote {
 	text-align: center;
 	padding: 30px 0 40px;
-	font: 300 italic 2em/1.25em "Open Sans", sans-serif;
+	font: 300 italic 30px/35px "Open Sans", sans-serif;
 	margin-bottom: 1em;
+}*/
+
+.home .intro {
+	margin: 1em auto 0em;
+	max-width: 840px;
+}
+
+.home .intro strong.hi {
+	font-family: 'DearJoe5CASUAL',cursive !important;
 }
 
 
-.page-id-3548 .testimonials {
+
+.home .testimonials {
 	margin: 1em 0;
-	/*text-align: center;*/
 }
 
-.page-id-3548 .entry blockquote p {
-	font: 300 italic 16px/1.5em 'Lora', arial, sans-serif;
+.home .testimonials a {
+	pointer-events: none;
 }
 
-.page-id-3548 .widget_woothemes_testimonials .quote .author {
+.home .testimonials .author span.url {
+	display: none;
+}
+
+.home .testimonials p {
+	font: 300 18px/1.5em 'Lora', arial, sans-serif;
+}
+
+.home .testimonials img.avatar{
+	margin: 20px 20px 0;
+}
+
+.home .widget_woothemes_testimonials .quote .author {
 	display: flex;
-	font-size: .5em;
-	justify-content: space-around;
+	font-size: 1.1em;
+	justify-content: flex-start;
+	flex-flow: column nowrap;
+	margin-top: -10px;
 }
 
-.page-id-3548 .CTAs {
+.home .CTAs {
 	margin: 30px 0;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
 }
 
-.page-id-3548 .call-to-action {
+.home .call-to-action {
 	background-color: #6EC095 !important;
 }
 
-.page-id-3548 .call-to-action:hover,
-.page-id-3548 .call-to-action:focus {
+.home .call-to-action:hover,
+.home .call-to-action:focus {
 	opacity: 0.8;
 }
 
@@ -1019,18 +1041,19 @@ div#contact-page h1.title {
 .page-id-3956 .service-wrapper,   /* on services */
 .page-id-3548 .service-wrapper {  /* on home */
 	max-width: 880px;
-	/*border: 1px solid blue;*/
 	margin: 25px auto 25px;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .page-id-3956 .col,
 .page-id-3548 .col {
-	display: inline-block;
-	padding: 20px;
+	display: block;
+	margin: 20px;
 	height: 250px;
 	width: 250px;
-	max-height: 250px;
 	max-width: 250px;
+	min-width: 250px;
 	overflow: hidden;
 }
 
@@ -1073,8 +1096,8 @@ div#contact-page h1.title {
 	text-align: center;
 	width: 100%;
 	height: 100%;
-	font-size: 1.6em;
-	line-height: 1.2em;
+	font-size: 1.4em;
+	line-height: 1.1em;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fafafc;
@@ -1091,6 +1114,7 @@ div#contact-page h1.title {
 	font-size: 0.75em;
 	font-style: italic;
 	font-weight: 300;
+	padding: 0 15px;
 }
 
 /* Images */
