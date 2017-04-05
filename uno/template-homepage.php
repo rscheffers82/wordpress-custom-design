@@ -81,7 +81,7 @@ get_header(); ?>
 
      <!-- Featured blog post rendering -->
     <!-- <h3 class="elegant">From the Blog</h3> -->
-    <h3 class="thin center">LATEST NEWS AND EVENTS</h3>
+    <h3 class="thin center">Latest News and Events</h3>
     <div class="homepage-blog">
     <?php
 
