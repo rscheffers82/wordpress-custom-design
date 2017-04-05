@@ -177,6 +177,10 @@ h3.signup {
 	animation-timing-function: linear;
 }
 
+.home .entry p {
+	font: 300 18px/1.5em 'Lora', arial, sans-serif;
+}
+
 .home .twocol-wrapper,
 .home .threecol-one {
 	box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
@@ -238,18 +242,27 @@ h3.signup {
 	font-family: 'DearJoe5CASUAL',cursive !important;
 }
 
+.home .testimonial-area {
+	margin: 1em 0 4em;
+	background-color: #ddd;
+	padding: 2em .5em 0;
+	position: relative;
+	z-index: 1;
+}
 
-
-.home .testimonials {
-	margin: 1em 0;
+.home .testimonial-area:before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-color: #ddd;
+	z-index: -1;
+	content: '';
+	left: -10em;
+	right: -10em;
 }
 
 .home .testimonials a {
 	pointer-events: none;
-}
-
-.home .testimonials .author span.url {
-	display: none;
 }
 
 .home .testimonials p {
@@ -258,6 +271,10 @@ h3.signup {
 
 .home .testimonials img.avatar{
 	margin: 20px 20px 0;
+}
+
+.home .widget {
+	margin: 0;
 }
 
 .home .widget_woothemes_testimonials .quote .author {
@@ -426,6 +443,12 @@ a.woo-sc-button.custom.medium.blog.home-blog-button {
 		margin: 0 auto 1.5rem;
 }
 
+@media only screen and (min-width: 768px){
+	.full-width .home-section {
+		padding-bottom: 5.5em !important;
+	}
+}
+
 
 /* TESTIMONIALS */
 
@@ -591,6 +614,10 @@ body.category-podcast a.podcast-link{
 body.category-podcast .podcast-icon {
 	display: inline-block;
 	margin: 0 2em;
+}
+
+body.category-podcast .podcast-icon img {
+	width: 75%;
 }
 
 body.category-podcast .podcast-text {
@@ -1133,13 +1160,20 @@ div#contact-page h1.title {
 
 
 @media (max-width: 950px){
+	.home .service-wrapper,
 	.page-id-3956 .service-wrapper {
 		max-width: 585px;
 	}
 }
 
 @media (max-width: 650px){
+	.home .service-wrapper,
 	.page-id-3956 .service-wrapper {
 		max-width: 290px;
 	}
+}
+
+/*custom colors*/
+.green {
+	color: #6EC095;
 }
