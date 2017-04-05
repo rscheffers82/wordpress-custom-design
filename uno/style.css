@@ -261,6 +261,17 @@ h3.signup {
 	right: -10em;
 }
 
+.home .testimonial-area .overlay-a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: '';
+	z-index: 10;
+	cursor: pointer;
+}
+
 .home .testimonials a {
 	pointer-events: none;
 }
@@ -443,6 +454,7 @@ a.woo-sc-button.custom.medium.blog.home-blog-button {
 		margin: 0 auto 1.5rem;
 }
 
+/* enlarge about top section */
 @media only screen and (min-width: 768px){
 	.full-width .home-section {
 		padding-bottom: 5.5em !important;
