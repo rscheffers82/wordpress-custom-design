@@ -152,10 +152,6 @@ h3.signup {
 	padding: 8px;
 }
 
-.home .mail-subscribe input[type=submit] {
-	border: 2px solid #6EC09580;
-}
-
 .home .mail-subscribe input[type=email]:focus {
 	box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.1 )
 }
@@ -246,7 +242,7 @@ h3.signup {
 	margin: 1em 0 4em;
 	background-color: #ddd;
 	padding: 2em .5em 0;
-	padding: 0.25em .5em 0;
+	padding: 1.75em .5em 1em;
 	position: relative;
 	z-index: 1;
 }
@@ -304,13 +300,27 @@ h3.signup {
 	justify-content: space-evenly;
 }
 
-.home .call-to-action {
+.call-to-action-hollow,
+.call-to-action {
 	background-color: #6EC095 !important;
+	font: 300 18px/1.5em 'Lora', arial, sans-serif !important;
 }
 
-.home .call-to-action:hover,
-.home .call-to-action:focus {
+.call-to-action:hover,
+.call-to-action:focus {
 	opacity: 0.8;
+}
+
+.call-to-action-hollow {
+		border: 2px solid #6EC09580;
+		/*border: 2px solid #6EC095;*/
+		background-color: transparent !important;
+	}
+}
+
+.call-to-action-hollow:hover,
+.call-to-action-hollow:focus {
+	color: #6EC095;
 }
 
 /* Featured blog on the home page */
@@ -323,6 +333,8 @@ body.home h3.elegant {
 	margin-bottom: 3px;
 }
 
+h1.entry-title,
+.page h1.title,
 body.home h3.thin {
 	font-weight: 300;
 

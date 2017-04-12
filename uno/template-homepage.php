@@ -41,7 +41,7 @@ get_header(); ?>
           </div>
 
           <input type="email" name="email" placeholder="Email">
-          <input type="submit" name="submit" value="Sign Up" class="pulse" alt="Sign Up">
+          <input type="submit" name="submit" value="Sign Up" class="pulse .call-to-action-hollow" alt="Sign Up">
         </form>
         <!-- <form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
           <input type="hidden" name="meta_web_form_id" value="305744">
@@ -97,10 +97,12 @@ get_header(); ?>
     //woo_pagenav( $query );
     //wp_reset_query();
     ?>
-
-    <div class="button-wrapper">
-      <a href="<?php echo site_url();?>/blog" class="woo-sc-button custom medium blog home-blog-button">View all posts</a>
-    </div>
+    <p>
+      <a href="<?php echo site_url();?>/blog" class="call-to-action woo-sc-button">View all posts</a>
+    </p>
+    <!-- <div class="button-wrapper">
+      <a href="<?php //echo site_url();?>/blog" class="woo-sc-button custom medium blog home-blog-button">View all posts</a>
+    </div> -->
   </div>
 
     <!-- Magazine Grid end -->
