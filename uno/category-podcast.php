@@ -28,11 +28,13 @@
 
      woo_loop_before();
      if (have_posts()) { $count = 0; ?>
-    <h1 class="title entry-title">Podcast</h1>
 
     <?php
       $id=4049;  // Dynamic Podcast content page
       $post = get_post($id);
+    ?>
+    <h1 class="title entry-title"> <?php echo $post->post_title; ?> </h1>
+    <?php
       $content = apply_filters('the_content', $post->post_content);
       echo $content;
     ?>
