@@ -473,11 +473,11 @@ a.woo-sc-button.custom.medium.blog.home-blog-button {
 }
 
 /* enlarge about top section */
-@media only screen and (min-width: 768px){
+/*@media only screen and (min-width: 768px){
 	.full-width .home-section {
 		padding-bottom: 8.5em !important;
 	}
-}
+}*/
 
 
 /* TESTIMONIALS */
@@ -1209,6 +1209,6 @@ div#contact-page h1.title {
 }
 
 
-body.page-id-8 section.home-section.custom-header {
+/*body.page-id-8 section.home-section.custom-header {
 	background-position: 20% 15%;
-}
+}*/
