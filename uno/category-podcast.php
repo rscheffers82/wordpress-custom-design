@@ -52,7 +52,7 @@
     <?php woo_archive_description(); ?>
 
      <div class="fix"></div>
-     <h1 class="title entry-title">Stream or download (through itunes) one of these conversations below:</h1>
+     <h1 class="title entry-title">Stream or download (through iTunes) one of these conversations below:</h1>
      <?php
      	while (have_posts()) { the_post(); $count++;
      		woo_get_template_part( 'content-podcast', get_post_type() );
@@ -83,32 +83,17 @@
     $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
     ?>
     <div class="col-full archives" style="width: 100%">
-
       <h1 class="title entry-title">Radio Shows</h1>
       <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
         <img src=<?php echo $img_pregnancy; ?> alt="Conscious Pregnancy" />
       </a>
 
-      <!-- <h1 class="title entry-title">Getting Married Consciously</h1> -->
       <a class="podcast-radioshow" href=<?php echo $link_marriage; ?>>
         <img src=<?php echo $img_marriage; ?> alt="Getting Married Consciously" />
       </a>
-      <!--
-      <iframe
-        class="soundcloud"
-        width="90%"
-        height="450"
-        scrolling="no"
-        frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/304164859&amp;color=d72844&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false">
-    </iframe>
 
-    <iframe
-      class="soundcloud"
-      width="90%"
-      height="450"
-      scrolling="no"
-      frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/304161208&amp;color=d72844&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false">
-    </iframe> -->
+      <h1 class="title entry-title">What others say</h1>
+      <?php do_action( 'woothemes_testimonials', array( 'limit' => 2, 'id' => '3638, 4175', 'size' => 100, 'per_row' => 2, ) ); ?>
   </div>
 	<?php woo_content_after(); ?>
 

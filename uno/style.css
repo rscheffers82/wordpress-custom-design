@@ -752,9 +752,13 @@ body.category-podcast .soundcloud{
 	margin: 0 1.4rem 5rem 1.4rem;
 }
 
+body.category-podcast .widget_woothemes_testimonials .quote {
+  width: 45%;
+  margin-right: 5%;
+}
+
 
 /* MEDIA PAGE */
-
 
 ul.medialist li {
 	float: left;
@@ -1012,6 +1016,11 @@ div#contact-page h1.title {
    .js.csstransitions.csstransforms3d .hero .hero-container {
      margin-top: 100px;
    }
+	 body.category-podcast .widget_woothemes_testimonials .quote {
+	 	width: 85%;
+	 	float: none;
+	 }
+
 
 } /* End Small Devices*/
 
