@@ -19,7 +19,7 @@ get_header(); ?>
 
     <div class="mail-subscribe">
       <div class="inside">
-        <h3 class="signup">Subscribe to Julie's newsletter!</h3>
+        <h3 class="signup">Subscribe to monthly newsletter and receive my FREE 6 minute guided audio meditation for relaxation</h3>
         <form
           method="post"
           class="af-form-wrapper"

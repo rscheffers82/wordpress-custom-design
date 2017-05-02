@@ -52,7 +52,7 @@
     <?php woo_archive_description(); ?>
 
      <div class="fix"></div>
-     <h1 class="title entry-title">Archives</h1>
+     <h1 class="title entry-title">Stream or download (through itunes) one of these conversations below:</h1>
      <?php
      	while (have_posts()) { the_post(); $count++;
      		woo_get_template_part( 'content-podcast', get_post_type() );
@@ -77,19 +77,19 @@
 
     <?php
     $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
-    $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/03/conscious-pregnancy-1.jpg';
+    $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/04/conscious-pregnancy-650wide.jpg';
 
     $link_marriage = get_site_url() . '/getting-married-consciously';
     $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
     ?>
     <div class="col-full archives" style="width: 100%">
 
-      <h1 class="title entry-title">Conscious Pregnancy</h1>
+      <h1 class="title entry-title">Radio Shows</h1>
       <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
         <img src=<?php echo $img_pregnancy; ?> alt="Conscious Pregnancy" />
       </a>
 
-      <h1 class="title entry-title">Getting Married Consciously</h1>
+      <!-- <h1 class="title entry-title">Getting Married Consciously</h1> -->
       <a class="podcast-radioshow" href=<?php echo $link_marriage; ?>>
         <img src=<?php echo $img_marriage; ?> alt="Getting Married Consciously" />
       </a>
