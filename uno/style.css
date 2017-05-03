@@ -27,7 +27,7 @@ a {
 /*  HEADER */
 
 #header {
-	background: url('/~juliec16/wp-content/uploads/2015/05/logotree.png') 10px 21px no-repeat !important;
+	background: url('../../uploads/2015/05/logotree.png') 10px 21px no-repeat !important;
 }
 
 #logo {
@@ -1198,7 +1198,7 @@ div#contact-page h1.title {
 .page-id-3956 .box a span,
 .page-id-3548 .box a span {
 	display: block;
-	text-transform: capitalize;
+	text-transform: none;
 	font-size: 0.75em;
 	font-style: italic;
 	font-weight: 300;
@@ -1206,11 +1206,11 @@ div#contact-page h1.title {
 }
 
 /* Images */
-.one { background: url(http://198.46.81.175/~juliec16/wp-content/uploads/2017/04/intuition-by-julie-cusmariu-small-1.jpg) no-repeat; }
-.two { background: url(http://198.46.81.175/~juliec16/wp-content/uploads/2017/04/intuition.jpg) no-repeat; }
-.three { background: url(http://198.46.81.175/~juliec16/wp-content/uploads/2017/04/julie-in-conversation-podcasts-small-1.jpg) no-repeat; }
+.one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }
+.two { background: url(../../uploads/2017/05/julie-cusmariu-intuition-3.jpg) no-repeat; }
+.three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
 .four { background: url(http://lorempixel.com/250/250/cats/4) no-repeat; }
-.five { background: url(http://lorempixel.com/250/250/animals/3) no-repeat; }
+.five { background: url(../../uploads/2017/05/julie-cusmariu-intuition-4.jpg) no-repeat; }
 .six { background: url(http://lorempixel.com/250/250/cats/3) no-repeat; }
 
 
