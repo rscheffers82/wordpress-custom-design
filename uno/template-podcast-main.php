@@ -24,13 +24,14 @@ get_header(); ?>
           <section id="main">
 
             <?php woo_loop_before();
-
             if (have_posts()) { $count = 0;
               while (have_posts()) { the_post(); $count++;
                 woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
               }
             }
             ?>
+
+            <div class="podcasts-wrapper">
     <?php
 
     $query = new WP_Query( 'cat=108&posts_per_page=-1' );
@@ -45,8 +46,8 @@ get_header(); ?>
       get_template_part( 'content', 'noposts' );
     }
     ?>
-
-  </div>
+  </div>  <!-- podcasts-wrapper -->
+  </div>  <!-- main-sidebar-container -->
     <?php woo_loop_after(); ?>
       </section><!-- /#main -->
       <?php woo_main_after(); ?>
@@ -69,7 +70,8 @@ get_header(); ?>
   $link_marriage = get_site_url() . '/getting-married-consciously';
   $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
   ?>
-  <div class="col-full archives" style="width: 100%">
+  <!-- <div class="col-full archives" style="width: 100%"> -->
+    <div id="content" class="col-full">
     <h1 class="title entry-title">Radio Shows</h1>
 
     <div class="podcast-radioshows-wrapper">

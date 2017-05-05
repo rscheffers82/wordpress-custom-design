@@ -570,7 +570,7 @@ label.screen-reader-text, #connect p {
 /* Additional blog styles */
 
 .page-title, .post .title, .page .title {
-    text-transform: capitalize !important;
+    text-transform: none !important;
 }
 
 body.blog .fix:after {
@@ -633,13 +633,13 @@ body.post-template-default .entry img {
 
 /*  PODCAST STYLES */
 
-body.category-podcast a.podcast-link:hover {
+.page-template-template-podcast-main .podcasts-wrapper a.podcast-link:hover {
 	border-left: 5px solid;
 	margin-left: 0px;
 	box-shadow: 0px 0px 7px 0px rgba( 0, 0, 0, 0.1 );
 	padding-right: 2em;
 }
-body.category-podcast a.podcast-link{
+.page-template-template-podcast-main .podcasts-wrapper a.podcast-link{
 	display: inline-flex;
 	flex-flow: row nowrap;
 	align-items: center;
@@ -650,23 +650,23 @@ body.category-podcast a.podcast-link{
 	transition: all 0.5s ease-in-out;
 }
 
-body.category-podcast .podcast-icon {
+.page-template-template-podcast-main .podcasts-wrapper .podcast-icon {
 	display: inline-block;
 	margin: 0 2em;
 }
 
-body.category-podcast .podcast-icon img {
+.page-template-template-podcast-main .podcasts-wrapper .podcast-icon img {
 	width: 75%;
 }
 
-body.category-podcast .podcast-text {
+.page-template-template-podcast-main .podcasts-wrapper .podcast-text {
 	display: inline-block;
 	margin: 0;
 	font-size: 1.15em;
 	color: #333;
 }
 
-body.category-podcast article {
+.page-template-template-podcast-main .podcasts-wrapper article {
 	width: 25%;
 	min-width: 100px;
 	max-width: 200px;
@@ -681,13 +681,13 @@ body.category-podcast article {
 	-moz-transition: opacity .5s ease-in-out;
 	-webkit-transition: opacity .5s ease-in-out;
 }
-body.category-podcast article:hover {
+.page-template-template-podcast-main .podcasts-wrapper article:hover {
 	opacity: 0.6;
 }
-body.category-podcast article a {
+.page-template-template-podcast-main .podcasts-wrapper article a {
 	width: 100%;
 }
-body.category-podcast article a:first-child {
+.page-template-template-podcast-main .podcasts-wrapper article a:first-child {
 	position: absolute;
 	background-color: rgba(38, 37, 55, 0.6);
 	z-index: 10;
@@ -696,23 +696,23 @@ body.category-podcast article a:first-child {
 	margin: 0;
 }
 
-body.category-podcast article a h2.title {
+.page-template-template-podcast-main .podcasts-wrapper article a h2.title {
 	color: #eee;
 	padding: 5px 10px;
 	margin: 0;
 }
 
-body.category-podcast article a:hover {
+.page-template-template-podcast-main .podcasts-wrapper article a:hover {
 	text-decoration: none;
 }
 
-body.category-podcast article a img.thumbnail {
+.page-template-template-podcast-main .podcasts-wrapper article a img.thumbnail {
 	padding: 0;
 	margin: 0;
 }
 
 
-body.category-podcast article section.entry p {
+.page-template-template-podcast-main .podcasts-wrapper article section.entry p {
 	display: none;
 }
 
@@ -749,15 +749,15 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 
 /* soundcloud section */
 
-body.category-podcast .archives {
+.page-template-template-podcast-main .archives {
 	padding: 0 1.618em 40px 1.618em;
 }
 
-body.category-podcast .soundcloud{
+.page-template-template-podcast-main .soundcloud{
 	margin: 0 1.4rem 5rem 1.4rem;
 }
 
-body.category-podcast .widget_woothemes_testimonials .quote {
+.page-template-template-podcast-main .widget_woothemes_testimonials .quote {
   width: 45%;
   margin-right: 5%;
 }
@@ -979,7 +979,7 @@ div#contact-page h1.title {
      color: #4C5567;
      font-size: 1.2rem;
    }
-	 body.category-podcast article a h2.title {
+	 .page-template-template-podcast-main .podcasts-wrapper article a h2.title {
 		 font-size: 160%;
 	 }
 }
@@ -1021,7 +1021,7 @@ div#contact-page h1.title {
    .js.csstransitions.csstransforms3d .hero .hero-container {
      margin-top: 100px;
    }
-	 body.category-podcast .widget_woothemes_testimonials .quote {
+	 .page-template-template-podcast-main .widget_woothemes_testimonials .quote {
 	 	width: 85%;
 	 	float: none;
 	 }
@@ -1042,7 +1042,7 @@ div#contact-page h1.title {
 		max-height: inherit;
 		float: left;
 	}
-	body.category-podcast article a h2.title {
+	.page-template-template-podcast-main .podcasts-wrapper article a h2.title {
 	 font-size: 2.75vw;
  }
 
@@ -1090,11 +1090,11 @@ div#contact-page h1.title {
 			 color: #4C5567;
 			 font-size: 1.5rem;
 		}
-		body.category-podcast article {
+		.page-template-template-podcast-main .podcasts-wrapper article {
 		 width: 45%;
 	 }
 
-	 body.category-podcast article a h2.title {
+	 .page-template-template-podcast-main .podcasts-wrapper article a h2.title {
  		font-size: 275%;
  	}
 
