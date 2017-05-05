@@ -1136,6 +1136,17 @@ div#contact-page h1.title {
   margin-top: -15px;
 }
 
+
+/* Images */
+.one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }
+.two { background: url(../../uploads/2017/05/julie-cusmariu-intuition-2.jpg) no-repeat; }
+.three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
+.four { background: url(http://lorempixel.com/250/250/cats/4) no-repeat; }
+.five { background: url(../../uploads/2017/05/julie-cusmariu-intuition-4.jpg) no-repeat; }
+.six { background: url(http://lorempixel.com/250/250/cats/3) no-repeat; }
+
+/*new styles*/
+
 .page-id-3956 .service-wrapper,   /* on services */
 .page-id-3548 .service-wrapper {  /* on home */
 	max-width: 880px;
@@ -1152,20 +1163,13 @@ div#contact-page h1.title {
 	width: 250px;
 	max-width: 250px;
 	min-width: 250px;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 /* allow on the home additional text underneath the service boxes */
 .page-id-3548 .col {
 	max-height: none;
 	height: auto;
-}
-
-.page-id-3956 .col:hover .box,
-.page-id-3956 .col:focus .box,
-.page-id-3548 .col:hover .box,
-.page-id-3548 .col:focus .box {
-	opacity: 0.6;
 }
 
 .page-id-3956 .box,
@@ -1177,8 +1181,9 @@ div#contact-page h1.title {
 	top: 0;
 	left: 0;
 	background-size: cover !important;
-	/*border: 1px solid red;*/
 	transition: all .5s ease-in-out;
+	border-radius: 25px;
+	overflow: hidden;
 }
 
 /* allow on the home additional text underneath the service boxes */
@@ -1190,8 +1195,6 @@ div#contact-page h1.title {
 .page-id-3956 .box a,
 .page-id-3548 .box a {
 	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
 	width: 100%;
 	height: 100%;
 	font-size: 1.4em;
@@ -1199,29 +1202,43 @@ div#contact-page h1.title {
 	text-decoration: none;
 	text-transform: none;
 	color: #fafafc;
-	background-color: rgba(76, 85, 103, 0.15);
+	background-color: rgba(76, 85, 103, 0.10);
 	text-shadow: 1px 1px 1px #15173666;
 	font-family: 'Open Sans', arial, sans-serif;
 	font-weight: 500;
+  transition: background-color .5s ease-in-out;
 }
 
-.page-id-3956 .box a span,
-.page-id-3548 .box a span {
+.page-id-3956 .box a:hover,
+.page-id-3548 .box a:hover {
+  	background-color: rgba(76, 85, 103, 0.0);
+}
+
+.page-id-3956 .box a div.wrapper,
+.page-id-3548 .box a div.wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  padding: 5px 10px;
+  background-color: rgba(30,30,40, .35);
+}
+
+.page-id-3956 .box a div.wrapper p,
+.page-id-3548 .box a div.wrapper p,
+.page-id-3956 .box p,
+.page-id-3548 .box p {
+	display: none;
+}
+
+.page-id-3956 .box a div.underline,
+.page-id-3548 .box a div.underline {
 	display: block;
 	text-transform: none;
 	font-size: 0.75em;
 	font-style: italic;
 	font-weight: 300;
-	padding: 0 15px;
 }
-
-/* Images */
-.one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }
-.two { background: url(../../uploads/2017/05/julie-cusmariu-intuition-2.jpg) no-repeat; }
-.three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
-.four { background: url(http://lorempixel.com/250/250/cats/4) no-repeat; }
-.five { background: url(../../uploads/2017/05/julie-cusmariu-intuition-4.jpg) no-repeat; }
-.six { background: url(http://lorempixel.com/250/250/cats/3) no-repeat; }
 
 
 @media (max-width: 950px){
