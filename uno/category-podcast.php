@@ -84,15 +84,17 @@
     ?>
     <div class="col-full archives" style="width: 100%">
       <h1 class="title entry-title">Radio Shows</h1>
-      <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
-        <img src=<?php echo $img_pregnancy; ?> alt="Conscious Pregnancy" />
-      </a>
 
-      <a class="podcast-radioshow" href=<?php echo $link_marriage; ?>>
-        <img src=<?php echo $img_marriage; ?> alt="Getting Married Consciously" />
-      </a>
+      <div class="podcast-radioshows-wrapper">
+        <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
+          <img src=<?php echo $img_pregnancy; ?> alt="Conscious Pregnancy" />
+        </a>
+        <a class="podcast-radioshow" href=<?php echo $link_marriage; ?>>
+          <img src=<?php echo $img_marriage; ?> alt="Getting Married Consciously" />
+        </a>
+      </div>
 
-      <h1 class="title entry-title">What others say</h1>
+      <h1 class="title entry-title">What listeners are saying</h1>
       <?php do_action( 'woothemes_testimonials', array( 'limit' => 2, 'id' => '3638, 4175', 'size' => 100, 'per_row' => 2, ) ); ?>
   </div>
 	<?php woo_content_after(); ?>

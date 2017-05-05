@@ -19,7 +19,7 @@ get_header(); ?>
 
     <div class="mail-subscribe">
       <div class="inside">
-        <h3 class="signup">Subscribe to monthly newsletter and receive my FREE 6 minute guided audio meditation for relaxation</h3>
+        <h3 class="signup">Subscribe to my monthly newsletter and receive my FREE 6 minute guided audio meditation for relaxation</h3>
         <form
           method="post"
           class="af-form-wrapper"
@@ -81,7 +81,7 @@ get_header(); ?>
 
      <!-- Featured blog post rendering -->
     <!-- <h3 class="elegant">From the Blog</h3> -->
-    <h3 class="thin center">Latest News and Events</h3>
+    <h3 class="thin center">Some of my thoughts</h3>
     <div class="homepage-blog">
     <?php
 
