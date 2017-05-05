@@ -633,6 +633,11 @@ body.post-template-default .entry img {
 
 /*  PODCAST STYLES */
 
+.page-template-template-podcast-main .podcasts-wrapper {
+	display: inline-block;
+	margin-bottom: 2.5em;
+}
+
 .page-template-template-podcast-main .podcasts-wrapper a.podcast-link:hover {
 	border-left: 5px solid;
 	margin-left: 0px;
@@ -726,7 +731,7 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 }
 
 .podcast-radioshows-wrapper {
-	margin-bottom: 20px;
+	margin-bottom: 1.5em;
 }
 
 .podcast-radioshow {
