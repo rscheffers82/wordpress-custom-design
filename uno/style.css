@@ -1216,12 +1216,19 @@ div#contact-page h1.title {
 
 .page-id-3956 .box a div.wrapper,
 .page-id-3548 .box a div.wrapper {
-  position: absolute;
+	background-color: rgba(30,30,40, .35);
+	position: absolute;
   left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  padding: 5px 10px;
-  background-color: rgba(30,30,40, .35);
+	right: 0;
+	top: 64%;
+	text-align: center;
+	padding: 5px 10px;
+	min-height: 50px;
+}
+
+.page-id-3956 .box a div.single,
+.page-id-3548 .box a div.single {
+	line-height: 50px;
 }
 
 .page-id-3956 .box a div.wrapper p,
@@ -1235,9 +1242,9 @@ div#contact-page h1.title {
 .page-id-3548 .box a div.underline {
 	display: block;
 	text-transform: none;
-	font-size: 0.75em;
-	font-style: italic;
-	font-weight: 300;
+	font-size: 0.6em;
+	font-weight: 500;
+	/*line-height: 1.3em;*/
 }
 
 
@@ -1264,3 +1271,17 @@ div#contact-page h1.title {
 /*body.page-id-8 section.home-section.custom-header {
 	background-position: 20% 15%;
 }*/
+
+body.home blockquote { z-index: 5; }
+
+body.home .quote::before,
+body.home blockquote::after {
+	content: "\"";
+	color: #777;
+	font-family: 'DearJoe5CASUAL', script, sans-serif !important;
+	font-size: 750%;
+	position: relative;
+	top: 35px;
+	z-index: 10;
+}
+body.home blockquote::after { float: right; }
