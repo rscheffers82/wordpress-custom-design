@@ -104,6 +104,13 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
     background: inherit !important;
 }
 
+/* Life coaching and intuitive reading menu background fix */
+.page-id-8 #menu-item-3971 a,
+.page-id-6 #menu-item-3971 a {
+	background-color: #4c5567 !important;
+}
+
+
 #navigation ul.nav > li a{
 	transition: none;
 }
