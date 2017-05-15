@@ -1,34 +1,41 @@
-# To set your custom php.ini, add the following line to this file:
-# suphp_configpath /home/yourusername/path/to/php.ini
-# php_value mbstring.func_overload 4 # Required for PWSB support. Please do not uncomment this line.
+# Use PHP5.6 as default
+AddHandler application/x-httpd-php56 .php
 
 # BEGIN WordPress
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpg "access plus 1 year"
+	ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType image/gif "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType application/pdf "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+	ExpiresByType image/x-icon "access plus 1 year"
+	ExpiresDefault "access plus 1 weeks"
+</IfModule>
+Options -Indexes
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteRule ^/wp-content/endurance-page-cache/ - [L]
+	RewriteCond %{REQUEST_METHOD} !POST
+	RewriteCond %{QUERY_STRING} !.*=.*
+	RewriteCond %{HTTP_COOKIE} !(wordpress_test_cookie|comment_author|wp\-postpass|wordpress_logged_in|wptouch_switch_toggle|wp_woocommerce_session_) [NC]
+	RewriteCond %{DOCUMENT_ROOT}/wp-content/endurance-page-cache/$1/_index.html -f
+	RewriteRule ^(.*)$ /wp-content/endurance-page-cache/$1/_index.html [L]
+</IfModule>
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /~juliec16/
+RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /~juliec16/index.php [L]
+RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
-
-<IfModule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-</IfModule>
-
-<ifmodule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access plus 1 year"
-ExpiresByType image/jpeg "access plus 1 year"
-ExpiresByType image/gif "access plus 1 year"
-ExpiresByType image/png "access plus 1 year"
-# ExpiresByType text/css "access plus 1 month"
-ExpiresByType text/css "access plus 1 day"
-ExpiresByType application/pdf "access plus 1 month"
-ExpiresByType text/x-javascript "access plus 1 month"
-ExpiresByType application/x-shockwave-flash "access plus 1 month"
-ExpiresByType image/x-icon "access plus 1 year"
-ExpiresDefault "access plus 1 week"
-</ifmodule>
+#AuthType Basic
+#AuthName "dev site"
+#AuthUserFile "/home1/rawvegan/.htpasswds/public_html/dev.jolitabrilliant/passwd"
+#require valid-user

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contact Form
+ * Template Name: Contact Form - backup
  *
  * The contact form page template displays the a
  * simple contact form in your website's content area.
@@ -162,7 +162,7 @@ if($wearelive !== "") { ?>
 
             <?php woo_post_inside_before(); ?>
 
-            <!-- <h1 class="title"><?php the_title(); ?></h1> -->
+            <h1 class="title"><?php the_title(); ?></h1>
 
             <?php if( isset( $emailSent ) && $emailSent == true ) { ?>
 
@@ -173,6 +173,33 @@ if($wearelive !== "") { ?>
                 <?php if ( have_posts() ) { ?>
 
                 <?php while ( have_posts() ) { the_post(); ?>
+
+                        <section class="entry">
+	                        <!-- <?php the_content(); ?> -->
+
+                			<div class="location-twitter">
+    							<?php if ( isset( $woo_options['woo_contact_panel'] ) && $woo_options['woo_contact_panel'] == 'true' ) { ?>
+						    	<section id="office-location"<?php if ( ( isset($woo_options['woo_contact_subscribe_and_connect']) && $woo_options['woo_contact_subscribe_and_connect'] == 'true' ) ) { ?> class="col-left"<?php } ?>>
+									<?php if (isset($woo_options['woo_contact_title'])) { ?><h3><?php echo stripslashes( $woo_options['woo_contact_title'] ); ?></h3><?php } ?>
+									<ul>
+										<?php if (isset($woo_options['woo_contact_title']) && $woo_options['woo_contact_title'] != '' ) { ?><li><?php echo stripslashes( $woo_options['woo_contact_address'] ); ?></li><?php } ?>
+										<?php if (isset($woo_options['woo_contact_number']) && $woo_options['woo_contact_number'] != '' ) { ?><li><?php _e('Tel:','woothemes'); ?> <?php echo $woo_options['woo_contact_number']; ?></li><?php } ?>
+										<?php if (isset($woo_options['woo_contact_fax']) && $woo_options['woo_contact_fax'] != '' ) { ?><li><?php _e('Fax:','woothemes'); ?> <?php echo $woo_options['woo_contact_fax']; ?></li><?php } ?>
+									</ul>
+						    	</section>
+						    	<?php } ?>
+						    	<div class="contact-social<?php if ( ( isset( $woo_options['woo_contact_panel'] ) && $woo_options['woo_contact_panel'] == 'true' ) || ( isset($woo_options['woo_contact_subscribe_and_connect']) && $woo_options['woo_contact_subscribe_and_connect'] == 'true' ) )  { ?> col-right<?php } ?>">
+
+						    		<?php if ( isset($woo_options['woo_contact_subscribe_and_connect']) && $woo_options['woo_contact_subscribe_and_connect'] == 'true' ) { woo_subscribe_connect( 'true' );
+										} ?>
+
+						    	</div>
+
+						    	<div class="clear"></div>
+
+						    	</div><!-- /.location-twitter -->
+
+                        </section>
 
                     <?php if( isset( $hasError ) || isset( $captchaError ) ) { ?>
                         <p class="alert"><?php _e( 'There was an error submitting the form.', 'woothemes' ); ?></p>
