@@ -1152,7 +1152,7 @@ div#contact-page h1.title {
 .one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }
 .two { background: url(../../uploads/2017/05/julie-cusmariu-intuition-2.jpg) no-repeat; }
 .three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
-.four { background: url(../../uploads/2017/05/julie-cusmariu-Mentor-Coaching-.jpg) no-repeat; }
+.four { background: url(../../uploads/2017/05/Mentor-Coaching-5.jpg) no-repeat; }
 .five { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal-white-round-sticker.jpg) no-repeat; }
 .six { background: url(http://lorempixel.com/250/250/cats/3) no-repeat; }
 
@@ -1165,6 +1165,9 @@ div#contact-page h1.title {
 	margin: 25px auto 25px;
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-evenly;			/* Use this line for 1 item  */
+/*
+	justify-content: space-between; 		/* Use this line for 2 items */
 }
 
 
@@ -1266,7 +1269,17 @@ div#contact-page h1.title {
 	text-transform: none;
 	font-size: 0.6em;
 	font-weight: 500;
+	margin: 0 -5px;
 	/*line-height: 1.3em;*/
+}
+
+/* fix for mentor coaching (4th widget) */
+.page-id-2 .service-wrapper .four .wrapper,   		/* about */
+.page-id-3956 .service-wrapper .four .wrapper,   /* on services */
+.page-id-3548 .service-wrapper .four .wrapper {  /* on home */
+	background-color: rgba(30,30,40, .70);
+	background: linear-gradient(to right, rgba(30,30,40, .35) 0%, rgba(30,30,40, .35) 30%,rgba(30,30,40, .90) 80%, rgba(30,30,40, .80) 100%);
+	top: 50%;
 }
 
 
