@@ -85,6 +85,8 @@ body.page.custom-header #content header {
 
 body.page.custom-header #content header h1 {
 	color: #fff;
+	position: relative;
+	bottom: 35px;
 }
 
 .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
@@ -105,6 +107,11 @@ body.custom-header #nav-container {
 body.category-podcast #navigation ul.nav > li#menu-item-3565 a,
 body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
     background: inherit !important;
+}
+
+/* Only highlight podcasts also when the julie in conversation page is clicked */
+.page-template-template-podcast-main #navigation ul.nav li#menu-item-3971 a {
+	background: inherit !important;
 }
 
 /* Life coaching and intuitive reading menu background fix */
@@ -157,14 +164,15 @@ h3.signup {
 	display: inline-block;
 	float: left;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 36px;
 	padding: 0 5vw;
 }
 
 .af-form-wrapper {
-	min-width: 330px;
+	min-width: 385px;
 	margin: auto 0;
+	font-size: 18px;
 }
 
 .home .mail-subscribe input[type=email] {

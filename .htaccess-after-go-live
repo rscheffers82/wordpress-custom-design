@@ -91,4 +91,34 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 
+Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^aboutjulie.html.*$ http://www.juliecusmariu.com/who-is-julie-cusmariu [R=301,L]
+  RewriteRule ^blog/radio-show.*$ http://www.juliecusmariu.com/julie-conversation-wednesdays-2pm-et [R=301,L]
+  RewriteRule ^blog/gettingmarriedconsciously.*$ http://www.juliecusmariu.com/getting-married-consciously [R=301,L]
+  RewriteRule ^consciouspregnancyempoweringbirth.*$ http://www.juliecusmariu.com/conscious-pregnancy-empowering-birth [R=301,L]
+  RewriteRule ^usingyourintuition.html.*$ http://www.juliecusmariu.com/using-your-intuition [R=301,L]
+  RewriteRule ^blog/intuitivejumpstartwithjulie-thank-you.*$ http://www.juliecusmariu.com/intuitivejumpstartwithjulie-thank-you [R=301,L]
+  RewriteRule ^blog/2015/01/life-coaching-intuitive-readings-and-more-from-montreal-reaching-far-and-wide.*$ http://www.juliecusmariu.com/life-coaching-intuitive-readings-and-more-from-montreal-reaching-far-and-wide [R=301,L]
+  RewriteRule ^blog/dancefree.*$ http://www.juliecusmariu.com/dance-free-open-your-mind-feel-your-heart-move-your-soul [R=301,L]
+  RewriteRule ^blog/radiantwellbeing.*$ http://www.juliecusmariu.com/2013/01/radiant-well-being-enriching-your-mind-body-and-spirit-a-group-life-coaching-and-learning-experience [R=301,L]
+  RewriteRule ^blog/testimonials.*$ http://www.juliecusmariu.com/testimonials-of-julie-cusmariu [R=301,L]
+  RewriteRule ^blog/resources-and-links.*$ http://www.juliecusmariu.com/resources [R=301,L]
+  RewriteRule ^blog/radio-show-archives.*$ http://www.juliecusmariu.com/julie-conversation-wednesdays-2pm-et [R=301,L]
+  RewriteRule ^blog/radio-show.*$ http://www.juliecusmariu.com/julie-conversation-wednesdays-2pm-et [R=301,L]
+  RewriteRule ^blog/meditation-audio.*$ http://www.juliecusmariu.com/meditation-audio [R=301,L]
+  RewriteRule ^blog/life-coaching.*$ http://www.juliecusmariu.com/julie-cusmariu-life-coaching [R=301,L]
+  RewriteRule ^category/podcast.*$ http://www.juliecusmariu.com/julie-conversation-wednesdays-2pm-et [R=301,L]
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule . index.php [L]
+</IfModule>
+
 # END WordPress
+
+# temp
+
+Redirect 302 /who-is-julie-cusmariu /under-construction
+Redirect 302 /julie-cusmariu-life-coaching /under-construction
+Redirect 302 /using-your-intuition /under-construction
