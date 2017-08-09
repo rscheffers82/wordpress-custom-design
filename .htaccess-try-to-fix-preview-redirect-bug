@@ -83,12 +83,12 @@ FileETag None
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
 </IfModule>
 
 Options +FollowSymLinks
@@ -110,18 +110,21 @@ Options +FollowSymLinks
   RewriteRule ^blog/meditation-audio.*$ http://www.juliecusmariu.com/meditation-audio [R=301,L]
   RewriteRule ^blog/life-coaching.*$ http://www.juliecusmariu.com/julie-cusmariu-life-coaching [R=301,L]
   RewriteRule ^category/podcast.*$ http://www.juliecusmariu.com/julie-conversation-wednesdays-2pm-et [R=301,L]
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteRule . index.php [L]
 
-  RewriteCond %{REQUEST_URI} !/?preview_id
+</IfModule>
 
-  RewriteRule . index.php [L]
+<IfModule mod_rewrite.c>
+
+  RewriteCond %{REQUEST_URI} /julie-cusmariu-life-coaching [NC]
+  RewriteCond %{QUERY_STRING} !preview [NC]
+  RewriteRule ^ /under-construction
+
 </IfModule>
 
 # END WordPress
 
-# temp
-
 Redirect 302 /who-is-julie-cusmariu /under-construction
-Redirect 302 /julie-cusmariu-life-coaching /under-construction
 Redirect 302 /using-your-intuition /under-construction
