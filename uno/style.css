@@ -1169,6 +1169,7 @@ div#contact-page h1.title {
 
 /*new styles*/
 
+.page-id-4480 .service-wrapper,   		/* test */
 .page-id-2 .service-wrapper,   		/* about */
 .page-id-3956 .service-wrapper,   /* on services */
 .page-id-3548 .service-wrapper {  /* on home */
@@ -1182,6 +1183,7 @@ div#contact-page h1.title {
 }
 
 
+.page-id-4480 .col,
 .page-id-2 .col,
 .page-id-3956 .col,
 .page-id-3548 .col {
@@ -1200,6 +1202,7 @@ div#contact-page h1.title {
 	height: auto;
 }
 
+.page-id-4480 .box,
 .page-id-2 .box,
 .page-id-3956 .box,
 .page-id-3548 .box {
@@ -1221,6 +1224,7 @@ div#contact-page h1.title {
 	margin-bottom: 20px;
 }
 
+.page-id-4480 .box a,
 .page-id-2 .box a,
 .page-id-3956 .box a,
 .page-id-3548 .box a {
@@ -1239,12 +1243,14 @@ div#contact-page h1.title {
   transition: background-color .5s ease-in-out;
 }
 
+.page-id-4480 .box a:hover,
 .page-id-2 .box a:hover,
 .page-id-3956 .box a:hover,
 .page-id-3548 .box a:hover {
   	background-color: rgba(76, 85, 103, 0.0);
 }
 
+.page-id-4480 .box a div.wrapper,
 .page-id-2 .box a div.wrapper,
 .page-id-3956 .box a div.wrapper,
 .page-id-3548 .box a div.wrapper {
@@ -1259,12 +1265,14 @@ div#contact-page h1.title {
 	min-height: 50px;
 }
 
+.page-id-4480 .box a div.single,
 .page-id-2 .box a div.single,
 .page-id-3956 .box a div.single,
 .page-id-3548 .box a div.single {
 	line-height: 50px;
 }
 
+.page-id-4480 .box a div.wrapper p,
 .page-id-2 .box a div.wrapper p,
 .page-id-3956 .box a div.wrapper p,
 .page-id-3548 .box a div.wrapper p,
@@ -1274,6 +1282,7 @@ div#contact-page h1.title {
 	display: none;
 }
 
+.page-id-4480 .box a div.underline,
 .page-id-2 .box a div.underline,
 .page-id-3956 .box a div.underline,
 .page-id-3548 .box a div.underline {
@@ -1286,6 +1295,7 @@ div#contact-page h1.title {
 }
 
 /* fix for mentor coaching (4th widget) */
+.page-id-4480 .service-wrapper .four .wrapper,   		/* about */
 .page-id-2 .service-wrapper .four .wrapper,   		/* about */
 .page-id-3956 .service-wrapper .four .wrapper,   /* on services */
 .page-id-3548 .service-wrapper .four .wrapper {  /* on home */

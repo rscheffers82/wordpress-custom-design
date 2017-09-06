@@ -500,3 +500,12 @@ function nopodcast_limits( $limits )
   // not in the podcast category, return default limits
   return $limits;
 }
+
+
+// Status shortcode
+
+function showServices() {
+    return file_get_contents(get_stylesheet_directory() . '/services-html-structure.html');
+}
+
+add_shortcode('services', 'showServices');
