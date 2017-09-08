@@ -504,8 +504,14 @@ function nopodcast_limits( $limits )
 
 // Status shortcode
 
-function showServices() {
-    return file_get_contents(get_stylesheet_directory() . '/services-html-structure.html');
+function showServices($atts, $content = null) {
+	extract (shortcode_atts(array(
+		"page" => ''
+	), $atts));
+		if ($page) $page = '-' . $page;
+		echo 'page:' . $page;
+    // return file_get_contents(get_stylesheet_directory() . '/services-html-structure.html');
+    return file_get_contents(get_stylesheet_directory() . '/services-html-structure' . $page . '.html');
 }
 
 add_shortcode('services', 'showServices');
