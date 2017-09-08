@@ -24,6 +24,12 @@ a {
 	transition: color .75s ease-out;
 }
 
+/* Overall layout styles */
+
+.entry h3 {
+    margin: 2.5rem 0 0.5rem;
+}
+
 /*  HEADER */
 
 #header {
@@ -80,13 +86,12 @@ section.home-section.custom-header {
 
 
 body.page.custom-header #content header {
-	margin: -60px 0 60px;
+	margin: -100px 0 20px;
+	color: #fff;
 }
 
 body.page.custom-header #content header h1 {
 	color: #fff;
-	position: relative;
-	bottom: 35px;
 }
 
 .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
@@ -505,6 +510,11 @@ a.woo-sc-button.custom.medium.blog.home-blog-button {
 		padding-bottom: 8.5em !important;
 	}
 }*/
+
+/* About page custom styles */
+.page-id-2 header {
+	display: none;
+}
 
 
 /* TESTIMONIALS */
@@ -1158,21 +1168,15 @@ div#contact-page h1.title {
   margin-top: -15px;
 }
 
-
 /* Images */
 .one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }
 .two { background: url(../../uploads/2017/05/julie-cusmariu-intuition-2.jpg) no-repeat; }
 .three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
 .four { background: url(../../uploads/2017/05/Mentor-Coaching-5.jpg) no-repeat; }
-.five { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal-white-round-sticker.jpg) no-repeat; }
-.six { background: url(http://lorempixel.com/250/250/cats/3) no-repeat; }
 
 /*new styles*/
 
-.page-id-4480 .service-wrapper,   		/* test */
-.page-id-2 .service-wrapper,   		/* about */
-.page-id-3956 .service-wrapper,   /* on services */
-.page-id-3548 .service-wrapper {  /* on home */
+.service-wrapper {
 	max-width: 880px;
 	margin: 25px auto 25px;
 	display: flex;
@@ -1182,11 +1186,11 @@ div#contact-page h1.title {
 	justify-content: space-between; 		/* Use this line for 2 items */
 }
 
+.service-wrapper.set-height {
+	height: 500px;
+}
 
-.page-id-4480 .col,
-.page-id-2 .col,
-.page-id-3956 .col,
-.page-id-3548 .col {
+.service-wrapper .col {
 	display: block;
 	margin: 20px;
 	height: 250px;
@@ -1202,10 +1206,7 @@ div#contact-page h1.title {
 	height: auto;
 }
 
-.page-id-4480 .box,
-.page-id-2 .box,
-.page-id-3956 .box,
-.page-id-3548 .box {
+.service-wrapper .box {
 	display: table;
 	position: relative;
 	width: 100%;
@@ -1224,10 +1225,7 @@ div#contact-page h1.title {
 	margin-bottom: 20px;
 }
 
-.page-id-4480 .box a,
-.page-id-2 .box a,
-.page-id-3956 .box a,
-.page-id-3548 .box a {
+.service-wrapper .box a {
 	display: table-cell;
 	width: 100%;
 	height: 100%;
@@ -1243,17 +1241,11 @@ div#contact-page h1.title {
   transition: background-color .5s ease-in-out;
 }
 
-.page-id-4480 .box a:hover,
-.page-id-2 .box a:hover,
-.page-id-3956 .box a:hover,
-.page-id-3548 .box a:hover {
+.service-wrapper .box a:hover {
   	background-color: rgba(76, 85, 103, 0.0);
 }
 
-.page-id-4480 .box a div.wrapper,
-.page-id-2 .box a div.wrapper,
-.page-id-3956 .box a div.wrapper,
-.page-id-3548 .box a div.wrapper {
+.service-wrapper .box a div.wrapper {
 	background-color: rgba(30,30,40, .35);
 	background-color: rgba(30,30,40, .45);
 	position: absolute;
@@ -1265,27 +1257,15 @@ div#contact-page h1.title {
 	min-height: 50px;
 }
 
-.page-id-4480 .box a div.single,
-.page-id-2 .box a div.single,
-.page-id-3956 .box a div.single,
-.page-id-3548 .box a div.single {
+.service-wrapper .box a div.single {
 	line-height: 50px;
 }
 
-.page-id-4480 .box a div.wrapper p,
-.page-id-2 .box a div.wrapper p,
-.page-id-3956 .box a div.wrapper p,
-.page-id-3548 .box a div.wrapper p,
-.page-id-2 .box p,
-.page-id-3956 .box p,
-.page-id-3548 .box p {
+.service-wrapper .box p {
 	display: none;
 }
 
-.page-id-4480 .box a div.underline,
-.page-id-2 .box a div.underline,
-.page-id-3956 .box a div.underline,
-.page-id-3548 .box a div.underline {
+.service-wrapper .box a div.underline {
 	display: block;
 	text-transform: none;
 	font-size: 0.55em;
@@ -1295,27 +1275,21 @@ div#contact-page h1.title {
 }
 
 /* fix for mentor coaching (4th widget) */
-.page-id-4480 .service-wrapper .four .wrapper,   		/* about */
-.page-id-2 .service-wrapper .four .wrapper,   		/* about */
-.page-id-3956 .service-wrapper .four .wrapper,   /* on services */
-.page-id-3548 .service-wrapper .four .wrapper {  /* on home */
+.service-wrapper .four .wrapper {  /* on home */
 	background-color: rgba(30,30,40, .70);
 	/*background: linear-gradient(to right, rgba(30,30,40, .35) 0%, rgba(30,30,40, .35) 30%,rgba(30,30,40, .90) 80%, rgba(30,30,40, .80) 100%);*/
 	background: linear-gradient(to right, rgba(30,30,40, .35) 0%, rgba(30,30,40, .35) 10%,rgba(30,30,40, 1) 60%, rgba(30,30,40, .90) 100%);
 	top: 50%;
 }
 
-
 @media (max-width: 950px){
-	.home .service-wrapper,
-	.page-id-3956 .service-wrapper {
+	.service-wrapper {
 		max-width: 585px;
 	}
 }
 
 @media (max-width: 650px){
-	.home .service-wrapper,
-	.page-id-3956 .service-wrapper {
+	.service-wrapper {
 		max-width: 290px;
 	}
 }
@@ -1343,3 +1317,8 @@ body.home blockquote::after {
 	z-index: 10;
 }
 body.home blockquote::after { float: right; }
+
+
+img.radius {
+	border-radius: 40px;
+}
