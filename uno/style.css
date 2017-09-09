@@ -275,8 +275,7 @@ h3.signup {
 	margin: 1em 0 4em;
 	background-color: #ddd;
 	padding: 2em .5em 0;
-	/*padding: 1.75em .5em 1em;  -- with the title */
-	padding: 3.25em .5em 1em;
+	padding: 1em .5em;
 	position: relative;
 	z-index: 1;
 }
@@ -292,39 +291,12 @@ h3.signup {
 	right: -10em;
 }
 
-.home .testimonial-area .overlay-a{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	content: '';
-	z-index: 10;
-	cursor: pointer;
+.strong-view.default.slider-container.slider-adaptive:not(.slider-mode-horizontal) .wpmslider-viewport {
+	border: none;
 }
 
-.home .testimonials a {
-	pointer-events: none;
-}
-
-.home .testimonials p {
-	font: 300 18px/1.5em 'Lora', arial, sans-serif;
-}
-
-.home .testimonials img.avatar{
-	margin: 20px 20px 0;
-}
-
-.home .widget {
-	margin: 0;
-}
-
-.home .widget_woothemes_testimonials .quote .author {
-	display: flex;
-	font-size: 1.1em;
-	justify-content: flex-start;
-	flex-flow: column nowrap;
-	margin-top: -10px;
+.strong-view.default .testimonial-inner {
+	border: none;
 }
 
 .home .CTAs {
