@@ -1142,7 +1142,7 @@ div#contact-page h1.title {
 
 /* Images */
 .one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }
-.two { background: url(../../uploads/2017/05/julie-cusmariu-intuition-2.jpg) no-repeat; }
+.two { background: url(../../uploads/2017/09/intuitive-reading-by-julie-cusmariu.jpg) no-repeat; }
 .three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
 .four { background: url(../../uploads/2017/05/Mentor-Coaching-5.jpg) no-repeat; }
 
@@ -1187,7 +1187,7 @@ div#contact-page h1.title {
 	left: 0;
 	background-size: cover !important;
 	transition: all .5s ease-in-out;
-	border-radius: 25px;
+	/*border-radius: 25px;*/
 	overflow: hidden;
 }
 
@@ -1289,8 +1289,3 @@ body.home blockquote::after {
 	z-index: 10;
 }
 body.home blockquote::after { float: right; }
-
-
-img.radius {
-	border-radius: 40px;
-}
