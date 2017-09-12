@@ -497,6 +497,10 @@ a.woo-sc-button.custom.medium.blog.home-blog-button {
     width: 150px;
 }
 
+.widget_woothemes_testimonials .quote .author .url {
+	display: none;
+}
+
 /* SIDEBAR */
 
 .widget h3 {
@@ -1141,7 +1145,8 @@ div#contact-page h1.title {
 }
 
 /* Images */
-.one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }
+/*.one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }*/
+.one { background: url(../../uploads/2017/09/life-coaching-1-canion.jpg) no-repeat; }
 .two { background: url(../../uploads/2017/09/intuitive-reading-by-julie-cusmariu.jpg) no-repeat; }
 .three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
 .four { background: url(../../uploads/2017/05/Mentor-Coaching-5.jpg) no-repeat; }
@@ -1202,13 +1207,13 @@ div#contact-page h1.title {
 	width: 100%;
 	height: 100%;
 	font-size: 1.4em;
+	font-family: 'Open Sans', arial, sans-serif;
 	line-height: 1.1em;
 	text-decoration: none;
 	text-transform: none;
 	color: #fafafc;
-	background-color: rgba(76, 85, 103, 0.10);
+	background-color: rgba(76, 85, 103, 0.20);
 	text-shadow: 1px 1px 1px #15173666;
-	font-family: 'Open Sans', arial, sans-serif;
 	font-weight: 500;
   transition: background-color .5s ease-in-out;
 }
@@ -1218,15 +1223,17 @@ div#contact-page h1.title {
 }
 
 .service-wrapper .box a div.wrapper {
-	background-color: rgba(30,30,40, .35);
-	background-color: rgba(30,30,40, .45);
+	background-color: rgba(30,30,40, .15);
+	/*background-color: rgba(30,30,40, .45);*/
+	font-family: 'DearJoe5CASUAL', arial, sans-serif;
 	position: absolute;
   left: 0;
 	right: 0;
-	top: 64%;
+	top: 70%;
 	text-align: center;
-	padding: 5px;
+	padding: 10px 5px 5px 5px;
 	min-height: 50px;
+  transition: background-color .5s ease-in-out;
 }
 
 .service-wrapper .box a div.single {
@@ -1240,9 +1247,10 @@ div#contact-page h1.title {
 .service-wrapper .box a div.underline {
 	display: block;
 	text-transform: none;
-	font-size: 0.55em;
+	font-size: 0.53em;
 	font-weight: 500;
 	margin: 0 -5px;
+	font-family: 'Open Sans', arial, sans-serif;
 	/*line-height: 1.3em;*/
 }
 
