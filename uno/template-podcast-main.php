@@ -76,8 +76,8 @@ get_header(); ?>
           </div>
 
           <h1 class="title entry-title">What listeners are saying</h1>
-          <?php do_action( 'woothemes_testimonials', array( 'limit' => 2, 'id' => '3638, 4175', 'size' => 100, 'per_row' => 2, ) ); ?>
-
+          <?php // do_action( 'woothemes_testimonials', array( 'limit' => 2, 'id' => '3638, 4175', 'size' => 100, 'per_row' => 2, ) ); ?>
+          <?php echo do_shortcode('[testimonial_view id=3]'); ?>
 
     </div><!-- /#main-sidebar-container -->
 

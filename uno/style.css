@@ -109,7 +109,8 @@ body.custom-header #nav-container {
 }
 
 /*Ensure the blog menu item is not highlighted when podcast and workshops categories are displayed*/
-body.category-podcast #navigation ul.nav > li#menu-item-3565 a,
+body.page-template-template-podcast-main #navigation ul.nav > li#menu-item-4415 a,
+body.page-template-template-podcast-main #navigation ul.nav > li#menu-item-3565 a,
 body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
     background: inherit !important;
 }
@@ -289,14 +290,6 @@ h3.signup {
 	content: '';
 	left: -10em;
 	right: -10em;
-}
-
-.strong-view.default.slider-container.slider-adaptive:not(.slider-mode-horizontal) .wpmslider-viewport {
-	border: none;
-}
-
-.strong-view.default .testimonial-inner {
-	border: none;
 }
 
 .home .CTAs {
@@ -1291,4 +1284,7 @@ body.home blockquote::after {
 }
 body.home blockquote::after { float: right; }
 
-section.custom-header .
+.strong-view.default.slider-container.slider-adaptive:not(.slider-mode-horizontal) .wpmslider-viewport,
+.strong-view.default .testimonial-inner {
+	border: 1px solid transparent;
+}

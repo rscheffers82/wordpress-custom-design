@@ -31,20 +31,15 @@ if ( ! is_single() ) {
 	$title_before = '<h2 class="title entry-title">';
 	$title_after = '</h2>';
 }
-
-//woo_post_before();
 ?>
 
-<?php echo '<a href="' . get_permalink() . '">'; ?>
-	<article <?php post_class(); ?>>
-	<?php // woo_post_inside_before(); ?>
+<article <?php post_class(); ?>>
 
+<a href="<?php echo get_permalink(); ?>">
 	<?php the_title( $title_before, $title_after ); ?>
-	<?php woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) ); ?>
+	<a href="<?php echo get_permalink(); ?>">
+		<?php woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) . '&link=img' ); ?>
+	</a>
+</a>
 
-	<?php // woo_post_inside_after(); ?>
-
-	</article><!-- /.post -->
-<?php echo '</a>'; ?>
-
-<?php //woo_post_after(); ?>
+</article>
