@@ -1190,10 +1190,12 @@ div#contact-page h1.title {
 }
 
 /* Images */
-.one { background: url(../../uploads/2017/09/life-coaching-grass-lands-square.jpg) no-repeat; }
+/*.one { background: url(../../uploads/2017/09/life-coaching-grass-lands-square.jpg) no-repeat; }*/
+.one { background: url(../../uploads/2017/09/life-coaching-mountains-in-clouds-square.jpg) no-repeat; }
 .two { background: url(../../uploads/2017/09/intuitive-reading-by-julie-cusmariu.jpg) no-repeat; }
 .three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
-.four { background: url(../../uploads/2017/09/life-coaching-guidance-optimized.jpg) no-repeat; }
+/*.four { background: url(../../uploads/2017/09/life-coaching-guidance-optimized.jpg) no-repeat; }*/
+.four { background: url(../../uploads/2017/09/mentor-coaching-boats-sunset-square.jpg) no-repeat; }
 
 /*new styles*/
 
@@ -1205,10 +1207,13 @@ div#contact-page h1.title {
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+			-webkit-flex-flow: wrap;
 	    -ms-flex-flow: row wrap;
 	        flex-flow: row wrap;
 	-webkit-box-pack: space-evenly;
 	    -ms-flex-pack: space-evenly;
+					-webkit-justify-content: space-evenly;
 	        justify-content: space-evenly;			/* Use this line for 1 item  */
 /*
 	justify-content: space-between; 		/* Use this line for 2 items */
@@ -1267,6 +1272,7 @@ div#contact-page h1.title {
 	text-shadow: 1px 1px 1px #15173666;
 	font-weight: 500;
   transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
 }
 
 .service-wrapper .box a:hover {
