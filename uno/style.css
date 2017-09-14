@@ -162,8 +162,13 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 }
 
 .home .inside {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
 }
 
 h3.signup {
@@ -294,9 +299,16 @@ h3.signup {
 
 .home .CTAs {
 	margin: 30px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-evenly;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
 }
 
 .call-to-action-hollow,
@@ -369,13 +381,16 @@ body.home .post-box a:hover {
 }
 
 body.home .post-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0 auto 50px auto;
 	width: 18%;
 	background-color: #fff;
 	padding: 20px;
 	border-bottom: 2px solid #6EC095;
-	box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
+	-webkit-box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
+	        box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
 }
 
 body.home .homepage-blog .entry p {
@@ -398,13 +413,22 @@ body.home .has-post-thumbnail img:hover {
 .homepage-blog {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 	margin: 3.5rem auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 	width: 100%;
 	min-width: 100%;
 	max-width: 100%;
-	justify-content: center;
-	align-items: flex-start;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 }
 
 body.home article.post {
@@ -412,8 +436,13 @@ body.home article.post {
 	padding-bottom: 0;
 	border-bottom: 0;
 	float: left;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
 	width: 100%;
 }
 
@@ -431,13 +460,22 @@ article.post {
 
 .home ul.media {
 	list-style-type: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-bottom: 3.5rem;
 }
 
 .home ul.media li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 1em .5em;
 	border: 1px solid transparent;
@@ -445,6 +483,7 @@ article.post {
 	text-align: center;
 	margin: auto;
 }
+
 .home ul.media li img {
 	max-width: 90%;
 }
@@ -456,6 +495,8 @@ a.woo-sc-button.custom.medium.blog {
 }
 
 .button-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 }
@@ -672,23 +713,36 @@ body.post-template-default .entry img {
 	width: 25%;
 	min-width: 100px;
 	max-width: 200px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	position: relative;
 	margin: 2%;
 	opacity: 1;
+	-o-transition: opacity .5s ease-in-out;
 	transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;
 	-webkit-transition: opacity .5s ease-in-out;
 }
+
 .page-template-template-podcast-main .podcasts-wrapper article:hover {
 	opacity: 0.6;
 }
+
 .page-template-template-podcast-main .podcasts-wrapper article a {
 	width: 100%;
 }
+
 .page-template-template-podcast-main .podcasts-wrapper article a:first-child {
 	position: absolute;
 	background-color: rgba(38, 37, 55, 0.6);
@@ -775,8 +829,13 @@ ul.medialist li {
 }
 
 ul.medialist-4 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 }
 
 ul.medialist-4 li {
@@ -1131,11 +1190,9 @@ div#contact-page h1.title {
 }
 
 /* Images */
-/*.one { background: url(../../uploads/2017/05/julie-cusmariu-life-coach-montreal.jpg) no-repeat; }*/
-.one { background: url(../../uploads/2017/09/life-coaching-1-canion.jpg) no-repeat; }
+.one { background: url(../../uploads/2017/09/life-coaching-grass-lands-square.jpg) no-repeat; }
 .two { background: url(../../uploads/2017/09/intuitive-reading-by-julie-cusmariu.jpg) no-repeat; }
 .three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
-/*.four { background: url(../../uploads/2017/05/Mentor-Coaching-5.jpg) no-repeat; }*/
 .four { background: url(../../uploads/2017/09/life-coaching-guidance-optimized.jpg) no-repeat; }
 
 /*new styles*/
@@ -1143,9 +1200,16 @@ div#contact-page h1.title {
 .service-wrapper {
 	max-width: 880px;
 	margin: 25px auto 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;			/* Use this line for 1 item  */
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;			/* Use this line for 1 item  */
 /*
 	justify-content: space-between; 		/* Use this line for 2 items */
 }
