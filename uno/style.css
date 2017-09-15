@@ -1190,13 +1190,10 @@ div#contact-page h1.title {
 }
 
 /* Images */
-/*.one { background: url(../../uploads/2017/09/life-coaching-grass-lands-square.jpg) no-repeat; }*/
-.one { background: url(../../uploads/2017/09/life-coaching-mountains-in-clouds-square.jpg) no-repeat; }
+.one { background: url(../../uploads/2017/09/life-coaching-mountains-square.jpg) no-repeat; }
 .two { background: url(../../uploads/2017/09/intuitive-reading-by-julie-cusmariu.jpg) no-repeat; }
 .three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
-/*.four { background: url(../../uploads/2017/09/life-coaching-guidance-optimized.jpg) no-repeat; }*/
-.four { background: url(../../uploads/2017/09/mentor-coaching-boats-sunset-square.jpg) no-repeat; }
-
+.four { background: url(../../uploads/2017/05/mentor-coaching-guidance-two-trees-square.jpg) no-repeat; }
 /*new styles*/
 
 .service-wrapper {
@@ -1335,11 +1332,6 @@ div#contact-page h1.title {
 	color: #6EC095;
 }
 
-
-/*body.page-id-8 section.home-section.custom-header {
-	background-position: 20% 15%;
-}*/
-
 body.home blockquote { z-index: 5; }
 
 body.home .quote::before,
@@ -1357,4 +1349,16 @@ body.home blockquote::after { float: right; }
 .strong-view.default.slider-container.slider-adaptive:not(.slider-mode-horizontal) .wpmslider-viewport,
 .strong-view.default .testimonial-inner {
 	border: 1px solid transparent;
+}
+
+
+/* Styles for changing custom header background positions for various pages*/
+
+/* Mentor coaching */
+.page-id-4355 section.home-section.custom-header {
+	background-position: 0% 10%;
+}
+
+.page-id-8 section.home-section.custom-header {
+	background-position: 0% 30%;
 }
