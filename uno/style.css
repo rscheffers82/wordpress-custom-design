@@ -344,6 +344,16 @@ body.home h3.elegant {
 	margin-bottom: 3px;
 }
 
+body.home .hero a.button:hover {
+	background: rgba(110, 192, 149, 0.7);
+	border: 2px solid transparent;
+}
+
+body.home .hero a.button {
+	color: rgba(110, 192, 149, 0.7);
+}
+
+
 h1.entry-title,
 .page h1.title,
 h3.thin {
