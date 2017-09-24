@@ -151,6 +151,21 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 	background-position: center center !important;
 }
 
+.hero h1.section-title {
+	overflow: hidden;
+}
+
+@media all and (max-width: 640px) {
+	.hero .cta {
+		font-size: 0.75rem;
+		margin-bottom: 1.618em;
+	}
+	.hero .section-title {
+	    font: normal 1.8em/2.4em 'DearJoe5CASUAL', script !important;
+	    color: #fff;
+	}
+}
+
 .home .mail-subscribe {
    padding: 1.5em 1em 1em;
    background: #FFFFFF;
@@ -1071,10 +1086,6 @@ div#contact-page h1.title {
 
 /* SMALL DEVICES */
 @media all and (max-width: 640px) { /* and (min-width: 320px) */
-		body.home h1.section-title{
-			font-size: 7vw !important;
-		}
-
 	.home .inside {
 		flex-direction: column;
 	  width: 90%;
@@ -1094,7 +1105,7 @@ div#contact-page h1.title {
    }
 
    .hero, .full-width .hero {
-      padding: 5em 2em 0em;
+      padding: 7.5em 2em 0em
    }
 
    .js.csstransitions.csstransforms3d .hero .hero-container {
