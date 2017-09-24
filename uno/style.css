@@ -1376,3 +1376,31 @@ body.home blockquote::after { float: right; }
 .page-id-8 section.home-section.custom-header {
 	background-position: 0% 30%;
 }
+
+
+/* FAQ page styles */
+
+.collapseomatic {
+	margin: 1.75rem 0 0.5rem;
+	font: normal 22px/1.2em 'Open Sans', arial, sans-serif;
+	padding: 10px 0 10px 35px;
+	text-decoration: none;
+	background-position: center left 15px;
+	border: 1px solid #ccc;
+	webkit-transition: background-color 1s ease;
+	transition: background-color 1s ease;
+}
+
+.colomat-close {
+	border-bottom: none;
+	background-color: #f3f3f3;
+}
+
+.collapseomatic_content {
+	margin-top: -10px;
+	margin-left: 0px;
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: #f3f3f3;
+}
