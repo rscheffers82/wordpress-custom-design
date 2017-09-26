@@ -37,6 +37,9 @@
 		<?php woo_header_inside();
 		// Callback for Social Widget
 		  if ( function_exists('dynamic_sidebar') && is_active_sidebar('header-socnets') ) {
+				echo '<a href="' . get_page_link(4237) . '">';
+				echo "<div class='listen-here hide-small'>Podcasts</div>";
+				echo "</a>";
 		    dynamic_sidebar('header-socnets');
 		 	} ?>
 	</header>

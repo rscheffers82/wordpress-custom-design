@@ -1431,3 +1431,28 @@ body.home blockquote::after { float: right; }
 	border-top: none;
 	background-color: #f3f3f3;
 }
+
+.listen-here {
+	float: right;
+	height: 40px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	margin-top: 17px;
+	border-radius: 20%/50%;
+	padding: 0px 10px 0px 30px;
+	color: #6EC095;
+	margin-left: 5px;
+	background-image: url(images/glyphicons-552-podcast.png);
+	background-image: url(images/glyphicons-77-headphones.png);
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+	border: 1px solid #777;
+	background-size: 15px;
+}
+
+@media (max-width: 640px) {
+	.listen-here {
+		display: none;
+	}
+}
