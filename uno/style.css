@@ -1432,23 +1432,30 @@ body.home blockquote::after { float: right; }
 	background-color: #f3f3f3;
 }
 
-.listen-here {
+a.listen-here {
 	float: right;
-	height: 40px;
+	height: 41px;
 	display: flex;
 	align-content: center;
 	align-items: center;
-	margin-top: 17px;
-	border-radius: 20%/50%;
-	padding: 0px 10px 0px 30px;
-	color: #6EC095;
-	margin-left: 5px;
-	background-image: url(images/glyphicons-552-podcast.png);
-	background-image: url(images/glyphicons-77-headphones.png);
+	margin-top: 16px;
+	padding: 0px 13px 0px 40px;
+	color: #fff !important;
+	background-color: #84D1A9;
+	margin-right: 9px;
+	background-image: url(images/headphone-7.svg);
 	background-repeat: no-repeat;
 	background-position: left 10px center;
-	border: 1px solid #777;
-	background-size: 15px;
+	background-size: 25px;
+	webkit-transition: all .2s ease-in-out;
+	transition: all .25s ease-in-out;
+	border-radius: 20%/50%;
+	padding: 0px 13px 0px 40px;
+}
+
+a.listen-here:hover {
+	background-color: #6EC095;
+	text-decoration: none;
 }
 
 @media (max-width: 640px) {
@@ -1456,3 +1463,48 @@ body.home blockquote::after { float: right; }
 		display: none;
 	}
 }
+
+a.woo-sc-button.headphones span {
+	background-image: url(images/headphone-7.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px;
+	padding-left: 30px;
+}
+
+.headphones {
+	background-image: url(images/headphone-7.svg);
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+	background-size: 25px;
+}
+
+/*Without animation*/
+/*a.listen-here {
+	float: right;
+	height: 42px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	margin-top: 17px;
+	border-radius: 50%;
+	padding: 0px 10px 0px 40px;
+	color: #fff !important;
+	background-color: #84D1A9;
+	margin-left: 5px;
+	background-image: url(images/glyphicons-552-podcast.png);
+	background-image: url(images/glyphicons-77-headphones.png);
+	background-image: url(images/headphone-7.svg);
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+	background-size: 25px;
+	webkit-transition: all .2s ease-in-out;
+	transition: all .5s ease-in-out;
+	content: ' ';
+}
+
+a.listen-here:hover {
+	background-color: #6EC095;
+	text-decoration: none;
+	border-radius: 20%/50%;
+}*/
