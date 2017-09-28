@@ -1472,11 +1472,12 @@ a.woo-sc-button.headphones span {
 	padding-left: 30px;
 }
 
-.headphones {
+.headphones, .podcast {
 	background-image: url(images/headphone-7.svg);
 	background-repeat: no-repeat;
 	background-position: left 10px center;
 	background-size: 25px;
+	padding-left: 45px !important;
 }
 
 /*Without animation*/
@@ -1508,3 +1509,119 @@ a.listen-here:hover {
 	text-decoration: none;
 	border-radius: 20%/50%;
 }*/
+
+
+/* ==== TEMP Styles */
+
+input.btn,
+a.btn {
+  padding: 5px 20px;
+  border: 2px solid;
+  margin: 5px 0px 15px 0px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: Tahoma;
+  font-weight: 500;
+	text-decoration: none;
+  -web-kit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+	border-radius: 0px;
+}
+
+input.btn:hover,
+a.btn:hover {
+	text-decoration: none;
+}
+
+a.red {
+  color: #EB7067 !important;
+  border-color: #EB7067;
+}
+
+a.red:hover {
+  border-color: #EB5950;
+  background-color: #EB5950;
+  color: #f9f9f9 !important;
+}
+
+a.red-full {
+  color: #f9f9f9 !important;
+  background-color: #EB5950;
+  border-color: #EB5950;
+}
+
+a.red-full:hover {
+  border-color: #EB5950;
+  background-color: transparent;
+  color: #EB5950 !important;
+}
+
+a.green {
+  border-color: #6EC095;
+  color: #6EC095 !important;
+}
+
+a.green:hover {
+  border-color: transparent;
+  background-color: #6EC095;
+  color: #f9f9f9 !important;
+}
+
+a.green-full {
+  border-color: #6EC095;
+  background-color: #6EC095;
+  color: #f9f9f9 !important;
+
+}
+
+a.green-full:hover {
+  border-color: #6EC095;
+  background-color: inherit;
+  color: #6EC095 !important;
+}
+
+a.blue {
+  border-color: #38A5EB;
+  color: #38A5EB !important;
+}
+
+a.blue:hover {
+  border-color: transparent;
+  background-color: #38A5EB;
+  color: #f9f9f9 !important;
+}
+
+a.grow:hover {
+  -web-kit-transform: translate(scale(1.1));
+  -ms-transform: translate(scale(1.1));
+  transform: scale(1.1);
+}
+
+a.rounded {
+  border-radius: 50px;
+}
+/*
+green: #6EC095
+dark-gray: #4C5567
+red : #EB5950
+blue: #38A5EB
+*/
+.on-white, .on-lightgray, .on-darkgray {
+  min-height: 10rem;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.on-darkgray {
+  background-color: #4C5567;
+}
+
+.on-lightgray {
+  background-color: #F9F9F9;
+}
+
+.on-white {
+  background-color: #fff;
+}
