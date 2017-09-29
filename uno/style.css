@@ -1443,7 +1443,7 @@ a.listen-here {
 	color: #fff !important;
 	background-color: #84D1A9;
 	margin-right: 9px;
-	background-image: url(images/headphone-7.svg);
+	background-image: url(images/podcast-white.svg);
 	background-repeat: no-repeat;
 	background-position: left 10px center;
 	background-size: 25px;
@@ -1464,20 +1464,18 @@ a.listen-here:hover {
 	}
 }
 
-a.woo-sc-button.headphones span {
-	background-image: url(images/headphone-7.svg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	background-size: 25px;
-	padding-left: 30px;
-}
-
 .headphones, .podcast {
-	background-image: url(images/headphone-7.svg);
+	background-image: url(images/podcast-green.svg);
 	background-repeat: no-repeat;
 	background-position: left 10px center;
 	background-size: 25px;
 	padding-left: 45px !important;
+	-web-kit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+.headphones:hover, .podcast:hover {
+	background-image: url(images/podcast-white.svg);
 }
 
 /*Without animation*/
@@ -1558,14 +1556,17 @@ a.red-full:hover {
   color: #EB5950 !important;
 }
 
+input.green[type="submit"],
 a.green {
   border-color: #6EC095;
   color: #6EC095 !important;
+	background-color: inherit;
 }
 
+input.green[type="submit"]:hover,
 a.green:hover {
   border-color: transparent;
-  background-color: #6EC095;
+  background-color: #6EC095 !important;
   color: #f9f9f9 !important;
 }
 
@@ -1593,6 +1594,7 @@ a.blue:hover {
   color: #f9f9f9 !important;
 }
 
+input.grow[type="submit"]:hover,
 a.grow:hover {
   -web-kit-transform: translate(scale(1.1));
   -ms-transform: translate(scale(1.1));
@@ -1624,4 +1626,22 @@ blue: #38A5EB
 
 .on-white {
   background-color: #fff;
+}
+
+
+/* Some styles to cater for particular button elements */
+
+.cta .btn {
+	background-color: rgba(250, 250, 250, 0.65) !important;
+	font-size: 1.5rem;
+	padding: 12px 20px;
+}
+
+.cta .btn:hover {
+	background-color: rgba(110, 192, 149, 0.7) !important;
+}
+
+input.btn.green.grow.btn-widget {
+	font-size: 0.85rem;
+	margin: 5px 0px;
 }

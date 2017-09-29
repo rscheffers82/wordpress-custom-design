@@ -307,7 +307,7 @@ function woo_display_hero() {
 
 					<?php if ( isset( $settings['hero_button'] ) && '' != $settings['hero_button'] ): ?>
 						<div class="cta">
-							<a class="button" href="<?php echo esc_url( $settings['hero_button_link'] ); ?>"><?php echo stripslashes( esc_attr( $settings['hero_button'] ) ); ?></a>
+							<a class="btn green hover" href="<?php echo esc_url( $settings['hero_button_link'] ); ?>"><?php echo stripslashes( esc_attr( $settings['hero_button'] ) ); ?></a>
 						</div>
 					<?php endif; ?>
 				</div>
@@ -509,7 +509,7 @@ function showServices($atts, $content = null) {
 		"page" => ''
 	), $atts));
 		if ($page) $page = '-' . $page;
-		echo 'page:' . $page;
+		// echo 'page:' . $page;
     // return file_get_contents(get_stylesheet_directory() . '/services-html-structure.html');
     return file_get_contents(get_stylesheet_directory() . '/services-html-structure' . $page . '.html');
 }

@@ -41,7 +41,7 @@ get_header(); ?>
           </div>
 
           <input type="email" name="email" placeholder="Email">
-          <input type="submit" name="submit" value="Sign Up" class="pulse .call-to-action-hollow" alt="Sign Up">
+          <input type="submit" name="submit" value="Sign Up" class="pulse btn green grow" alt="Sign Up">
         </form>
         <!-- <form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
           <input type="hidden" name="meta_web_form_id" value="305744">
@@ -98,7 +98,7 @@ get_header(); ?>
     //wp_reset_query();
     ?>
     <p>
-      <a href="<?php echo site_url();?>/blog" class="call-to-action woo-sc-button">View all posts</a>
+      <a href="<?php echo site_url();?>/blog" class="btn green grow">View all posts</a>
     </p>
     <!-- <div class="button-wrapper">
       <a href="<?php //echo site_url();?>/blog" class="woo-sc-button custom medium blog home-blog-button">View all posts</a>
