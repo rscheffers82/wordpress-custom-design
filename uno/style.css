@@ -1432,38 +1432,6 @@ body.home blockquote::after { float: right; }
 	background-color: #f3f3f3;
 }
 
-a.listen-here {
-	float: right;
-	height: 41px;
-	display: flex;
-	align-content: center;
-	align-items: center;
-	margin-top: 16px;
-	padding: 0px 13px 0px 40px;
-	color: #fff !important;
-	background-color: #84D1A9;
-	margin-right: 9px;
-	background-image: url(images/podcast-white.svg);
-	background-repeat: no-repeat;
-	background-position: left 10px center;
-	background-size: 25px;
-	webkit-transition: all .2s ease-in-out;
-	transition: all .25s ease-in-out;
-	border-radius: 20%/50%;
-	padding: 0px 13px 0px 40px;
-}
-
-a.listen-here:hover {
-	background-color: #6EC095;
-	text-decoration: none;
-}
-
-@media (max-width: 640px) {
-	.listen-here {
-		display: none;
-	}
-}
-
 .headphones, .podcast {
 	background-image: url(images/podcast-green.svg);
 	background-repeat: no-repeat;
@@ -1477,37 +1445,6 @@ a.listen-here:hover {
 .headphones:hover, .podcast:hover {
 	background-image: url(images/podcast-white.svg);
 }
-
-/*Without animation*/
-/*a.listen-here {
-	float: right;
-	height: 42px;
-	display: flex;
-	align-content: center;
-	align-items: center;
-	margin-top: 17px;
-	border-radius: 50%;
-	padding: 0px 10px 0px 40px;
-	color: #fff !important;
-	background-color: #84D1A9;
-	margin-left: 5px;
-	background-image: url(images/glyphicons-552-podcast.png);
-	background-image: url(images/glyphicons-77-headphones.png);
-	background-image: url(images/headphone-7.svg);
-	background-repeat: no-repeat;
-	background-position: left 10px center;
-	background-size: 25px;
-	webkit-transition: all .2s ease-in-out;
-	transition: all .5s ease-in-out;
-	content: ' ';
-}
-
-a.listen-here:hover {
-	background-color: #6EC095;
-	text-decoration: none;
-	border-radius: 20%/50%;
-}*/
-
 
 /* ==== TEMP Styles */
 
@@ -1644,4 +1581,15 @@ blue: #38A5EB
 input.btn.green.grow.btn-widget {
 	font-size: 0.85rem;
 	margin: 5px 0px;
+}
+
+.btn-header {
+	border-radius: 25px !important;
+	margin: 16px 11px 0 0 !important;
+}
+
+@media (max-width: 640px) {
+	.btn-header {
+		display: none;
+	}
 }

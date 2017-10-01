@@ -39,7 +39,7 @@
 		  if ( function_exists('dynamic_sidebar') && is_active_sidebar('header-socnets') ) {
 				echo "<div class='hide-small'>";
 					dynamic_sidebar('header-socnets');
-					echo '<a class= "listen-here pulse" href="' . get_page_link(4237) . '">Podcast</a>';
+					echo '<a class= "btn green btn-header grow pulse podcast" href="' . get_page_link(4237) . '">Podcast</a>';
 				echo "</div>";
 		 	} ?>
 	</header>
