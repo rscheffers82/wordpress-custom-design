@@ -15,6 +15,13 @@ get_header(); ?>
 
     	<?php woo_main_before(); ?>
 
+      <?php
+      $wearelive = chi_get_header_image_url();
+      if($wearelive !== "") { ?>
+      		<section class="home-section custom-header" style="background-image:url('<?php chi_display_header(); ?>')">
+      		</section>
+      <?php } ?>
+      
         <!-- #content Starts -->
     <?php woo_content_before(); ?>
     <div id="content" class="col-full">

@@ -696,6 +696,10 @@ body.post-template-default .entry img {
 
 /*  PODCAST STYLES */
 
+body.page-id-4237 section.custom-header {
+	background-position: inherit;
+}
+
 .page-template-template-podcast-main .podcasts-wrapper {
 	display: inline-block;
 	margin-bottom: 2.5em;
