@@ -307,7 +307,7 @@ function woo_display_hero() {
 
 					<?php if ( isset( $settings['hero_button'] ) && '' != $settings['hero_button'] ): ?>
 						<div class="cta">
-							<a class="btn green hover" href="<?php echo esc_url( $settings['hero_button_link'] ); ?>"><?php echo stripslashes( esc_attr( $settings['hero_button'] ) ); ?></a>
+							<a class="btn brown hover grow-more" href="<?php echo esc_url( $settings['hero_button_link'] ); ?>"><?php echo stripslashes( esc_attr( $settings['hero_button'] ) ); ?></a>
 						</div>
 					<?php endif; ?>
 				</div>

@@ -1557,11 +1557,29 @@ a.blue:hover {
   color: #f9f9f9 !important;
 }
 
+a.brown {
+  border-color: #DA9544 ;
+  color: #DA9544 !important;
+}
+
+a.brown:hover {
+  border-color: transparent;
+  background-color: #DA9544;
+  color: #f9f9f9 !important;
+}
+
 input.grow[type="submit"]:hover,
 a.grow:hover {
   -web-kit-transform: translate(scale(1.1));
   -ms-transform: translate(scale(1.1));
   transform: scale(1.1);
+}
+
+input.grow-more[type="submit"]:hover,
+a.grow-more:hover {
+  -web-kit-transform: translate(scale(1.2));
+  -ms-transform: translate(scale(1.2));
+  transform: scale(1.2);
 }
 
 a.rounded,
@@ -1573,6 +1591,10 @@ green: #6EC095
 dark-gray: #4C5567
 red : #EB5950
 blue: #38A5EB
+
+nice brown color
+BF823B - #DA9544
+
 */
 .on-white, .on-lightgray, .on-darkgray {
   min-height: 10rem;
@@ -1596,13 +1618,17 @@ blue: #38A5EB
 /* Some styles to cater for particular button elements */
 
 .cta .btn {
-	background-color: rgba(250, 250, 250, 0.65) !important;
+	background-color: rgba(250, 250, 250, 0.6) !important;
+	border: 3px solid;
+	color: #DA9544;
 	font-size: 1.5rem;
 	padding: 12px 20px;
 }
 
 .cta .btn:hover {
-	background-color: rgba(110, 192, 149, 0.7) !important;
+	background-color: rgba(191, 130, 59, .7) !important;
+	color: #fff !important;
+	border-color: #DA9544;
 }
 
 input.btn.green.grow.btn-widget,
