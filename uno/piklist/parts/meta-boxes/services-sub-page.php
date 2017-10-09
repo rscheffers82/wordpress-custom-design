@@ -126,7 +126,7 @@ Template: template-services-sub-page, template-services-sub-page-dev
 
     piklist('field', array(
       'type' => 'editor'
-      ,'field' => 'text-below-services'
+      ,'field' => 'text-below-sub-services'
       ,'label' => 'Content below the Services section'
       ,'columns' => 12
       ,'options' => array(

@@ -36,27 +36,30 @@ if($wearelive !== "") { ?>
 			// default content like title and page content
 			woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
 
+      ?>
+			<!-- Sub-page Services widgets code -->
 
-			// Sub-page Services widgets code
-			$get_post_meta = get_post_meta($post->ID, 'intuition-services', false);
-			foreach($get_post_meta[0] as $item) {
-				echo '<div class="title">' . $item['title'] . '</div>';
-				echo '<img src="' . wp_get_attachment_url( $item['image'][0] ) . '"/>';
-				echo '<div class="">' . htmlspecialchars_decode( $item['description'] ) . '</div>';
-				echo $item['price'];
-				echo '<a class="btn green rounded grow">' . $item['button'] . 'Book now!</a>';
-			}
+      <div class="sub-service-wrapper">
 
-			// Display content below the widgets
-			echo wpautop(get_post_meta($post->ID, 'text-below-services', true));
-			// var_dump(get_post_meta($post->ID, 'text-below-services', true));
-			// echo get_post_meta($post->ID, 'demo_select', true);
-			// echo get_post_meta($post->ID, 'demo_colorpicker', true);
-		}
-	}
+  			<?php $get_post_meta = get_post_meta($post->ID, 'intuition-services', false);
+  			foreach($get_post_meta[0] as $item) { ?>
 
-	woo_loop_after();
-?>
+            <div class="col">
+              <div class="service-title"><?php echo $item['title']; ?></div>
+              <img src="<?php echo wp_get_attachment_url( $item['image'][0] ); ?>" class="img-responsive">
+              <div class="underneath-image">
+                <div class="description"><?php echo wpautop($item['description']); ?></div>
+                <div class="price">USD $<?php echo $item['price']; ?>,-</div>
+                <a class="btn green-full grow rounded" href="<?php echo $item['button']; ?>">Book here</a>
+              </div>
+            </div>
+
+        <?php } ?>
+      </div>
+      <?php echo wpautop(get_post_meta($post->ID, 'text-below-sub-services', true));
+    }
+  } ?>
+	<?php woo_loop_after(); ?>
             </section><!-- /#main -->
             <?php woo_main_after(); ?>
 

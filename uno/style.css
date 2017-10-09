@@ -1265,7 +1265,9 @@ div#contact-page h1.title {
 	/* overflow: hidden; */
 }
 
-/* allow on the home additional text underneath the service boxes */
+/* allow on home and services sub-page additional text underneath the service boxes */
+.page-template-template-services-sub-page .col,
+.page-template-template-services-sub-page-dev .col,
 .page-id-3548 .col {
 	max-height: none;
 	height: auto;
@@ -1284,7 +1286,9 @@ div#contact-page h1.title {
 	overflow: hidden;
 }
 
-/* allow on the home additional text underneath the service boxes */
+/* allow on the home and services sub page for additional text underneath the service boxes */
+.page-template-template-services-sub-page .box,
+.page-template-template-services-sub-page-dev .box,
 .page-id-3548 .box {
 	height: 250px;
 	margin-bottom: 20px;
@@ -1596,4 +1600,75 @@ input.btn.green.grow.btn-widget {
 	.btn-header {
 		display: none;
 	}
+}
+
+/* sub-service template styles */
+
+.sub-service-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+	margin: 1rem 0 2rem;
+}
+
+.sub-service-wrapper::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #ddd;
+    z-index: -1;
+    content: '';
+    left: -10em;
+    right: -10em;
+}
+
+.sub-service-wrapper .col {
+  width: 100%;
+  margin: 1rem;
+	padding: .75rem;
+  border: 1px solid #eee;
+	-web-kit-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.sub-service-wrapper .col:hover {
+  margin: .5rem;
+	padding: 1.25rem;
+}
+
+@media all and (min-width: 480px){
+  .sub-service-wrapper .col {
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 800px){
+  .sub-service-wrapper .col {
+		width: 27%;
+  }
+}
+
+.sub-service-wrapper .service-title {
+  font: normal 2rem/3rem 'DearJoe5CASUAL', script !important;
+  color: #555;
+  text-align: center;
+}
+
+.sub-service-wrapper .img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+	margin: 0 auto;
+}
+
+.sub-service-wrapper .underneath-image {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.sub-service-wrapper .price {
+	font-size: 1.75rem;
+	margin-bottom: 1rem;
 }
