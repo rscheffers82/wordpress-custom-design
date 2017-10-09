@@ -38,7 +38,6 @@ if($wearelive !== "") { ?>
 
       ?>
 			<!-- Sub-page Services widgets code -->
-
       <div class="sub-service-wrapper">
 
   			<?php $get_post_meta = get_post_meta($post->ID, 'intuition-services', false);

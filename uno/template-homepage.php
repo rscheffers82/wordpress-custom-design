@@ -98,7 +98,7 @@ get_header(); ?>
     //wp_reset_query();
     ?>
     <p>
-      <a href="<?php echo site_url();?>/blog" class="btn green grow">View all posts</a>
+      <a href="<?php echo site_url();?>/blog" class="btn green-full rounded grow">View all posts</a>
     </p>
     <!-- <div class="button-wrapper">
       <a href="<?php //echo site_url();?>/blog" class="woo-sc-button custom medium blog home-blog-button">View all posts</a>

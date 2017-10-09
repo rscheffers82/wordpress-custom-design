@@ -1612,18 +1612,8 @@ input.btn.green.grow.btn-widget {
 	margin: 1rem 0 2rem;
 }
 
-.sub-service-wrapper::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-color: #ddd;
-    z-index: -1;
-    content: '';
-    left: -10em;
-    right: -10em;
-}
-
 .sub-service-wrapper .col {
+	background-color: #fcfcfc;
   width: 100%;
   margin: 1rem;
 	padding: .75rem;
