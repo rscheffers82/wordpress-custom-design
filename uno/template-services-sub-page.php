@@ -33,11 +33,27 @@ if($wearelive !== "") { ?>
 
 	if (have_posts()) { $count = 0;
 		while (have_posts()) { the_post(); $count++;
+			// default content like title and page content
 			woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
+
+
+			// Sub-page Services widgets code
+			$get_post_meta = get_post_meta($post->ID, 'intuition-services', false);
+			foreach($get_post_meta[0] as $item) {
+				// echo '<div class="title">' . $item['title'] . '</div>';
+				// echo '<img src="' . wp_get_attachment_url( $item['image'][0] ) . '"/>"';
+				// echo '<div class="">' . htmlspecialchars_decode( $item['description'] ) . '</div>';
+				// echo $item['price'];
+				// echo '<a class="btn green rounded grow">' . $item['button'] . 'Book now!</a>';
+			}
+
+			// Display content below the widgets
+			// print htmlspecialchars_decode(get_post_meta($post->ID, 'text-below-services', true));
+			// var_dump(get_post_meta($post->ID, 'text-below-services', true));
+			// echo get_post_meta($post->ID, 'demo_select', true);
+			// echo get_post_meta($post->ID, 'demo_colorpicker', true);
 		}
 	}
-	// Products go here \\
-	echo the_field('below_products');
 
 	woo_loop_after();
 ?>
