@@ -1257,8 +1257,12 @@ div#contact-page h1.title {
 	justify-content: space-between; 		/* Use this line for 2 items */
 }
 
+.page-template-template-services-sub-page-dev .service-wrapper {
+	max-width: none;
+}
+
 .service-wrapper.set-height {
-	height: 500px;
+	/*height: 500px;*/
 }
 
 .service-wrapper .col {
@@ -1272,11 +1276,18 @@ div#contact-page h1.title {
 }
 
 /* allow on home and services sub-page additional text underneath the service boxes */
-.page-template-template-services-sub-page .col,
-.page-template-template-services-sub-page-dev .col,
+
 .page-id-3548 .col {
 	max-height: none;
 	height: auto;
+}
+
+.page-template-template-services-sub-page .col,
+.page-template-template-services-sub-page-dev .col{
+	max-height: none;
+	height: auto;
+	width: 30%;
+	max-width: 400px;
 }
 
 .service-wrapper .box {
@@ -1358,6 +1369,16 @@ div#contact-page h1.title {
 	/*background-color: rgba(30,30,40, .70);*/
 	/*background: linear-gradient(to right, rgba(30,30,40, .35) 0%, rgba(30,30,40, .35) 10%,rgba(30,30,40, 1) 60%, rgba(30,30,40, .90) 100%);*/
 	/*top: 50%;*/
+}
+
+.service-wrapper .details {
+	padding: 0 1rem;
+	text-align: center;
+}
+
+.service-wrapper .price {
+	font-size: 1.75rem;
+	margin: 2rem 0;
 }
 
 @media (max-width: 950px){

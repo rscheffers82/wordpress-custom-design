@@ -38,20 +38,26 @@ if($wearelive !== "") { ?>
 
       ?>
 			<!-- Sub-page Services widgets code -->
-      <div class="sub-service-wrapper">
+      <div class="service-wrapper">
 
   			<?php $get_post_meta = get_post_meta($post->ID, 'intuition-services', false);
   			foreach($get_post_meta[0] as $item) { ?>
 
-            <div class="col">
-              <div class="service-title"><?php echo $item['title']; ?></div>
-              <img src="<?php echo wp_get_attachment_url( $item['image'][0] ); ?>" class="img-responsive">
-              <div class="underneath-image">
-                <div class="description"><?php echo wpautop($item['description']); ?></div>
-                <div class="price">USD $<?php echo $item['price']; ?>,-</div>
-                <a class="btn green-full grow rounded" href="<?php echo $item['button']; ?>">Book here</a>
+              <div class="col">
+                  <div class="box img-responsive" style="background: url(<?php echo wp_get_attachment_url( $item['image'][0] ); ?>)">
+                    <a href="http://juliecusmariu.com/julie-cusmariu-life-coaching">
+                      <div class="wrapper single">
+                          <?php echo $item['title']; ?>
+                          <!-- <div class="underline">When someone is in your corner</div> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="details">
+                    <div class="description"><?php echo wpautop($item['description']); ?></div>
+                    <div class="price">USD $<?php echo $item['price']; ?>,-</div>
+                    <a class="btn green-full grow rounded" href="<?php echo $item['button']; ?>">Book here</a>
+                  </div>
               </div>
-            </div>
 
         <?php } ?>
       </div>
