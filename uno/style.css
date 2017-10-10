@@ -1308,7 +1308,6 @@ div#contact-page h1.title {
 .page-template-template-services-sub-page-dev .box,
 .page-id-3548 .box {
 	height: 250px;
-	margin-bottom: 20px;
 }
 
 .service-wrapper .box a {
@@ -1372,8 +1371,14 @@ div#contact-page h1.title {
 }
 
 .service-wrapper .details {
-	padding: 0 1rem;
+	padding: 1.5rem 0;
 	text-align: center;
+}
+
+.page-template-template-services-sub-page .service-wrapper .details,
+.page-template-template-services-sub-page-dev .service-wrapper .details {
+	padding: 1.5rem;
+	border: 1px solid #e3e3e3;
 }
 
 .service-wrapper .price {
