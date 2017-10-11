@@ -1246,13 +1246,14 @@ div#contact-page h1.title {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-			-webkit-flex-flow: wrap;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	-webkit-box-pack: space-evenly;
-	    -ms-flex-pack: space-evenly;
-					-webkit-justify-content: space-evenly;
-	        justify-content: space-evenly;			/* Use this line for 1 item  */
+	-webkit-flex-flow: wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-evenly;
+	justify-content: space-evenly;
+	-webkit-align-items: flex-start;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
 /*
 	justify-content: space-between; 		/* Use this line for 2 items */
 }
@@ -1286,8 +1287,9 @@ div#contact-page h1.title {
 .page-template-template-services-sub-page-dev .col{
 	max-height: none;
 	height: auto;
-	width: 30%;
-	max-width: 400px;
+	width: 29%;
+	max-width: 450px;
+	margin: 2rem 1rem;
 }
 
 .service-wrapper .box {
@@ -1333,16 +1335,27 @@ div#contact-page h1.title {
 
 .service-wrapper .box a div.wrapper {
 	background-color: rgba(30,30,40, .15);
-	/*background-color: rgba(30,30,40, .45);*/
 	font-family: 'DearJoe5CASUAL', arial, sans-serif;
 	position: absolute;
   left: 0;
 	right: 0;
-	top: 70%;
+	bottom: 5%;
 	text-align: center;
 	padding: 10px 5px 5px 5px;
 	min-height: 50px;
+  webkit-transition: background-color .5s ease-in-out;
   transition: background-color .5s ease-in-out;
+}
+
+/*.page-template-template-services-sub-page .service-wrapper .box a div.wrapper,*/
+.page-template-template-services-sub-page-dev .service-wrapper .box a div.wrapper {
+	color: #fafafc;
+	font-family: Lato, sans-serif;
+	font-size: 1.7rem;
+	-web-kit-text-shadow: 1px 1px 1px #555;
+	-ms-text-shadow: 1px 1px 1px #555;
+	text-shadow: 1px 1px 1px #555;
+	text-transform: uppercase;
 }
 
 .service-wrapper .box a div.single {
@@ -1390,11 +1403,27 @@ div#contact-page h1.title {
 	.service-wrapper {
 		max-width: 585px;
 	}
+	.page-template-template-services-sub-page .col,
+	.page-template-template-services-sub-page-dev .col{
+		width: 44%;
+	}
 }
 
 @media (max-width: 650px){
 	.service-wrapper {
 		max-width: 290px;
+	}
+	.page-template-template-services-sub-page .col,
+	.page-template-template-services-sub-page-dev .col{
+		width: 75%;
+	}
+}
+
+@media (max-width: 481px){
+	.page-template-template-services-sub-page .col,
+	.page-template-template-services-sub-page-dev .col{
+		width: 100%;
+		margin: 2rem 0;
 	}
 }
 
@@ -1710,27 +1739,4 @@ input.btn.green-full.grow.btn-widget {
   .sub-service-wrapper .col {
 		width: 27%;
   }
-}
-
-.sub-service-wrapper .service-title {
-  font: normal 2rem/3rem 'DearJoe5CASUAL', script !important;
-  color: #555;
-  text-align: center;
-}
-
-.sub-service-wrapper .img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-	margin: 0 auto;
-}
-
-.sub-service-wrapper .underneath-image {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.sub-service-wrapper .price {
-	font-size: 1.75rem;
-	margin-bottom: 1rem;
 }

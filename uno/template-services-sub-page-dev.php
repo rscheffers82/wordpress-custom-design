@@ -54,7 +54,7 @@ if($wearelive !== "") { ?>
                   </div>
                   <div class="details">
                     <div class="description"><?php echo wpautop($item['description']); ?></div>
-                    <div class="price">USD $<?php echo $item['price']; ?>,-</div>
+                    <div class="price"><?php echo $item['price']; ?>,-</div>
                     <a class="btn green-full grow rounded" href="<?php echo $item['button']; ?>">Book here</a>
                   </div>
               </div>
