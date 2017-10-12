@@ -1359,7 +1359,7 @@ div#contact-page h1.title {
   transition: background-color .5s ease-in-out;
 }
 
-/*.page-template-template-services-sub-page .service-wrapper .box a div.wrapper,*/
+.page-template-template-services-sub-page .service-wrapper .box a div.wrapper,
 .page-template-template-services-sub-page-dev .service-wrapper .box a div.wrapper,
 .page-template-template-confirm-booking .service-wrapper .box a div.wrapper {
 	color: #fafafc;

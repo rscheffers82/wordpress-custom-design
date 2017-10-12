@@ -218,9 +218,9 @@ if($wearelive !== "") { ?>
                                 <?php } ?>
                             </li>
 
-                            <li class="inline"><input type="checkbox" name="sendCopy" id="sendCopy" value="true"<?php if( isset( $_POST['sendCopy'] ) && $_POST['sendCopy'] == true ) { echo ' checked="checked"'; } ?> /><label for="sendCopy"><?php _e( 'Send a copy of this email to yourself', 'woothemes' ); ?></label></li>
+                            <li class="inline"><input type="checkbox" name="sendCopy" id="sendCopy" value="true"<?php if( isset( $_POST['sendCopy'] ) && $_POST['sendCopy'] == true ) { echo ' checked="checked"'; } ?> /> <label for="sendCopy"><?php _e( 'Send a copy of this email to yourself', 'woothemes' ); ?></label></li>
                             <li class="screenReader"><label for="checking" class="screenReader"><?php _e( 'If you want to submit this form, do not enter anything in this field', 'woothemes' ); ?></label><input type="text" name="checking" id="checking" class="screenReader" value="<?php if( isset( $_POST['checking'] ) ) { echo esc_attr( $_POST['checking'] ); } ?>" /></li>
-                            <li class="buttons"><input type="hidden" name="submitted" id="submitted" value="true" /><input class="submit btn green" type="submit" value="<?php esc_attr_e( 'Submit', 'woothemes' ); ?>" /></li>
+                            <li class="buttons"><input type="hidden" name="submitted" id="submitted" value="true" /><input class="submit btn green-full rounded grow" type="submit" value="<?php esc_attr_e( 'Submit', 'woothemes' ); ?>" /></li>
                         </ol>
                     </form>
 

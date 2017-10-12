@@ -529,7 +529,7 @@ function showBookingPackage($atts, $content = null) {
 					'</a>' .
 				'</div>' .
 				'<div class="details">' .
-					'<div class="price">' . $price . ',-</div>' .
+					'<div class="price">$' . $price . ',-</div>' .
 				'</div>' .
 		'</div>' .
 	'</div>';

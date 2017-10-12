@@ -66,7 +66,7 @@ Template: template-services-sub-page, template-services-sub-page-dev
           ,'label' => 'Price'
           ,'columns' => 12
           ,'attributes' => array(
-            'placeholder' => 'in USD'
+            'placeholder' => 'Enter amount (numbers only) - $ ,- will be added.'
           )
         )
       )
