@@ -515,3 +515,36 @@ function showServices($atts, $content = null) {
 }
 
 add_shortcode('services', 'showServices');
+
+function showBookingPackage($atts, $content = null) {
+	$name = htmlspecialchars($_GET["package-name"]);
+	$price = htmlspecialchars($_GET["package-price"]);
+	$img_url = htmlspecialchars($_GET["package-img-url"]);
+
+	$output = '<div class="service-wrapper">' .
+		'<div class="col">' .
+				'<div class="box img-responsive" style="background: url(' . $img_url . ')">' .
+					'<a>' .
+						'<div class="wrapper single">' . $name . '</div>' .
+					'</a>' .
+				'</div>' .
+				'<div class="details">' .
+					'<div class="price">' . $price . ',-</div>' .
+				'</div>' .
+		'</div>' .
+	'</div>';
+
+	return $output;
+}
+
+add_shortcode('showBookingPackage', 'showBookingPackage');
+
+
+// Tell WordPress to allow these query params
+function add_custom_query_var( $vars ){
+  $vars[] = "package-name";
+  $vars[] = "package-price";
+  $vars[] = "package-img-url";
+  return $vars;
+}
+add_filter( 'query_vars', 'add_custom_query_var' );

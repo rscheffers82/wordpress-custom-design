@@ -1258,8 +1258,18 @@ div#contact-page h1.title {
 	justify-content: space-between; 		/* Use this line for 2 items */
 }
 
+.page-template-template-services-sub-page .service-wrapper,
 .page-template-template-services-sub-page-dev .service-wrapper {
 	max-width: none;
+}
+
+.page-template-template-confirm-booking .service-wrapper {
+	max-width: 100%;
+	justify-content: flex-start;
+}
+
+.page-template-template-confirm-booking .service-wrapper .col {
+	margin: 0;
 }
 
 .service-wrapper.set-height {
@@ -1284,7 +1294,8 @@ div#contact-page h1.title {
 }
 
 .page-template-template-services-sub-page .col,
-.page-template-template-services-sub-page-dev .col{
+.page-template-template-services-sub-page-dev .col,
+.page-template-template-confirm-booking .col{
 	max-height: none;
 	height: auto;
 	width: 29%;
@@ -1308,6 +1319,7 @@ div#contact-page h1.title {
 /* allow on the home and services sub page for additional text underneath the service boxes */
 .page-template-template-services-sub-page .box,
 .page-template-template-services-sub-page-dev .box,
+.page-template-template-confirm-booking .box,
 .page-id-3548 .box {
 	height: 250px;
 }
@@ -1348,7 +1360,8 @@ div#contact-page h1.title {
 }
 
 /*.page-template-template-services-sub-page .service-wrapper .box a div.wrapper,*/
-.page-template-template-services-sub-page-dev .service-wrapper .box a div.wrapper {
+.page-template-template-services-sub-page-dev .service-wrapper .box a div.wrapper,
+.page-template-template-confirm-booking .service-wrapper .box a div.wrapper {
 	color: #fafafc;
 	font-family: Lato, sans-serif;
 	font-size: 1.7rem;
@@ -1389,7 +1402,8 @@ div#contact-page h1.title {
 }
 
 .page-template-template-services-sub-page .service-wrapper .details,
-.page-template-template-services-sub-page-dev .service-wrapper .details {
+.page-template-template-services-sub-page-dev .service-wrapper .details,
+.page-template-template-confirm-booking .service-wrapper .details {
 	padding: 1.5rem;
 	border: 1px solid #e3e3e3;
 }
@@ -1399,12 +1413,17 @@ div#contact-page h1.title {
 	margin: 2rem 0;
 }
 
+.page-template-template-confirm-booking .service-wrapper .price {
+	margin: 0;
+}
+
 @media (max-width: 950px){
 	.service-wrapper {
 		max-width: 585px;
 	}
 	.page-template-template-services-sub-page .col,
-	.page-template-template-services-sub-page-dev .col{
+	.page-template-template-services-sub-page-dev .col,
+	.page-template-template-confirm-booking .col{
 		width: 44%;
 	}
 }
@@ -1414,14 +1433,16 @@ div#contact-page h1.title {
 		max-width: 290px;
 	}
 	.page-template-template-services-sub-page .col,
-	.page-template-template-services-sub-page-dev .col{
+	.page-template-template-services-sub-page-dev .col,
+ 	.page-template-template-confirm-booking .col{
 		width: 75%;
 	}
 }
 
 @media (max-width: 481px){
 	.page-template-template-services-sub-page .col,
-	.page-template-template-services-sub-page-dev .col{
+	.page-template-template-services-sub-page-dev .col,
+	.page-template-template-confirm-booking .col{
 		width: 100%;
 		margin: 2rem 0;
 	}
