@@ -517,9 +517,9 @@ function showServices($atts, $content = null) {
 add_shortcode('services', 'showServices');
 
 function showBookingPackage($atts, $content = null) {
-	$name = htmlspecialchars($_GET["package-name"]);
-	$price = htmlspecialchars($_GET["package-price"]);
-	$img_url = htmlspecialchars($_GET["package-img-url"]);
+	$name = htmlspecialchars($_POST["package-name"]);
+	$price = htmlspecialchars($_POST["package-price"]);
+	$img_url = htmlspecialchars($_POST["package-img-url"]);
 
 	$output = '<div class="service-wrapper">' .
 		'<div class="col">' .
