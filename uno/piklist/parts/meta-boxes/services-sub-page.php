@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Add your Services and content below them
+Title: Specify your packages
 Post Type: page
 Template: template-services-sub-page, template-services-sub-page-dev
 */
@@ -75,21 +75,4 @@ Template: template-services-sub-page, template-services-sub-page-dev
       )
     ));
 
-    piklist('field', array(
-      'type' => 'editor'
-      ,'field' => 'text-below-sub-services'
-      ,'label' => 'Content below the Services section'
-      ,'columns' => 12
-      ,'options' => array(
-        'wpautop' => true
-        ,'media_buttons' => false
-        ,'tabindex' => ''
-        ,'editor_css' => ''
-        ,'editor_class' => ''
-        ,'teeny' => false
-        ,'dfw' => false
-        ,'tinymce' => true
-        ,'quicktags' => true
-      )
-    ));
 ?>

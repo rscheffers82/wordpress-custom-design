@@ -63,14 +63,17 @@ if($wearelive !== "") { ?>
                  </div>
                  <div class="details">
                    <div class="description"><?php echo wpautop($item['description']); ?></div>
-                   <div class="price"><?php echo '$' . $item['price']; ?>,-</div>
+                   <div class="price"><?php echo '$' . $item['price']; ?></div>
                    <?php display_button( $item['title'], $item['price'], $img_url ); ?>
                  </div>
              </div>
 
        <?php } ?>
      </div>
-     <?php echo wpautop(get_post_meta($post->ID, 'text-below-sub-services', true));
+     <?php
+        // display content below the packages
+        $get_post_below_packages_meta = get_post_meta($post->ID, 'group-below-packages', false);
+        echo wpautop($get_post_below_packages_meta[0]["content_below_packages"]);
    }
  } ?>
  <?php woo_loop_after(); ?>
