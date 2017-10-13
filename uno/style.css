@@ -1553,6 +1553,7 @@ body.home blockquote::after { float: right; }
 
 /* ==== TEMP Styles */
 
+button.btn,
 input.btn,
 a.btn {
   padding: 5px 20px;
@@ -1570,6 +1571,7 @@ a.btn {
 	border-radius: 0px;
 }
 
+button.btn:hover,
 input.btn:hover,
 a.btn:hover {
 	text-decoration: none;
@@ -1599,6 +1601,7 @@ a.red-full:hover {
 }
 
 input.green[type="submit"],
+button.green,
 a.green {
   border-color: #6EC095;
   color: #6EC095 !important;
@@ -1606,6 +1609,7 @@ a.green {
 }
 
 input.green[type="submit"]:hover,
+button.green:hover,
 a.green:hover {
   border-color: transparent;
   background-color: #6EC095 !important;
@@ -1613,6 +1617,7 @@ a.green:hover {
 }
 
 input.green-full[type="submit"],
+button.green-full,
 a.green-full {
   border-color: #6EC095;
   background-color: #6EC095;
@@ -1621,6 +1626,7 @@ a.green-full {
 }
 
 input.green-full[type="submit"]:hover,
+button.green-full:hover,
 a.green-full:hover {
   border-color: #6EC095;
   background-color: inherit;
@@ -1650,6 +1656,7 @@ a.brown:hover {
 }
 
 input.grow[type="submit"]:hover,
+button.grow:hover,
 a.grow:hover {
   -web-kit-transform: translate(scale(1.1));
   -ms-transform: translate(scale(1.1));
@@ -1657,6 +1664,7 @@ a.grow:hover {
 }
 
 input.grow-more[type="submit"]:hover,
+button.grow-more:hover,
 a.grow-more:hover {
   -web-kit-transform: translate(scale(1.2));
   -ms-transform: translate(scale(1.2));
@@ -1664,6 +1672,7 @@ a.grow-more:hover {
 }
 
 a.rounded,
+button.rounded,
 input.rounded {
   border-radius: 50px;
 }
@@ -1765,4 +1774,10 @@ input.btn.green-full.grow.btn-widget {
   .sub-service-wrapper .col {
 		width: 27%;
   }
+}
+
+.wpcf7-select {
+	font: 300 18px/1.5em 'Lora', arial, sans-serif;
+	padding: .25rem;
+	height: 9rem;
 }

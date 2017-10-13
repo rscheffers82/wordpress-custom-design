@@ -548,3 +548,5 @@ function add_custom_query_var( $vars ){
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
+
+add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
