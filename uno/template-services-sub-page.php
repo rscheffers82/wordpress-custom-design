@@ -16,8 +16,8 @@ function display_button($name, $price, $img_url) {
  echo '<form action="/confirm-booking" method="post">';
     // echo '<i class="fa fa-mail-forward" style="font-size:24px"></i>';
   //  echo '<input value="Book now" type="submit" class="btn green-full rounded grow fa fa-mail-forward">';
-   echo '<button type="submit" class="btn green-full rounded grow"><i class="fa fa-mail-forward" style="font-size: 1.25rem;
-margin-right: .5rem;"></i>Let\'s Go</button>';
+   echo '<button type="submit" class="btn green-full rounded grow package"><i class="fa fa-mail-forward" style="font-size: 1.25rem;
+margin-right: .5rem;"></i>book now</button>';
    echo '<input type="hidden" name="package-name" value="' . $name . '">';
    echo '<input type="hidden" name="package-price" value="' . $price . '">';
    echo '<input type="hidden" name="package-img-url" value="' . $img_url . '">';

@@ -702,10 +702,6 @@ body.post-template-default .entry img {
 
 /*  PODCAST STYLES */
 
-body.page-id-4237 section.custom-header {
-	background-position: 50%;
-}
-
 .page-template-template-podcast-main .podcasts-wrapper {
 	display: inline-block;
 	margin-bottom: 2.5em;
@@ -1493,19 +1489,6 @@ body.home blockquote::after { float: right; }
 	border: 1px solid transparent;
 }
 
-
-/* Styles for changing custom header background positions for various pages*/
-
-/* Mentor coaching */
-.page-id-4355 section.home-section.custom-header {
-	background-position: 0% 10%;
-}
-
-.page-id-8 section.home-section.custom-header {
-	background-position: 0% 30%;
-}
-
-
 /* FAQ page styles */
 
 .collapseomatic {
@@ -1681,6 +1664,12 @@ a.rounded,
 button.rounded,
 input.rounded {
   border-radius: 50px;
+}
+
+a.package,
+button.package,
+input.package {
+	padding: .55rem .85rem;
 }
 /*
 green: #6EC095
@@ -1892,6 +1881,15 @@ input.btn.green-full.grow.btn-widget {
 	font-weight: 600;
 }
 
+.header2-8{
+	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+	border-bottom: 2px solid #6EC095;
+	color: #667;
+	border-top: 1px solid #6EC095;
+	text-align: center;
+	padding: 1rem 0 .25rem;
+	margin: 3.5rem 0 2.5rem !important;
+}
 
 .header2-1:after,
 .header2-2:after,
@@ -1906,4 +1904,40 @@ input.btn.green-full.grow.btn-widget {
 .header5:after {
 	display: block;
 	content: ' ';
+}
+
+.background-container {
+	padding: 2.25rem 0 1rem 0;
+	text-align: center;
+	border-radius: 25rem;
+	font-size: 3rem;
+	border: 4px solid #6EC095;
+	margin: 3.75rem 0 2.5rem;
+}
+
+.background-container h3 {
+	color: #6EC095;
+}
+
+.background-container a {
+	color: #555555;
+}
+
+/*Reposition background header image as needed*/
+
+/*Intuitive readings*/
+body.page-id-4830 section.custom-header {
+	background-position: 0% 10%;
+}
+/*Podcasts*/
+body.page-id-4237 section.custom-header {
+	background-position: 50%;
+}
+/* Mentor coaching */
+.page-id-4355 section.home-section.custom-header {
+	background-position: 0% 10%;
+}
+
+.page-id-8 section.home-section.custom-header {
+	background-position: 0% 30%;
 }
