@@ -1781,3 +1781,123 @@ input.btn.green-full.grow.btn-widget {
 	padding: .25rem;
 	height: 9rem;
 }
+
+/*   Headers try-out   */
+
+.header1 {
+	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+	color: #555;
+	display: inline-block;
+	border-bottom: 7px solid #6ec095;
+	margin-top: 2rem !important;
+}
+
+.header2 {
+	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+	color: #555;
+	display: inline-block;
+	border-bottom: 7px solid #DA9544;
+	margin-top: 2rem !important;
+}
+.header3 {
+	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+	color: #555;
+	display: inline-block;
+	border-bottom: 4px solid #DA9544;
+	margin-top: 2rem !important;
+}
+.header4 {
+	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+	color: #555;
+	display: inline-block;
+	border-bottom: 4px solid #DA9544;
+	margin-top: 2rem !important;
+	color: #DA9544;
+}
+.header5 {
+	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+	color: #555;
+	text-align: center;
+}
+
+.header2-1 {
+	font: normal 28px/1.2em 'Open Sans', arial, sans-serif !important;
+
+}
+
+.header2-2 {
+	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 0 20px;
+	margin-bottom: .5rem !important;
+}
+
+.header2-3 {
+	font: italic 28px/3rem 'Open Sans', arial, sans-serif !important;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 0 20px;
+	margin-bottom: .5rem !important;
+}
+
+.header2-4 {
+	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5rem !important;
+	color: #DA9544;
+}
+
+.header2-5 {
+	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+	border-bottom: 1px solid #DA9544;
+	margin-bottom: .5rem !important;
+	color: #667;
+}
+
+.header2-6 {
+	font-family: georgia;
+	font-size: 1.75rem;
+	border-bottom: 1px solid #DA9544;
+	padding: 0 0 0 20px;
+	margin-bottom: .5rem !important;
+	color: #667;
+	font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Cinzelregular';
+    src: url('fonts/Cinzel-Regular-webfont.eot');
+    src: url('fonts/Cinzel-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cinzel-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Cinzel-Regular-webfont.woff') format('woff'),
+         url('fonts/Cinzel-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Cinzel-Regular-webfont.svg#cinzelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.header2-7 {
+	font-family: "Cinzelregular", georgia, times, serif;
+	font-size: 1.6rem;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 0 20px;
+	margin-bottom: .5rem !important;
+	color: #667;
+	font-weight: 600;
+}
+
+
+.header2-1:after,
+.header2-2:after,
+.header2-3:after,
+.header2-4:after,
+.header2-5:after,
+.header2-6:after,
+.header1:after,
+.header2:after,
+.header3:after,
+.header4:after,
+.header5:after {
+	display: block;
+	content: ' ';
+}
