@@ -1263,6 +1263,7 @@ div#contact-page h1.title {
 .page-template-template-services-sub-page .service-wrapper,
 .page-template-template-services-sub-page-dev .service-wrapper {
 	max-width: none;
+	margin-top: 0;
 }
 
 .page-template-template-confirm-booking .service-wrapper {
@@ -1634,8 +1635,8 @@ a.blue:hover {
 }
 
 a.brown {
-  border-color: #DA9544 ;
-  color: #DA9544 !important;
+  border-color: #FF9B2E;
+  color: #FF9B2E !important;
 }
 
 a.brown:hover {
@@ -1711,9 +1712,9 @@ BF823B - #DA9544
 }
 
 .cta .btn:hover {
-	background-color: rgba(191, 130, 59, .7) !important;
-	color: #fff !important;
-	border-color: #DA9544;
+	background-color: rgba(255,155,46, 0.7) !important;
+	color: #fafafc !important;
+	border-color: #FF9B2E;
 }
 
 input.btn.green.grow.btn-widget,
