@@ -1612,7 +1612,6 @@ a.green-full {
   border-color: #6EC095;
   background-color: #6EC095;
   color: #f9f9f9 !important;
-
 }
 
 input.green-full[type="submit"]:hover,
@@ -1622,6 +1621,39 @@ a.green-full:hover {
   background-color: inherit;
   color: #6EC095 !important;
 }
+
+input.orange[type="submit"],
+button.orange,
+a.orange {
+  border-color: #FF9B2E;
+  color: #FF9B2E !important;
+}
+
+input.orange[type="submit"]:hover,
+button.orange:hover,
+a.orange:hover {
+  border-color: transparent;
+  background-color: #FF9B2E;
+  color: #f9f9f9 !important;
+}
+
+input.orange-full[type="submit"],
+button.orange-full,
+a.orange-full {
+  border-color: #FF9B2E;
+  background-color: #FF9B2E;
+  color: #f9f9f9 !important;
+}
+
+input.orange-full[type="submit"]:hover,
+button.orange-full:hover,
+a.orange-full:hover {
+  border-color: #FF9B2E;
+  background-color: inherit;
+  color: #FF9B2E !important;
+}
+
+
 
 a.blue {
   border-color: #38A5EB;
@@ -1634,16 +1666,6 @@ a.blue:hover {
   color: #f9f9f9 !important;
 }
 
-a.brown {
-  border-color: #FF9B2E;
-  color: #FF9B2E !important;
-}
-
-a.brown:hover {
-  border-color: transparent;
-  background-color: #DA9544;
-  color: #f9f9f9 !important;
-}
 
 input.grow[type="submit"]:hover,
 button.grow:hover,
