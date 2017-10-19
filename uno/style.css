@@ -846,7 +846,7 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 	padding: 0 1.618em 40px 1.618em;
 }
 
-.page-template-template-podcast-main .soundcloud{
+.page-template-template-podcast-main .soundcloud {
 	margin: 0 1.4rem 5rem 1.4rem;
 }
 
@@ -1949,12 +1949,14 @@ input.btn.green-full.grow.btn-widget {
 /*Reposition background header image as needed*/
 
 /*Intuitive readings*/
-body.page-id-4830 section.custom-header {
+body.page-id-4830 section.home-section.custom-header {
 	background-position: 0% 10%;
 }
 /*Podcasts*/
-body.page-id-4237 section.custom-header {
-	background-position: 50%;
+body.page-template-template-podcast-main section.home-section.custom-header,
+body.page-template-template-podcast-main-dev section.home-section.custom-header {
+	/*background-position: 50%;*/
+	background-position: 50% 75%;
 }
 /* Mentor coaching */
 .page-id-4355 section.home-section.custom-header {
@@ -1963,4 +1965,25 @@ body.page-id-4237 section.custom-header {
 
 .page-id-8 section.home-section.custom-header {
 	background-position: 0% 30%;
+}
+
+body.page-template-template-podcast-main h1.title.entry-title,
+body.page-template-template-podcast-main-dev h1.title.entry-title {
+	background-color: rgba(249,249,249,.8);
+	display: inline-block;
+	padding: 0 1.5rem;
+	border-radius: 50px;
+	color: #555 !important;
+}
+
+/*New podcast styles*/
+
+/*body.page-template-template-podcast-main section.home-section.custom-header,*/
+body.page-template-template-podcast-main-dev section.home-section.custom-header {
+	min-height: 550px;
+}
+
+.full-width-band {
+	color: #6EC095;
+	min-height: 100px;
 }
