@@ -212,8 +212,28 @@ h3.signup {
 	padding-left: 15px;
 }
 
-.home .mail-subscribe input[type=email]:focus {
+.home .mail-subscribe input[type=email]:focus,
+.home .mail-subscribe input[type=email]:active {
 	box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.1 )
+}
+
+/*CSS fix for email and submit button for email subscription*/
+
+@media all and (max-width: 415px) {
+	.home .mail-subscribe input[type=submit],
+	.home .mail-subscribe input[type=email] {
+		width: 100%;
+		border-radius: 25px;
+	}
+	.home .mail-subscribe input[type=email] {
+		width: 92%;
+	}
+	.af-form-wrapper {
+    min-width: 100% !important;
+	}
+	.home .inside {
+    width: 100% !important;
+	}
 }
 
 @keyframes pulse_animation {
@@ -1154,6 +1174,10 @@ div#contact-page h1.title {
 }
 
 	@media all and (max-width: 479px) {
+		.home .inside {
+			width: 90%;
+		}
+
 		.home ul.media li {
 			width: 40%;
 		}
@@ -1946,6 +1970,13 @@ input.btn.green-full.grow.btn-widget {
 	color: #555555;
 }
 
+@media all and (max-width: 415px) {
+	.background-container {
+		padding: 2.25rem 2rem .75rem;
+		border-radius: 25px;
+	}
+}
+
 /*Reposition background header image as needed*/
 
 /*Intuitive readings*/
@@ -1986,4 +2017,9 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 .full-width-band {
 	color: #6EC095;
 	min-height: 100px;
+}
+
+h1.entry-title,
+.page h1.title, h3.thin {
+	line-height: 4rem !important;
 }
