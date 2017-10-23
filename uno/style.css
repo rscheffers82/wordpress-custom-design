@@ -400,7 +400,6 @@ h1.entry-title,
 h3.thin {
 	font-weight: 300;
 	font: 300 2.6em/2em 'DearJoe5CASUAL', script !important;
-	/*text-transform: Capitalize;*/
 	color: #555;
 }
 
@@ -658,7 +657,9 @@ label.screen-reader-text, #connect p {
 
 /* Additional blog styles */
 
-.page-title, .post .title, .page .title {
+.page-title,
+.post .title,
+.page .title {
     text-transform: none !important;
 }
 
@@ -1478,6 +1479,12 @@ div#contact-page h1.title {
 		width: 100%;
 		margin: 2rem 0;
 	}
+
+	img.mobile-align-center {
+    margin: 1.5rem auto;
+    display: block;
+    float: none;
+	}
 }
 
 @media all and (max-width: 321px) {
@@ -1486,6 +1493,11 @@ div#contact-page h1.title {
 	}
 	.af-form-wrapper {
 		min-width: auto;
+	}
+	{
+		margin: .25rem auto;
+		display: block;
+		float: none;
 	}
 }
 
@@ -1975,6 +1987,10 @@ input.btn.green-full.grow.btn-widget {
 		padding: 2.25rem 2rem .75rem;
 		border-radius: 25px;
 	}
+	#logo .site-description {
+		display: block;
+		margin: .5rem 0 0 0;
+	}
 }
 
 /*Reposition background header image as needed*/
@@ -2019,7 +2035,33 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	min-height: 100px;
 }
 
-h1.entry-title,
-.page h1.title, h3.thin {
-	line-height: 4rem !important;
+@media all and (max-width: 640px) {
+	h1.entry-title,
+	.page h1.title, h3.thin {
+		line-height: 4rem !important;
+		margin-top: 1.5rem;
+	}
+}
+
+section.custom-header h1.title-positioning {
+	color: red;
+	position: absolute;
+	bottom: -1.75rem;
+	left: 4rem;
+}
+
+/*New header styles to show the title better on mobile devices*/
+
+.page-template-template-header-test section.home-section.custom-header {
+	min-height: 360px;
+	margin-bottom: 2rem;
+}
+
+.page-template-template-header-test .full-width .home-section {
+	padding: 0! important;
+}
+
+/*remove this option once all styles have been updated*/
+body.page.custom-header #content header {
+	margin: 0 !important;
 }
