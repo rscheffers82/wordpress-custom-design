@@ -28,8 +28,11 @@ margin-right: .5rem;"></i>Learn More</button>';
 <?php
 $wearelive = chi_get_header_image_url();
 if($wearelive !== "") { ?>
-   <section class="home-section custom-header" style="background-image:url('<?php chi_display_header(); ?>')">
-   </section>
+		<section class="home-section custom-header" style="position:relative; max-width:100vw; background-image:url('<?php chi_display_header(); ?>')">
+			<header>
+				<h1 class='title title-entry title-positioning'><?php the_title(); ?></h1>
+			</header>
+		</section>
 <?php } ?>
 
    <!-- #content Starts -->

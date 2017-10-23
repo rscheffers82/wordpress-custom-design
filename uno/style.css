@@ -82,22 +82,50 @@ section.home-section.custom-header {
     background-repeat: no-repeat;
     background-size: cover;
 		background-position: 0% 50%;
-}
-
-
-body.page.custom-header #content header {
-	margin: -100px 0 20px;
-	color: #fff;
-}
-
-body.page.custom-header #content header h1 {
-	color: #fff;
+		margin-bottom: 2.25rem;
 }
 
 .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
     background: #CACACA !important;
 }
 
+section.custom-header h1.title-positioning {
+	color: #f9f9f9;
+	position: absolute;
+	bottom: -1rem;
+  margin-right: 2rem;
+}
+
+.page-template-template-header-test section.home-section.custom-header {
+	min-height: 360px;
+	margin-bottom: 2rem;
+}
+
+.page-template-template-header-test .full-width .home-section {
+	padding: 0! important;
+}
+
+section.custom-header header {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 1200px;
+	width: auto;
+	margin: 0 auto;
+	padding: 0 1.618em;
+}
+
+section.home-section {
+	margin: 0;
+}
+
+@media all and (min-width: 1200px) {
+	section.custom-header header {
+		padding: 0;
+	}
+}
 
 /* navigation */
 #navigation ul.nav > li {
@@ -2041,51 +2069,5 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 		line-height: 4rem !important;
 		margin-top: 1.5rem;
 		margin-bottom: 2rem;
-	}
-}
-
-/*New header styles to show the title better on mobile devices*/
-
-
-section.custom-header h1.title-positioning {
-	color: #f9f9f9;
-	position: absolute;
-	bottom: -1rem;
-  margin-right: 2rem;
-}
-
-.page-template-template-header-test section.home-section.custom-header {
-	min-height: 360px;
-	margin-bottom: 2rem;
-}
-
-.page-template-template-header-test .full-width .home-section {
-	padding: 0! important;
-}
-
-/*remove this option once all styles have been updated*/
-body.page.custom-header #content header {
-	margin: 0 !important;
-}
-
-section.custom-header header {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	max-width: 1200px;
-	width: auto;
-	margin: 0 auto;
-	padding: 0 1.618em;
-}
-
-section.home-section {
-	margin: 0;
-}
-
-@media all and (min-width: 1200px) {
-	section.custom-header header {
-		padding: 0;
 	}
 }
