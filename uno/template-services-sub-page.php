@@ -13,7 +13,7 @@ get_header();
 // helper function(s)
 
 function display_button($name, $price, $img_url) {
- echo '<form action="/confirm-booking" method="post">';
+ echo '<form action="/information-quest-form" method="post">';
     // echo '<i class="fa fa-mail-forward" style="font-size:24px"></i>';
   //  echo '<input value="Book now" type="submit" class="btn green-full rounded grow fa fa-mail-forward">';
    echo '<button type="submit" class="btn orange-full rounded grow package"><i class="fa fa-mail-forward" style="font-size: 1.25rem;
@@ -69,7 +69,7 @@ if($wearelive !== "") { ?>
                  </div>
                  <div class="details">
                    <div class="description"><?php echo wpautop($item['description']); ?></div>
-                   <div class="price"><?php echo '$' . $item['price']; ?></div>
+                   <!-- <div class="price"><?php //echo '$' . $item['price']; ?></div> -->
                    <?php display_button( $item['title'], $item['price'], $img_url ); ?>
                  </div>
              </div>
