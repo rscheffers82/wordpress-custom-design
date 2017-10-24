@@ -33,7 +33,10 @@
 	woo_post_inside_before();
 ?>
 	<header>
-		<!-- <?php the_title( $title_before, $title_after ); ?> -->
+		<?php
+      $wearelive = chi_get_header_image_url();
+      if($wearelive === "") the_title( $title_before, $title_after );
+    ?>
 	</header>
 
 	<section class="entry">
