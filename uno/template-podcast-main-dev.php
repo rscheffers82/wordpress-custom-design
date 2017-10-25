@@ -12,18 +12,56 @@
 get_header(); ?>
 
     <!-- <div id="content"> -->
-
+      <div style="display: none; visibility: hidden;">
+        <?php $action = (the_field('topic_guest') == "topic") ? ' discussing' : ' featuring'; ?>
+      </div>
     	<?php woo_main_before(); ?>
 
       <?php
       $wearelive = chi_get_header_image_url();
       if($wearelive !== "") { ?>
-      		<section class="home-section custom-header" style="position:relative; max-width:100vw; background-image:url('<?php chi_display_header(); ?>')">
-      			<header>
-      				<h1 class='title title-entry title-positioning'><?php the_title(); ?></h1>
-      			</header>
-      		</section>
+        <header>
+          <section class="left">
+            <h1 class='podcast-main-title'><?php
+              the_title();
+              echo $action; ?>
+            </h2>
+            <h1 class="podcast-topic-guest-name"><?php echo the_field('topic_guest_name') ; ?></h1>
+            <h2 class='podcast-sub-title'>A live podcast with</h2>
+            <h1 class='title title-entry podcast-sub-title-julie'>Julie Cusmariu</h1>
+          </section>
+          <section class="right" style="background-image:url('<?php chi_display_header(); ?>')">
+          </section>
+        </header>
       <?php } ?>
+
+      <!-- Before the content, full width -->
+      <div class="radio-show-summary">
+        <?php echo the_field('radio_show_summary'); ?>
+      </div>
+      <div class="wrapper">
+        <div class="podcast-time-date">
+          <h1>WHEN</h1>
+          Each Wednesday, 2PM ET
+        </div>
+        <div class="podcast-join">
+          <h1>How to Join</h1>
+          - First you do<br>
+          - After that<br>
+          - Then...<br>
+          - Next click on<br>
+        </div>
+      </div>
+
+      <hr class="down";
+
+      <div class="podcast-topic-guest-description">
+        <?php the_field('weekly_topic_guest'); ?>
+      </div>
+      <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
+      <div class="podcast-bio">
+        <?php echo the_field('radio_host_bio'); ?>
+      </div>
 
         <!-- #content Starts -->
     <?php woo_content_before(); ?>
@@ -32,7 +70,6 @@ get_header(); ?>
           <!-- #main Starts -->
           <?php woo_main_before(); ?>
           <section id="main">
-
             <?php woo_loop_before();
             if (have_posts()) { $count = 0;
               while (have_posts()) { the_post(); $count++;

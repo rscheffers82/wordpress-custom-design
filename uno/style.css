@@ -2082,3 +2082,143 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 .wpcf7-select option {
 	padding-left: 0.75rem;
 }
+
+/* New Podcast styles */
+
+.page-template-template-podcast-main-dev header,
+.page-template-template-podcast-main header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.page-template-template-podcast-main-dev .wrapper,
+.page-template-template-podcast-main .wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+section.right {
+	background-position: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+section.left,
+section.right {
+	min-height: 450px;
+	width: 50%;
+	position: relative;
+}
+
+.podcast-main-title {
+	position: absolute;
+	top: 20%;
+	right: 10%;
+}
+
+.podcast-topic-guest-name {
+	position: absolute;
+	top: 40%;
+	right: 10%;
+}
+
+.podcast-sub-title {
+	position: absolute;
+	top: 60%;
+	right: 10%;
+}
+.podcast-sub-title-julie {
+	position: absolute;
+	top: 70%;
+	right: 10%;
+}
+
+.radio-show-summary,
+.podcast-summary {
+	background-color: #6EC095;
+	color: #f9f9f9;
+	padding: 4rem 6rem;
+	position: relative;
+}
+
+hr.down {
+	width: 100%;
+	background-color: #eaeaea;
+	margin: 3rem auto 4rem;
+	position: relative;
+}
+
+hr.down:after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 40px solid #eaeaea;
+	bottom: -36px;
+	left: 46%;
+}
+
+.radio-show-summary:after {
+display: block;
+position: absolute;
+content: '';
+width: 40px;
+height: 40px;
+bottom: -20px;
+left: 50%;
+margin-left: -20px;
+background-color: #6EC095;
+-ms-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+z-index: 1;
+}
+
+.radio-show-summary p,
+.podcast-summary p {
+	font: 400 1.75rem/1.75 "Open Sans", sans-serif;
+	margin: 0;
+	color: #fafafc;
+}
+
+.podcast-join,
+.podcast-time-date {
+	padding: 4rem 6rem
+}
+
+.podcast-time-date {
+	display: inline-block;
+	width: 50%;
+}
+
+.podcast-join {
+	display: inline-block;
+	width: 50%;
+	min-height: 10rem;
+	border-left: 1px solid #ccc;
+}
+
+.podcast-topic-guest-description {
+
+}
+
+.podcast-image,
+.podcast-bio,
+.podcast-image,
+.podcast-bio {
+	min-height: 150px;
+	border: 1px solid #6EC095;
+	margin: 2rem 0;
+}
+
+.podcast-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	content: ' ';
+	background-size: cover !important;
+	background-position: 50% !important;
+}
