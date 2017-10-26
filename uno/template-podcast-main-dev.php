@@ -20,7 +20,7 @@ get_header(); ?>
       <?php
       $wearelive = chi_get_header_image_url();
       if($wearelive !== "") { ?>
-        <header>
+        <header class="show">
           <section class="left">
             <h1 class='podcast-main-title'><?php
               the_title();
@@ -53,14 +53,17 @@ get_header(); ?>
         </div>
       </div>
 
-      <hr class="down";
-
       <div class="podcast-topic-guest-description">
         <?php the_field('weekly_topic_guest'); ?>
       </div>
-      <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
-      <div class="podcast-bio">
-        <?php echo the_field('radio_host_bio'); ?>
+
+      <!-- <hr class="down"> -->
+
+      <div class="wrapper">
+        <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
+        <div class="podcast-bio">
+          <?php echo the_field('radio_host_bio'); ?>
+        </div>
       </div>
 
         <!-- #content Starts -->
@@ -70,6 +73,12 @@ get_header(); ?>
           <!-- #main Starts -->
           <?php woo_main_before(); ?>
           <section id="main">
+
+            <h1 class="title entry-title">What listeners are saying</h1>
+            <?php // do_action( 'woothemes_testimonials', array( 'limit' => 2, 'id' => '3638, 4175', 'size' => 100, 'per_row' => 2, ) ); ?>
+            <?php echo do_shortcode('[testimonial_view id=3]'); ?>
+
+
             <?php woo_loop_before();
             if (have_posts()) { $count = 0;
               while (have_posts()) { the_post(); $count++;
@@ -121,10 +130,6 @@ get_header(); ?>
               <img src=<?php echo $img_marriage; ?> alt="Getting Married Consciously" />
             </a>
           </div>
-
-          <h1 class="title entry-title">What listeners are saying</h1>
-          <?php // do_action( 'woothemes_testimonials', array( 'limit' => 2, 'id' => '3638, 4175', 'size' => 100, 'per_row' => 2, ) ); ?>
-          <?php echo do_shortcode('[testimonial_view id=3]'); ?>
 
     </div><!-- /#main-sidebar-container -->
 

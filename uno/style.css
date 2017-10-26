@@ -2085,8 +2085,8 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 
 /* New Podcast styles */
 
-.page-template-template-podcast-main-dev header,
-.page-template-template-podcast-main header {
+.page-template-template-podcast-main-dev header.show,
+.page-template-template-podcast-main header.show {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
@@ -2096,6 +2096,7 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 .page-template-template-podcast-main .wrapper {
 	display: flex;
 	flex-flow: row nowrap;
+	margin: 4rem 0;
 }
 
 section.right {
@@ -2135,11 +2136,35 @@ section.right {
 }
 
 .radio-show-summary,
-.podcast-summary {
+.podcast-topic-guest-description {
 	background-color: #6EC095;
 	color: #f9f9f9;
-	padding: 4rem 6rem;
+	padding: 6rem;
 	position: relative;
+}
+
+.radio-show-summary p,
+.podcast-topic-guest-description p {
+	font: 400 1.75rem/1.75 "Open Sans", sans-serif;
+	margin: 0;
+	color: #fafafc;
+}
+
+.radio-show-summary:after,
+.podcast-topic-guest-description:after {
+display: block;
+position: absolute;
+content: '';
+width: 40px;
+height: 40px;
+bottom: -20px;
+left: 50%;
+margin-left: -20px;
+background-color: #6EC095;
+-ms-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+z-index: 1;
 }
 
 hr.down {
@@ -2161,32 +2186,9 @@ hr.down:after {
 	left: 46%;
 }
 
-.radio-show-summary:after {
-display: block;
-position: absolute;
-content: '';
-width: 40px;
-height: 40px;
-bottom: -20px;
-left: 50%;
-margin-left: -20px;
-background-color: #6EC095;
--ms-transform: rotate(45deg);
--webkit-transform: rotate(45deg);
-transform: rotate(45deg);
-z-index: 1;
-}
-
-.radio-show-summary p,
-.podcast-summary p {
-	font: 400 1.75rem/1.75 "Open Sans", sans-serif;
-	margin: 0;
-	color: #fafafc;
-}
-
 .podcast-join,
 .podcast-time-date {
-	padding: 4rem 6rem
+	padding: 3rem 6rem 6rem;
 }
 
 .podcast-time-date {
@@ -2202,23 +2204,22 @@ z-index: 1;
 }
 
 .podcast-topic-guest-description {
-
+	margin-bottom: 6rem;
 }
 
 .podcast-image,
-.podcast-bio,
-.podcast-image,
 .podcast-bio {
-	min-height: 150px;
-	border: 1px solid #6EC095;
-	margin: 2rem 0;
+	margin: 0 2rem;
 }
 
 .podcast-image {
 	width: 150px;
+	min-width: 150px;
 	height: 150px;
+	min-height: 150px;
 	border-radius: 150px;
 	content: ' ';
 	background-size: cover !important;
 	background-position: 50% !important;
+	margin: 0 2rem 0 5rem;
 }
