@@ -22,11 +22,9 @@ get_header(); ?>
       if($wearelive !== "") { ?>
         <header class="show">
           <section class="left">
-            <h1 class='podcast-main-title'><?php
-              the_title();
-              //echo $action; ?>
-            </h2>
-            <!-- <h1 class="podcast-topic-guest-name"><?php //echo the_field('topic_guest_name') ; ?></h1> -->
+            <h1 class='podcast-main-title'>
+              <?php the_title(); ?>
+            </h1>
             <h2 class='podcast-sub-title'>A live podcast with</h2>
             <h1 class='title title-entry podcast-sub-title-julie'>Julie Cusmariu</h1>
           </section>
@@ -36,33 +34,42 @@ get_header(); ?>
       <?php } ?>
 
       <!-- Before the content, full width -->
-      <div class="radio-show-summary">
-        <?php echo the_field('radio_show_summary'); ?>
-      </div>
-      <div class="wrapper details-podcast">
-        <div class="podcast-time-date">
-          <h1>When:</h1>
-          every Wednesday @ 2PM ET
-          <br><br><br>
-          <h1><?php echo $action; ?></h1>
-          <?php the_field('topic_guest_name'); ?>
-        </div>
-        <div class="podcast-join">
-          <h1>How to join:</h1>
-          - First you do<br>
-          - After that<br>
-          - Then...<br>
-          - Next click on<br>
+      <div class="podcast-newsletter">
+        <div class="center">
+          <div class="podcast-icon" style="display:inline-block;"> </div>
+          <div style="display:inline-block;">
+            <h1>Never want to miss a podcast again?</h1>
+            <input type="email">
+            <input type="submit" class="btn pulse white" value="Subscribe">
+          </div>
         </div>
       </div>
 
-      <div class="podcast-topic-guest-description">
-        <?php the_field('weekly_topic_guest'); ?>
+      <div class="wrapper details-podcast">
+        <div class="podcast-time-date">
+          <h1>When:</h1>
+          <p>Every Wednesday @ 2PM ET</p>
+          <h1>How:</h1>
+          <p>Visit or reload this page at 2PM ET. The broadcast will start automatically in the player.</p>
+        </div>
+        <div class="podcast-join">
+          <h1>Listen: <span>(live in 11 days)</span></h1>
+          <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="false" hide-comments="false" hide-sharing="false"]'); ?>
+        </div>
+        <div class="podcast-topic-guest-description">
+          <h1><?php echo $action; ?></h1>
+          <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
+          <p><?php the_field('weekly_topic_guest'); ?></p>
+        </div>
+      </div>
+
+      <div class="radio-show-summary">
+        <?php echo the_field('radio_show_summary'); ?>
       </div>
 
       <!-- <hr class="down"> -->
 
-      <div class="wrapper">
+      <div class="wrapper podcast-host">
         <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
         <div class="podcast-bio">
           <?php echo the_field('radio_host_bio'); ?>

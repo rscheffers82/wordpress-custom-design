@@ -230,11 +230,14 @@ h3.signup {
 	font-size: 18px;
 }
 
-.home .mail-subscribe input[type=submit] {
+
+.home .mail-subscribe input[type=submit],
+.podcast-newsletter input[type=submit] {
 	border-radius: 0 25px 25px 0;
 }
 
-.home .mail-subscribe input[type=email] {
+.home .mail-subscribe input[type=email],
+.podcast-newsletter input[type=email] {
 	color: #555;
 	padding: 8px;
 	border-radius: 25px 0 0 25px;
@@ -1671,6 +1674,22 @@ a.green:hover {
   color: #f9f9f9 !important;
 }
 
+input.white[type="submit"],
+button.white,
+a.white {
+  border-color: #fff;
+  color: #fff !important;
+	background-color: inherit;
+}
+
+/*input.white[type="submit"]:hover,
+button.white:hover,
+a.white:hover {
+  border-color: transparent;
+  background: none !important;
+  color: #f9f9f9 !important;
+}*/
+
 input.green-full[type="submit"],
 button.green-full,
 a.green-full {
@@ -2093,6 +2112,17 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	justify-content: space-around;
 }
 
+.podcast-newsletter {
+	background-color: #6EC095;
+	color: #f9f9f9;
+	padding: 4rem;
+}
+
+.podcast-newsletter h1 {
+	color: #fafafc;
+	font: 400 1.5rem/2em "Open Sans", sans-serif;
+}
+
 .page-template-template-podcast-main-dev .wrapper,
 .page-template-template-podcast-main .wrapper {
 	display: flex;
@@ -2101,8 +2131,27 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 }
 
 .wrapper.details-podcast {
+	flex-flow: row wrap;
 	font-size: 1.75rem;
 	line-height: 1.5rem;
+	margin: 3rem 6rem;
+	position: relative;
+}
+
+.wrapper.details-podcast:after {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 40px;
+	height: 40px;
+	bottom: -4.25rem;
+	left: 50%;
+	margin-left: -20px;
+	background-color: #f9f9f9;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 1;
 }
 
 section.right {
@@ -2122,8 +2171,9 @@ section.right {
 	position: absolute;
 	top: 20%;
 	right: 10%;
-	font-family: 'Trocchi', serif;
+	font-family: 'Georgia', serif;
 	font-size: 3.5vw;
+	font-weight: 600;
 }
 
 .podcast-topic-guest-name {
@@ -2143,36 +2193,36 @@ section.right {
 	right: 10%;
 }
 
-.radio-show-summary,
-.podcast-topic-guest-description {
+.podcast-newsletter {
+	text-align: center;
+	position: relative;
+}
+
+.podcast-icon { position: relative; }
+
+.podcast-icon:after {
+	position: absolute;
+	top: -5.45rem;
+	left: -8rem;
+	width: 7rem;
+	height: 7rem;
+	background-image: url(./images/podcast-white.svg);
+	background-size: cover;
+	content: ' ';
+	opacity: 0.5;
+}
+
+.radio-show-summary {
 	background-color: #6EC095;
 	color: #f9f9f9;
 	padding: 6rem;
 	position: relative;
 }
 
-.radio-show-summary p,
-.podcast-topic-guest-description p {
-	font: 400 1.75rem/1.75 "Open Sans", sans-serif;
+.radio-show-summary p {
+	font: 400 1.5rem/2em "Open Sans", sans-serif;
 	margin: 0;
 	color: #fafafc;
-}
-
-.radio-show-summary:after,
-.podcast-topic-guest-description:after {
-display: block;
-position: absolute;
-content: '';
-width: 40px;
-height: 40px;
-bottom: -20px;
-left: 50%;
-margin-left: -20px;
-background-color: #6EC095;
--ms-transform: rotate(45deg);
--webkit-transform: rotate(45deg);
-transform: rotate(45deg);
-z-index: 1;
 }
 
 hr.down {
@@ -2194,30 +2244,60 @@ hr.down:after {
 	left: 46%;
 }
 
-.podcast-join,
-.podcast-time-date {
-	padding: 3rem 6rem 6rem;
-
-}
-.podcast-join h1,
-.podcast-time-date h1 {
-	font-family: 'Trocchi', serif;
-}
-
 .podcast-time-date {
 	display: inline-block;
-	width: 50%;
+	flex: 1;
+}
+
+.podcast-time-date p {
+	margin-left: 1.5rem;
 }
 
 .podcast-join {
+  margin-left: 4em;
 	display: inline-block;
-	width: 50%;
 	min-height: 10rem;
-	border-left: 1px solid #ccc;
+	flex: 1
 }
 
 .podcast-topic-guest-description {
-	margin-bottom: 6rem;
+	margin-bottom: 3rem;
+}
+
+
+.podcast-topic-guest-description .img-wrap {
+	padding: .5rem;
+	border: 1px solid #ccc;
+	margin: 0 .5rem .5rem 1.5rem;
+	display: inline-block;
+	float: left;
+  background-color: #fff;
+}
+
+.podcast-topic-guest-description .guest-img {
+	display: inline-block;
+	float: left;
+	width: 7.5rem;
+	height: 7.5rem;
+	background-size: cover;
+}
+
+.podcast-join h1,
+.podcast-time-date h1,
+.podcast-topic-guest-description h1 {
+	font: 300 2.6rem/1rem 'DearJoe5CASUAL', script !important;
+	padding-top: 3rem;
+}
+
+.podcast-join h1 span {
+	font: normal 18px/1.5em 'Lora', arial, sans-serif;
+	font-style: italic;
+	color: #777;
+}
+
+.wrapper.podcast-host {
+	max-width: 1200px;
+	margin: 6rem auto 4rem;
 }
 
 .podcast-image,
@@ -2234,5 +2314,5 @@ hr.down:after {
 	content: ' ';
 	background-size: cover !important;
 	background-position: 50% !important;
-	margin: 0 2rem 0 5rem;
+	margin: 0 2rem;
 }
