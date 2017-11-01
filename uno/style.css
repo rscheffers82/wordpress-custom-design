@@ -15,6 +15,7 @@ Tags: canvas, woothemes, store, woocommerce
 */
 @import url(../canvas/style.css);
 @import url(css/font-style.css);
+@import url('https://fonts.googleapis.com/css?family=Trocchi');
 
 body {
 	background-color: #ffffff;
@@ -2051,7 +2052,20 @@ body.page-template-template-podcast-main-dev h1.title.entry-title {
 	color: #555 !important;
 }
 
-/*New podcast styles*/
+/* Confirm booking sytles */
+
+.wpcf7-select {
+	height: 6rem;
+	width: 14rem;
+}
+
+.wpcf7-select option {
+	padding-left: 0.75rem;
+}
+
+
+
+/* New Podcast styles */
 
 /*body.page-template-template-podcast-main section.home-section.custom-header,*/
 body.page-template-template-podcast-main-dev section.home-section.custom-header {
@@ -2072,19 +2086,6 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	}
 }
 
-/* Confirm booking sytles */
-
-.wpcf7-select {
-	height: 6rem;
-	width: 14rem;
-}
-
-.wpcf7-select option {
-	padding-left: 0.75rem;
-}
-
-/* New Podcast styles */
-
 .page-template-template-podcast-main-dev header.show,
 .page-template-template-podcast-main header.show {
 	display: flex;
@@ -2097,6 +2098,11 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	display: flex;
 	flex-flow: row nowrap;
 	margin: 4rem 0;
+}
+
+.wrapper.details-podcast {
+	font-size: 1.75rem;
+	line-height: 1.5rem;
 }
 
 section.right {
@@ -2116,6 +2122,8 @@ section.right {
 	position: absolute;
 	top: 20%;
 	right: 10%;
+	font-family: 'Trocchi', serif;
+	font-size: 3.5vw;
 }
 
 .podcast-topic-guest-name {
@@ -2189,6 +2197,11 @@ hr.down:after {
 .podcast-join,
 .podcast-time-date {
 	padding: 3rem 6rem 6rem;
+
+}
+.podcast-join h1,
+.podcast-time-date h1 {
+	font-family: 'Trocchi', serif;
 }
 
 .podcast-time-date {
@@ -2213,11 +2226,11 @@ hr.down:after {
 }
 
 .podcast-image {
-	width: 150px;
-	min-width: 150px;
-	height: 150px;
-	min-height: 150px;
-	border-radius: 150px;
+	width: 200px;
+	min-width: 200px;
+	height: 200px;
+	min-height: 200px;
+	border-radius: 200px;
 	content: ' ';
 	background-size: cover !important;
 	background-position: 50% !important;

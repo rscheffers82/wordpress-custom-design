@@ -13,7 +13,7 @@ get_header(); ?>
 
     <!-- <div id="content"> -->
       <div style="display: none; visibility: hidden;">
-        <?php $action = (the_field('topic_guest') == "topic") ? ' discussing' : ' featuring'; ?>
+        <?php $action = (the_field('topic_guest') == "topic") ? 'Topic:' : 'Guest:'; ?>
       </div>
     	<?php woo_main_before(); ?>
 
@@ -24,9 +24,9 @@ get_header(); ?>
           <section class="left">
             <h1 class='podcast-main-title'><?php
               the_title();
-              echo $action; ?>
+              //echo $action; ?>
             </h2>
-            <h1 class="podcast-topic-guest-name"><?php echo the_field('topic_guest_name') ; ?></h1>
+            <!-- <h1 class="podcast-topic-guest-name"><?php //echo the_field('topic_guest_name') ; ?></h1> -->
             <h2 class='podcast-sub-title'>A live podcast with</h2>
             <h1 class='title title-entry podcast-sub-title-julie'>Julie Cusmariu</h1>
           </section>
@@ -39,13 +39,16 @@ get_header(); ?>
       <div class="radio-show-summary">
         <?php echo the_field('radio_show_summary'); ?>
       </div>
-      <div class="wrapper">
+      <div class="wrapper details-podcast">
         <div class="podcast-time-date">
-          <h1>WHEN</h1>
-          Each Wednesday, 2PM ET
+          <h1>When:</h1>
+          every Wednesday @ 2PM ET
+          <br><br><br>
+          <h1><?php echo $action; ?></h1>
+          <?php the_field('topic_guest_name'); ?>
         </div>
         <div class="podcast-join">
-          <h1>How to Join</h1>
+          <h1>How to join:</h1>
           - First you do<br>
           - After that<br>
           - Then...<br>
