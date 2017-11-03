@@ -25,8 +25,7 @@ get_header(); ?>
             <h1 class='podcast-main-title'>
               <?php the_title(); ?>
             </h1>
-            <h2 class='podcast-sub-title'>A live podcast with</h2>
-            <h1 class='title title-entry podcast-sub-title-julie'>Julie Cusmariu</h1>
+            <h2 class='podcast-sub-title'>a live podcast</h2>
           </section>
           <section class="right" style="background-image:url('<?php chi_display_header(); ?>')">
           </section>
@@ -38,7 +37,7 @@ get_header(); ?>
         <div class="center">
           <div class="podcast-icon" style="display:inline-block;"> </div>
           <div style="display:inline-block;">
-            <h1>Never want to miss a podcast again?</h1>
+            <h1>Never want to miss a podcast?</h1>
             <input type="email">
             <input type="submit" class="btn pulse white" value="Subscribe">
           </div>
