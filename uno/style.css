@@ -2218,7 +2218,7 @@ section.right {
 .radio-show-summary {
 	background-color: #6EC095;
 	color: #f9f9f9;
-	padding: 6rem;
+	padding: 4rem;
 	position: relative;
 }
 
@@ -2253,6 +2253,11 @@ hr.down:after {
 	flex: 1;
 }
 
+.podcast-time-date .header {
+	text-align: center;
+	margin: 2rem auto 4rem;
+}
+
 .podcast-time-date p {
 	margin-left: 1.5rem;
 }
@@ -2264,12 +2269,11 @@ hr.down:after {
 	flex: 1
 }
 
-.podcast-topic-guest-description {
-	margin-bottom: 3rem;
+.podcast-guest {
+	margin: 2rem 0;
 }
 
-
-.podcast-topic-guest-description .img-wrap {
+.podcast-time-date .img-wrap {
 	padding: .5rem;
 	border: 1px solid #ccc;
 	margin: 0 .5rem .5rem 1.5rem;
@@ -2278,7 +2282,7 @@ hr.down:after {
   background-color: #fff;
 }
 
-.podcast-topic-guest-description .guest-img {
+.podcast-time-date .guest-img {
 	display: inline-block;
 	float: left;
 	width: 7.5rem;
@@ -2287,8 +2291,7 @@ hr.down:after {
 }
 
 .podcast-join h1,
-.podcast-time-date h1,
-.podcast-topic-guest-description h1 {
+.podcast-time-date h1 {
 	font: 300 2.6rem/1rem 'DearJoe5CASUAL', script !important;
 	padding-top: 3rem;
 }
@@ -2301,7 +2304,7 @@ hr.down:after {
 
 .wrapper.podcast-host {
 	max-width: 1200px;
-	margin: 6rem auto 4rem;
+	margin: 4rem auto 0;
 }
 
 .podcast-image,
@@ -2319,4 +2322,9 @@ hr.down:after {
 	background-size: cover !important;
 	background-position: 50% !important;
 	margin: 0 2rem;
+}
+
+.page-template-template-podcast-main #main h1:first-child,
+.page-template-template-podcast-main-dev #main h1:first-child {
+	margin-bottom: 0;
 }

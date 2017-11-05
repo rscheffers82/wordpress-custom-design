@@ -13,7 +13,7 @@ get_header(); ?>
 
     <!-- <div id="content"> -->
       <div style="display: none; visibility: hidden;">
-        <?php $action = (the_field('topic_guest') == "topic") ? 'Topic:' : 'Guest:'; ?>
+        <?php $action = (the_field('topic_guest') == "topic") ? 'discussing ' : 'featuring '; ?>
       </div>
     	<?php woo_main_before(); ?>
 
@@ -46,19 +46,18 @@ get_header(); ?>
 
       <div class="wrapper details-podcast">
         <div class="podcast-time-date">
-          <h1>When:</h1>
-          <p>Every Wednesday @ 2PM ET</p>
-          <h1>How:</h1>
-          <p>Visit or reload this page at 2PM ET. The broadcast will start automatically in the player.</p>
-        </div>
-        <div class="podcast-join">
-          <h1>Listen: <span>(live in 11 days)</span></h1>
+          <!-- <p><strong>Join Julie every Wednesday @ 2PM ET</strong></p> -->
+          <h2 class="header">Join Julie live every Wednesday @ 2PM ET</h2>
+          <p>To attend the live session, visit or reload this page at 2PM ET. The broadcast will start automatically in the player below.</p>
           <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="false" hide-comments="false" hide-sharing="false"]'); ?>
-        </div>
-        <div class="podcast-topic-guest-description">
-          <h1><?php echo $action; ?></h1>
-          <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
-          <p><?php the_field('weekly_topic_guest'); ?></p>
+          <!-- <h1><?php echo $action; ?></h1> -->
+
+          <div class="podcast-guest">
+
+            <p>Next session Julie will be <?php echo $action; ?><?php the_field('topic_guest_name'); ?>.</p>
+            <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
+            <p><?php the_field('weekly_topic_guest'); ?></p>
+          </div>
         </div>
       </div>
 
