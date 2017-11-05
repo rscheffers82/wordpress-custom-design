@@ -2328,3 +2328,46 @@ hr.down:after {
 .page-template-template-podcast-main-dev #main h1:first-child {
 	margin-bottom: 0;
 }
+
+
+/*   Podcast promote widget   */
+
+.podcast-widget-wrapper {
+	border: 1px solid #6EC095;
+	padding: 1rem;
+	font: 300 15px/1.4em 'Lora', arial, sans-serif;
+	overflow: hidden;
+	border-radius: .25rem;
+	background-color: #fff;
+	text-align: center;
+}
+
+.podcast-widget-wrapper .header {
+	margin: -20px -20px 10px -20px;
+	padding: 20px;
+	background-color: #6EC095;
+	color: #f9f9f9;
+	text-align: center;
+	font-size: 18px;
+}
+
+.podcast-widget-wrapper .header strong {
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 2rem;
+}
+
+.widget .podcast-widget-wrapper p {
+    font: 300 15px/1.4em 'Lora', arial, sans-serif;
+}
+
+.widget .podcast-widget-wrapper p strong {
+	font-size: 1.2em;
+	line-height: 2rem;
+}
+
+/*   Helper classes   */
+
+.center {
+	text-align: center;
+}
