@@ -1,0 +1,11 @@
+<div class="podcast-widget-wrapper">
+    <div class="header">
+      <strong>'Julie in Conversation'</strong> a new podcast series.
+    </div>
+    Join Julie live or listen to previous sessions.
+    <p class="center">
+      <a class="btn green-full rounded grow" href="http://juliecusmariu.com/julie-conversation-wednesdays-2pm-et">Podcast</a>
+    </p>
+    <strong>Next live session</strong>
+    <p class="live-session">Wednesday, 2PM ET.</p>
+</div>
