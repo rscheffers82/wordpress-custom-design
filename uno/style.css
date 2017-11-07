@@ -2175,26 +2175,56 @@ section.left { background-color: #f9f9f9; }
 
 section.left,
 section.right {
-	min-height: 450px;
+	min-height: 400px;
 	width: 50%;
 	position: relative;
 }
 
 .podcast-main-title {
 	position: absolute;
-  top: 34%;
-  right: 7%;
-  font-family: 'Georgia', serif;
-  font-size: 3.5vw;
-  font-weight: 600;
+	top: 7%;
+	right: 7%;
+	font-family: 'Georgia', serif;
+	font-size: 3vw;
+	font-weight: 600;
 	color: #444;
 }
 
-.podcast-sub-title {
+.podcast-main-title-underline {
 	position: absolute;
-	top: 55%;
+	top: 21%;
 	right: 9%;
 }
+
+.podcast-main-middle {
+	position: absolute;
+	top: 36%;
+	left: 26%;
+	text-align: center;
+}
+
+.podcast-main-middle p:nth-child(1) {
+	color: #FF9B2E;
+	font-size: 2rem;
+	font: bold 36px/1.2em 'Open Sans', arial, sans-serif !important;
+	margin: .25rem;
+}
+
+.podcast-main-middle p:nth-child(2) {
+	text-align: center;
+	font: bold 28px/1em 'Open Sans', arial, sans-serif !important;
+	color: #FF9B2E;
+}
+
+.podcast-main-bottom {
+	position: absolute;
+	bottom: -5%;
+	right: 10%;
+	text-align: right;
+}
+
+
+
 
 .podcast-newsletter {
 	text-align: center;
