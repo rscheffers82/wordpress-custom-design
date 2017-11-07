@@ -45,7 +45,7 @@ get_header(); ?>
         <div class="center">
           <div class="podcast-icon" style="display:inline-block;"> </div>
           <div style="display:inline-block;">
-            <h1>Never want to miss a podcast?</h1>
+            <p>Never want to miss a podcast?</p>
             <input type="email">
             <input type="submit" class="btn pulse white" value="Subscribe">
           </div>
@@ -62,7 +62,7 @@ get_header(); ?>
 
           <div class="podcast-guest">
 
-            <p>Next session Julie will be <?php echo $action; ?><?php the_field('topic_guest_name'); ?>.</p>
+            <p>In the next session Julie will be <?php echo $action; ?><?php the_field('topic_guest_name'); ?>.</p>
             <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
             <p><?php the_field('weekly_topic_guest'); ?></p>
           </div>
@@ -76,7 +76,9 @@ get_header(); ?>
       <!-- <hr class="down"> -->
 
       <div class="wrapper podcast-host">
-        <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
+        <?php if( get_field('text_field') ): ?>
+          <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
+        <?php endif; ?>
         <div class="podcast-bio">
           <?php echo the_field('radio_host_bio'); ?>
         </div>
