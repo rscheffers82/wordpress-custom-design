@@ -2122,17 +2122,6 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	justify-content: space-around;
 }
 
-.podcast-newsletter {
-	background-color: #6EC095;
-	color: #f9f9f9;
-	padding: 4rem;
-}
-
-.podcast-newsletter h1 {
-	color: #fafafc;
-	font: 400 1.5rem/2em "Open Sans", sans-serif;
-}
-
 .page-template-template-podcast-main-dev .wrapper,
 .page-template-template-podcast-main .wrapper {
 	display: flex;
@@ -2144,7 +2133,7 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	flex-flow: row wrap;
 	font-size: 1.75rem;
 	line-height: 1.5rem;
-	margin: 3rem auto;
+	margin: 1rem auto 2rem;
 	position: relative;
 	max-width: 1200px;
 }
@@ -2153,9 +2142,9 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	display: block;
 	position: absolute;
 	content: '';
-	width: 40px;
-	height: 40px;
-	bottom: -4.25rem;
+	width: 30px;
+	height: 30px;
+	bottom: -47px;
 	left: 50%;
 	margin-left: -20px;
 	background-color: #f9f9f9;
@@ -2223,22 +2212,26 @@ section.right {
 	text-align: right;
 }
 
-
-
-
 .podcast-newsletter {
-	text-align: center;
-	position: relative;
+	background-color: #6EC095;
+	color: #f9f9f9;
+	padding: 2rem;
+}
+
+.podcast-newsletter p {
+	color: #f9f9f9;
+	font: 300 18px/36px 'Open Sans', arial, sans-serif;
+	margin-bottom: .5rem;
 }
 
 .podcast-icon { position: relative; }
 
 .podcast-icon:after {
 	position: absolute;
-	top: -5.45rem;
-	left: -8rem;
-	width: 7rem;
-	height: 7rem;
+	top: -4.5rem;
+	left: -7rem;
+	width: 6rem;
+	height: 6rem;
 	background-image: url(./images/podcast-white.svg);
 	background-size: cover;
 	content: ' ';
@@ -2248,12 +2241,12 @@ section.right {
 .radio-show-summary {
 	background-color: #6EC095;
 	color: #f9f9f9;
-	padding: 4rem;
+	padding: 2rem 4rem;
 	position: relative;
 }
 
 .radio-show-summary p {
-	font: 400 1.5rem/2em "Open Sans", sans-serif;
+	font: 300 18px/36px 'Open Sans', arial, sans-serif;
 	margin: 0 auto;
 	color: #fafafc;
 	max-width: 1200px;
@@ -2285,7 +2278,7 @@ hr.down:after {
 
 .podcast-time-date .header {
 	text-align: center;
-	margin: 2rem auto 4rem;
+	margin: 2rem auto;
 }
 
 .podcast-time-date p {
@@ -2334,7 +2327,7 @@ hr.down:after {
 
 .wrapper.podcast-host {
 	max-width: 1200px;
-	margin: 4rem auto 0;
+	margin: 2rem auto -1rem;
 }
 
 .podcast-image,
