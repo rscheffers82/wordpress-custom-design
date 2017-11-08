@@ -22,18 +22,16 @@ get_header(); ?>
       if($wearelive !== "") { ?>
         <header class="show">
           <section class="left">
-            <h1 class='podcast-main-title'>
-              <?php the_title(); ?>
-            </h1>
+            <h1 class='podcast-main-title'><?php the_title(); ?></h1>
             <div class="podcast-main-title-underline">a live podcast</div>
-            <div class="podcast-main-middle">
+            <!-- <div class="podcast-main-middle">
               <p>#motherhood</p>
               <p>#let's create a village</p>
-            </div>
-            <div class="podcast-main-bottom">
+            </div> -->
+            <!-- <div class="podcast-main-bottom">
               a new series with
               <h1 class="title">Julie Cusmariu</h1>
-            </div>
+            </div> -->
           </section>
           <section class="right" style="background-image:url('<?php chi_display_header(); ?>')">
           </section>

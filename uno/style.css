@@ -2171,7 +2171,7 @@ section.right {
 
 .podcast-main-title {
 	position: absolute;
-	top: 7%;
+	top: 35%;
 	right: 7%;
 	font-family: 'Georgia', serif;
 	font-size: 3vw;
@@ -2181,7 +2181,7 @@ section.right {
 
 .podcast-main-title-underline {
 	position: absolute;
-	top: 21%;
+	top: 49%;
 	right: 9%;
 }
 
