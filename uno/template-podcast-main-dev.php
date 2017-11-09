@@ -52,14 +52,11 @@ get_header(); ?>
 
       <div class="wrapper details-podcast">
         <div class="podcast-time-date">
-          <!-- <p><strong>Join Julie every Wednesday @ 2PM ET</strong></p> -->
           <h2 class="header">Join Julie live every Wednesday @ 2PM ET</h2>
           <p>To attend the live session, visit or reload this page at 2PM ET. The broadcast will start automatically in the player below.</p>
           <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="false" hide-comments="false" hide-sharing="false"]'); ?>
-          <!-- <h1><?php echo $action; ?></h1> -->
 
           <div class="podcast-guest">
-
             <p>In the next session Julie will be <?php echo $action; ?><?php the_field('topic_guest_name'); ?>.</p>
             <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
             <p><?php the_field('weekly_topic_guest'); ?></p>
@@ -74,11 +71,17 @@ get_header(); ?>
       <!-- <hr class="down"> -->
 
       <div class="wrapper podcast-host">
-        <?php if( get_field('text_field') ): ?>
+        <?php if( get_field('text_field') !== ''): ?>
           <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
         <?php endif; ?>
         <div class="podcast-bio">
           <?php echo the_field('radio_host_bio'); ?>
+        </div>
+        <div class="podcast-subscribe">
+          <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
+          <a href="#listen-to-archives" class="btn green-full rounded grow">Listen to archives</a><br>
+          <a href="#" class="btn green rounded grow">Newsletter</a><br>
+          <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn green rounded grow" target="_blank">iTunes</a><br>
         </div>
       </div>
 
@@ -89,11 +92,6 @@ get_header(); ?>
           <!-- #main Starts -->
           <?php woo_main_before(); ?>
           <section id="main">
-
-            <h1 class="title entry-title">What listeners are saying</h1>
-            <?php // do_action( 'woothemes_testimonials', array( 'limit' => 2, 'id' => '3638, 4175', 'size' => 100, 'per_row' => 2, ) ); ?>
-            <?php echo do_shortcode('[testimonial_view id=3]'); ?>
-
 
             <?php woo_loop_before();
             if (have_posts()) { $count = 0;
@@ -146,6 +144,9 @@ get_header(); ?>
               <img src=<?php echo $img_marriage; ?> alt="Getting Married Consciously" />
             </a>
           </div>
+
+          <h1 class="title entry-title">What listeners are saying</h1>
+          <?php echo do_shortcode('[testimonial_view id=3]'); ?>
 
     </div><!-- /#main-sidebar-container -->
 

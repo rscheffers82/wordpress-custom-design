@@ -2347,6 +2347,16 @@ hr.down:after {
 	margin: 0 2rem;
 }
 
+.podcast-subscribe {
+	min-width: 200px;
+	text-align: right;
+}
+
+.podcast-subscribe h1 {
+	font-size: 2em !important;
+	margin-top: .75rem;
+}
+
 .page-template-template-podcast-main #main h1:first-child,
 .page-template-template-podcast-main-dev #main h1:first-child {
 	margin-bottom: 0;
