@@ -1731,6 +1731,18 @@ a.orange:hover {
   color: #f9f9f9 !important;
 }
 
+a.soft-white {
+  border-color: #eee !important;
+  border-color: rgba(250,250,250,.6) !important;
+  color: #eee !important;
+  color: rgba(250,250,250,1) !important;
+}
+
+a.soft-white:hover {
+	border-color: #fff !important;
+	color: #fff !important;
+}
+
 input.orange-full[type="submit"],
 button.orange-full,
 a.orange-full {
@@ -1746,8 +1758,6 @@ a.orange-full:hover {
   background-color: inherit;
   color: #FF9B2E !important;
 }
-
-
 
 a.blue {
   border-color: #38A5EB;
@@ -2243,6 +2253,7 @@ section.right {
 	color: #f9f9f9;
 	padding: 2rem 4rem;
 	position: relative;
+	margin-bottom: 2rem;
 }
 
 .radio-show-summary p {
@@ -2281,8 +2292,18 @@ hr.down:after {
 	margin: 2rem auto;
 }
 
-.podcast-time-date p {
+.orange {
+	color: #FF9B2E;
+}
+
+.podcast-time-date ul {
 	margin-left: 1.5rem;
+}
+
+.podcast-time-date li {
+	font: normal 18px/1.5em 'Lora', arial, sans-serif;
+	list-style: disc inside url(http://juliecusmariu.com/wp-content/themes/uno/images/logotree-li.png);
+	margin-left: 1rem;
 }
 
 .podcast-join {
@@ -2327,12 +2348,23 @@ hr.down:after {
 
 .wrapper.podcast-host {
 	max-width: 1200px;
-	margin: 2rem auto -1rem;
+	margin: 0rem auto -1rem;
 }
 
 .podcast-image,
 .podcast-bio {
 	margin: 0 2rem;
+}
+
+.podcast-bio,
+.podcast-bio h1.title {
+	color: #f9f9f9;
+}
+
+.podcast-subscribe h1.title {
+	font-size: 2em !important;
+	margin-top: .75rem;
+	color: #f9f9f9;
 }
 
 .podcast-image {
@@ -2344,12 +2376,14 @@ hr.down:after {
 	content: ' ';
 	background-size: cover !important;
 	background-position: 50% !important;
-	margin: 0 2rem;
+	margin: 2rem;
+	box-shadow: 0px 0px 0px 6px #f9f9f9;
 }
 
 .podcast-subscribe {
 	min-width: 200px;
 	text-align: right;
+	margin-left: 3rem;
 }
 
 .podcast-subscribe h1 {
@@ -2397,10 +2431,4 @@ hr.down:after {
 .widget .podcast-widget-wrapper p strong {
 	font-size: 1.2em;
 	line-height: 2rem;
-}
-
-/*   Helper classes   */
-
-.center {
-	text-align: center;
 }
