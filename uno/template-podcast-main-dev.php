@@ -44,8 +44,60 @@ get_header(); ?>
           <div class="podcast-icon" style="display:inline-block;"> </div>
           <div style="display:inline-block;">
             <p>Never want to miss a podcast?</p>
-            <input type="email">
-            <input type="submit" class="btn pulse white" value="Subscribe">
+
+            <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+              <div style="display: none;">
+              <input type="hidden" name="meta_web_form_id" value="1212515379" />
+              <input type="hidden" name="meta_split_id" value="" />
+              <input type="hidden" name="listname" value="awlist4853401" />
+
+              <input type="hidden" name="meta_adtracking" value="Listen_to_my_podcast_sign_up" />
+              <input type="hidden" name="meta_message" value="1" />
+              <input type="hidden" name="meta_required" value="email" />
+
+              <input type="hidden" name="meta_tooltip" value="" />
+              </div>
+              <input class="text" id="awf_field-94169424" type="email" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
+              <input type="submit" name="submit "class="btn pulse white" id="newsletter" value="Subscribe">
+            </form>
+            <script type="text/javascript">
+            // Special handling for facebook iOS since it cannot open new windows
+            (function() {
+                if (navigator.userAgent.indexOf('FBIOS') !== -1 || navigator.userAgent.indexOf('Twitter for iPhone') !== -1) {
+                    document.getElementById('af-form-1212515379').parentElement.removeAttribute('target');
+                }
+            })();
+            </script><script type="text/javascript">
+                <!--
+                (function() {
+                    var IE = /*@cc_on!@*/false;
+                    if (!IE) { return; }
+                    if (document.compatMode && document.compatMode == 'BackCompat') {
+                        if (document.getElementById("af-form-1212515379")) {
+                            document.getElementById("af-form-1212515379").className = 'af-form af-quirksMode';
+                        }
+                        if (document.getElementById("af-body-1212515379")) {
+                            document.getElementById("af-body-1212515379").className = "af-body inline af-quirksMode";
+                        }
+                        if (document.getElementById("af-header-1212515379")) {
+                            document.getElementById("af-header-1212515379").className = "af-header af-quirksMode";
+                        }
+                        if (document.getElementById("af-footer-1212515379")) {
+                            document.getElementById("af-footer-1212515379").className = "af-footer af-quirksMode";
+                        }
+                    }
+                })();
+                -->
+            </script>
+
+            <!-- /AWeber Web Form Generator 3.0.1 -->
+
+
+
+
+
+            <!-- <input type="email">
+            <input type="submit" class="btn pulse white" id="newsletter" value="Subscribe"> -->
           </div>
         </div>
       </div>
@@ -73,17 +125,20 @@ get_header(); ?>
           </div>
           <div class="podcast-subscribe">
             <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
-            <a href="#listen-to-archives" class="btn soft-white rounded grow">Listen to archives</a><br>
-            <a href="#" class="btn soft-white rounded grow">Newsletter</a><br>
-            <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank">iTunes</a><br>
+            <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i>  iTunes</a><br>
+            <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
+            <a href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
           </div>
         </div>
       </div>
-
-      <!-- <hr class="down"> -->
-
-
-
+<script>
+function newsletterFocus() {
+  (function() {
+    document.getElementById("newsletter").focus();
+    document.getElementById("newsletter").select();
+  })();
+}
+</script>
         <!-- #content Starts -->
     <?php woo_content_before(); ?>
     <div id="content" class="col-full">
@@ -99,7 +154,7 @@ get_header(); ?>
         //      }
       //      }
             ?>
-            <h3 class="thin">Click on an image below to listen to previous shows</h3>
+            <h3 id="listen-to-archives" class="thin">Click on an image below to listen to previous shows</h3>
 
             <div class="podcasts-wrapper">
     <?php

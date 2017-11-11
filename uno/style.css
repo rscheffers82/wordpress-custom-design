@@ -1617,6 +1617,9 @@ body.home blockquote::after { float: right; }
 	background-image: url(images/podcast-green.svg);
 }
 
+.headphones-full-keep:hover, .podcast-full-keep:hover {
+	background-image: url(images/podcast-white.svg);;
+}
 
 
 /* ==== TEMP Styles */
@@ -2287,6 +2290,12 @@ hr.down:after {
 	flex: 1;
 }
 
+.podcast-player {
+	box-shadow: 0px -5px 15px 2px rgba(0,0,0,.35);
+	margin: 3rem 0;
+	width: 50%;
+}
+
 .podcast-time-date .header {
 	text-align: center;
 	margin: 2rem auto;
@@ -2367,6 +2376,12 @@ hr.down:after {
 	color: #f9f9f9;
 }
 
+.podcast-subscribe .fa {
+	font-size: 20px;
+	padding-right: 5px;
+	margin-left: -8px;
+}
+
 .podcast-image {
 	width: 200px;
 	min-width: 200px;
@@ -2381,9 +2396,9 @@ hr.down:after {
 }
 
 .podcast-subscribe {
-	min-width: 200px;
+	margin-left: 1rem;
+	min-width: 250px;
 	text-align: right;
-	margin-left: 3rem;
 }
 
 .podcast-subscribe h1 {
