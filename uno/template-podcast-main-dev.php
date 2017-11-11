@@ -52,9 +52,7 @@ get_header(); ?>
 
       <div class="wrapper details-podcast">
         <div class="podcast-time-date">
-          <h2 class="header">Join Julie live every Wednesday @ 2PM ET</h2>
-          <p>To attend the live session, visit or reload this page at 2PM ET. The broadcast will start automatically in the player below.</p>
-          <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="false" hide-comments="false" hide-sharing="false"]'); ?>
+        <?php the_content(); ?>
 
           <div class="podcast-guest">
             <p>In the next session Julie will be <?php echo $action; ?><?php the_field('topic_guest_name'); ?>.</p>
@@ -65,25 +63,26 @@ get_header(); ?>
       </div>
 
       <div class="radio-show-summary">
-        <?php echo the_field('radio_show_summary'); ?>
+        <?php // echo the_field('radio_show_summary'); ?>
+        <div class="wrapper podcast-host">
+          <?php if( get_field('text_field') !== ''): ?>
+            <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
+          <?php endif; ?>
+          <div class="podcast-bio">
+            <?php echo the_field('radio_host_bio'); ?>
+          </div>
+          <div class="podcast-subscribe">
+            <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
+            <a href="#listen-to-archives" class="btn soft-white rounded grow">Listen to archives</a><br>
+            <a href="#" class="btn soft-white rounded grow">Newsletter</a><br>
+            <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank">iTunes</a><br>
+          </div>
+        </div>
       </div>
 
       <!-- <hr class="down"> -->
 
-      <div class="wrapper podcast-host">
-        <?php if( get_field('text_field') !== ''): ?>
-          <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
-        <?php endif; ?>
-        <div class="podcast-bio">
-          <?php echo the_field('radio_host_bio'); ?>
-        </div>
-        <div class="podcast-subscribe">
-          <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
-          <a href="#listen-to-archives" class="btn green-full rounded grow">Listen to archives</a><br>
-          <a href="#" class="btn green rounded grow">Newsletter</a><br>
-          <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn green rounded grow" target="_blank">iTunes</a><br>
-        </div>
-      </div>
+
 
         <!-- #content Starts -->
     <?php woo_content_before(); ?>
@@ -93,16 +92,18 @@ get_header(); ?>
           <?php woo_main_before(); ?>
           <section id="main">
 
-            <?php woo_loop_before();
-            if (have_posts()) { $count = 0;
-              while (have_posts()) { the_post(); $count++;
-                woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
-              }
-            }
+            <?php //woo_loop_before();
+          //  if (have_posts()) { $count = 0;
+        //      while (have_posts()) { the_post(); $count++;
+        //        woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
+        //      }
+      //      }
             ?>
+            <h3 class="thin">Click on an image below to listen to previous shows</h3>
 
             <div class="podcasts-wrapper">
     <?php
+
 
     $query = new WP_Query( 'cat=108&posts_per_page=-1' );
 
