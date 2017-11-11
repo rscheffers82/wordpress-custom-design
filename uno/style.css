@@ -2131,7 +2131,7 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 .page-template-template-podcast-main-dev header.show,
 .page-template-template-podcast-main header.show {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-around;
 }
 
@@ -2168,7 +2168,7 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 }
 
 section.right {
-	background-position: 100%;
+	background-position: 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -2194,8 +2194,8 @@ section.right {
 
 .podcast-main-title-underline {
 	position: absolute;
-	top: 49%;
-	right: 9%;
+  top: calc(33.5% + 4vw);
+  right: 7%;
 }
 
 .podcast-main-middle {
@@ -2410,6 +2410,32 @@ hr.down:after {
 .page-template-template-podcast-main-dev #main h1:first-child {
 	margin-bottom: 0;
 }
+
+@media all and (max-width: 640px) {
+	section.left {
+		width: 100%;
+	  height: calc(3rem + 11vw);
+	  min-height: fit-content;
+	}
+	.podcast-main-title {
+    top: 20%;
+    left: 10%;
+    font-size: 6vw;
+		right: auto;
+	}
+	.podcast-main-title-underline {
+    top: calc(25% + 5vw);
+    left: 10%;
+		right: auto;
+	}
+	section.right {
+		order: -5;
+		width: 100%;
+
+	}
+}
+
+
 
 
 /*   Podcast promote widget   */
