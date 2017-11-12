@@ -17,49 +17,60 @@ get_header(); ?>
 
 		<?php do_action( 'homepage' ); ?>
 
-    <div class="mail-subscribe">
-      <div class="inside">
-        <h3 class="signup">Subscribe to my monthly newsletter and receive my FREE 6 minute guided audio meditation for relaxation</h3>
-        <form
-          method="post"
-          class="af-form-wrapper"
-          accept-charset="UTF-8"
-          action="https://www.aweber.com/scripts/addlead.pl"
-          target="_blank"
-        >
-          <div style="display: none;">
-            <input type="hidden" name="meta_web_form_id" value="1377243306" />
-            <input type="hidden" name="meta_split_id" value="" />
-            <input type="hidden" name="listname" value="intuitiontips" />
-            <input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=text" id="redirect_42622a16a4f3bbebb668f4198696d367" />
+    <div class="podcast-newsletter">
+      <div class="center">
+        <div class="podcast-icon" style="display:inline-block;"> </div>
+        <div style="display:inline-block;">
+          <p>Never want to miss a podcast?</p>
 
-            <input type="hidden" name="meta_adtracking" value="Email_Only" />
+          <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+            <div style="display: none;">
+            <input type="hidden" name="meta_web_form_id" value="1212515379" />
+            <input type="hidden" name="meta_split_id" value="" />
+            <input type="hidden" name="listname" value="awlist4853401" />
+
+            <input type="hidden" name="meta_adtracking" value="Listen_to_my_podcast_sign_up" />
             <input type="hidden" name="meta_message" value="1" />
             <input type="hidden" name="meta_required" value="email" />
 
             <input type="hidden" name="meta_tooltip" value="" />
-          </div>
-
-          <input type="email" name="email" placeholder="Email">
-          <input type="submit" name="submit" value="Sign Up" class="pulse btn green grow" alt="Sign Up">
-        </form>
-        <!-- <form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
-          <input type="hidden" name="meta_web_form_id" value="305744">
-          <input type="hidden" name="meta_split_id" value="">
-          <input type="hidden" name="unit" value="intuitiontips">
-
-          <input type="hidden" name="redirect" value="http://www.aweber.com/form/thankyou_vo.html">
-          <input type="hidden" name="meta_redirect_onlist" value="">
-          <input type="hidden" name="meta_adtracking" value="">
-          <input type="hidden" name="meta_message" value="1">
-          <input type="hidden" name="meta_required" value="email">
-          <input type="hidden" name="meta_forward_vars" value="0">
-
-          <input type="email" name="email" placeholder="Email">
-          <input type="submit" value="Sign Up" class="pulse">
-        </form> -->
-      </div> <!--.inside -->
-    </div> <!-- .subscribe -->
+            </div>
+            <input class="text" id="awf_field-94169424" type="email" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
+            <input type="submit" name="submit "class="btn pulse white" id="newsletter" value="Subscribe">
+          </form>
+          <script type="text/javascript">
+          // Special handling for facebook iOS since it cannot open new windows
+          (function() {
+              if (navigator.userAgent.indexOf('FBIOS') !== -1 || navigator.userAgent.indexOf('Twitter for iPhone') !== -1) {
+                  document.getElementById('af-form-1212515379').parentElement.removeAttribute('target');
+              }
+          })();
+          </script><script type="text/javascript">
+              <!--
+              (function() {
+                  var IE = /*@cc_on!@*/false;
+                  if (!IE) { return; }
+                  if (document.compatMode && document.compatMode == 'BackCompat') {
+                      if (document.getElementById("af-form-1212515379")) {
+                          document.getElementById("af-form-1212515379").className = 'af-form af-quirksMode';
+                      }
+                      if (document.getElementById("af-body-1212515379")) {
+                          document.getElementById("af-body-1212515379").className = "af-body inline af-quirksMode";
+                      }
+                      if (document.getElementById("af-header-1212515379")) {
+                          document.getElementById("af-header-1212515379").className = "af-header af-quirksMode";
+                      }
+                      if (document.getElementById("af-footer-1212515379")) {
+                          document.getElementById("af-footer-1212515379").className = "af-footer af-quirksMode";
+                      }
+                  }
+              })();
+              -->
+          </script>
+          <!-- /AWeber Web Form Generator 3.0.1 -->
+        </div>
+      </div>
+    </div>
 
         <!-- #content Starts -->
     <?php woo_content_before(); ?>
