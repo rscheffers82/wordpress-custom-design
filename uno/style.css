@@ -2160,7 +2160,7 @@ body.page-template-template-podcast-main-dev h1.title.entry-title {
 
 /* New Podcast styles */
 
-/*body.page-template-template-podcast-main section.home-section.custom-header,*/
+body.page-template-template-podcast-main section.home-section.custom-header,
 body.page-template-template-podcast-main-dev section.home-section.custom-header {
 	min-height: 550px;
 }
