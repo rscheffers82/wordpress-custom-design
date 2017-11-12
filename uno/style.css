@@ -2254,7 +2254,7 @@ section.right {
 .radio-show-summary {
 	background-color: #6EC095;
 	color: #f9f9f9;
-	padding: 2rem 4rem;
+	padding: 2rem 1.618em;
 	position: relative;
 	margin-bottom: 2rem;
 }
@@ -2287,7 +2287,7 @@ hr.down:after {
 
 .podcast-time-date {
 	display: inline-block;
-	flex: 1;
+  padding: 0 1.618em;
 }
 
 .podcast-player {
@@ -2329,7 +2329,7 @@ hr.down:after {
 .podcast-time-date .img-wrap {
 	padding: .5rem;
 	border: 1px solid #ccc;
-	margin: 0 .5rem .5rem 1.5rem;
+  margin: 0 1rem 1rem 0rem;
 	display: inline-block;
 	float: left;
   background-color: #fff;
@@ -2411,11 +2411,35 @@ hr.down:after {
 	margin-bottom: 0;
 }
 
+
+@media all and (max-width: 1089px) {
+	.podcast-player {
+		width: 75%;
+	}
+	.wrapper.podcast-host {
+		flex-flow: row wrap;
+	}
+
+	.podcast-bio {
+		width: calc(100% - 340px);
+	}
+	.podcast-subscribe {
+		text-align: left;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		width: 100%;
+	}
+	.podcast-subscribe h1{
+		width: 100%;
+	}
+}
+
 @media all and (max-width: 640px) {
 	section.left {
 		width: 100%;
 	  height: calc(3rem + 11vw);
-	  min-height: fit-content;
+	  min-height: auto;
 	}
 	.podcast-main-title {
     top: 20%;
@@ -2433,9 +2457,21 @@ hr.down:after {
 		width: 100%;
 
 	}
+	.podcast-player {
+    width: 100%;
+	}
+	.podcast-image {
+    margin: 2rem auto;
+	}
+	.podcast-bio {
+	  width: 100%;
+	}
+	.podcast-subscribe {
+		text-align: left;
+		display: block;
+		flex-flow: row wrap;
+	}
 }
-
-
 
 
 /*   Podcast promote widget   */
