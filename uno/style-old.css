@@ -22,7 +22,6 @@ body {
 }
 
 a {
-	-webkit-transition: color .75s ease-out;
 	transition: color .75s ease-out;
 }
 
@@ -158,7 +157,6 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 
 
 #navigation ul.nav > li a{
-	-webkit-transition: none;
 	transition: none;
 }
 
@@ -248,8 +246,7 @@ h3.signup {
 
 .home .mail-subscribe input[type=email]:focus,
 .home .mail-subscribe input[type=email]:active {
-	-webkit-box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.1 )
+	box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.1 )
 }
 
 /*CSS fix for email and submit button for email subscription*/
@@ -271,35 +268,21 @@ h3.signup {
 	}
 }
 
-@-webkit-keyframes pulse_animation {
-	0% { -webkit-transform: scale(1); transform: scale(1); }
-	45% { -webkit-transform: scale(1); transform: scale(1); }
-	50% { -webkit-transform: scale(.90); transform: scale(.90); }
-	55% { -webkit-transform: scale(1.03); transform: scale(1.03); }
-	58% { -webkit-transform: scale(1); transform: scale(1); }
-	100% { -webkit-transform: scale(1); transform: scale(1); }
-}
-
 @keyframes pulse_animation {
-	0% { -webkit-transform: scale(1); transform: scale(1); }
-	45% { -webkit-transform: scale(1); transform: scale(1); }
-	50% { -webkit-transform: scale(.90); transform: scale(.90); }
-	55% { -webkit-transform: scale(1.03); transform: scale(1.03); }
-	58% { -webkit-transform: scale(1); transform: scale(1); }
-	100% { -webkit-transform: scale(1); transform: scale(1); }
+	0% { transform: scale(1); }
+	45% { transform: scale(1); }
+	50% { transform: scale(.90); }
+	55% { transform: scale(1.03); }
+	58% { transform: scale(1); }
+	100% { transform: scale(1); }
 }
 
 .pulse {
-	-webkit-animation-name: pulse_animation;
-	        animation-name: pulse_animation;
-	-webkit-animation-duration: 5000ms;
-	        animation-duration: 5000ms;
-	-webkit-transform-origin:70% 70%;
-	        transform-origin:70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
+	animation-name: pulse_animation;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .home .entry p {
@@ -308,8 +291,7 @@ h3.signup {
 
 .home .twocol-wrapper,
 .home .threecol-one {
-	-webkit-box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
+	box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
 	transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;
 	-webkit-transition: opacity .5s ease-in-out;
@@ -469,7 +451,6 @@ body.home .post-box h2.title.entry-title {
 
 body.home .post-box h2.title.entry-title a {
 	color: #6EC095;
-	-webkit-transition: all .5s ease-out;
 	transition: all .5s ease-out;
 	line-height: 25px;
 }
@@ -756,8 +737,7 @@ body.blog article.post {
 	margin-bottom: 2rem;
 	background-color: #fff;
 	padding: 20px 20px;
-	-webkit-box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
+	box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
 }
 
 body.blog .post .title a:hover {
@@ -792,26 +772,17 @@ body.post-template-default .entry img {
 .page-template-template-podcast-main .podcasts-wrapper a.podcast-link:hover {
 	border-left: 5px solid;
 	margin-left: 0px;
-	-webkit-box-shadow: 0px 0px 7px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 7px 0px rgba( 0, 0, 0, 0.1 );
+	box-shadow: 0px 0px 7px 0px rgba( 0, 0, 0, 0.1 );
 	padding-right: 2em;
 }
 .page-template-template-podcast-main .podcasts-wrapper a.podcast-link{
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row nowrap;
-	        flex-flow: row nowrap;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	flex-flow: row nowrap;
+	align-items: center;
 	text-decoration: none;
 	margin: 2em 0;
 	border-left: 2px solid;
 	margin-left: 3px;
-	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -854,6 +825,7 @@ body.post-template-default .entry img {
 	border: 1px solid #ccc;
 	overflow: hidden;
 	opacity: 1;
+	-o-transition: opacity .5s ease-in-out;
 	transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;
 	-webkit-transition: opacity .5s ease-in-out;
@@ -913,8 +885,6 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 }
 
 .podcast-radioshow {
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	margin: 0 0 35px 10px;
 	transition: opacity .5s ease-in-out;
@@ -1062,7 +1032,6 @@ div#contact-page h1.title {
 #sidebar .subscribe-widget input[type=submit]{
 	background: #6EC095;
 	color: #fff !important;
-	-webkit-transition: all 0.5 ease-in-out;
 	transition: all 0.5 ease-in-out;
 }
 #sidebar .subscribe-widget input[type=submit]:hover{
@@ -1185,20 +1154,14 @@ div#contact-page h1.title {
 
 @media all and (max-width: 766px) {
 	.home .inside {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		flex-direction: column;
 	}
 }
 
 /* SMALL DEVICES */
 @media all and (max-width: 640px) { /* and (min-width: 320px) */
 	.home .inside {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		flex-direction: column;
 	  width: 90%;
 	  text-align: center;
 	 }
@@ -1350,15 +1313,15 @@ div#contact-page h1.title {
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-webkit-flex-flow: wrap;
 	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
-	-webkit-box-pack: space-evenly;
-	    -ms-flex-pack: space-evenly;
-	        justify-content: space-evenly;
+	-webkit-justify-content: space-evenly;
+	justify-content: space-evenly;
+	-webkit-align-items: flex-start;
 	-ms-align-items: flex-start;
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
+	align-items: flex-start;
 /*
 	justify-content: space-between; 		/* Use this line for 2 items */
 }
@@ -1371,9 +1334,7 @@ div#contact-page h1.title {
 
 .page-template-template-confirm-booking .service-wrapper {
 	max-width: 100%;
-	-webkit-box-pack: start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
+	justify-content: flex-start;
 }
 
 .page-template-template-confirm-booking .service-wrapper .col {
@@ -1419,7 +1380,6 @@ div#contact-page h1.title {
 	top: 0;
 	left: 0;
 	background-size: cover !important;
-	-webkit-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 	/*border-radius: 25px;*/
 	overflow: hidden;
@@ -1465,7 +1425,6 @@ div#contact-page h1.title {
 	padding: 10px 5px 5px 5px;
 	min-height: 50px;
   webkit-transition: background-color .5s ease-in-out;
-  -webkit-transition: background-color .5s ease-in-out;
   transition: background-color .5s ease-in-out;
 }
 
@@ -1618,7 +1577,6 @@ body.home blockquote::after { float: right; }
 	background-position: center left 15px;
 	border: 1px solid #ccc;
 	webkit-transition: background-color 1s ease;
-	-webkit-transition: background-color 1s ease;
 	transition: background-color 1s ease;
 }
 
@@ -1643,7 +1601,6 @@ body.home blockquote::after { float: right; }
 	background-size: 25px;
 	padding-left: 45px !important;
 	-web-kit-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 }
 
@@ -1680,7 +1637,6 @@ a.btn {
   font-weight: 500;
 	text-decoration: none;
   -web-kit-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 	border-radius: 0px;
 }
@@ -1821,16 +1777,16 @@ input.grow[type="submit"]:hover,
 button.grow:hover,
 a.grow:hover {
   -web-kit-transform: translate(scale(1.1));
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: translate(scale(1.1));
+  transform: scale(1.1);
 }
 
 input.grow-more[type="submit"]:hover,
 button.grow-more:hover,
 a.grow-more:hover {
   -web-kit-transform: translate(scale(1.2));
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -ms-transform: translate(scale(1.2));
+  transform: scale(1.2);
 }
 
 a.rounded,
@@ -1909,18 +1865,10 @@ input.btn.green-full.grow.btn-widget {
 /* sub-service template styles */
 
 .sub-service-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-around;
 	margin: 1rem 0 2rem;
 }
 
@@ -1931,7 +1879,7 @@ input.btn.green-full.grow.btn-widget {
 	padding: .75rem;
   border: 1px solid #eee;
 	-web-kit-transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
@@ -2181,34 +2129,20 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 
 .page-template-template-podcast-main-dev header.show,
 .page-template-template-podcast-main header.show {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 .page-template-template-podcast-main-dev .wrapper,
 .page-template-template-podcast-main .wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row nowrap;
-	        flex-flow: row nowrap;
+	flex-flow: row nowrap;
 	margin: 4rem 0;
 }
 
 .wrapper.details-podcast {
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
+	flex-flow: row wrap;
 	font-size: 1.75rem;
 	line-height: 1.5rem;
 	margin: 1rem auto 2rem;
@@ -2226,6 +2160,7 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	left: 50%;
 	margin-left: -20px;
 	background-color: #f9f9f9;
+	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 	z-index: 1;
@@ -2355,8 +2290,7 @@ hr.down:after {
 }
 
 .podcast-player {
-	-webkit-box-shadow: 0px -5px 15px 2px rgba(0,0,0,.35);
-	        box-shadow: 0px -5px 15px 2px rgba(0,0,0,.35);
+	box-shadow: 0px -5px 15px 2px rgba(0,0,0,.35);
 	margin: 3rem 0;
 	width: 50%;
 }
@@ -2384,9 +2318,7 @@ hr.down:after {
   margin-left: 4em;
 	display: inline-block;
 	min-height: 10rem;
-	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1
+	flex: 1
 }
 
 .podcast-guest {
@@ -2459,8 +2391,7 @@ hr.down:after {
 	background-size: cover !important;
 	background-position: 50% !important;
 	margin: 2rem;
-	-webkit-box-shadow: 0px 0px 0px 6px #f9f9f9;
-	        box-shadow: 0px 0px 0px 6px #f9f9f9;
+	box-shadow: 0px 0px 0px 6px #f9f9f9;
 }
 
 .podcast-subscribe {
@@ -2485,10 +2416,7 @@ hr.down:after {
 		width: 75%;
 	}
 	.wrapper.podcast-host {
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: row wrap;
-		        flex-flow: row wrap;
+		flex-flow: row wrap;
 	}
 
 	.podcast-bio {
@@ -2496,15 +2424,9 @@ hr.down:after {
 	}
 	.podcast-subscribe {
 		text-align: left;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: row wrap;
-		        flex-flow: row wrap;
-		-ms-flex-pack: distribute;
-		    justify-content: space-around;
+		flex-flow: row wrap;
+		justify-content: space-around;
 		width: 100%;
 	}
 	.podcast-subscribe h1{
@@ -2530,9 +2452,7 @@ hr.down:after {
 		right: auto;
 	}
 	section.right {
-		-webkit-box-ordinal-group: -4;
-		    -ms-flex-order: -5;
-		        order: -5;
+		order: -5;
 		width: 100%;
 
 	}
@@ -2562,10 +2482,7 @@ hr.down:after {
 	.podcast-subscribe {
 		text-align: left;
 		display: block;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: row wrap;
-		        flex-flow: row wrap;
+		flex-flow: row wrap;
 	}
 }
 
@@ -2612,5 +2529,3 @@ hr.down:after {
 		padding-right: 1.618em !important;
 	}
 }
-
-/*# sourceMappingURL=style.css.map */
