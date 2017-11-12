@@ -1877,10 +1877,10 @@ BF823B - #DA9544
 
 .cta .btn {
 	background-color: rgba(250, 250, 250, 0.6) !important;
-	border: 3px solid;
-	color: #DA9544;
+	border: 3px solid rgba(255,155,46, 0.7) !important;
 	font-size: 1.5rem;
 	padding: 12px 20px;
+	color: #FF9B2E;
 }
 
 .cta .btn:hover {

@@ -48,8 +48,7 @@ $settings = woo_get_dynamic_values( $settings );
 		<header>
 		<?php the_title( $title_before, $title_after ); ?>
 		</header>
-	<?php the_date(); ?> posted by <?php echo '<a href="' . get_site_url(null,'/about') . '">' ?>
-			<?php the_author(); ?>
+	Posted on <?php the_date(); ?>
 		</a>
 		<section class="entry">
 	<?php
