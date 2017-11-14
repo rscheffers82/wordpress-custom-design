@@ -24,6 +24,7 @@ get_header(); ?>
           <section class="left">
             <h1 class='podcast-main-title'><?php the_title(); ?></h1>
             <div class="podcast-main-title-underline">a live podcast</div>
+            <div class="podcast-main-tagline">Inspiring individual<br>and global change</div>
             <!-- <div class="podcast-main-middle">
               <p>#motherhood</p>
               <p>#let's create a village</p>
