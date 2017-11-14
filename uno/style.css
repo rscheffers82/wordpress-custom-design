@@ -2376,7 +2376,8 @@ hr.down:after {
 
 .podcast-time-date li {
 	font: normal 18px/1.5em 'Lora', arial, sans-serif;
-	list-style: disc inside url(http://juliecusmariu.com/wp-content/themes/uno/images/logotree-li.png);
+	/*list-style: disc inside url(http://juliecusmariu.com/wp-content/themes/uno/images/logotree-li.png);*/
+	list-style: disc inside;
 	margin-left: 1rem;
 }
 

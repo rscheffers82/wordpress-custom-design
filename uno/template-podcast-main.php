@@ -89,15 +89,7 @@ get_header(); ?>
                 })();
                 -->
             </script>
-
             <!-- /AWeber Web Form Generator 3.0.1 -->
-
-
-
-
-
-            <!-- <input type="email">
-            <input type="submit" class="btn pulse white" id="newsletter" value="Subscribe"> -->
           </div>
         </div>
       </div>
@@ -107,7 +99,7 @@ get_header(); ?>
         <?php the_content(); ?>
 
           <div class="podcast-guest">
-            <p>In the next session Julie will be <?php echo $action; ?><?php the_field('topic_guest_name'); ?>.</p>
+            <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
             <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
             <p><?php the_field('weekly_topic_guest'); ?></p>
           </div>

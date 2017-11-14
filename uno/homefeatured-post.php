@@ -43,7 +43,7 @@ $settings = woo_get_dynamic_values( $settings );
 	<?php
 	woo_post_inside_before();
 	if ( 'content' != $settings['post_content']) // && ! is_singular() )
-		woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) );
+			woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) );
 	?>
 		<header>
 		<?php the_title( $title_before, $title_after ); ?>
