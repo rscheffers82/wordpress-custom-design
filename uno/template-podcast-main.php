@@ -104,6 +104,53 @@ get_header(); ?>
             <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
             <p><?php the_field('weekly_topic_guest'); ?></p>
           </div>
+
+          <!-- ======================================= -->
+           <h2 class="header2-1">Upcoming guests:</h2>
+           <div class="guest-list-wrapper">
+             <div class="guest-list">
+               <div class="img-wrap">
+                 <div class="guest-img" style="background-image: url('http://juliecusmariu.com/wp-content/uploads/2017/03/Marion-Light.jpg');"></div>
+               </div>
+               <div class="guest-details">
+                 <ul>
+                   <li><strong>November 29th</strong></li>
+                   <li>Marion Light</li>
+                   <li>Therapist (www.MarionLight.com)</li>
+                 </ul>
+               </div>
+             </div>
+
+             <div class="guest-list">
+               <div class="img-wrap">
+                 <div class="guest-img" style="background-image: url('http://juliecusmariu.com/wp-content/uploads/2017/10/Sherl-Paul-Best-selling-author-Counselor-square.jpg');"></div>
+               </div>
+               <div class="guest-details">
+                 <ul>
+                   <li><strong>December 6th</strong></li>
+                   <li>Sheryl Paul</li>
+                   <li>Counselor, Author (www.Conscious-transitions.com)</li>
+                 </ul>
+               </div>
+             </div>
+
+             <div class="guest-list">
+               <div class="img-wrap">
+                 <div class="guest-img" style="background-image: url('http://juliecusmariu.com/wp-content/uploads/2017/11/Deborah-MacNamara-PhD.png');"></div>
+               </div>
+               <div class="guest-details">
+                 <ul>
+                   <li><strong>December 13th</strong></li>
+                   <li>Deborah MacNamara, Ph.D</li>
+                   <li>Author of Rest Play Grow (www.macNamara.ca)</li>
+                 </ul>
+               </div>
+             </div>
+
+           </div>
+          <p>Stay tuned for new guest announcements for 2018</p>
+<!-- ======================================= -->
+
         </div>
       </div>
 

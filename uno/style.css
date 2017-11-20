@@ -2398,7 +2398,8 @@ hr.down:after {
 	margin: 2rem 0;
 }
 
-.podcast-time-date .img-wrap {
+.podcast-time-date .img-wrap,
+.guest-list .img-wrap {
 	padding: .5rem;
 	border: 1px solid #ccc;
   margin: 0 1rem 1rem 0rem;
@@ -2407,7 +2408,8 @@ hr.down:after {
   background-color: #fff;
 }
 
-.podcast-time-date .guest-img {
+.podcast-time-date .guest-img,
+.guest-list .guest-img {
 	display: inline-block;
 	float: left;
 	width: 7.5rem;
@@ -2628,11 +2630,45 @@ hr.down:after {
 	}
 }
 
-/*# sourceMappingURL=style.css.map */
+
+/* ___ Helper classes ___ */
 
 img.aligncenter {
 	margin-left: auto;
 	margin-right: auto !important;
 	display: block;
 	float: none !important;
+}
+
+
+/* ___ Styles for guestlist on the podcast page ___ */
+/* ________________________________________________ */
+.guest-list .img-wrap {
+	border: 1px solid #ccc;
+	margin: .25rem .5rem 0 0;
+	border-radius: 3px;
+	padding: .25rem;
+}
+
+.guest-list .guest-img {
+	width: 3.75rem;
+	height: 3.75rem;
+}
+
+.guest-list .guest-details li {
+  list-style: none;
+}
+
+.guest-list-wrapper {
+  margin: 2rem 0rem;
+}
+
+.guest-list {
+	margin: 1rem 0;
+}
+
+@media only screen and (max-width: 640px) {
+	.guest-list .guest-details li {
+		margin-left: -1.25rem;
+	}
 }
