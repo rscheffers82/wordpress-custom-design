@@ -99,6 +99,12 @@ get_header(); ?>
         <div class="podcast-time-date">
         <?php the_content(); ?>
 
+        <div class="podcast-player">
+          <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="false" hide-comments="false" hide-sharing="false"]'); ?>
+        </div>
+        <?php echo do_shortcode('[Sassy_Social_Share]'); ?>
+        <a href="https://api.spreaker.com/download/episode/13277265/welcome_to_julie_in_conversation.mp3" class="btn orange-full" style="border-radius: 3px;">Download</a>
+
           <div class="podcast-guest">
             <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
             <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
