@@ -44,7 +44,7 @@ get_header(); ?>
         <div class="center">
           <div class="podcast-icon" style="display:inline-block;"> </div>
           <div style="display:inline-block;">
-            <p>Want to hear conversations to connect you to yourself and inspire change?</p>
+            <p>Never want to miss a podcast?</p>
 
             <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
               <div style="display: none;">
