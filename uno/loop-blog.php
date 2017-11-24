@@ -19,7 +19,7 @@ $paged = intval( $paged );
 
 $query_args = array(
 					'post_type' => 'post',
-					'cat'=> '-108',
+					'cat'=> '-108, -130',
 					'paged' => $paged
 				);
 

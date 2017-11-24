@@ -44,7 +44,7 @@
          <div class="center">
            <div class="podcast-icon" style="display:inline-block;"> </div>
            <div style="display:inline-block;">
-             <p>Want to hear conversations to connect you to yourself and inspire change?</p>
+             <p>Never want to miss a podcast?</p>
 
              <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
                <div style="display: none;">
@@ -99,58 +99,44 @@
          <div class="podcast-time-date">
          <?php the_content(); ?>
 
+         <div class="podcast-player">
+           <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
+         </div>
+         <?php echo do_shortcode('[Sassy_Social_Share]'); ?>
+         <a href="https://api.spreaker.com/download/episode/13277265/welcome_to_julie_in_conversation.mp3" class="btn orange-full" style="border-radius: 3px;">Download</a>
+
            <div class="podcast-guest">
              <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
              <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
              <p><?php the_field('weekly_topic_guest'); ?></p>
            </div>
 
-           <!-- ======================================= -->
             <h2 class="header2-1">Upcoming guests:</h2>
             <div class="guest-list-wrapper">
-              <div class="guest-list">
-                <div class="img-wrap">
-                  <div class="guest-img" style="background-image: url('http://juliecusmariu.com/wp-content/uploads/2017/03/Marion-Light.jpg');"></div>
-                </div>
-                <div class="guest-details">
-                  <ul>
-                    <li><strong>November 29th</strong></li>
-                    <li>Marion Light</li>
-                    <li>Therapist (www.MarionLight.com)</li>
-                  </ul>
-                </div>
-              </div>
+              <?php if (have_posts()) { $count = 0;
+                while (have_posts()) { the_post(); $count++;
+                  $post_meta = get_post_meta($post->ID, 'podcast-guests', false);
 
-              <div class="guest-list">
-                <div class="img-wrap">
-                  <div class="guest-img" style="background-image: url('http://juliecusmariu.com/wp-content/uploads/2017/10/Sherl-Paul-Best-selling-author-Counselor-square.jpg');"></div>
-                </div>
-                <div class="guest-details">
-                  <ul>
-                    <li><strong>December 6th</strong></li>
-                    <li>Sheryl Paul</li>
-                    <li>Counselor, Author (www.Conscious-transitions.com)</li>
-                  </ul>
-                </div>
-              </div>
+                    foreach($post_meta[0] as $item) { ?>
+                          <?php $img_url = wp_get_attachment_url( $item['image'][0] ); ?>
 
-              <div class="guest-list">
-                <div class="img-wrap">
-                  <div class="guest-img" style="background-image: url('http://juliecusmariu.com/wp-content/uploads/2017/11/Deborah-MacNamara-PhD.png');"></div>
-                </div>
-                <div class="guest-details">
-                  <ul>
-                    <li><strong>December 13th</strong></li>
-                    <li>Deborah MacNamara, Ph.D</li>
-                    <li>Author of Rest Play Grow (www.macNamara.ca)</li>
-                  </ul>
-                </div>
-              </div>
-
+                          <div class="guest-list">
+                            <div class="img-wrap">
+                              <div class="guest-img" style="background-image: url('<?php echo $img_url; ?>');"></div>
+                            </div>
+                            <div class="guest-details">
+                              <ul>
+                                <li><strong><?php echo $item['date']; ?></strong></li>
+                                <li><?php echo $item['guest-name']; ?></li>
+                                <li><?php echo $item['guest-company']; ?></li>
+                              </ul>
+                            </div>
+                          </div>
+                    <?php }
+                  }
+                } ?>
             </div>
            <p>Stay tuned for new guest announcements for 2018</p>
-<!-- ======================================= -->
-
          </div>
        </div>
 
@@ -194,7 +180,7 @@
          //      }
        //      }
              ?>
-             <h3 id="listen-to-archives" class="thin">Click on an image below to listen to previous shows</h3>
+             <h3 id="listen-to-archives" class="thin">Heatbeat radio archives</h3>
 
              <div class="podcasts-wrapper">
      <?php
@@ -211,6 +197,7 @@
      } else {
        get_template_part( 'content', 'noposts' );
      }
+     wp_reset_query();
      ?>
    </div>  <!-- podcasts-wrapper -->
 
@@ -230,7 +217,7 @@
          $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
          ?>
 
-           <h1 class="title entry-title">Radio Shows</h1>
+           <h1 class="title entry-title">Two series designed to support your own journey through marriage and pregnancy</h1>
 
            <div class="podcast-radioshows-wrapper">
              <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
