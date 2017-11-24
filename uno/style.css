@@ -787,6 +787,7 @@ body.post-template-default .entry img {
 .page-template-template-podcast-main .podcasts-wrapper {
 	display: inline-block;
 	margin-bottom: 2.5em;
+	width: 100%;
 }
 
 .page-template-template-podcast-main .podcasts-wrapper a.podcast-link:hover {

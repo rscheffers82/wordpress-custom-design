@@ -173,32 +173,36 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
-             <?php //woo_loop_before();
-           //  if (have_posts()) { $count = 0;
-         //      while (have_posts()) { the_post(); $count++;
-         //        woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
-         //      }
-       //      }
-             ?>
-             <h3 id="listen-to-archives" class="thin">Heatbeat radio archives</h3>
+    <h3 id="listen-to-archives" class="thin">#Motherhood, #Let's create a village archives</h3>
+    <div class="podcasts-wrapper">
+    <?php
+    $query = new WP_Query( 'cat=130&posts_per_page=-1' );
 
-             <div class="podcasts-wrapper">
-     <?php
+    if ( $query->have_posts() ) {
+      while ( $query->have_posts() ) { $query->the_post();
+        woo_get_template_part( 'content-podcast', get_post_type() );
+      }
+    } else {
+      get_template_part( 'content', 'noposts' );
+    }
+    wp_reset_query();
+    ?>
+   </div>  <!-- podcasts-wrapper -->
 
+    <h3 id="listen-to-archives" class="thin">Heatbeat radio archives</h3>
+    <div class="podcasts-wrapper">
+    <?php
+    $query = new WP_Query( 'cat=108&posts_per_page=-1' );
 
-     $query = new WP_Query( 'cat=108,130&posts_per_page=-1' );
-
-     if ( $query->have_posts() ) {
-       while ( $query->have_posts() ) { $query->the_post();
-         // woo_get_template_part(  'content-podcast', 'post' );
-         woo_get_template_part( 'content-podcast', get_post_type() );
-
-       }
-     } else {
-       get_template_part( 'content', 'noposts' );
-     }
-     wp_reset_query();
-     ?>
+    if ( $query->have_posts() ) {
+      while ( $query->have_posts() ) { $query->the_post();
+        woo_get_template_part( 'content-podcast', get_post_type() );
+      }
+    } else {
+      get_template_part( 'content', 'noposts' );
+    }
+    wp_reset_query();
+    ?>
    </div>  <!-- podcasts-wrapper -->
 
    </div>  <!-- main-sidebar-container -->
