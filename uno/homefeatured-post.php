@@ -21,7 +21,8 @@ $settings = array(
 				'thumb_h' => 100,
 				'thumb_align' => 'alignleft',
 				'post_content' => 'excerpt',
-				'comments' => 'both'
+				'comments' => 'both',
+				'link' => 'img'
 				);
 $settings = woo_get_dynamic_values( $settings );
 ?>
@@ -42,9 +43,10 @@ $settings = woo_get_dynamic_values( $settings );
 	<article <?php post_class(); ?>>
 	<?php
 	woo_post_inside_before();
-	if ( 'content' != $settings['post_content']) // && ! is_singular() )
-			woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) );
-	?>
+	if ( 'content' != $settings['post_content']) // && ! is_singular() ) ?>
+			<a href="<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>">
+				<?php woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) . '&link=' .esc_attr( $settings['link'] ) ); ?>
+			</a>
 		<header>
 		<?php the_title( $title_before, $title_after ); ?>
 		</header>
