@@ -173,7 +173,7 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
-    <h2 class="header2-1">Previously on #motherhood #let’s create a village</h2>
+    <h2 class="header2-1">Previous on the series # Motherhood, let’s create a village</h2>
     <div class="podcasts-wrapper">
     <?php
     $query = new WP_Query( 'cat=130&posts_per_page=-1' );
