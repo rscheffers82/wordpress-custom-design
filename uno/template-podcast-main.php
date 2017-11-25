@@ -173,7 +173,7 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
-    <h3 id="listen-to-archives" class="thin">#Motherhood, #Let's create a village archives</h3>
+    <h2 class="header2-1">Previously on #motherhood #let’s create a village</h2>
     <div class="podcasts-wrapper">
     <?php
     $query = new WP_Query( 'cat=130&posts_per_page=-1' );
@@ -189,7 +189,7 @@
     ?>
    </div>  <!-- podcasts-wrapper -->
 
-    <h3 id="listen-to-archives" class="thin">Heatbeat radio archives</h3>
+    <h2 class="header2-1" id="listen-to-archives">Heatbeat radio archives</h2>
     <div class="podcasts-wrapper">
     <?php
     $query = new WP_Query( 'cat=108&posts_per_page=-1' );
@@ -221,8 +221,7 @@
          $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
          ?>
 
-           <h1 class="title entry-title">Two series designed to support your own journey through marriage and pregnancy</h1>
-
+           <h2 class="header2-1">Two series designed to support your own journey through marriage and pregnancy</h2>
            <div class="podcast-radioshows-wrapper">
              <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
                <img src=<?php echo $img_pregnancy; ?> alt="Conscious Pregnancy" />
@@ -232,7 +231,7 @@
              </a>
            </div>
 
-           <h1 class="title entry-title">What listeners are saying</h1>
+            <h2 class="header2-1">What listeners are saying</h2>
            <?php echo do_shortcode('[testimonial_view id=3]'); ?>
 
      </div><!-- /#main-sidebar-container -->

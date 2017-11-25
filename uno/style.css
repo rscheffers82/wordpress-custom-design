@@ -910,7 +910,7 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 }
 
 .podcast-radioshows-wrapper {
-	margin-bottom: 1.5em;
+	margin-top: 2rem;
 }
 
 .podcast-radioshow {
@@ -921,6 +921,12 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 	transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;
 	-webkit-transition: opacity .5s ease-in-out;
+}
+
+@media all and (max-width: 640px) {
+	.podcast-radioshow {
+		display: block;
+	}
 }
 
 .podcast-radioshow:hover{
