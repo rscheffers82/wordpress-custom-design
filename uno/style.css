@@ -2652,14 +2652,14 @@ img.aligncenter {
 /* ________________________________________________ */
 .guest-list .img-wrap {
 	border: 1px solid #ccc;
-	margin: .25rem .5rem 0 0;
-	border-radius: 3px;
-	padding: .25rem;
+  margin: 0.05rem .5rem 0 0;
+  border-radius: 3px;
+  padding: .35rem;
 }
 
 .guest-list .guest-img {
-	width: 3.75rem;
-	height: 3.75rem;
+	width: 4.25rem;
+	height: 4.25rem;
 }
 
 .guest-list .guest-details li {

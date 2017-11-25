@@ -24,8 +24,8 @@ $settings = array(
 				'comments' => 'both'
 				);
 $settings = woo_get_dynamic_values( $settings );
-$title_before = '<h1 class="title entry-title">';
-$title_after = '</h1>';
+$title_before = '<h2 class="header2-1">';
+$title_after = '</h2>';
 if ( ! is_single() ) {
 $title_before = '<h2 class="title entry-title">';
 $title_after = '</h2>';
