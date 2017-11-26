@@ -555,17 +555,29 @@ add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 function promotePodcast($atts, $content = null) {
 	$output = '<a class="promote-podcast" href="/julie-conversation-wednesdays-2pm-et">' .
 	      '<div class="podcast-banner">' .
-	          '<div class="banner-title">'.
-	            '<div class="small">Listen LIVE to </div>' .
-	            'Julie in Conversation' .
-	          '</div>' .
-	          '<div class="banner-subtitle">' .
-	            'New series: <strong>#motherhood</strong>, <strong>#let’s create a village</strong>' .
-	          '</div>' .
+					'<div class="banner-pre-title">Listen LIVE to</div>' .
+	        '<div class="banner-title">Julie in Conversation</div>' .
+	        '<div class="banner-subtitle">' .
+	        	'#motherhood, #let’s create a village' .
+	        '</div>' .
 	      '</div>' .
 	    '</a>';
 
 	return $output;
 }
+// Structure for orange
+// function promotePodcast($atts, $content = null) {
+// 	$output = '<a class="promote-podcast" href="/julie-conversation-wednesdays-2pm-et">' .
+// 	      '<div class="podcast-banner">' .
+// 					'<div class="banner-pre-title">Listen LIVE to</div>' .
+// 	        '<div class="banner-title">Julie in Conversation</div>' .
+// 	        '<div class="banner-subtitle">' .
+// 	        	'#motherhood, #let’s create a village' .
+// 	        '</div>' .
+// 	      '</div>' .
+// 	    '</a>';
+//
+// 	return $output;
+// }
 
 add_shortcode('promotePodcast', 'promotePodcast');
