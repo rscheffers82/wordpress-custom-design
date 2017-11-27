@@ -104,6 +104,7 @@
          </div>
          <?php echo do_shortcode('[Sassy_Social_Share]'); ?>
          <a href="https://api.spreaker.com/download/episode/13277265/welcome_to_julie_in_conversation.mp3" class="btn orange-full" style="border-radius: 3px;">Download</a>
+         <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="podcast podcast-full btn green-full" target="_blank" style="border-radius: 3px;">iTunes</a>
 
            <div class="podcast-guest">
              <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
