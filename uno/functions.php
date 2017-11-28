@@ -551,10 +551,11 @@ function add_custom_query_var( $vars ){
 add_filter( 'query_vars', 'add_custom_query_var' );
 add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 
-
 function promotePodcast($atts, $content = null) {
 	return '<a class="promote-podcast" href="/julie-conversation-wednesdays-2pm-et">' .
-	       		'<div class="podcast-banner"></div>' .
+	       		'<div class="podcast-banner">' .
+							'<img src="' . get_stylesheet_directory_uri() . '/images/podcast-promotion.jpg">' .
+						'</div>' .
 	    	 '</a>';
 }
 // Structure for orange
