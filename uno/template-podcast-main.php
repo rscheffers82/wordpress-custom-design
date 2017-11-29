@@ -103,8 +103,14 @@
            <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
          </div>
          <?php echo do_shortcode('[Sassy_Social_Share]'); ?>
-         <a href="https://api.spreaker.com/download/episode/13277265/welcome_to_julie_in_conversation.mp3" class="btn orange-full" style="border-radius: 3px;">Download</a>
-         <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="podcast podcast-full btn green-full" target="_blank" style="border-radius: 3px;">iTunes</a>
+         <a href="https://api.spreaker.com/download/episode/13277265/welcome_to_julie_in_conversation.mp3" class="btn orange-full" style="border-radius: 3px;">
+           <i class="fa fa-download"></i>
+           Download
+         </a>
+         <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn green-full" target="_blank" style="border-radius: 3px;">
+           <i class="fa fa-apple"></i>
+           iTunes
+         </a>
 
            <div class="podcast-guest">
              <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
@@ -152,7 +158,7 @@
            </div>
            <div class="podcast-subscribe">
              <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
-             <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i>  iTunes</a><br>
+             <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank">  iTunes</a><br>
              <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
              <a href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
            </div>
@@ -174,7 +180,7 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
-    <h2 class="header2-1">Previous on the series # Motherhood, let’s create a village</h2>
+    <h2 class="header2-1">Previously on the series #Motherhood, let’s create a village</h2>
     <div class="podcasts-wrapper">
     <?php
     $query = new WP_Query( 'cat=130&posts_per_page=-1' );
