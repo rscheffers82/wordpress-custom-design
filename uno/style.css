@@ -2703,20 +2703,22 @@ a.promote-podcast:active {
 	transform: scale(1.02);
 }
 
-/*.podcast-banner:after {
-	position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  content: " ";
-  background: url(images/podcast-promotion.jpg);
-  background-repeat: no-repeat;
-  height: 100%;
-  background-size: contain;
-}*/
+.podcast-banner img.desktop {
+	display: block;
+	visibility: visible;
+}
+.podcast-banner img.mobile {
+	display: none;
+	visibility: hidden;
+}
 
-@media all and (max-width: 900px) {
-	.podcast-banner {
-		/*height: 126px;*/
+@media all and (max-width: 640px) {
+	.podcast-banner img.desktop {
+		display: none;
+		visibility: hidden;
+	}
+	.podcast-banner img.mobile {
+		display: block;
+		visibility: visible;
 	}
 }
