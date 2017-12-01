@@ -42,8 +42,8 @@ woo_post_before();
 		<?php the_title( $title_before, $title_after ); ?>
 	</header>
 
-	<!--  Only display the image when ! singular or when it's within the podcast category -->
-	<?php if ( ( 'content' != $settings['post_content'] && ! is_singular() ) || in_category('podcast') )
+	<!--  Only display the image when ! singular or when it's within the podcast category!!! -->
+	<?php if ( ( 'content' != $settings['post_content'] && ! is_singular() ) || in_category('podcast') || in_category('julie-in-conversation-motherhood'))
 		woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) ); ?>
 
 	<?php //woo_post_meta(); ?>

@@ -2722,3 +2722,14 @@ a.promote-podcast:active {
 		visibility: visible;
 	}
 }
+
+aside#connect {
+	display: none;
+	visibility: hidden;
+}
+
+body.single-post .post-entries {
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
