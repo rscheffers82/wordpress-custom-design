@@ -1,2 +1,3 @@
-./uno/*.map
-./uno/*.css
+uno/style.map
+uno/style.css
+uno/style-before-sass.css
