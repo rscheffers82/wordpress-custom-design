@@ -575,3 +575,24 @@ function promotePodcast($atts, $content = null) {
 // }
 
 add_shortcode('promotePodcast', 'promotePodcast');
+
+// Add support for various post templates \\
+
+function get_category_post_template($single_template) {
+	global $post;
+	$single_dir = dirname( __FILE__ ) . "/post-templates";
+
+	$categories = get_the_category($post->ID) ;
+	foreach ( $categories as $cat) {
+		// See if template file is available based on slug
+		if (file_exists( $single_dir . "/single-cat-{$cat->slug}.php" ) ) {
+			$single_template = $single_dir . "/single-cat-{$cat->slug}.php";
+			// See if template file is available based on ID
+		} else if (file_exists( $single_dir . "/single-cat-{$cat->cat_ID}.php" ) ) {
+			$single_template = $single_dir . "/single-cat-{$cat->cat_ID}.php";
+		}
+	}
+	return $single_template;
+}
+
+add_filter( "single_template", "get_category_post_template" ) ;
