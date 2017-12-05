@@ -15,340 +15,434 @@ Tags: canvas, woothemes, store, woocommerce
 */
 @import url(../canvas/style.css);
 @import url(css/font-style.css);
-@import url('https://fonts.googleapis.com/css?family=Trocchi');
-
-body {
-	background-color: #ffffff;
+@import url("https://fonts.googleapis.com/css?family=Trocchi");
+/* custom colors */
+/* line 27, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.green {
+  color: #6EC095;
 }
 
+/* line 31, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.orange {
+  color: #FF9B2E;
+}
+
+/* line 35, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+body {
+  background-color: #ffffff;
+}
+
+/* line 39, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a {
-	-webkit-transition: color .75s ease-out;
-	transition: color .75s ease-out;
+  -webkit-transition: color .75s ease-out;
+  transition: color .75s ease-out;
 }
 
 /* Overall layout styles */
-
+/* line 46, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .entry h3 {
-    margin: 2.5rem 0 0.5rem;
+  margin: 2.5rem 0 0.5rem;
 }
 
 /*  HEADER */
-
+/* line 52, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #header {
-	background: url('../../uploads/2015/05/logotree.png') 10px 21px no-repeat !important;
+  background: url("../../uploads/2015/05/logotree.png") 10px 21px no-repeat !important;
 }
 
+/* line 56, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #logo {
-   margin-left: 5.5em !important;
+  margin-left: 5.5em !important;
 }
 
+/* line 60, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #logo .site-title, #logo .site-title a {
   text-transform: capitalize !important;
   margin-left: 10px;
-	font-family: 'DearJoe5CASUAL', script, sans-serif !important;
+  font-family: 'DearJoe5CASUAL', script, sans-serif !important;
 }
 
+/* line 66, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #logo .site-title a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
+/* line 70, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #logo .site-description {
-   margin-left: 60px;
-	 font-family: 'DearJoe5CASUAL', sans-serif !important;
+  margin-left: 60px;
+  font-family: 'DearJoe5CASUAL', sans-serif !important;
 }
 
+/* line 75, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .hide-small {
-    float: right;
+  float: right;
 }
 
+/* line 79, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .hide-small #connect {
-	border: 0;
-	padding: 1rem 0 00rem;
-	margin-bottom: 0;
+  border: 0;
+  padding: 1rem 0 00rem;
+  margin-bottom: 0;
 }
 
+/* line 85, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .hide-small #connect h3, .hide-small #connect p {
-	display: none;
+  display: none;
 }
 
 @media all and (max-width: 640px) {
-	.hide-small {
-		display: none;
-	}
+  /* line 90, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .hide-small {
+    display: none;
+  }
 }
 
 /* Custom Header Image */
-
+/* line 97, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 section.home-section.custom-header {
-    min-height: 320px;
-    background-repeat: no-repeat;
-    background-size: cover;
-		background-position: 0% 50%;
-		margin-bottom: 2.25rem;
+  min-height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 50%;
+  margin-bottom: 2.25rem;
 }
 
+/* line 105, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
-    background: #CACACA !important;
+  background: #CACACA !important;
 }
 
+/* line 109, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 section.custom-header h1.title-positioning {
-	color: #f9f9f9;
-	position: absolute;
-	bottom: -1rem;
+  color: #f9f9f9;
+  position: absolute;
+  bottom: -1rem;
   margin-right: 2rem;
 }
 
+/* line 116, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-header-test section.home-section.custom-header {
-	min-height: 360px;
-	margin-bottom: 2rem;
+  min-height: 360px;
+  margin-bottom: 2rem;
 }
 
+/* line 121, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-header-test .full-width .home-section {
-	padding: 0! important;
+  padding: 0 !important;
 }
 
+/* line 125, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 section.custom-header header {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	max-width: 1200px;
-	width: auto;
-	margin: 0 auto;
-	padding: 0 1.618em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 1.618em;
 }
 
+/* line 137, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 section.home-section {
-	margin: 0;
+  margin: 0;
 }
 
 @media all and (min-width: 1200px) {
-	section.custom-header header {
-		padding: 0;
-	}
+  /* line 142, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  section.custom-header header {
+    padding: 0;
+  }
 }
 
 /* navigation */
+/* line 148, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #navigation ul.nav > li {
-	font: 400 0.89em/1.45 "Open Sans", sans-serif
+  font: 400 0.89em/1.45 "Open Sans", sans-serif;
 }
 
+/* line 152, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.custom-header #nav-container {
-	margin: 0;
+  margin: 0;
 }
 
 /*Ensure the blog menu item is not highlighted when podcast and workshops categories are displayed*/
+/* line 157, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.page-template-template-podcast-main #navigation ul.nav > li#menu-item-4415 a,
 body.page-template-template-podcast-main #navigation ul.nav > li#menu-item-3565 a,
 body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
-    background: inherit !important;
+  background: inherit !important;
 }
 
 /* Only highlight podcasts also when the julie in conversation page is clicked */
+/* line 164, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main #navigation ul.nav li#menu-item-3971 a {
-	background: inherit !important;
+  background: inherit !important;
 }
 
 /* Life coaching and intuitive reading menu background fix */
+/* line 169, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-id-8 #menu-item-3971 a,
 .page-id-6 #menu-item-3971 a {
-	background-color: #4c5567 !important;
+  background-color: #4c5567 !important;
 }
 
-
-#navigation ul.nav > li a{
-	-webkit-transition: none;
-	transition: none;
+/* line 175, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+#navigation ul.nav > li a {
+  -webkit-transition: none;
+  transition: none;
 }
 
 /* Homepage top part - Hero */
-
+/* line 182, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .hero, .full-width .hero {
-   padding: 9.505em 5.874em 5em;
+  padding: 9.505em 5.874em 5em;
 }
 
+/* line 186, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home-section .section-title {
-   text-transform: capitalize !important;
-   line-height: 5.2rem;
+  text-transform: capitalize !important;
+  line-height: 5.2rem;
 }
 
+/* line 191, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .hero .section-title {
-    font: normal 2.6em/2.4em 'DearJoe5CASUAL', script !important;
-    color: #fff;
+  font: normal 2.6em/2.4em 'DearJoe5CASUAL', script !important;
+  color: #fff;
 }
 
+/* line 196, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .hero {
-	background-position: center center !important;
+  background-position: center center !important;
 }
 
+/* line 200, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .hero h1.section-title {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 @media all and (max-width: 640px) {
-	.hero .cta {
-		font-size: 0.75rem;
-		margin-bottom: 1.618em;
-	}
-	.hero .section-title {
-	    font: normal 1.8em/2.4em 'DearJoe5CASUAL', script !important;
-	    color: #fff;
-	}
+  /* line 205, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .hero .cta {
+    font-size: 0.75rem;
+    margin-bottom: 1.618em;
+  }
+  /* line 209, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .hero .section-title {
+    font: normal 1.8em/2.4em 'DearJoe5CASUAL', script !important;
+    color: #fff;
+  }
 }
 
+/* line 215, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .mail-subscribe {
-   padding: 1.5em 1em 1em;
-   background: #FFFFFF;
-	 margin-bottom: 25px;
+  padding: 1.5em 1em 1em;
+  background: #FFFFFF;
+  margin-bottom: 25px;
 }
 
+/* line 221, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .subscribe {
   background: transparent;
 }
 
+/* line 225, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .inside {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row nowrap;
-	        flex-flow: row nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
+/* line 235, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 h3.signup {
-	display: inline-block;
-	float: left;
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 36px;
-	padding: 0 5vw;
+  display: inline-block;
+  float: left;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 36px;
+  padding: 0 5vw;
 }
 
+/* line 244, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .af-form-wrapper {
-	min-width: 385px;
-	margin: auto 0;
-	font-size: 18px;
+  min-width: 385px;
+  margin: auto 0;
+  font-size: 18px;
 }
 
-
+/* line 251, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .mail-subscribe input[type=submit],
 .podcast-newsletter input[type=submit] {
-	border-radius: 0 25px 25px 0;
+  border-radius: 0 25px 25px 0;
 }
 
+/* line 256, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .mail-subscribe input[type=email],
 .podcast-newsletter input[type=email] {
-	color: #555;
-	padding: 8px;
-	border-radius: 25px 0 0 25px;
-	padding-left: 15px;
+  color: #555;
+  padding: 8px;
+  border-radius: 25px 0 0 25px;
+  padding-left: 15px;
 }
 
+/* line 264, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .mail-subscribe input[type=email]:focus,
 .home .mail-subscribe input[type=email]:active {
-	-webkit-box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.1 )
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*CSS fix for email and submit button for email subscription*/
-
 @media all and (max-width: 415px) {
-	.home .mail-subscribe input[type=submit],
-	.home .mail-subscribe input[type=email] {
-		width: 100%;
-		border-radius: 25px;
-	}
-	.home .mail-subscribe input[type=email] {
-		width: 92%;
-	}
-	.af-form-wrapper {
+  /* line 273, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .mail-subscribe input[type=submit],
+  .home .mail-subscribe input[type=email] {
+    width: 100%;
+    border-radius: 25px;
+  }
+  /* line 278, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .mail-subscribe input[type=email] {
+    width: 92%;
+  }
+  /* line 281, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .af-form-wrapper {
     min-width: 100% !important;
-	}
-	.home .inside {
+  }
+  /* line 284, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .inside {
     width: 100% !important;
-	}
+  }
 }
 
 @-webkit-keyframes pulse_animation {
-	0% { -webkit-transform: scale(1); transform: scale(1); }
-	45% { -webkit-transform: scale(1); transform: scale(1); }
-	50% { -webkit-transform: scale(.90); transform: scale(.90); }
-	55% { -webkit-transform: scale(1.03); transform: scale(1.03); }
-	58% { -webkit-transform: scale(1); transform: scale(1); }
-	100% { -webkit-transform: scale(1); transform: scale(1); }
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  55% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+  58% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 @keyframes pulse_animation {
-	0% { -webkit-transform: scale(1); transform: scale(1); }
-	45% { -webkit-transform: scale(1); transform: scale(1); }
-	50% { -webkit-transform: scale(.90); transform: scale(.90); }
-	55% { -webkit-transform: scale(1.03); transform: scale(1.03); }
-	58% { -webkit-transform: scale(1); transform: scale(1); }
-	100% { -webkit-transform: scale(1); transform: scale(1); }
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  55% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+  58% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
+/* line 307, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .pulse {
-	-webkit-animation-name: pulse_animation;
-	        animation-name: pulse_animation;
-	-webkit-animation-duration: 5000ms;
-	        animation-duration: 5000ms;
-	-webkit-transform-origin:70% 70%;
-	        transform-origin:70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
+  -webkit-animation-name: pulse_animation;
+  animation-name: pulse_animation;
+  -webkit-animation-duration: 5000ms;
+  animation-duration: 5000ms;
+  -webkit-transform-origin: 70% 70%;
+  transform-origin: 70% 70%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
+/* line 320, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .entry p {
-	font: 300 18px/1.5em 'Lora', arial, sans-serif;
+  font: 300 18px/1.5em 'Lora', arial, sans-serif;
 }
 
+/* line 324, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .twocol-wrapper,
 .home .threecol-one {
-	-webkit-box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }
 
+/* line 333, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .twocol-wrapper:hover,
 .home .threecol-one:hover {
-		opacity: 0.6;
+  opacity: 0.6;
 }
 
+/* line 338, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .twocol-wrapper a:hover, .home .twocol-wrapper h3:hover,
 .home .threecol-one a:hover, .home .threecol-one h3:hover {
-	text-decoration: none;
-	color: #747D90;
+  text-decoration: none;
+  color: #747D90;
 }
 
+/* line 344, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .twocol-one {
-	margin: 0px 1% 50px 1%;
+  margin: 0px 1% 50px 1%;
 }
 
+/* line 348, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .twocol-wrapper {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
-.home .threecol-one h3{
-	text-align: center;
-	border: 1px solid blue;
+/* line 352, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.home .threecol-one h3 {
+  text-align: center;
+  border: 1px solid blue;
 }
 
+/* line 357, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .twocol-wrapper {
-	max-width: 375px;
-	/*border: 1px solid red;*/
+  max-width: 375px;
+  /*border: 1px solid red;*/
 }
 
-.home .twocol-one h3{
-	background-color: #fff;
-	margin: -21px 0;
-	padding: .5rem 1rem;
-	text-align: center;
+/* line 362, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.home .twocol-one h3 {
+  background-color: #fff;
+  margin: -21px 0;
+  padding: .5rem 1rem;
+  text-align: center;
 }
 
 /* HOME underneath the hero */
@@ -358,256 +452,279 @@ h3.signup {
 	font: 300 italic 30px/35px "Open Sans", sans-serif;
 	margin-bottom: 1em;
 }*/
-
+/* line 377, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .intro {
-	margin: 1em auto 0em;
-	max-width: 840px;
+  margin: 1em auto 0em;
+  max-width: 840px;
 }
 
+/* line 382, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .intro strong.hi {
-	font-family: 'DearJoe5CASUAL',cursive !important;
+  font-family: 'DearJoe5CASUAL',cursive !important;
 }
 
+/* line 386, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .testimonial-area {
-	margin: 1em 0 4em;
-	background-color: #ddd;
-	padding: 2em .5em 0;
-	padding: 1em .5em;
-	position: relative;
-	z-index: 1;
+  margin: 1em 0 4em;
+  background-color: #ddd;
+  padding: 2em .5em 0;
+  padding: 1em .5em;
+  position: relative;
+  z-index: 1;
 }
 
+/* line 395, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .testimonial-area:before {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	background-color: #ddd;
-	z-index: -1;
-	content: '';
-	left: -10em;
-	right: -10em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #ddd;
+  z-index: -1;
+  content: '';
+  left: -10em;
+  right: -10em;
 }
 
+/* line 406, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home .CTAs {
-	margin: 30px 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row nowrap;
-	        flex-flow: row nowrap;
-	-webkit-box-pack: space-evenly;
-	    -ms-flex-pack: space-evenly;
-	        justify-content: space-evenly;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
+/* line 420, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .call-to-action-hollow,
 .call-to-action {
-	background-color: #6EC095 !important;
-	font: 300 18px/1.5em 'Lora', arial, sans-serif !important;
+  background-color: #6EC095 !important;
+  font: 300 18px/1.5em 'Lora', arial, sans-serif !important;
 }
 
+/* line 426, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .call-to-action:hover,
 .call-to-action:focus {
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
-.call-to-action-hollow {
-		border: 2px solid #6EC09580;
-		/*border: 2px solid #6EC095;*/
-		background-color: transparent !important;
-	}
-
+/* line 437, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .call-to-action-hollow:hover,
 .call-to-action-hollow:focus {
-	color: #6EC095;
+  color: #6EC095;
 }
 
 /* Featured blog on the home page */
-
+/* line 444, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home h3.elegant {
-	font-family: 'DearJoe5CASUAL',cursive !important;
-	text-align: center;
-	color: #60DC9B;
-	margin-top: 50px;
-	margin-bottom: 3px;
+  font-family: 'DearJoe5CASUAL',cursive !important;
+  text-align: center;
+  color: #60DC9B;
+  margin-top: 50px;
+  margin-bottom: 3px;
 }
 
+/* line 452, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .hero a.button {
-	color: rgba(110, 192, 149, 0.7);
-	background-color: rgba(250,250,250,.6);
+  color: rgba(110, 192, 149, 0.7);
+  background-color: rgba(250, 250, 250, 0.6);
 }
 
+/* line 457, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .hero a.button:hover {
-	background-color: rgba(110, 192, 149, 0.7);
-	border: 2px solid transparent;
+  background-color: rgba(110, 192, 149, 0.7);
+  border: 2px solid transparent;
 }
 
+/* line 462, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 h1.entry-title,
 .page h1.title,
 h3.thin {
-	font-weight: 300;
-	font: 300 2.6em/2em 'DearJoe5CASUAL', script !important;
-	color: #555;
+  font-weight: 300;
+  font: 300 2.6em/2em 'DearJoe5CASUAL', script !important;
+  color: #555;
 }
 
+/* line 470, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .center {
-	text-align: center;
+  text-align: center;
 }
 
+/* line 474, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home article.page h2.title.entry-title {
   display: none;
 }
+
 /*here-block*/
+/* line 478, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .post-box h2.title.entry-title {
-	 font-size: 1.25rem;
-	 background-color: inherit;
-	 padding: 15px 0px;
-	 margin: 0;
+  font-size: 1.25rem;
+  background-color: inherit;
+  padding: 15px 0px;
+  margin: 0;
 }
 
+/* line 485, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .post-box h2.title.entry-title a {
-	color: #6EC095;
-	-webkit-transition: all .5s ease-out;
-	transition: all .5s ease-out;
-	line-height: 25px;
+  color: #6EC095;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  line-height: 25px;
 }
 
+/* line 492, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .post-box h2.title.entry-title a:hover,
 body.home .post-box a:hover {
-	text-decoration: none;
-	color: #60DC9B;
+  text-decoration: none;
+  color: #60DC9B;
 }
 
+/* line 498, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .post-box {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 0 auto 50px auto;
-	width: 18%;
-	background-color: #fff;
-	padding: 20px;
-	border-bottom: 2px solid #6EC095;
-	-webkit-box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 50px auto;
+  width: 18%;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 2px solid #6EC095;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* line 511, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .homepage-blog .entry p {
-	/*font: 15px/1.5em 'montserrat',arial, sans-serif;*/
-	font: 15px/1.5em 	'Open Sans', sans-serif !important;;
-	line-height: 25px;
+  /*font: 15px/1.5em 'montserrat',arial, sans-serif;*/
+  font: 15px/1.5em 	'Open Sans', sans-serif !important;
+  line-height: 25px;
 }
 
+/* line 517, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .has-post-thumbnail img {
-	margin: 0;
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+  margin: 0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }
 
+/* line 524, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .has-post-thumbnail img:hover {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
+/* line 528, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .homepage-blog {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-	margin: 3.5rem auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	width: 100%;
-	min-width: 100%;
-	max-width: 100%;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  margin: 3.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
+/* line 549, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home article.post {
-	margin-bottom: .5em;
-	padding-bottom: 0;
-	border-bottom: 0;
-	float: left;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: column nowrap;
-	        flex-flow: column nowrap;
-	width: 100%;
+  margin-bottom: .5em;
+  padding-bottom: 0;
+  border-bottom: 0;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  width: 100%;
 }
 
+/* line 564, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 article.post {
-   margin-bottom: 3rem;
-   padding-bottom: 0;
-   border-bottom: 0;
-	 float: left;
+  margin-bottom: 3rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+  float: left;
 }
 
+/* line 571, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .woo-pagination {
-   margin: 1rem 0 2rem;
-   text-align: right;
+  margin: 1rem 0 2rem;
+  text-align: right;
 }
 
+/* line 576, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home ul.media {
-	list-style-type: none;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	margin-bottom: 3.5rem;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
 }
 
+/* line 591, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home ul.media li {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	padding: 1em .5em;
-	border: 1px solid transparent;
-	width: 12%;
-	text-align: center;
-	margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em .5em;
+  border: 1px solid transparent;
+  width: 12%;
+  text-align: center;
+  margin: auto;
 }
 
+/* line 602, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .home ul.media li img {
-	max-width: 90%;
+  max-width: 90%;
 }
 
-
+/* line 607, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.woo-sc-button.custom.medium.blog {
-    clear: both;
-    float: right;
+  clear: both;
+  float: right;
 }
 
+/* line 612, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .button-wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
+/* line 619, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.woo-sc-button.custom.medium.blog.home-blog-button {
-    clear: both;
-    /*float: right;*/
-		background:#6EC095 !important;
-		border-color:#6EC095 !important;
-		text-transform: uppercase;
-		margin: 0 auto 1.5rem;
+  clear: both;
+  /*float: right;*/
+  background: #6EC095 !important;
+  border-color: #6EC095 !important;
+  text-transform: uppercase;
+  margin: 0 auto 1.5rem;
 }
 
 /* enlarge about top section */
@@ -616,99 +733,110 @@ a.woo-sc-button.custom.medium.blog.home-blog-button {
 		padding-bottom: 8.5em !important;
 	}
 }*/
-
 /* About page custom styles */
+/* line 636, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-id-2 header {
-	display: none;
+  display: none;
 }
-
 
 /* TESTIMONIALS */
-
+/* line 643, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .testimonials-text img.avatar.wp-post-image {
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
 }
 
+/* line 649, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget_woothemes_testimonials .quote .author .url {
-	display: none;
+  display: none;
 }
 
 /*  White border fix  */
+/* line 654, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .testimonial-inner {
-	border: 1px solid transparent !important;
+  border: 1px solid transparent !important;
 }
 
+/* line 658, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .strong-view.default.slider-container.slider-adaptive:not(.slider-mode-horizontal) .wpmslider-viewport {
-	border: 1px solid transparent !important;
+  border: 1px solid transparent !important;
 }
-
 
 /* SIDEBAR */
-
+/* line 665, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget h3 {
-	margin-bottom: .5rem !important;
+  margin-bottom: .5rem !important;
 }
 
+/* line 669, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #sidebar .widget {
-	float: left;
+  float: left;
 }
 
+/* line 673, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget_categories select#cat {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 0.5rem 1rem !important;
-	color: #8E8E8E;
-	background: #fff;
-	border-radius: 0;
-	border: 0;
-	border-bottom: 4px solid #f1f1f1;
-	float: left;
+  color: #8E8E8E;
+  background: #fff;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 4px solid #f1f1f1;
+  float: left;
 }
 
+/* line 686, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget_categories select#cat:hover {
-	border-bottom: 4px solid #4c5567;
-	background: #f1f1f1;
+  border-bottom: 4px solid #4c5567;
+  background: #f1f1f1;
 }
 
+/* line 691, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 span.downarrow {
-	float: left;
-	display: block;
-	width: 0;
-	height: 0;
-	border-top: 5px solid #4c5567;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	margin-left: -20px;
-	margin-top: 13px;
+  float: left;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #4c5567;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin-left: -20px;
+  margin-top: 13px;
 }
 
+/* line 703, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 label.screen-reader-text, #connect p {
-	display: none;
+  display: none;
 }
 
+/* line 707, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget_tag_cloud h3 {
-	display: none;
+  display: none;
 }
 
+/* line 711, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget_recent_entries ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
+/* line 715, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget_recent_entries li {
-    background-color: #fff;
-    padding: 10px 20px;
-    border-left: 10px solid #f1f1f1;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-left: 10px solid #f1f1f1;
 }
 
+/* line 721, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget_recent_entries li:hover {
-	border-left: 10px solid #4C5567;
-	background-color: #f2f2f2;
+  border-left: 10px solid #4C5567;
+  background-color: #f2f2f2;
 }
 
 /*  Custom Headers on Full Width Pages */
+/* line 727, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .chi_display_header + #main-sidebar-container h1.title.entry-title {
   margin-top: -90px;
   color: #fff;
@@ -716,426 +844,483 @@ label.screen-reader-text, #connect p {
 }
 
 /* Additional blog styles */
-
+/* line 735, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-title,
 .post .title,
 .page .title {
-    text-transform: none !important;
+  text-transform: none !important;
 }
 
+/* line 741, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.blog .fix:after {
-	clear: none;
+  clear: none;
 }
 
+/* line 745, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.blog .post-more {
-	clear: none;
+  clear: none;
 }
 
+/* line 749, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.blog .post .title a {
-	line-height: 1.3em;
+  line-height: 1.3em;
 }
 
+/* line 753, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.blog article img.thumbnail {
-	width: 200px;
-	height: 200px;
-	max-width: 200px;
-	max-height: 200px;
-	margin-top: 7px;
-	margin-bottom: 10px;
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }
 
+/* line 765, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.blog article img.thumbnail:hover {
-	opacity: .6;
-	cursor: pointer;
+  opacity: .6;
+  cursor: pointer;
 }
 
+/* line 770, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.blog article.post {
-	margin-bottom: 2rem;
-	background-color: #fff;
-	padding: 20px 20px;
-	-webkit-box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 20px 20px;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* line 778, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.blog .post .title a:hover {
-	text-decoration: none;
-	color: #6ec095;
+  text-decoration: none;
+  color: #6EC095;
 }
 
-
+/* line 784, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.two-col-left-1200 #main-sidebar-container #main {
-	width: 67%;
+  width: 67%;
 }
 
+/* line 788, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.two-col-left-1200 #main-sidebar-container #sidebar {
-    width: 27%;
+  width: 27%;
 }
 
 /*  Default post template styles */
-
+/* line 794, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.post-template-default .entry img {
-	float: left;
-	margin-right: 20px;
-	border-radius: 3px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 3px;
 }
 
 /*  PODCAST STYLES */
-
+/* line 802, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper {
-	display: inline-block;
-	margin-bottom: 2.5em;
-	width: 100%;
+  display: inline-block;
+  margin-bottom: 2.5em;
+  width: 100%;
 }
 
+/* line 808, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper a.podcast-link:hover {
-	border-left: 5px solid;
-	margin-left: 0px;
-	-webkit-box-shadow: 0px 0px 7px 0px rgba( 0, 0, 0, 0.1 );
-	        box-shadow: 0px 0px 7px 0px rgba( 0, 0, 0, 0.1 );
-	padding-right: 2em;
-}
-.page-template-template-podcast-main .podcasts-wrapper a.podcast-link{
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row nowrap;
-	        flex-flow: row nowrap;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	text-decoration: none;
-	margin: 2em 0;
-	border-left: 2px solid;
-	margin-left: 3px;
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+  border-left: 5px solid;
+  margin-left: 0px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  padding-right: 2em;
 }
 
+/* line 815, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.page-template-template-podcast-main .podcasts-wrapper a.podcast-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 2em 0;
+  border-left: 2px solid;
+  margin-left: 3px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 834, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper .podcast-icon {
-	display: inline-block;
-	margin: 0 2em;
+  display: inline-block;
+  margin: 0 2em;
 }
 
+/* line 839, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper .podcast-icon img {
-	width: 75%;
+  width: 75%;
 }
 
+/* line 843, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper .podcast-text {
-	display: inline-block;
-	margin: 0;
-	font-size: 1.15em;
-	color: #333;
+  display: inline-block;
+  margin: 0;
+  font-size: 1.15em;
+  color: #333;
 }
 
+/* line 850, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper article {
-	width: 25%;
-	min-width: 100px;
-	max-width: 200px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
-	position: relative;
-	margin: 2%;
-	padding: 10px;
-	border: 1px solid #ccc;
-	overflow: hidden;
-	opacity: 1;
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+  width: 25%;
+  min-width: 100px;
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative;
+  margin: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }
 
+/* line 878, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper article:hover {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
+/* line 882, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper article a {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 886, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper article a:first-child {
-	position: absolute;
-	background-color: rgba(38, 37, 55, 0.6);
-	z-index: 10;
-	font-size: 1.7vw;
-	bottom: 10%;
-	margin: 0;
-	left: 10px;
-	right: 10px;
-	width: calc(100% - 20px);
+  position: absolute;
+  background-color: rgba(38, 37, 55, 0.6);
+  z-index: 10;
+  font-size: 1.7vw;
+  bottom: 10%;
+  margin: 0;
+  left: 10px;
+  right: 10px;
+  width: calc(100% - 20px);
 }
 
+/* line 898, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper article a h2.title {
-	color: #eee;
-	padding: 5px 10px;
-	margin: 0;
+  color: #eee;
+  padding: 5px 10px;
+  margin: 0;
 }
 
+/* line 904, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper article a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
+/* line 908, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper article a img.thumbnail {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-
+/* line 914, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .podcasts-wrapper article section.entry p {
-	display: none;
+  display: none;
 }
 
+/* line 918, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 abbr.date.time.published.updated {
-	display: none;
+  display: none;
 }
 
+/* line 922, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 article.category-podcast .post-meta .small, article.category-podcast .post-meta .author,
 article.category-podcast .post-meta .categories, article.category-podcast .post-more {
-	display: none;
+  display: none;
 }
 
+/* line 927, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-radioshows-wrapper {
-	margin-top: 2rem;
+  margin-top: 2rem;
 }
 
+/* line 931, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-radioshow {
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	margin: 0 0 35px 10px;
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0 35px 10px;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }
 
 @media all and (max-width: 640px) {
-	.podcast-radioshow {
-		display: block;
-	}
+  /* line 942, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-radioshow {
+    display: block;
+  }
 }
 
-.podcast-radioshow:hover{
-	opacity: 0.6;
+/* line 947, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.podcast-radioshow:hover {
+  opacity: 0.6;
 }
 
+/* line 951, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-radioshow img {
-	max-width: 500px;
-	width: 80vw;
-	padding-right: 20px;
+  max-width: 500px;
+  width: 80vw;
+  padding-right: 20px;
 }
 
 /* soundcloud section */
-
+/* line 959, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .archives {
-	padding: 0 1.618em 40px 1.618em;
+  padding: 0 1.618em 40px 1.618em;
 }
 
+/* line 963, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .soundcloud {
-	margin: 0 1.4rem 5rem 1.4rem;
+  margin: 0 1.4rem 5rem 1.4rem;
 }
 
+/* line 967, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main .widget_woothemes_testimonials .quote {
   width: 45%;
   margin-right: 5%;
 }
 
-
 /* MEDIA PAGE */
-
+/* line 975, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 ul.medialist li {
-	float: left;
-	width: 50%;
-	list-style-type: none;
-	min-height: 120px;
+  float: left;
+  width: 50%;
+  list-style-type: none;
+  min-height: 120px;
 }
 
+/* line 982, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 ul.medialist-4 {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
+/* line 992, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 ul.medialist-4 li {
-	float: left;
-	width: 21%;
-	list-style-type: none;
-	min-height: 305px;
-	margin-bottom: 2rem;
-	background-color: #fff;
-	border: 1px solid #aeb5dd66;
-	margin-right: 1%;
-	padding: 5px 5px;
-	border-radius: 3px;
-	text-align: center;
+  float: left;
+  width: 21%;
+  list-style-type: none;
+  min-height: 305px;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border: 1px solid #aeb5dd66;
+  margin-right: 1%;
+  padding: 5px 5px;
+  border-radius: 3px;
+  text-align: center;
 }
 
-.post-3761 li:nth-child(6) img { 			/* Media page CSS fix */
+/* line 1006, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.post-3761 li:nth-child(6) img {
+  /* Media page CSS fix */
   display: inline-block;
 }
 
+/* line 1010, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .medialist-4 .magazine,
 .medialist-4 .date {
-	margin-bottom: 10px;
-	color: inherit;
+  margin-bottom: 10px;
+  color: inherit;
 }
 
 /* CONTACT PAGE STYLES */
-
+/* line 1018, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.page-template-template-contact-php .location-twitter {
-	/*display: none;*/
+  /*display: none;*/
 }
 
+/* line 1022, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.page-template-template-contact .entry {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
+/* line 1026, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.page-template-template-contact-php .location-twitter {
-	padding: 1em 0 1em;
+  padding: 1em 0 1em;
 }
 
+/* line 1030, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 div#contact-page h1.title {
   padding: 2rem 0 0 2rem;
   margin-top: -100px;
   color: #fff;
 }
 
+/* line 1036, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #contact-page .above-contact-form {
-	/*margin-top: 25px;*/
+  /*margin-top: 25px;*/
 }
 
+/* line 1040, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #contact-page ol.forms textarea,
 #contact-page ol.forms input.txt {
-	padding: 10px;
-	border: 1px solid #e2e6f3;
+  padding: 10px;
+  border: 1px solid #e2e6f3;
 }
 
+/* line 1046, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #contact-page ol.forms textarea:focus,
 #contact-page ol.forms input.txt:focus {
-	border: 1px solid #60DC9B;
+  border: 1px solid #60DC9B;
 }
 
+/* line 1051, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #contact-page ol.forms label {
-	margin: 9px 0;
+  margin: 9px 0;
 }
-#contact-page ol.forms li:nth-child(3) label{
-	margin: 0;
+
+/* line 1054, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+#contact-page ol.forms li:nth-child(3) label {
+  margin: 0;
 }
 
 /* Widgets */
-
+/* line 1060, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #sidebar .subscribe-widget {
-	font: 300 15px/1.4em 'Lora', arial, sans-serif;
-	color: #333;
-	border: 1px solid #DBDBEC;
-	padding: 20px 15px;
-	background-color: #ececec;
-	border-radius: .1em;
+  font: 300 15px/1.4em 'Lora', arial, sans-serif;
+  color: #333;
+  border: 1px solid #DBDBEC;
+  padding: 20px 15px;
+  background-color: #ececec;
+  border-radius: .1em;
 }
 
+/* line 1069, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #sidebar .subscribe-widget table {
-	margin: 20px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 
+/* line 1073, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #sidebar .subscribe-widget input[type=text] {
-	padding: 5px;
-	border: 1px solid #e2e6f3;
-	width: 90%;
-	max-width: 500px;
+  padding: 5px;
+  border: 1px solid #e2e6f3;
+  width: 90%;
+  max-width: 500px;
 }
 
+/* line 1080, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #sidebar .subscribe-widget input[type=text]:focus {
-	border: 1px solid #60DC9B;
+  border: 1px solid #60DC9B;
 }
 
-#sidebar .subscribe-widget input[type=submit]{
-	background: #6EC095;
-	color: #fff !important;
-	-webkit-transition: all 0.5 ease-in-out;
-	transition: all 0.5 ease-in-out;
+/* line 1084, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+#sidebar .subscribe-widget input[type=submit] {
+  background: #6EC095;
+  color: #fff !important;
+  -webkit-transition: all 0.5 ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
-#sidebar .subscribe-widget input[type=submit]:hover{
-	opacity: 0.85;
+
+/* line 1090, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+#sidebar .subscribe-widget input[type=submit]:hover {
+  opacity: 0.85;
 }
 
 /* FOOTER */
+/* line 1095, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #footer-widgets .widget h3 {
-	font-family: 'DearJoe5CASUAL',cursive !important;
+  font-family: 'DearJoe5CASUAL',cursive !important;
 }
-#footer .col-left{
-	float: none;
+
+/* line 1098, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+#footer .col-left {
+  float: none;
 }
+
+/* line 1101, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #footer p {
-	text-align: center;
+  text-align: center;
 }
+
+/* line 1104, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 #footer a.subtle-link {
-	color: #bbbbcc;
-	text-decoration: none;
+  color: #bbbbcc;
+  text-decoration: none;
 }
 
 @media all and (min-width: 320px) and (max-width: 640px) {
-	ul.medialist li {
-		width: 100%;
-	}
-	ul.medialist-4 li {
-		width: 43%;
-		margin-right: 2%;
-	}
+  /* line 1110, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  ul.medialist li {
+    width: 100%;
+  }
+  /* line 1113, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  ul.medialist-4 li {
+    width: 43%;
+    margin-right: 2%;
+  }
 }
 
 /* LARGE DEVICES */
 @media all and (min-width: 1024px) {
-
-	body.home .post-box {
-		width: 19%;
-	}
-
-   .js.csstransitions.csstransforms3d .hero .hero-container {
-     opacity: 0;
-     margin-top: 300px;
-   }
-
-   .home .inside {
-      width: 70%;
-      margin: 0 auto;
-      text-align: center;
-   }
-
-.home .inside:after {
-     clear: both;
-     display: block;
-     content: '';
+  /* line 1122, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  body.home .post-box {
+    width: 19%;
   }
-
-	.home .threecol-one h3 {
-		margin: -20px 0 0;
-		background-color: #fff;
-		padding: .5rem 1rem;
-		z-index: 5;
-		position: relative;
-		color: #4C5567;
-		font-size: 1.75rem;
-	}
-
-	/*.home .twocol-one h3 {
+  /* line 1126, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .js.csstransitions.csstransforms3d .hero .hero-container {
+    opacity: 0;
+    margin-top: 300px;
+  }
+  /* line 1131, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .inside {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 1137, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .inside:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+  /* line 1143, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .threecol-one h3 {
+    margin: -20px 0 0;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    z-index: 5;
+    position: relative;
+    color: #4C5567;
+    font-size: 1.75rem;
+  }
+  /*.home .twocol-one h3 {
 		display: inline-block;
 		margin: -20px 0 0;
 		background-color: #fff;
@@ -1150,529 +1335,591 @@ div#contact-page h1.title {
 		width: 32%;
 		margin: 0 9%;
 	}*/
-
 }
 
 /* MEDIUM DEVICES */
-@media all and (min-width: 640px) and (max-width:1024px) {
-
-	.js.csstransitions.csstransforms3d .hero .hero-container {
-     opacity: 0;
-     margin-top: 200px;
-   }
-
-   .home .inside {
-      width: 90%;
-      text-align: center;
-   }
-
-   .home .threecol-one h3 {
-     margin-top: -20px;
-     background-color: #fff;
-     padding: .5rem 1rem;
-     z-index: 5;
-     position: relative;
-     color: #4C5567;
-     font-size: 1.2rem;
-   }
-
-   .home .twocol-one h3 {
-     margin-top: -20px;
-     background-color: #fff;
-     padding: .5rem 1rem;
-     z-index: 5;
-     position: relative;
-     color: #4C5567;
-     font-size: 1.2rem;
-   }
-	 .page-template-template-podcast-main .podcasts-wrapper article a h2.title {
-		 font-size: 160%;
-	 }
+@media all and (min-width: 640px) and (max-width: 1024px) {
+  /* line 1174, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .js.csstransitions.csstransforms3d .hero .hero-container {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  /* line 1179, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .inside {
+    width: 90%;
+    text-align: center;
+  }
+  /* line 1184, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .threecol-one h3 {
+    margin-top: -20px;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    z-index: 5;
+    position: relative;
+    color: #4C5567;
+    font-size: 1.2rem;
+  }
+  /* line 1194, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .twocol-one h3 {
+    margin-top: -20px;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    z-index: 5;
+    position: relative;
+    color: #4C5567;
+    font-size: 1.2rem;
+  }
+  /* line 1203, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .page-template-template-podcast-main .podcasts-wrapper article a h2.title {
+    font-size: 160%;
+  }
 }
 
 @media all and (max-width: 766px) {
-	.home .inside {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-	}
+  /* line 1209, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .inside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 /* SMALL DEVICES */
-@media all and (max-width: 640px) { /* and (min-width: 320px) */
-	.home .inside {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-	  width: 90%;
-	  text-align: center;
-	 }
-
-	body.home .post-box {
-		width: 100%;
-	}
-
-	 body.home .post-box img {
-		 width: 100%;
-	 }
-
-   .js.csstransitions.csstransforms3d .hero .hero-container {
-      margin-top: 40px;
-   }
-
-   .hero, .full-width .hero {
-      padding: 7.5em 2em 0em
-   }
-
-   .js.csstransitions.csstransforms3d .hero .hero-container {
-     margin-top: 100px;
-   }
-	 .page-template-template-podcast-main .widget_woothemes_testimonials .quote {
-	 	width: 85%;
-	 	float: none;
-	 }
-
-
-} /* End Small Devices*/
-
-
-@media all and (max-width: 640px) and (min-width: 480px){
-	body.home .post-box {
-		width: 40%;
-	}
-	body.post-template-default .entry img,
-	body.blog article img.thumbnail {
-		width: inherit;
-		height: inherit;
-		max-width: inherit;
-		max-height: inherit;
-		float: left;
-	}
-	.page-template-template-podcast-main .podcasts-wrapper article a h2.title {
-	 font-size: 2.75vw;
- }
- .home ul.media li {
-	 width: 40%;
- }
-
+@media all and (max-width: 640px) {
+  /* and (min-width: 320px) */
+  /* line 1219, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .inside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+  /* line 1228, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  body.home .post-box {
+    width: 100%;
+  }
+  /* line 1232, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  body.home .post-box img {
+    width: 100%;
+  }
+  /* line 1236, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .js.csstransitions.csstransforms3d .hero .hero-container {
+    margin-top: 40px;
+  }
+  /* line 1240, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .hero, .full-width .hero {
+    padding: 7.5em 2em 0em;
+  }
+  /* line 1244, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .js.csstransitions.csstransforms3d .hero .hero-container {
+    margin-top: 100px;
+  }
+  /* line 1247, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .page-template-template-podcast-main .widget_woothemes_testimonials .quote {
+    width: 85%;
+    float: none;
+  }
 }
 
-	@media all and (max-width: 479px) {
-		.home .inside {
-			width: 90%;
-		}
-
-		.home ul.media li {
-			width: 40%;
-		}
-		body.post-template-default .entry img {
-			width: 100%;
-			height: 100%;
-			max-width: 100%;
-			max-height: 100%;
-			float: none;
-		}
-		.threecol-one img {
-			width: 100%;
-		}
-
-		.twocol-one img {
-			width: 100%;
-		}
-
-		.twocol-wrapper {
-		 max-width: 100%;
-		 /*border: 1px solid red;*/
-		}
-
-	 .home .threecol-one h3 {
-			 max-width: 365px;
-			 text-align: center;
-			 margin-top: -30px;
-			 background-color: #fff;
-			 padding: .5rem 1rem;
-			 z-index: 5;
-			 position: relative;
-			 color: #4C5567;
-			 font-size: 1.5rem;
-		}
-
-	 .home .twocol-one h3 {
-			 margin-top: -30px;
-			 background-color: #fff;
-			 padding: .5rem 1rem;
-			 z-index: 5;
-			 position: relative;
-			 color: #4C5567;
-			 font-size: 1.5rem;
-		}
-		.page-template-template-podcast-main .podcasts-wrapper article {
-		 width: 45%;
-	 }
-
-	 .page-template-template-podcast-main .podcasts-wrapper article a h2.title {
- 		font-size: 275%;
- 	}
-
-	ul.medialist-4 li {
-		width: 90%;
-	}
-
-	#contact-page .above-contact-form {
-		margin-top: 40px;
-	}
-
-	#contact-page ol.forms textarea,
-	#contact-page ol.forms input.txt {
-		width: 92%;
-	}
-	#contact-page ol.forms li:nth-child(3) label{
-		margin: 9px 0;
-	}
+/* End Small Devices*/
+@media all and (max-width: 640px) and (min-width: 480px) {
+  /* line 1257, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  body.home .post-box {
+    width: 40%;
+  }
+  /* line 1260, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  body.post-template-default .entry img,
+  body.blog article img.thumbnail {
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    float: left;
+  }
+  /* line 1268, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .page-template-template-podcast-main .podcasts-wrapper article a h2.title {
+    font-size: 2.75vw;
+  }
+  /* line 1271, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home ul.media li {
+    width: 40%;
+  }
 }
+
+@media all and (max-width: 479px) {
+  /* line 1278, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .inside {
+    width: 90%;
+  }
+  /* line 1282, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home ul.media li {
+    width: 40%;
+  }
+  /* line 1285, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  body.post-template-default .entry img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    float: none;
+  }
+  /* line 1292, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .threecol-one img {
+    width: 100%;
+  }
+  /* line 1296, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .twocol-one img {
+    width: 100%;
+  }
+  /* line 1300, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .twocol-wrapper {
+    max-width: 100%;
+    /*border: 1px solid red;*/
+  }
+  /* line 1305, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .threecol-one h3 {
+    max-width: 365px;
+    text-align: center;
+    margin-top: -30px;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    z-index: 5;
+    position: relative;
+    color: #4C5567;
+    font-size: 1.5rem;
+  }
+  /* line 1317, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .twocol-one h3 {
+    margin-top: -30px;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    z-index: 5;
+    position: relative;
+    color: #4C5567;
+    font-size: 1.5rem;
+  }
+  /* line 1326, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .page-template-template-podcast-main .podcasts-wrapper article {
+    width: 45%;
+  }
+  /* line 1330, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .page-template-template-podcast-main .podcasts-wrapper article a h2.title {
+    font-size: 275%;
+  }
+  /* line 1334, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  ul.medialist-4 li {
+    width: 90%;
+  }
+  /* line 1338, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  #contact-page .above-contact-form {
+    margin-top: 40px;
+  }
+  /* line 1342, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  #contact-page ol.forms textarea,
+  #contact-page ol.forms input.txt {
+    width: 92%;
+  }
+  /* line 1346, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  #contact-page ol.forms li:nth-child(3) label {
+    margin: 9px 0;
+  }
+}
+
 /* media queries for 2 columns as show on main blog and individual blog posts */
 @media all and (max-width: 980px) {
-	body.two-col-left-1200 #main-sidebar-container #main {
-		width: 100%;
-	}
-	body.two-col-left-1200 #main-sidebar-container #sidebar {
-		width: 100%;
-	}
+  /* line 1352, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  body.two-col-left-1200 #main-sidebar-container #main {
+    width: 100%;
+  }
+  /* line 1355, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  body.two-col-left-1200 #main-sidebar-container #sidebar {
+    width: 100%;
+  }
 }
 
 /* Images */
-.one { background: url(../../uploads/2017/09/life-coaching-mountains-square-1.jpg) no-repeat; }
-.two { background: url(../../uploads/2017/09/intuitive-reading-by-julie-cusmariu.jpg) no-repeat; }
-.three { background: url(../../uploads/2017/05/podcasts.jpg) no-repeat; }
-.four { background: url(../../uploads/2017/05/mentor-coaching-guidance-two-trees-square.jpg) no-repeat; }
-/*new styles*/
+/* line 1361, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.one {
+  background: url(../../uploads/2017/09/life-coaching-mountains-square-1.jpg) no-repeat;
+}
 
+/* line 1362, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.two {
+  background: url(../../uploads/2017/09/intuitive-reading-by-julie-cusmariu.jpg) no-repeat;
+}
+
+/* line 1363, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.three {
+  background: url(../../uploads/2017/05/podcasts.jpg) no-repeat;
+}
+
+/* line 1364, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.four {
+  background: url(../../uploads/2017/05/mentor-coaching-guidance-two-trees-square.jpg) no-repeat;
+}
+
+/*new styles*/
+/* line 1367, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper {
-	max-width: 880px;
-	margin: 25px auto 25px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-	-webkit-box-pack: space-evenly;
-	    -ms-flex-pack: space-evenly;
-	        justify-content: space-evenly;
-	-ms-align-items: flex-start;
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
-/*
+  max-width: 880px;
+  margin: 25px auto 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-align-items: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  /*
 	justify-content: space-between; 		/* Use this line for 2 items */
 }
 
+/* line 1388, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-services-sub-page .service-wrapper,
 .page-template-template-services-sub-page-dev .service-wrapper {
-	max-width: none;
-	margin-top: 0;
+  max-width: none;
+  margin-top: 0;
 }
 
+/* line 1394, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-confirm-booking .service-wrapper {
-	max-width: 100%;
-	-webkit-box-pack: start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
+  max-width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
+/* line 1401, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-confirm-booking .service-wrapper .col {
-	margin: 0;
+  margin: 0;
 }
 
+/* line 1405, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper.set-height {
-	/*height: 500px;*/
+  /*height: 500px;*/
 }
 
+/* line 1409, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .col {
-	display: block;
-	margin: 20px;
-	height: 250px;
-	width: 250px;
-	max-width: 250px;
-	min-width: 250px;
-	/* overflow: hidden; */
+  display: block;
+  margin: 20px;
+  height: 250px;
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  /* overflow: hidden; */
 }
 
 /* allow on home and services sub-page additional text underneath the service boxes */
-
+/* line 1421, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-id-3548 .col {
-	max-height: none;
-	height: auto;
+  max-height: none;
+  height: auto;
 }
 
+/* line 1426, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-services-sub-page .col,
 .page-template-template-services-sub-page-dev .col,
-.page-template-template-confirm-booking .col{
-	max-height: none;
-	height: auto;
-	width: 29%;
-	max-width: 450px;
-	margin: 2rem 1rem;
+.page-template-template-confirm-booking .col {
+  max-height: none;
+  height: auto;
+  width: 29%;
+  max-width: 450px;
+  margin: 2rem 1rem;
 }
 
+/* line 1436, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .box {
-	display: table;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-size: cover !important;
-	-webkit-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
-	/*border-radius: 25px;*/
-	overflow: hidden;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  /*border-radius: 25px;*/
+  overflow: hidden;
 }
 
 /* allow on the home and services sub page for additional text underneath the service boxes */
+/* line 1451, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-services-sub-page .box,
 .page-template-template-services-sub-page-dev .box,
 .page-template-template-confirm-booking .box,
 .page-id-3548 .box {
-	height: 250px;
+  height: 250px;
 }
 
+/* line 1458, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .box a {
-	display: table-cell;
-	width: 100%;
-	height: 100%;
-	font-size: 1.4em;
-	font-family: 'Open Sans', arial, sans-serif;
-	line-height: 1.1em;
-	text-decoration: none;
-	text-transform: none;
-	color: #fafafc;
-	background-color: rgba(76, 85, 103, 0.20);
-	text-shadow: 1px 1px 1px #15173666;
-	font-weight: 500;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4em;
+  font-family: 'Open Sans', arial, sans-serif;
+  line-height: 1.1em;
+  text-decoration: none;
+  text-transform: none;
+  color: #fafafc;
+  background-color: rgba(76, 85, 103, 0.2);
+  text-shadow: 1px 1px 1px rgba(21, 23, 54, 0.4);
+  font-weight: 500;
   transition: background-color .5s ease-in-out;
   -webkit-transition: background-color .5s ease-in-out;
 }
 
+/* line 1475, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .box a:hover {
-  	background-color: rgba(76, 85, 103, 0.0);
+  background-color: rgba(76, 85, 103, 0);
 }
 
+/* line 1479, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .box a div.wrapper {
-	background-color: rgba(30,30,40, .15);
-	font-family: 'DearJoe5CASUAL', arial, sans-serif;
-	position: absolute;
+  background-color: rgba(30, 30, 40, 0.15);
+  font-family: 'DearJoe5CASUAL', arial, sans-serif;
+  position: absolute;
   left: 0;
-	right: 0;
-	bottom: 5%;
-	text-align: center;
-	padding: 10px 5px 5px 5px;
-	min-height: 50px;
+  right: 0;
+  bottom: 5%;
+  text-align: center;
+  padding: 10px 5px 5px 5px;
+  min-height: 50px;
   webkit-transition: background-color .5s ease-in-out;
   -webkit-transition: background-color .5s ease-in-out;
   transition: background-color .5s ease-in-out;
 }
 
+/* line 1494, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-services-sub-page .service-wrapper .box a div.wrapper,
 .page-template-template-services-sub-page-dev .service-wrapper .box a div.wrapper,
 .page-template-template-confirm-booking .service-wrapper .box a div.wrapper {
-	color: #fafafc;
-	font-family: Lato, sans-serif;
-	font-size: 1.7rem;
-	-web-kit-text-shadow: 1px 1px 1px #555;
-	-ms-text-shadow: 1px 1px 1px #555;
-	text-shadow: 1px 1px 1px #555;
-	text-transform: uppercase;
+  color: #fafafc;
+  font-family: Lato, sans-serif;
+  font-size: 1.7rem;
+  -web-kit-text-shadow: 1px 1px 1px #555;
+  -ms-text-shadow: 1px 1px 1px #555;
+  text-shadow: 1px 1px 1px #555;
+  text-transform: uppercase;
 }
 
+/* line 1506, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .box a div.single {
-	line-height: 50px;
+  line-height: 50px;
 }
 
+/* line 1510, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .box p {
-	display: none;
+  display: none;
 }
 
+/* line 1514, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .box a div.underline {
-	display: block;
-	text-transform: none;
-	font-size: 0.53em;
-	font-weight: 500;
-	margin: 0 -5px;
-	font-family: 'Open Sans', arial, sans-serif;
-	/*line-height: 1.3em;*/
+  display: block;
+  text-transform: none;
+  font-size: 0.53em;
+  font-weight: 500;
+  margin: 0 -5px;
+  font-family: 'Open Sans', arial, sans-serif;
+  /*line-height: 1.3em;*/
 }
 
 /* fix for mentor coaching (4th widget) */
-.service-wrapper .four .wrapper {  /* on home */
-	/*background-color: rgba(30,30,40, .70);*/
-	/*background: linear-gradient(to right, rgba(30,30,40, .35) 0%, rgba(30,30,40, .35) 10%,rgba(30,30,40, 1) 60%, rgba(30,30,40, .90) 100%);*/
-	/*top: 50%;*/
+/* line 1525, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.service-wrapper .four .wrapper {
+  /* on home */
+  /*background-color: rgba(30,30,40, .70);*/
+  /*background: linear-gradient(to right, rgba(30,30,40, .35) 0%, rgba(30,30,40, .35) 10%,rgba(30,30,40, 1) 60%, rgba(30,30,40, .90) 100%);*/
+  /*top: 50%;*/
 }
 
+/* line 1531, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .details {
-	padding: 1.5rem 0;
-	text-align: center;
+  padding: 1.5rem 0;
+  text-align: center;
 }
 
+/* line 1536, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-services-sub-page .service-wrapper .details,
 .page-template-template-services-sub-page-dev .service-wrapper .details,
 .page-template-template-confirm-booking .service-wrapper .details {
-	padding: 1.5rem;
-	border: 1px solid #e3e3e3;
+  padding: 1.5rem;
+  border: 1px solid #e3e3e3;
 }
 
+/* line 1543, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .service-wrapper .price {
-	font-size: 1.75rem;
-	margin: 2rem 0;
+  font-size: 1.75rem;
+  margin: 2rem 0;
 }
 
+/* line 1548, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-confirm-booking .service-wrapper .price {
-	margin: 0;
+  margin: 0;
 }
 
+/* line 1552, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-confirm-booking input,
 .page-template-template-confirm-booking textarea {
-	max-width: 95%;
+  max-width: 95%;
 }
 
-@media (max-width: 950px){
-	.service-wrapper {
-		max-width: 585px;
-	}
-	.page-template-template-services-sub-page .col,
-	.page-template-template-services-sub-page-dev .col,
-	.page-template-template-confirm-booking .col{
-		width: 44%;
-	}
+@media (max-width: 950px) {
+  /* line 1558, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .service-wrapper {
+    max-width: 585px;
+  }
+  /* line 1561, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .page-template-template-services-sub-page .col,
+  .page-template-template-services-sub-page-dev .col,
+  .page-template-template-confirm-booking .col {
+    width: 44%;
+  }
 }
 
-@media (max-width: 650px){
-	.service-wrapper {
-		max-width: 290px;
-	}
-	.page-template-template-services-sub-page .col,
-	.page-template-template-services-sub-page-dev .col,
- 	.page-template-template-confirm-booking .col{
-		width: 75%;
-	}
+@media (max-width: 650px) {
+  /* line 1569, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .service-wrapper {
+    max-width: 290px;
+  }
+  /* line 1572, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .page-template-template-services-sub-page .col,
+  .page-template-template-services-sub-page-dev .col,
+  .page-template-template-confirm-booking .col {
+    width: 75%;
+  }
 }
 
-@media (max-width: 481px){
-	.page-template-template-services-sub-page .col,
-	.page-template-template-services-sub-page-dev .col,
-	.page-template-template-confirm-booking .col{
-		width: 100%;
-		margin: 2rem 0;
-	}
-
-	img.mobile-align-center {
+@media (max-width: 481px) {
+  /* line 1580, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .page-template-template-services-sub-page .col,
+  .page-template-template-services-sub-page-dev .col,
+  .page-template-template-confirm-booking .col {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  /* line 1587, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  img.mobile-align-center {
     margin: 1.5rem auto;
     display: block;
     float: none;
-	}
+  }
 }
 
 @media all and (max-width: 321px) {
-	.home .inside {
-		width: auto;
-	}
-	.af-form-wrapper {
-		min-width: auto;
-	}
-	{
-		margin: .25rem auto;
-		display: block;
-		float: none;
-	}
+  /* line 1595, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .home .inside {
+    width: auto;
+  }
+  /* line 1598, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .af-form-wrapper {
+    min-width: auto;
+  }
 }
 
-
-/*custom colors*/
-.green {
-	color: #6EC095;
+/* line 1608, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+body.home blockquote {
+  z-index: 5;
 }
 
-body.home blockquote { z-index: 5; }
-
+/* line 1610, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.home .quote::before,
 body.home blockquote::after {
-	content: "\"";
-	color: #777;
-	font-family: 'DearJoe5CASUAL', script, sans-serif !important;
-	font-size: 750%;
-	position: relative;
-	top: 35px;
-	z-index: 10;
+  content: "\"";
+  color: #777;
+  font-family: 'DearJoe5CASUAL', script, sans-serif !important;
+  font-size: 750%;
+  position: relative;
+  top: 35px;
+  z-index: 10;
 }
-body.home blockquote::after { float: right; }
 
+/* line 1620, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+body.home blockquote::after {
+  float: right;
+}
+
+/* line 1622, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .strong-view.default.slider-container.slider-adaptive:not(.slider-mode-horizontal) .wpmslider-viewport,
 .strong-view.default .testimonial-inner {
-	border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 /* FAQ page styles */
-
+/* line 1629, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .collapseomatic {
-	margin: 1.75rem 0 0.5rem;
-	font: normal 22px/1.2em 'Open Sans', arial, sans-serif;
-	padding: 10px 0 10px 35px;
-	text-decoration: none;
-	background-position: center left 15px;
-	border: 1px solid #ccc;
-	webkit-transition: background-color 1s ease;
-	-webkit-transition: background-color 1s ease;
-	transition: background-color 1s ease;
+  margin: 1.75rem 0 0.5rem;
+  font: normal 22px/1.2em 'Open Sans', arial, sans-serif;
+  padding: 10px 0 10px 35px;
+  text-decoration: none;
+  background-position: center left 15px;
+  border: 1px solid #ccc;
+  webkit-transition: background-color 1s ease;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
 }
 
+/* line 1641, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .colomat-close {
-	border-bottom: none;
-	background-color: #f3f3f3;
+  border-bottom: none;
+  background-color: #f3f3f3;
 }
 
+/* line 1646, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .collapseomatic_content {
-	margin-top: -10px;
-	margin-left: 0px;
-	padding: 10px 20px;
-	border: 1px solid #ccc;
-	border-top: none;
-	background-color: #f3f3f3;
+  margin-top: -10px;
+  margin-left: 0px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #f3f3f3;
 }
 
+/* line 1655, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .headphones, .podcast {
-	background-image: url(images/podcast-green.svg);
-	background-repeat: no-repeat;
-	background-position: left 10px center;
-	background-size: 25px;
-	padding-left: 45px !important;
-	-web-kit-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
+  background-image: url(images/podcast-green.svg);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 25px;
+  padding-left: 45px !important;
+  -web-kit-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
+/* line 1666, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .headphones:hover, .podcast:hover {
-	background-image: url(images/podcast-white.svg);
+  background-image: url(images/podcast-white.svg);
 }
 
+/* line 1670, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .headphones-full, .podcast-full {
-	background-image: url(images/podcast-white.svg);
+  background-image: url(images/podcast-white.svg);
 }
 
+/* line 1674, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .headphones-full:hover, .podcast-full:hover {
-	background-image: url(images/podcast-green.svg);
+  background-image: url(images/podcast-green.svg);
 }
 
+/* line 1678, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .headphones-full-keep:hover, .podcast-full-keep:hover {
-	background-image: url(images/podcast-white.svg);;
+  background-image: url(images/podcast-white.svg);
 }
-
 
 /* ==== TEMP Styles */
-
+/* line 1685, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 button.btn,
 input.btn,
 a.btn {
@@ -1685,50 +1932,57 @@ a.btn {
   font-size: 1rem;
   font-family: Tahoma;
   font-weight: 500;
-	text-decoration: none;
+  text-decoration: none;
   -web-kit-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-	border-radius: 0px;
+  border-radius: 0px;
 }
 
+/* line 1704, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 button.btn:hover,
 input.btn:hover,
 a.btn:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
+/* line 1710, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.red {
   color: #EB7067 !important;
   border-color: #EB7067;
 }
 
+/* line 1715, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.red:hover {
   border-color: #EB5950;
   background-color: #EB5950;
   color: #f9f9f9 !important;
 }
 
+/* line 1721, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.red-full {
   color: #f9f9f9 !important;
   background-color: #EB5950;
   border-color: #EB5950;
 }
 
+/* line 1727, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.red-full:hover {
   border-color: #EB5950;
   background-color: transparent;
   color: #EB5950 !important;
 }
 
+/* line 1733, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.green[type="submit"],
 button.green,
 a.green {
   border-color: #6EC095;
   color: #6EC095 !important;
-	background-color: inherit;
+  background-color: inherit;
 }
 
+/* line 1741, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.green[type="submit"]:hover,
 button.green:hover,
 a.green:hover {
@@ -1737,12 +1991,13 @@ a.green:hover {
   color: #f9f9f9 !important;
 }
 
+/* line 1749, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.white[type="submit"],
 button.white,
 a.white {
   border-color: #fff;
   color: #fff !important;
-	background-color: inherit;
+  background-color: inherit;
 }
 
 /*input.white[type="submit"]:hover,
@@ -1752,7 +2007,7 @@ a.white:hover {
   background: none !important;
   color: #f9f9f9 !important;
 }*/
-
+/* line 1765, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.green-full[type="submit"],
 button.green-full,
 a.green-full {
@@ -1761,6 +2016,7 @@ a.green-full {
   color: #f9f9f9 !important;
 }
 
+/* line 1773, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.green-full[type="submit"]:hover,
 button.green-full:hover,
 a.green-full:hover {
@@ -1769,6 +2025,7 @@ a.green-full:hover {
   color: #6EC095 !important;
 }
 
+/* line 1781, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.orange[type="submit"],
 button.orange,
 a.orange {
@@ -1776,22 +2033,25 @@ a.orange {
   color: #FF9B2E !important;
 }
 
+/* line 1788, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.orange[type="submit"]:hover,
 button.orange:hover,
 a.orange:hover {
   border-color: transparent;
   background-color: #FF9B2E;
-  color: #f9f9f9 !important;
+  color: #F9F9F9 !important;
 }
 
+/* line 1796, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.orange-full[type="submit"],
 button.orange-full,
 a.orange-full {
   border-color: #FF9B2E;
   background-color: #FF9B2E;
-  color: #f9f9f9 !important;
+  color: #F9F9F9 !important;
 }
 
+/* line 1804, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.orange-full[type="submit"]:hover,
 button.orange-full:hover,
 a.orange-full:hover {
@@ -1800,73 +2060,65 @@ a.orange-full:hover {
   color: #FF9B2E !important;
 }
 
+/* line 1812, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.soft-white {
   border-color: #eee !important;
-  border-color: rgba(250,250,250,.6) !important;
+  border-color: rgba(250, 250, 250, 0.6) !important;
   color: #eee !important;
-  color: rgba(250,250,250,1) !important;
+  color: #fafafa !important;
 }
 
+/* line 1819, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.soft-white:hover {
-	border-color: #fff !important;
-	color: #fff !important;
+  border-color: #fff !important;
+  color: #fff !important;
 }
 
-input.orange-full[type="submit"],
-button.orange-full,
-a.orange-full {
-  border-color: #FF9B2E;
-  background-color: #FF9B2E;
-  color: #f9f9f9 !important;
-}
-
-input.orange-full[type="submit"]:hover,
-button.orange-full:hover,
-a.orange-full:hover {
-  border-color: #FF9B2E;
-  background-color: inherit;
-  color: #FF9B2E !important;
-}
-
+/* line 1824, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.blue {
   border-color: #38A5EB;
   color: #38A5EB !important;
 }
 
+/* line 1829, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.blue:hover {
   border-color: transparent;
   background-color: #38A5EB;
   color: #f9f9f9 !important;
 }
 
-
+/* line 1835, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.grow[type="submit"]:hover,
 button.grow:hover,
 a.grow:hover {
   -web-kit-transform: translate(scale(1.1));
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+/* line 1843, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.grow-more[type="submit"]:hover,
 button.grow-more:hover,
 a.grow-more:hover {
   -web-kit-transform: translate(scale(1.2));
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
+/* line 1851, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.rounded,
 button.rounded,
 input.rounded {
   border-radius: 50px;
 }
 
+/* line 1857, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.package,
 button.package,
 input.package {
-	padding: .55rem .85rem;
+  padding: .55rem .85rem;
 }
+
 /*
 green: #6EC095
 dark-gray: #4C5567
@@ -1877,230 +2129,253 @@ nice brown color
 BF823B - #DA9544
 
 */
+/* line 1872, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .on-white, .on-lightgray, .on-darkgray {
   min-height: 10rem;
   padding: 1rem;
   margin: 2rem 0;
 }
 
+/* line 1878, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .on-darkgray {
   background-color: #4C5567;
 }
 
+/* line 1882, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .on-lightgray {
   background-color: #F9F9F9;
 }
 
+/* line 1886, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .on-white {
   background-color: #fff;
 }
 
-
 /* Some styles to cater for particular button elements */
-
+/* line 1893, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .cta .btn {
-	background-color: rgba(250, 250, 250, 0.6) !important;
-	border: 3px solid rgba(255,155,46, 0.7) !important;
-	font-size: 1.5rem;
-	padding: 12px 20px;
-	color: #FF9B2E;
+  background-color: rgba(250, 250, 250, 0.6) !important;
+  border: 3px solid rgba(255, 155, 46, 0.7) !important;
+  font-size: 1.5rem;
+  padding: 12px 20px;
+  color: #FF9B2E;
 }
 
+/* line 1901, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .cta .btn:hover {
-	background-color: rgba(255,155,46, 0.7) !important;
-	color: #fafafc !important;
-	border-color: #FF9B2E;
+  background-color: rgba(255, 155, 46, 0.7) !important;
+  color: #fafafc !important;
+  border-color: #FF9B2E;
 }
 
+/* line 1907, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 input.btn.green.grow.btn-widget,
 input.btn.green-full.grow.btn-widget {
-	font-size: 0.85rem;
-	margin: 5px 0px;
+  font-size: 0.85rem;
+  margin: 5px 0px;
 }
 
+/* line 1913, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .btn-header {
-	border-radius: 25px !important;
-	margin: 16px 11px 0 0 !important;
+  border-radius: 25px !important;
+  margin: 16px 11px 0 0 !important;
 }
 
 @media (max-width: 640px) {
-	.btn-header {
-		display: none;
-	}
+  /* line 1919, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .btn-header {
+    display: none;
+  }
 }
 
 /* sub-service template styles */
-
+/* line 1926, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .sub-service-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-	margin: 1rem 0 2rem;
+  justify-content: space-around;
+  margin: 1rem 0 2rem;
 }
 
+/* line 1942, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .sub-service-wrapper .col {
-	background-color: #fcfcfc;
+  background-color: #fcfcfc;
   width: 100%;
   margin: 1rem;
-	padding: .75rem;
+  padding: .75rem;
   border: 1px solid #eee;
-	-web-kit-transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+  -web-kit-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
+/* line 1953, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .sub-service-wrapper .col:hover {
   margin: .5rem;
-	padding: 1.25rem;
+  padding: 1.25rem;
 }
 
-@media all and (min-width: 480px){
+@media all and (min-width: 480px) {
+  /* line 1959, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
   .sub-service-wrapper .col {
     width: 40%;
   }
 }
 
-@media all and (min-width: 800px){
+@media all and (min-width: 800px) {
+  /* line 1965, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
   .sub-service-wrapper .col {
-		width: 27%;
+    width: 27%;
   }
 }
 
+/* line 1970, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .wpcf7-select {
-	font: 300 18px/1.5em 'Lora', arial, sans-serif;
-	padding: .25rem;
-	height: 9rem;
+  font: 300 18px/1.5em 'Lora', arial, sans-serif;
+  padding: .25rem;
+  height: 9rem;
 }
 
 /*   Headers try-out   */
-
+/* line 1978, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header1 {
-	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
-	color: #555;
-	display: inline-block;
-	border-bottom: 7px solid #6ec095;
-	margin-top: 2rem !important;
+  font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+  color: #555;
+  display: inline-block;
+  border-bottom: 7px solid #6EC095;
+  margin-top: 2rem !important;
 }
 
+/* line 1986, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2 {
-	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
-	color: #555;
-	display: inline-block;
-	border-bottom: 7px solid #DA9544;
-	margin-top: 2rem !important;
+  font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+  color: #555;
+  display: inline-block;
+  border-bottom: 7px solid #DA9544;
+  margin-top: 2rem !important;
 }
+
+/* line 1993, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header3 {
-	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
-	color: #555;
-	display: inline-block;
-	border-bottom: 4px solid #DA9544;
-	margin-top: 2rem !important;
+  font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+  color: #555;
+  display: inline-block;
+  border-bottom: 4px solid #DA9544;
+  margin-top: 2rem !important;
 }
+
+/* line 2000, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header4 {
-	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
-	color: #555;
-	display: inline-block;
-	border-bottom: 4px solid #DA9544;
-	margin-top: 2rem !important;
-	color: #DA9544;
+  font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+  color: #555;
+  display: inline-block;
+  border-bottom: 4px solid #DA9544;
+  margin-top: 2rem !important;
+  color: #DA9544;
 }
+
+/* line 2008, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header5 {
-	font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
-	color: #555;
-	text-align: center;
+  font: 300 2.6em/.75em 'DearJoe5CASUAL', script !important;
+  color: #555;
+  text-align: center;
 }
 
+/* line 2014, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-1 {
-	font: normal 28px/1.2em 'Open Sans', arial, sans-serif !important;
-
+  font: normal 28px/1.2em 'Open Sans', arial, sans-serif !important;
 }
 
+/* line 2019, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-2 {
-	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
-	border-bottom: 1px solid #ccc;
-	padding: 0 0 0 20px;
-	margin-bottom: .5rem !important;
+  font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 0 20px;
+  margin-bottom: .5rem !important;
 }
 
+/* line 2026, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-3 {
-	font: italic 28px/3rem 'Open Sans', arial, sans-serif !important;
-	border-bottom: 1px solid #ccc;
-	padding: 0 0 0 20px;
-	margin-bottom: .5rem !important;
+  font: italic 28px/3rem 'Open Sans', arial, sans-serif !important;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 0 20px;
+  margin-bottom: .5rem !important;
 }
 
+/* line 2033, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-4 {
-	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
-	border-bottom: 1px solid #ccc;
-	margin-bottom: .5rem !important;
-	color: #DA9544;
+  font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: .5rem !important;
+  color: #DA9544;
 }
 
+/* line 2040, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-5 {
-	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
-	border-bottom: 1px solid #DA9544;
-	margin-bottom: .5rem !important;
-	color: #667;
+  font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+  border-bottom: 1px solid #DA9544;
+  margin-bottom: .5rem !important;
+  color: #667;
 }
 
+/* line 2047, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-6 {
-	font-family: georgia;
-	font-size: 1.75rem;
-	border-bottom: 1px solid #DA9544;
-	padding: 0 0 0 20px;
-	margin-bottom: .5rem !important;
-	color: #667;
-	font-weight: 100;
+  font-family: georgia;
+  font-size: 1.75rem;
+  border-bottom: 1px solid #DA9544;
+  padding: 0 0 0 20px;
+  margin-bottom: .5rem !important;
+  color: #667;
+  font-weight: 100;
 }
 
 @font-face {
-    font-family: 'Cinzelregular';
-    src: url('fonts/Cinzel-Regular-webfont.eot');
-    src: url('fonts/Cinzel-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Cinzel-Regular-webfont.woff2') format('woff2'),
-         url('fonts/Cinzel-Regular-webfont.woff') format('woff'),
-         url('fonts/Cinzel-Regular-webfont.ttf') format('truetype'),
-         url('fonts/Cinzel-Regular-webfont.svg#cinzelregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'Cinzelregular';
+  src: url("fonts/Cinzel-Regular-webfont.eot");
+  src: url("fonts/Cinzel-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Cinzel-Regular-webfont.woff2") format("woff2"), url("fonts/Cinzel-Regular-webfont.woff") format("woff"), url("fonts/Cinzel-Regular-webfont.ttf") format("truetype"), url("fonts/Cinzel-Regular-webfont.svg#cinzelregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* line 2070, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-7 {
-	font-family: "Cinzelregular", georgia, times, serif;
-	font-size: 1.6rem;
-	border-bottom: 1px solid #ccc;
-	padding: 0 0 0 20px;
-	margin-bottom: .5rem !important;
-	color: #667;
-	font-weight: 600;
+  font-family: "Cinzelregular", georgia, times, serif;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 0 20px;
+  margin-bottom: .5rem !important;
+  color: #667;
+  font-weight: 600;
 }
 
+/* line 2080, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-8 {
-	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
-	border-bottom: 2px solid #6EC095;
-	color: #667;
-	border-top: 1px solid #6EC095;
-	text-align: center;
-	padding: 1rem 0 .25rem;
-	margin: 3.5rem 0 2.5rem !important;
+  font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+  border-bottom: 2px solid #6EC095;
+  color: #667;
+  border-top: 1px solid #6EC095;
+  text-align: center;
+  padding: 1rem 0 .25rem;
+  margin: 3.5rem 0 2.5rem !important;
 }
 
+/* line 2090, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-9 {
-	font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
-	color: #667;
-	margin: 3.5rem 0 2.5rem !important;
+  font: normal 28px/3rem 'Open Sans', arial, sans-serif !important;
+  color: #667;
+  margin: 3.5rem 0 2.5rem !important;
 }
 
+/* line 2096, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .header2-1:after,
 .header2-2:after,
 .header2-3:after,
@@ -2112,624 +2387,704 @@ input.btn.green-full.grow.btn-widget {
 .header3:after,
 .header4:after,
 .header5:after {
-	display: block;
-	content: ' ';
+  display: block;
+  content: ' ';
 }
 
+/* line 2111, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .background-container {
-	padding: 2.25rem 0 1rem 0;
-	text-align: center;
-	border-radius: 25rem;
-	font-size: 3rem;
-	border: 4px solid #6EC095;
-	margin: 3.75rem 0 2.5rem;
+  padding: 2.25rem 0 1rem 0;
+  text-align: center;
+  border-radius: 25rem;
+  font-size: 3rem;
+  border: 4px solid #6EC095;
+  margin: 3.75rem 0 2.5rem;
 }
 
+/* line 2120, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .background-container h3 {
-	color: #6EC095;
+  color: #6EC095;
 }
 
+/* line 2124, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .background-container a {
-	color: #555555;
+  color: #555555;
 }
 
 @media all and (max-width: 415px) {
-	.background-container {
-		padding: 2.25rem 2rem .75rem;
-		border-radius: 25px;
-	}
-	#logo .site-description {
-		display: block;
-		margin: .5rem 0 0 0;
-	}
+  /* line 2129, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .background-container {
+    padding: 2.25rem 2rem .75rem;
+    border-radius: 25px;
+  }
+  /* line 2133, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  #logo .site-description {
+    display: block;
+    margin: .5rem 0 0 0;
+  }
 }
 
 /*Reposition background header image as needed*/
-
 /*Intuitive readings*/
+/* line 2142, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.page-id-4830 section.home-section.custom-header {
-	background-position: 0% 10%;
+  background-position: 0% 10%;
 }
+
 /*Podcasts*/
+/* line 2146, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.page-template-template-podcast-main section.home-section.custom-header,
 body.page-template-template-podcast-main-dev section.home-section.custom-header {
-	/*background-position: 50%;*/
-	background-position: 50% 75%;
+  /*background-position: 50%;*/
+  background-position: 50% 75%;
 }
+
 /* Mentor coaching */
+/* line 2152, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-id-4355 section.home-section.custom-header {
-	background-position: 0% 10%;
+  background-position: 0% 10%;
 }
 
+/* line 2156, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-id-8 section.home-section.custom-header {
-	background-position: 0% 30%;
+  background-position: 0% 30%;
 }
 
+/* line 2160, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.page-template-template-podcast-main h1.title.entry-title,
 body.page-template-template-podcast-main-dev h1.title.entry-title {
-	background-color: rgba(249,249,249,.8);
-	display: inline-block;
-	padding: 0 1.5rem;
-	border-radius: 50px;
-	color: #555 !important;
+  background-color: rgba(249, 249, 249, 0.8);
+  display: inline-block;
+  padding: 0 1.5rem;
+  border-radius: 50px;
+  color: #555 !important;
 }
 
 /* Confirm booking sytles */
-
+/* line 2171, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .wpcf7-select {
-	height: 6rem;
-	width: 14rem;
+  height: 6rem;
+  width: 14rem;
 }
 
+/* line 2176, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .wpcf7-select option {
-	padding-left: 0.75rem;
+  padding-left: 0.75rem;
 }
-
-
 
 /* New Podcast styles */
-
+/* line 2184, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.page-template-template-podcast-main section.home-section.custom-header,
 body.page-template-template-podcast-main-dev section.home-section.custom-header {
-	min-height: 550px;
+  min-height: 550px;
 }
 
+/* line 2189, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .full-width-band {
-	color: #6EC095;
-	min-height: 100px;
+  color: #6EC095;
+  min-height: 100px;
 }
 
 @media all and (max-width: 640px) {
-	h1.entry-title,
-	.page h1.title, h3.thin {
-		line-height: 4rem !important;
-		margin-top: 1.5rem;
-		margin-bottom: 2rem;
-	}
+  /* line 2195, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  h1.entry-title,
+  .page h1.title, h3.thin {
+    line-height: 4rem !important;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
+/* line 2203, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main-dev header.show,
 .page-template-template-podcast-main header.show {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
+/* line 2216, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main-dev .wrapper,
 .page-template-template-podcast-main .wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row nowrap;
-	        flex-flow: row nowrap;
-	margin: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin: 4rem 0;
 }
 
+/* line 2228, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .wrapper.details-podcast {
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	font-size: 1.75rem;
-	line-height: 1.5rem;
-	margin: 1rem auto 2rem;
-	position: relative;
-	max-width: 1200px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  margin: 1rem auto 2rem;
+  position: relative;
+  max-width: 1200px;
 }
 
+/* line 2240, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .wrapper.details-podcast:after {
-	display: block;
-	position: absolute;
-	content: '';
-	width: 30px;
-	height: 30px;
-	bottom: -47px;
-	left: 50%;
-	margin-left: -20px;
-	background-color: #f9f9f9;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	z-index: 1;
+  display: block;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 30px;
+  bottom: -47px;
+  left: 50%;
+  margin-left: -20px;
+  background-color: #f9f9f9;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
 }
 
+/* line 2255, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 section.right {
-	background-position: 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-section.left { background-color: #f9f9f9; }
+/* line 2261, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+section.left {
+  background-color: #f9f9f9;
+}
 
+/* line 2263, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 section.left,
 section.right {
-	min-height: 400px;
-	width: 50%;
-	position: relative;
+  min-height: 400px;
+  width: 50%;
+  position: relative;
 }
 
+/* line 2270, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-main-title {
-	position: absolute;
-	top: 35%;
-	right: 7%;
-	font-family: 'Georgia', serif;
-	font-size: 3vw;
-	font-weight: 600;
-	color: #444;
+  position: absolute;
+  top: 35%;
+  right: 7%;
+  font-family: 'Georgia', serif;
+  font-size: 3vw;
+  font-weight: 600;
+  color: #444;
 }
 
+/* line 2280, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-main-title-underline {
-	position: absolute;
+  position: absolute;
   top: calc(33.5% + 4vw);
   right: 7%;
 }
 
+/* line 2286, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-main-tagline {
-	position: absolute;
-	bottom: calc(1% + 4vw);
-	right: 7%;
-	text-align: right;
-	font-family: 'Georgia', serif;
-	font-style: italic;
+  position: absolute;
+  bottom: calc(1% + 4vw);
+  right: 7%;
+  text-align: right;
+  font-family: 'Georgia', serif;
+  font-style: italic;
 }
 
+/* line 2295, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-newsletter {
-	background-color: #6EC095;
-	color: #f9f9f9;
-	padding: 2rem;
+  background-color: #6EC095;
+  color: #f9f9f9;
+  padding: 2rem;
 }
 
+/* line 2301, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-newsletter p {
-	color: #f9f9f9;
-	font: 300 18px/36px 'Open Sans', arial, sans-serif;
-	margin-bottom: .5rem;
+  color: #f9f9f9;
+  font: 300 18px/36px 'Open Sans', arial, sans-serif;
+  margin-bottom: .5rem;
 }
 
-.podcast-icon { position: relative; }
+/* line 2307, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.podcast-icon {
+  position: relative;
+}
 
+/* line 2309, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-icon:after {
-	position: absolute;
-	top: -4.5rem;
-	left: -7rem;
-	width: 6rem;
-	height: 6rem;
-	background-image: url(./images/podcast-white.svg);
-	background-size: cover;
-	content: ' ';
-	opacity: 0.5;
+  position: absolute;
+  top: -4.5rem;
+  left: -7rem;
+  width: 6rem;
+  height: 6rem;
+  background-image: url(./images/podcast-white.svg);
+  background-size: cover;
+  content: ' ';
+  opacity: 0.5;
 }
 
+/* line 2321, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .radio-show-summary {
-	background-color: #6EC095;
-	color: #f9f9f9;
-	padding: 2rem 1.618em;
-	position: relative;
-	margin-bottom: 2rem;
+  background-color: #6EC095;
+  color: #f9f9f9;
+  padding: 2rem 1.618em;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
+/* line 2329, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .radio-show-summary p {
-	font: 300 18px/36px 'Open Sans', arial, sans-serif;
-	margin: 0 auto;
-	color: #fafafc;
-	max-width: 1200px;
+  font: 300 18px/36px 'Open Sans', arial, sans-serif;
+  margin: 0 auto;
+  color: #fafafc;
+  max-width: 1200px;
 }
 
+/* line 2336, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 hr.down {
-	width: 100%;
-	background-color: #eaeaea;
-	margin: 3rem auto 4rem;
-	position: relative;
+  width: 100%;
+  background-color: #eaeaea;
+  margin: 3rem auto 4rem;
+  position: relative;
 }
 
+/* line 2343, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 hr.down:after {
-	position: absolute;
-	content: '';
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 40px solid #eaeaea;
-	bottom: -36px;
-	left: 46%;
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 40px solid #eaeaea;
+  bottom: -36px;
+  left: 46%;
 }
 
+/* line 2355, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-time-date {
-	display: inline-block;
+  display: inline-block;
   padding: 0 1.618em;
 }
 
+/* line 2360, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-player {
-	-webkit-box-shadow: 0px -5px 15px 2px rgba(0,0,0,.35);
-	        box-shadow: 0px -5px 15px 2px rgba(0,0,0,.35);
-	margin: 3rem 0;
-	width: 75%;
+  -webkit-box-shadow: 0px -5px 15px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px -5px 15px 2px rgba(0, 0, 0, 0.35);
+  margin: 3rem 0;
+  width: 75%;
 }
 
+/* line 2367, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-time-date .header {
-	text-align: center;
-	margin: 2rem auto;
+  text-align: center;
+  margin: 2rem auto;
 }
 
-.orange {
-	color: #FF9B2E;
-}
-
+/* line 2372, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-time-date ul {
-	margin-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
+/* line 2376, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-time-date li {
-	font: normal 18px/1.5em 'Lora', arial, sans-serif;
-	list-style: none inside;
-	margin-left: 1rem;
+  font: normal 18px/1.5em 'Lora', arial, sans-serif;
+  list-style: none inside;
+  margin-left: 1rem;
 }
 
+/* line 2382, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-join {
   margin-left: 4em;
-	display: inline-block;
-	min-height: 10rem;
-	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1
+  display: inline-block;
+  min-height: 10rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
+/* line 2391, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-guest {
-	margin: 2rem 0;
+  margin: 2rem 0;
 }
 
+/* line 2395, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-time-date .img-wrap,
 .guest-list .img-wrap {
-	padding: .5rem;
-	border: 1px solid #ccc;
+  padding: .5rem;
+  border: 1px solid #ccc;
   margin: 0 1rem 1rem 0rem;
-	display: inline-block;
-	float: left;
+  display: inline-block;
+  float: left;
   background-color: #fff;
+  border-radius: 3px;
 }
 
+/* line 2406, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-time-date .guest-img,
 .guest-list .guest-img {
-	display: inline-block;
-	float: left;
-	width: 7.5rem;
-	height: 7.5rem;
-	background-size: cover;
+  display: inline-block;
+  float: left;
+  width: 7.5rem;
+  height: 7.5rem;
+  background-size: cover;
 }
 
+/* line 2415, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-join h1,
 .podcast-time-date h1 {
-	font: 300 2.6rem/1rem 'DearJoe5CASUAL', script !important;
-	padding-top: 3rem;
+  font: 300 2.6rem/1rem 'DearJoe5CASUAL', script !important;
+  padding-top: 3rem;
 }
 
+/* line 2421, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-join h1 span {
-	font: normal 18px/1.5em 'Lora', arial, sans-serif;
-	font-style: italic;
-	color: #777;
+  font: normal 18px/1.5em 'Lora', arial, sans-serif;
+  font-style: italic;
+  color: #777;
 }
 
+/* line 2427, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .wrapper.podcast-host {
-	max-width: 1200px;
-	margin: 0rem auto -1rem;
+  max-width: 1200px;
+  margin: 0rem auto -1rem;
 }
 
+/* line 2432, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-image,
 .podcast-bio {
-	margin: 0 2rem;
+  margin: 0 2rem;
 }
 
+/* line 2437, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-bio,
 .podcast-bio h1.title {
-	color: #f9f9f9;
+  color: #f9f9f9;
 }
 
+/* line 2442, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-bio a:link {
-	color: #f9f9f9;
-	text-decoration: underline;
-	font-weight: 600;
+  color: #f9f9f9;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
+/* line 2448, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-subscribe h1.title {
-	font-size: 2em !important;
-	margin-top: .75rem;
-	color: #f9f9f9;
+  font-size: 2em !important;
+  margin-top: .75rem;
+  color: #f9f9f9;
 }
 
+/* line 2454, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-subscribe .fa {
-	font-size: 20px;
-	padding-right: 5px;
-	margin-left: -8px;
+  font-size: 20px;
+  padding-right: 5px;
+  margin-left: -8px;
 }
 
+/* line 2460, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-image {
-	width: 200px;
-	min-width: 200px;
-	height: 200px;
-	min-height: 200px;
-	border-radius: 200px;
-	content: ' ';
-	background-size: cover !important;
-	background-position: 50% !important;
-	margin: 2rem;
-	-webkit-box-shadow: 0px 0px 0px 6px #f9f9f9;
-	        box-shadow: 0px 0px 0px 6px #f9f9f9;
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  min-height: 200px;
+  border-radius: 200px;
+  content: ' ';
+  background-size: cover !important;
+  background-position: 50% !important;
+  margin: 2rem;
+  -webkit-box-shadow: 0px 0px 0px 6px #f9f9f9;
+  box-shadow: 0px 0px 0px 6px #f9f9f9;
 }
 
+/* line 2474, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-subscribe {
-	margin-left: 1rem;
-	min-width: 250px;
-	text-align: right;
+  margin-left: 1rem;
+  min-width: 250px;
+  text-align: right;
 }
 
+/* line 2480, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-subscribe h1 {
-	font-size: 2em !important;
-	margin-top: .75rem;
+  font-size: 2em !important;
+  margin-top: .75rem;
 }
 
+/* line 2485, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .page-template-template-podcast-main #main h1:first-child,
 .page-template-template-podcast-main-dev #main h1:first-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
 @media all and (max-width: 1089px) {
-	.podcast-player {
-		width: 75%;
-	}
-	.wrapper.podcast-host {
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: row wrap;
-		        flex-flow: row wrap;
-	}
-
-	.podcast-bio {
-		width: calc(100% - 340px);
-	}
-	.podcast-subscribe {
-		text-align: left;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: row wrap;
-		        flex-flow: row wrap;
-		-ms-flex-pack: distribute;
-		    justify-content: space-around;
-		width: 100%;
-	}
-	.podcast-subscribe h1{
-		width: 100%;
-	}
+  /* line 2492, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-player {
+    width: 75%;
+  }
+  /* line 2495, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .wrapper.podcast-host {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+  /* line 2502, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-bio {
+    width: calc(100% - 340px);
+  }
+  /* line 2505, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-subscribe {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+  }
+  /* line 2518, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-subscribe h1 {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 640px) {
-	section.left {
-		width: 100%;
-	  height: calc(3rem + 11vw);
-	  min-height: auto;
-	}
-	.podcast-main-title {
+  /* line 2524, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  section.left {
+    width: 100%;
+    height: calc(3rem + 11vw);
+    min-height: auto;
+  }
+  /* line 2529, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-main-title {
     top: 20%;
     left: 10%;
     font-size: 6vw;
-		right: auto;
-	}
-	.podcast-main-title-underline {
+    right: auto;
+  }
+  /* line 2535, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-main-title-underline {
     top: calc(25% + 5vw);
     left: 10%;
-		right: auto;
-	}
-	.podcast-main-tagline {
-		display: none;
-		visibility: hidden;
-	}
-	section.right {
-		-webkit-box-ordinal-group: -4;
-		    -ms-flex-order: -5;
-		        order: -5;
-		width: 100%;
-
-	}
-	.podcast-icon:after {
-		display: none;
-	}
-
-	.podcast-newsletter input[type="email"],
-		.podcast-newsletter input[type="submit"] {
-		display: block;
+    right: auto;
+  }
+  /* line 2540, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-main-tagline {
+    display: none;
+    visibility: hidden;
+  }
+  /* line 2544, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  section.right {
+    -webkit-box-ordinal-group: -4;
+    -ms-flex-order: -5;
+    order: -5;
+    width: 100%;
+  }
+  /* line 2551, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-icon:after {
+    display: none;
+  }
+  /* line 2555, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-newsletter input[type="email"],
+  .podcast-newsletter input[type="submit"] {
+    display: block;
     width: 90%;
     border-radius: 25px;
-	}
-	.podcast-newsletter input[type="email"] {
-	  width: calc(90% - 24px);
-	}
-
-	.podcast-player {
+  }
+  /* line 2561, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-newsletter input[type="email"] {
+    width: calc(90% - 24px);
+  }
+  /* line 2565, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-player {
     width: 100%;
-	}
-	.podcast-image {
+  }
+  /* line 2568, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-image {
     margin: 2rem auto;
-	}
-	.podcast-bio {
-	  width: 100%;
-	}
-	.podcast-subscribe {
-		text-align: left;
-		display: block;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: row wrap;
-		        flex-flow: row wrap;
-	}
+  }
+  /* line 2571, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-bio {
+    width: 100%;
+  }
+  /* line 2574, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-subscribe {
+    text-align: left;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
 }
-
 
 /*   Podcast promote widget   */
-
+/* line 2587, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-widget-wrapper {
-	border: 1px solid #6EC095;
-	padding: 1rem;
-	font: 300 15px/1.4em 'Lora', arial, sans-serif;
-	overflow: hidden;
-	border-radius: .25rem;
-	background-color: #fff;
-	text-align: center;
+  border: 1px solid #6EC095;
+  padding: 1rem;
+  font: 300 15px/1.4em 'Lora', arial, sans-serif;
+  overflow: hidden;
+  border-radius: .25rem;
+  background-color: #fff;
+  text-align: center;
 }
 
+/* line 2597, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-widget-wrapper .header {
-	margin: -20px -20px 10px -20px;
-	padding: 20px;
-	background-color: #6EC095;
-	color: #f9f9f9;
-	text-align: center;
-	font-size: 18px;
+  margin: -20px -20px 10px -20px;
+  padding: 20px;
+  background-color: #6EC095;
+  color: #f9f9f9;
+  text-align: center;
+  font-size: 18px;
 }
 
+/* line 2606, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-widget-wrapper .header strong {
-	font-weight: bold;
-	font-size: 1.2em;
-	line-height: 2rem;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 2rem;
 }
 
+/* line 2612, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget .podcast-widget-wrapper p {
-    font: 300 15px/1.4em 'Lora', arial, sans-serif;
+  font: 300 15px/1.4em 'Lora', arial, sans-serif;
 }
 
+/* line 2616, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .widget .podcast-widget-wrapper p strong {
-	font-size: 1.2em;
-	line-height: 2rem;
+  font-size: 1.2em;
+  line-height: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
-	#footer-widgets-container #footer-widgets {
-		padding-left: 1.618em !important;
-		padding-right: 1.618em !important;
-	}
+  /* line 2622, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  #footer-widgets-container #footer-widgets {
+    padding-left: 1.618em !important;
+    padding-right: 1.618em !important;
+  }
 }
-
 
 /* ___ Helper classes ___ */
-
+/* line 2631, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 img.aligncenter {
-	margin-left: auto;
-	margin-right: auto !important;
-	display: block;
-	float: none !important;
+  margin-left: auto;
+  margin-right: auto !important;
+  display: block;
+  float: none !important;
 }
-
 
 /* ___ Styles for guestlist on the podcast page ___ */
 /* ________________________________________________ */
-.guest-list .img-wrap {
-	border: 1px solid #ccc;
-  margin: 0.05rem .5rem 0 0;
-  border-radius: 3px;
-  padding: .35rem;
-}
-
-.guest-list .guest-img {
-	width: 4.25rem;
-	height: 4.25rem;
-}
-
-.guest-list .guest-details li {
-  list-style: none;
-}
-
+/* line 2642, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .guest-list-wrapper {
   margin: 2rem 0rem;
 }
 
+/* line 2646, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .guest-list {
-	margin: 1rem 0;
+  margin: 1rem 0;
+  min-height: 6rem;
+}
+
+/* line 2650, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.guest-list .img-wrap {
+  border: 1px solid #ccc;
+  margin: 0.05rem .5rem 0 0;
+  border-radius: 3px;
+  padding: .4rem;
+}
+
+/* line 2657, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.guest-list .guest-img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* line 2662, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.guest-list .guest-details li {
+  list-style: none;
 }
 
 @media only screen and (max-width: 640px) {
-	.guest-list .guest-details li {
-		margin-left: -1.25rem;
-	}
+  /* line 2668, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .guest-list .guest-details li {
+    margin-left: -1.25rem;
+  }
 }
-
 
 /* Podcast Banner */
-
-a.promote-podcast {
-
-}
+/* line 2679, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 a.promote-podcast:hover,
 a.promote-podcast:active {
-	text-decoration: none;
+  text-decoration: none;
 }
 
+/* line 2684, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-banner {
-	position: relative;
-	/*height: 126px;*/
-	margin: 4rem 0 2.5rem;
-	box-shadow: 0px 3px 15px #ccc;
-	transition: all .3s ease-out;
+  position: relative;
+  /*height: 126px;*/
+  margin: 4rem 0 2.5rem;
+  box-shadow: 0px 3px 15px #ccc;
+  transition: all .3s ease-out;
 }
 
+/* line 2692, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-banner:hover {
-	box-shadow: 0px 3px 20px #aaa;
-	transform: scale(1.02);
+  box-shadow: 0px 3px 20px #aaa;
+  transform: scale(1.02);
 }
 
+/* line 2697, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-banner img.desktop {
-	display: block;
-	visibility: visible;
+  display: block;
+  visibility: visible;
 }
+
+/* line 2701, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .podcast-banner img.mobile {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 @media all and (max-width: 640px) {
-	.podcast-banner img.desktop {
-		display: none;
-		visibility: hidden;
-	}
-	.podcast-banner img.mobile {
-		display: block;
-		visibility: visible;
-	}
+  /* line 2707, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-banner img.desktop {
+    display: none;
+    visibility: hidden;
+  }
+  /* line 2711, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+  .podcast-banner img.mobile {
+    display: block;
+    visibility: visible;
+  }
 }
 
+/* line 2717, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.single-post #content aside#connect {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
+/* line 2722, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 body.single-post #content .post-entries {
-	height: 0;
-	width: 0;
-	overflow: hidden;
+  height: 0;
+  width: 0;
+  overflow: hidden;
 }
+
+/*# sourceMappingURL=../style.map */

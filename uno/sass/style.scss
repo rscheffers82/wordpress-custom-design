@@ -2400,6 +2400,7 @@ hr.down:after {
 	display: inline-block;
 	float: left;
   background-color: #fff;
+	border-radius: 3px;
 }
 
 .podcast-time-date .guest-img,
@@ -2637,21 +2638,6 @@ img.aligncenter {
 
 /* ___ Styles for guestlist on the podcast page ___ */
 /* ________________________________________________ */
-.guest-list .img-wrap {
-	border: 1px solid #ccc;
-  margin: 0.05rem .5rem 0 0;
-  border-radius: 3px;
-  padding: .35rem;
-}
-
-.guest-list .guest-img {
-	width: 4.25rem;
-	height: 4.25rem;
-}
-
-.guest-list .guest-details li {
-  list-style: none;
-}
 
 .guest-list-wrapper {
   margin: 2rem 0rem;
@@ -2659,6 +2645,23 @@ img.aligncenter {
 
 .guest-list {
 	margin: 1rem 0;
+	min-height: 6rem;
+
+	.img-wrap {
+		border: 1px solid #ccc;
+		margin: 0.05rem .5rem 0 0;
+		border-radius: 3px;
+		padding: .4rem;
+	}
+
+	.guest-img {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.guest-details li {
+	  list-style: none;
+	}
 }
 
 @media only screen and (max-width: 640px) {
