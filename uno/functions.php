@@ -596,3 +596,24 @@ function get_category_post_template($single_template) {
 }
 
 add_filter( "single_template", "get_category_post_template" ) ;
+
+
+
+function socialShareButtons($atts, $content = null) {
+	extract (shortcode_atts(array(
+		"download" => ''
+	), $atts));
+	return '<div class="social-share-wrapper">' .
+		do_shortcode('[Sassy_Social_Share]') .
+		($download ? '<a href="' . $download . '" class="btn orange-full" style="border-radius: 3px; margin-right: 5px;">' .
+			'<i class="fa fa-download"></i>' .
+			' Download' .
+		'</a>' : '') .
+		'<a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn green-full" target="_blank" style="border-radius: 3px;">' .
+			'<i class="fa fa-apple"></i>' .
+			' iTunes' .
+		'</a>' .
+	'</div>' ;
+}
+
+add_shortcode('social-share-buttons', 'socialShareButtons');

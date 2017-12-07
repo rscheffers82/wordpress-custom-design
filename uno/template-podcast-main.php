@@ -102,16 +102,10 @@
          <div class="podcast-player">
            <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
          </div>
-         <?php echo do_shortcode('[Sassy_Social_Share]'); ?>
-         <a href="https://api.spreaker.com/download/episode/13277265/welcome_to_julie_in_conversation.mp3" class="btn orange-full" style="border-radius: 3px;">
-           <i class="fa fa-download"></i>
-           Download
-         </a>
-         <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn green-full" target="_blank" style="border-radius: 3px;">
-           <i class="fa fa-apple"></i>
-           iTunes
-         </a>
-
+         <?php
+          $shortcode = '[social-share-buttons download="' . get_field('download_link') . '"]';
+          echo do_shortcode($shortcode);
+         ?>
            <div class="podcast-guest">
              <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
              <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
