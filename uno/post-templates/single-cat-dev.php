@@ -17,7 +17,6 @@ get_header();
     <!-- #content Starts -->
 	<?php woo_content_before(); ?>
     <div id="content" class="col-full">
-      <h1>YAY in template folder!!!!!</h1>
     	<div id="main-sidebar-container">
 
             <!-- #main Starts -->
@@ -29,22 +28,22 @@ get_header();
 	if (have_posts()) { $count = 0;
 		while (have_posts()) { the_post(); $count++;
 
-			// woo_get_template_part( 'content', get_post_type() ); // Get the post content template file, contextually.
+			woo_get_template_part( '/post-templates/content-dev', get_post_type() ); // Get the post content template file, contextually.
 		}
 	}
 
 	// woo_loop_after();
 ?>
             </section><!-- /#main -->
-            <?php //woo_main_after(); ?>
+            <?php woo_main_after(); ?>
 
-            <?php //get_sidebar(); ?>
+            <?php get_sidebar(); ?>
 
 		</div><!-- /#main-sidebar-container -->
 
-		<?php // get_sidebar('alt'); ?>
+		<?php get_sidebar('alt'); ?>
 
     </div><!-- /#content -->
-	<?php // woo_content_after(); ?>
+	<?php woo_content_after(); ?>
 
 <?php get_footer(); ?>
