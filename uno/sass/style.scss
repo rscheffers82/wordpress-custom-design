@@ -2754,11 +2754,35 @@ hr.blog {
 	text-align: center;
 }
 
-.post-social-share > div > div {
+ul.heateor_sss_sharing_ul li {
+  transition: all .3s ease-out;
+  padding: 1px !important;
+	&:hover {
+	    transform: scale(1.1);
+	    transform-origin: bottom;
+	}
+}
+
+.post-social-share > div > div:first-child {
   font-weight: bold;
   font-family: 'DearJoe5CASUAL', script, sans-serif !important;
   margin-bottom: .5rem;
   font-size: 1.25rem;
+	color: #e65b5b;
+	position: relative;
+}
+
+.post-social-share > div > div:first-child:before {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	background-image: url(/wp-content/themes/uno/images/share-arrow.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: translate(150%,50%) rotateZ(60deg);
 }
 
 .post-meta {
@@ -2768,11 +2792,17 @@ hr.blog {
 	font: normal 18px/1.5em 'Lora', arial, sans-serif;
 	color: #555555;
 
+	i.icon {
+		font-size: 1.25rem;
+	}
 	.post-tag {
 		display: inline-block;
 		padding: 0px .5rem;
 		font-size: .85rem;
-
+		transition: all .3s ease-out;
+		&:hover {
+			transform: scale(1.1);
+		}
 		a {
 			color: $green;
 		}
@@ -2813,4 +2843,42 @@ hr.blog {
 .author-description {
 	h1 { display: none; }
 	p {display: none; }
+}
+
+.nocomments {
+    font: normal 18px/1.5em 'Lora', arial, sans-serif;
+}
+
+
+@media all and (max-width: 340px) {
+	.post-social-share > div > div:first-child {
+		margin-left: -1rem;
+	}
+	.post-social-share > div > div:first-child:before {
+		display: none;
+	}
+}
+
+@media all and (max-width: 480px){
+	.author-image {
+	  float: none;
+	  margin: 0 auto 1.5rem auto;
+	  text-align: center;
+	  overflow: hidden;
+	}
+	.post-meta li {
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+	}
+	.post-meta li:first-child {
+    padding: 0 5%;
+	}
+	.post-meta li:last-child {
+    padding: 0 5%;
+	}
+	.post-meta i.icon {
+    display: block;
+    margin-bottom: .5rem;
+	}
 }

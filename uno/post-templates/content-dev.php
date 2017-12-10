@@ -45,7 +45,7 @@ woo_post_before();
 	</section><!-- /.entry -->
 	<?php if( !in_category('julie-in-conversation-motherhood')) {
 		echo '<div class="post-social-share">' .
-			do_shortcode('[Sassy_Social_Share title="Sharing is Caring" style="display: inline-block;"]') .
+			do_shortcode('[Sassy_Social_Share title="Sharing is Caring" style="display: inline-block;" class="arrow"]') .
 		'</div>';
 	} ?>
 
@@ -67,7 +67,8 @@ woo_post_before();
 
 <!-- Display blogpost tags -->
 <div class="post-meta">
-	<p>This post is tagged with:</p>
+	<i class="fa fa-tags icon" aria-hidden="true"></i>
+
 	<?php $postTags = get_the_tags();
 	if ($postTags) {
 		foreach($postTags as $tag) {
@@ -100,7 +101,7 @@ woo_post_before();
 			$my_query = new wp_query( $args );
 			if( $my_query->have_posts() ) {
 				echo '<div class="post-meta">
-					<p>Similar articles with the same tag(s):</p>
+					<p>Other posts you will probably like.</p>
 					<ul>';
 
 				while( $my_query->have_posts() ) {
@@ -118,8 +119,7 @@ woo_post_before();
 							</a>
 						</div>
 						<div class="relatedcontent">
-							<p><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></p>
-							<?php //the_time('M j, Y') ?>
+							<a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><p><?php the_title(); ?></p></a>
 						</div>
 					</li>
 				<? }
