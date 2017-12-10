@@ -2724,3 +2724,82 @@ body.single-post #content .post-entries {
 	width: 0;
 	overflow: hidden;
 }
+
+
+/* Blog post styles */
+
+article.post {
+	margin-bottom: 0;
+	
+	header {
+		margin-bottom: 1.5rem;
+
+		.blogpost-details {
+	    font-style: italic;
+	    font-size: .9rem;
+	    margin: -.75rem 0 0 0;
+		}
+	}
+}
+
+hr.blog {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+	background: none;
+}
+
+.post-meta {
+	display: flex;
+	margin: 2rem 0;
+	display: block;
+	font: normal 18px/1.5em 'Lora', arial, sans-serif;
+	color: #555555;
+
+	.post-tag {
+		display: inline-block;
+		padding: 0px .5rem;
+		font-size: .85rem;
+
+		a {
+			color: $green;
+		}
+	}
+
+	li {
+		float: left;
+		width: 20%;
+		padding: 0 calc(20% / 6);
+	}
+	li:first-child {
+		padding-left: 0;
+	}
+	li:last-child {
+		padding-right: 0;
+	}
+}
+
+.attachment-img-related-post {
+	width: 100%;
+	height: 100%;
+}
+
+.relatedcontent p {
+    font-size: .85rem;
+    margin-top: .5rem;
+}
+
+.author-wrapper {
+	margin: 2rem 0;
+}
+
+.author-image {
+	float: left;
+	margin-right: 1.5rem;
+}
+
+.author-description {
+	h1 { display: none; }
+	p {display: none; }
+}
