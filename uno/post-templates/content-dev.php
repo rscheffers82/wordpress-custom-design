@@ -35,7 +35,7 @@ woo_post_before();
 			?></div>
 	</header>
 
-	<!--  Only display the image when ! singular or when it's within the podcast category!!! -->
+	<!--  Only display the image when ! singular or when it's within the podcast or motherhood category!!! -->
 	<?php if ( ( 'content' != $settings['post_content'] && ! is_singular() ) || in_category('podcast') || in_category('julie-in-conversation-motherhood'))
 		woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) ); ?>
 
@@ -43,6 +43,11 @@ woo_post_before();
 	<section class="entry">
 		<?php the_content(); ?>
 	</section><!-- /.entry -->
+	<?php if( !in_category('julie-in-conversation-motherhood')) {
+		echo '<div class="post-social-share">' .
+			do_shortcode('[Sassy_Social_Share title="Sharing is Caring" style="display: inline-block;"]') .
+		'</div>';
+	} ?>
 
 </article><!-- /.post -->
 

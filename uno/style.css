@@ -3115,6 +3115,19 @@ hr.blog {
 }
 
 /* line 2753, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.post-social-share {
+  text-align: center;
+}
+
+/* line 2757, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+.post-social-share > div > div {
+  font-weight: bold;
+  font-family: 'DearJoe5CASUAL', script, sans-serif !important;
+  margin-bottom: .5rem;
+  font-size: 1.25rem;
+}
+
+/* line 2764, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .post-meta {
   display: flex;
   margin: 2rem 0;
@@ -3123,64 +3136,64 @@ hr.blog {
   color: #555555;
 }
 
-/* line 2760, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2771, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .post-meta .post-tag {
   display: inline-block;
   padding: 0px .5rem;
   font-size: .85rem;
 }
 
-/* line 2765, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2776, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .post-meta .post-tag a {
   color: #6EC095;
 }
 
-/* line 2770, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2781, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .post-meta li {
   float: left;
   width: 20%;
   padding: 0 calc(20% / 6);
 }
 
-/* line 2775, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2786, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .post-meta li:first-child {
   padding-left: 0;
 }
 
-/* line 2778, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2789, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .post-meta li:last-child {
   padding-right: 0;
 }
 
-/* line 2783, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2794, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .attachment-img-related-post {
   width: 100%;
   height: 100%;
 }
 
-/* line 2788, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2799, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .relatedcontent p {
   font-size: .85rem;
   margin-top: .5rem;
 }
 
-/* line 2793, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2804, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .author-wrapper {
   margin: 2rem 0;
 }
 
-/* line 2797, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2808, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .author-image {
   float: left;
   margin-right: 1.5rem;
 }
 
-/* line 2803, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2814, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .author-description h1 {
   display: none;
 }
 
-/* line 2804, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
+/* line 2815, C:/d-data/Freelance/3. Julie/wordpress/uno/sass/style.scss */
 .author-description p {
   display: none;
 }

@@ -2730,7 +2730,7 @@ body.single-post #content .post-entries {
 
 article.post {
 	margin-bottom: 0;
-	
+
 	header {
 		margin-bottom: 1.5rem;
 
@@ -2748,6 +2748,17 @@ hr.blog {
   border: 0;
   border-top: 1px solid rgba(0,0,0,0.1);
 	background: none;
+}
+
+.post-social-share {
+	text-align: center;
+}
+
+.post-social-share > div > div {
+  font-weight: bold;
+  font-family: 'DearJoe5CASUAL', script, sans-serif !important;
+  margin-bottom: .5rem;
+  font-size: 1.25rem;
 }
 
 .post-meta {
