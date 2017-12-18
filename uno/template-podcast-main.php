@@ -137,7 +137,6 @@
                   }
                 } ?>
             </div>
-           <p>Stay tuned for new guest announcements for 2018</p>
          </div>
        </div>
 

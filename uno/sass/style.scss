@@ -1626,7 +1626,7 @@ body.home blockquote::after { float: right; }
 
 /* FAQ page styles */
 
-.collapseomatic {
+.collapseomatic.faq-triclass {
 	margin: 1.75rem 0 0.5rem;
 	font: normal 22px/1.2em 'Open Sans', arial, sans-serif;
 	padding: 10px 0 10px 35px;
@@ -1638,12 +1638,12 @@ body.home blockquote::after { float: right; }
 	transition: background-color 1s ease;
 }
 
-.colomat-close {
+.colomat-close.faq-triclass {
 	border-bottom: none;
 	background-color: #f3f3f3;
 }
 
-.collapseomatic_content {
+.collapseomatic_content.faq-targclass {
 	margin-top: -10px;
 	margin-left: 0px;
 	padding: 10px 20px;
@@ -1679,6 +1679,14 @@ body.home blockquote::after { float: right; }
 	background-image: url(images/podcast-white.svg);;
 }
 
+.podcast-triclass {
+	font: 600 18px/1.5em 'Lora', arial, sans-serif;
+	color: #6ec095;
+}
+
+.podcast-targclass {
+	font: normal 18px/1.5em 'Lora', arial, sans-serif
+}
 
 /* ==== TEMP Styles */
 
