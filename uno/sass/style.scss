@@ -171,6 +171,19 @@ body.category-workshops #navigation ul.nav > li#menu-item-3565 a {
 	background-color: #4c5567 !important;
 }
 
+// ensure when posts are in the podcast and motherhood category podcast instead of blog is selected in the main menu
+body.podcasts #navigation ul.nav li#menu-item-3565 a,
+body.julie-in-conversation-motherhood #navigation ul.nav li#menu-item-3565 a {
+	background-color: inherit !important;
+}
+
+body.podcasts #navigation ul.nav li#menu-item-4240 a,
+body.julie-in-conversation-motherhood #navigation ul.nav li#menu-item-4240 a {
+	background-color: #4c5567 !important;
+}
+
+
+
 
 #navigation ul.nav > li a{
 	-webkit-transition: none;
@@ -1624,7 +1637,7 @@ body.home blockquote::after { float: right; }
 	border: 1px solid transparent;
 }
 
-/* FAQ page styles */
+/* FAQ dropdown styles */
 
 .collapseomatic.faq-triclass {
 	margin: 1.75rem 0 0.5rem;
@@ -1652,6 +1665,19 @@ body.home blockquote::after { float: right; }
 	background-color: #f3f3f3;
 }
 
+// Podcast dropdown styles \\
+
+.podcast-triclass {
+	font: 600 18px/1.5em 'Lora', arial, sans-serif;
+	color: #6ec095;
+}
+
+.podcast-targclass {
+	font: normal 18px/1.5em 'Lora', arial, sans-serif
+}
+
+// other styles
+
 .headphones, .podcast {
 	background-image: url(images/podcast-green.svg);
 	background-repeat: no-repeat;
@@ -1677,15 +1703,6 @@ body.home blockquote::after { float: right; }
 
 .headphones-full-keep:hover, .podcast-full-keep:hover {
 	background-image: url(images/podcast-white.svg);;
-}
-
-.podcast-triclass {
-	font: 600 18px/1.5em 'Lora', arial, sans-serif;
-	color: #6ec095;
-}
-
-.podcast-targclass {
-	font: normal 18px/1.5em 'Lora', arial, sans-serif
 }
 
 /* ==== TEMP Styles */

@@ -80,24 +80,22 @@ woo_post_before();
 		</div>
 	</div>
 
-	<hr class="blog">
+	<!-- Display blogpost tags if they are set -->
+	<?php $postTags = get_the_tags();
+	if ($postTags) { ?>
+		<hr class="blog">
+		<div class="post-meta">
+			<i class="fa fa-tags icon" aria-hidden="true"></i>
+			<?php
+				foreach($postTags as $tag) {
+						echo '<div class="post-tag">' .
+							'• <a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>' .
+						'</div>';
+				}
+			?>
+		</div>
+	<?php } ?>
 
-	<!-- Display blogpost tags -->
-	<div class="post-meta">
-		<i class="fa fa-tags icon" aria-hidden="true"></i>
-
-		<?php $postTags = get_the_tags();
-		if ($postTags) {
-			foreach($postTags as $tag) {
-					echo '<div class="post-tag">' .
-						'• <a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>' .
-					'</div>';
-			}
-		}
-		?>
-	</div>
-
-	<hr class="blog">
 
 	<!-- Related posts based on tag -->
 	<?php
@@ -117,6 +115,7 @@ woo_post_before();
 				);
 				$my_query = new wp_query( $args );
 				if( $my_query->have_posts() ) {
+					echo '<hr class="blog">';
 					echo '<div class="post-meta">
 						<p>Other posts you will probably like.</p>
 						<ul>';
