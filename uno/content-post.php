@@ -121,11 +121,21 @@ woo_post_before();
 						<ul>';
 
 					while( $my_query->have_posts() ) {
-						$my_query->the_post(); ?>
-
+						$my_query->the_post();
+						$cats_data = get_the_category(get_the_ID());
+						$is_podcast = false;
+						foreach($cats_data as $cat) {
+							if ($cat->category_nicename === "julie-in-conversation-motherhood" || $cat->category_nicename === "podcasts") {
+								$is_podcast = true;
+							}
+						}
+						$the_title = $is_podcast ? 'PODCAST - ' . get_the_title() : get_the_title();
+						$the_title_fancy = $is_podcast
+							? '<span class="podcast-label">PODCAST</span>' . get_the_title()
+							: get_the_title();  ?>
 						<li>
 							<div class="relatedthumb">
-								<a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>">
+								<a href="<? the_permalink()?>" rel="bookmark" title="<?php echo $the_title; ?>">
 
 									<?php if ( has_post_thumbnail() ) {
 										the_post_thumbnail($img_args);
@@ -135,7 +145,9 @@ woo_post_before();
 								</a>
 							</div>
 							<div class="relatedcontent">
-								<a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><p><?php the_title(); ?></p></a>
+								<a href="<? the_permalink()?>" rel="bookmark" title="<?php echo $the_title; ?>">
+									<p><?php echo $the_title_fancy; ?></p>
+								</a>
 							</div>
 						</li>
 					<? }

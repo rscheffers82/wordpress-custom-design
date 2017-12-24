@@ -21,7 +21,7 @@ Tags: canvas, woothemes, store, woocommerce
 $green: #6EC095;
 $soft-white: #F9F9F9;
 $orange: #FF9B2E;
-
+$footer: #4C5567;
 
 /* custom colors */
 .green {
@@ -2849,6 +2849,20 @@ ul.heateor_sss_sharing_ul li {
 	li:last-child {
 		padding-right: 0;
 	}
+}
+
+.relatedcontent a {
+	font-weight: normal;
+}
+
+.podcast-label {
+    display: inline-block;
+    background-color: $green;
+    padding: 1px 5px;
+    border-radius: 2px;
+    margin-right: 4px;
+    color: $soft-white;
+    font: 300 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .attachment-img-related-post {
