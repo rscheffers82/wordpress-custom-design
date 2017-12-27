@@ -2926,3 +2926,20 @@ ul.heateor_sss_sharing_ul li {
     margin-bottom: .5rem;
 	}
 }
+
+/* About page specific styles */
+
+.collapse-header-with-link {
+	&:hover {
+		text-decoration: none;
+	}
+	h3 {
+		line-height: 1.75rem;
+		a {
+			font: normal 18px/1.5em 'Lora', arial, sans-serif;
+			color: #6ec095;
+			display: inline-block;
+			margin-bottom: -2rem;
+		}
+	}
+}
