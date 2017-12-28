@@ -630,3 +630,44 @@ function add_category_to_single($classes) {
   return $classes;
 }
 add_filter('body_class','add_category_to_single');
+
+function widget_postsbycategory($atts, $content = null) {
+	extract (shortcode_atts(array(
+		"category" => '',
+		"posts" => 5
+	), $atts));
+	// the query
+	$the_query = new WP_Query( array( 'category_name' => $category, 'posts_per_page' => $posts ) );
+
+	// The Loop
+	if ( $the_query->have_posts() ) {
+	    $string .= '<ul class="postsbycategory">';
+	    while ( $the_query->have_posts() ) {
+	        $the_query->the_post();
+	            if ( has_post_thumbnail() ) {
+		            $string .= '<li>' .
+									'<a href="' . get_the_permalink() .'" rel="bookmark">' .
+										get_the_post_thumbnail($post_id, array( 50, 50) ) .
+										'<span>' . get_the_title() . '<span>' .
+									'</a>
+								</li>';
+	            } else {
+	            	// if no featured image is found
+	            	$string .= '<li><a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_title() .'</a></li>';
+	            }
+			}
+		} else {
+	  // no posts found
+	}
+	$string .= '</ul>';
+
+	return $string;
+
+	/* Restore original Post Data */
+	wp_reset_postdata();
+}
+// Add a shortcode
+add_shortcode('categoryposts', 'widget_postsbycategory');
+
+// Enable shortcodes in text widgets
+add_filter('widget_text', 'do_shortcode');

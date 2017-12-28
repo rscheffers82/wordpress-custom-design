@@ -441,12 +441,6 @@ h3.signup {
 	opacity: 0.8;
 }
 
-// .call-to-action-hollow {
-// 		border: 2px solid #6EC09580;
-// 		/*border: 2px solid #6EC095;*/
-// 		background-color: transparent !important;
-// 	}
-
 .call-to-action-hollow:hover,
 .call-to-action-hollow:focus {
 	color: $green;
@@ -681,6 +675,7 @@ a.woo-sc-button.custom.medium.blog.home-blog-button {
 
 #sidebar .widget {
 	float: left;
+	width: 100%;
 }
 
 .widget_categories select#cat {
@@ -1669,7 +1664,7 @@ body.home blockquote::after { float: right; }
 
 .podcast-triclass {
 	font: 600 18px/1.5em 'Lora', arial, sans-serif;
-	color: #6ec095;
+	color: $green;
 }
 
 .podcast-targclass {
@@ -2927,7 +2922,7 @@ ul.heateor_sss_sharing_ul li {
 	}
 }
 
-/* About page specific styles */
+/* Collapse specific styles */
 
 .collapse-header-with-link {
 	&:hover {
@@ -2937,9 +2932,45 @@ ul.heateor_sss_sharing_ul li {
 		line-height: 1.75rem;
 		a {
 			font: normal 18px/1.5em 'Lora', arial, sans-serif;
-			color: #6ec095;
+			color: $green;
 			display: inline-block;
 			margin-bottom: -2rem;
+		}
+	}
+}
+
+/* Widget recent posts styles */
+
+.widget {
+	h3 {
+		font: bold 17px/1.2em 'Open Sans', arial, sans-serif !important;
+		color: #667;
+	}
+	ul.postsbycategory {
+		list-style-type: none;
+		border-top: 2px solid $green;
+
+		li {
+			border-bottom: 1px solid #D1D6DA;
+			padding: .5rem 0;
+			&:hover {
+				border-bottom: 1px solid $green;
+			}
+			a {
+				display: table;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			img, span {
+				margin-right: .5rem;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			span {
+				font: normal .85rem/1.5em 'Lora', arial, sans-serif;
+				color: #555555;
+			}
 		}
 	}
 }
