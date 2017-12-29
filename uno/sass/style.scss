@@ -2837,12 +2837,17 @@ ul.heateor_sss_sharing_ul li {
 		float: left;
 		width: 20%;
 		padding: 0 calc(20% / 6);
-	}
-	li:first-child {
+
+		&:first-child {
 		padding-left: 0;
-	}
-	li:last-child {
-		padding-right: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+		&:hover .podcast-label {
+			background-color: $green;
+			color: $soft-white;
+		}
 	}
 }
 
@@ -2852,11 +2857,11 @@ ul.heateor_sss_sharing_ul li {
 
 .podcast-label {
     display: inline-block;
-    background-color: $green;
+    border: 1px solid $green;
     padding: 1px 5px;
     border-radius: 2px;
     margin-right: 4px;
-    color: $soft-white;
+    color: $green;
     font: 300 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -2971,6 +2976,38 @@ ul.heateor_sss_sharing_ul li {
 				font: normal .85rem/1.5em 'Lora', arial, sans-serif;
 				color: #555555;
 			}
+		}
+	}
+}
+
+// widget quotes
+.widget {
+	#quotearea_5386_1 {
+		font: normal 18px/1.5em 'Lora', arial, sans-serif;
+		display: table;
+		width: 100%;
+
+		#quoterotator1 {
+			display: table-cell;
+			vertical-align: middle;
+			background: url(http://juliecusmariu.com/wp-content/uploads/2017/12/inspirational-quote.jpg);
+			background-size: cover;
+			background-position: 50% 25%;
+			border-radius: 3px;
+			padding: 3rem 2rem;
+		}
+		#quote, #quoteauthor {
+			margin: 0 auto;
+			display: block;
+			color: #fff;
+			text-shadow: 1px 3px 3px #555555;
+			text-shadow: 1px 3px 3px rgba(56, 47, 46, 0.8);
+		}
+		#quoteauthor {
+			font-size: .8em;
+			font-style: italic;
+			color: #eee;
+			margin: 10px 0 0 10px;
 		}
 	}
 }
