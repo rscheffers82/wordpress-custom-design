@@ -47,7 +47,7 @@ woo_post_before();
 		<!-- new start -->
 		<?php
 			if ( 'content' == $settings['post_content'] || is_single() ) {
-				// This will be printen on an individual blog post
+				// This will be printed on an individual blog post
 				the_content( __( 'Continue Reading &rarr;', 'woothemes' ) );
 				wp_link_pages( $page_link_args );
 			} else {
@@ -64,7 +64,7 @@ woo_post_before();
 			do_shortcode('[Sassy_Social_Share title="Sharing is Caring" style="display: inline-block;" class="arrow"]') .
 		'</div>';
 	} ?>
-
+	<?php woo_post_inside_after(); ?>
 </article><!-- /.post -->
 
 <?php if ( 'content' == $settings['post_content'] || is_single() ) { ?>
