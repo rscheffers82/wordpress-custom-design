@@ -412,8 +412,8 @@ h3.signup {
 	background-color: #ddd;
 	z-index: -1;
 	content: '';
-	left: -10em;
-	right: -10em;
+	left: -30vw;
+	right: -30vw;
 }
 
 .home .CTAs {
@@ -2994,11 +2994,11 @@ ul.heateor_sss_sharing_ul li {
 
 // widget quotes
 .widget {
-	#quotearea__1
-	 {
-		font: normal 18px/1.5em 'Lora', arial, sans-serif;
+	[id^="quotearea"] {
 		display: table;
 		width: 100%;
+		height: 100%;
+		font: normal 18px/1.5em 'Lora', arial, sans-serif;
 
 		#quoterotator1 {
 			display: table-cell;
@@ -3023,4 +3023,9 @@ ul.heateor_sss_sharing_ul li {
 			margin: 10px 0 0 10px;
 		}
 	}
+}
+
+article aside#post-author,
+article .post-utility {
+	display: none;
 }

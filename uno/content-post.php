@@ -64,7 +64,7 @@ woo_post_before();
 			do_shortcode('[Sassy_Social_Share title="Sharing is Caring" style="display: inline-block;" class="arrow"]') .
 		'</div>';
 	} ?>
-	<?php woo_post_inside_after(); ?>
+	<?php // woo_post_inside_after(); ?>
 </article><!-- /.post -->
 
 <?php if ( 'content' == $settings['post_content'] || is_single() ) { ?>
