@@ -37,8 +37,8 @@ body {
 }
 
 a {
-	-webkit-transition: color .75s ease-out;
-	transition: color .75s ease-out;
+	-webkit-transition: color .75s ease-in;
+	transition: color .75s ease-in;
 }
 
 /* Overall layout styles */
@@ -338,9 +338,9 @@ h3.signup {
 .home .threecol-one {
 	-webkit-box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
 	        box-shadow: 0px 0px 21px 0px rgba( 0, 0, 0, 0.1 );
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in;
+	-moz-transition: opacity .5s ease-in;
+	-webkit-transition: opacity .5s ease-in;
 }
 
 .home .twocol-wrapper:hover,
@@ -491,8 +491,8 @@ body.home .post-box h2.title.entry-title {
 
 body.home .post-box h2.title.entry-title a {
 	color: $green;
-	-webkit-transition: all .5s ease-out;
-	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-in;
+	transition: all .5s ease-in;
 	line-height: 25px;
 }
 
@@ -523,9 +523,9 @@ body.home .homepage-blog .entry p {
 
 body.home .has-post-thumbnail img {
 	margin: 0;
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in;
+	-moz-transition: opacity .5s ease-in;
+	-webkit-transition: opacity .5s ease-in;
 }
 
 body.home .has-post-thumbnail img:hover {
@@ -769,9 +769,9 @@ body.blog article img.thumbnail {
 	max-height: 200px;
 	margin-top: 7px;
 	margin-bottom: 10px;
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in;
+	-moz-transition: opacity .5s ease-in;
+	-webkit-transition: opacity .5s ease-in;
 }
 
 body.tag article img.thumbnail:hover,
@@ -846,8 +846,8 @@ body.post-template-default .entry img {
 	margin: 2em 0;
 	border-left: 2px solid;
 	margin-left: 3px;
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
 }
 
 .page-template-template-podcast-main .podcasts-wrapper .podcast-icon {
@@ -889,9 +889,9 @@ body.post-template-default .entry img {
 	border: 1px solid #ccc;
 	overflow: hidden;
 	opacity: 1;
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in;
+	-moz-transition: opacity .5s ease-in;
+	-webkit-transition: opacity .5s ease-in;
 }
 
 .page-template-template-podcast-main .podcasts-wrapper article:hover {
@@ -952,9 +952,9 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	margin: 0 0 35px 10px;
-	transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in;
+	-moz-transition: opacity .5s ease-in;
+	-webkit-transition: opacity .5s ease-in;
 }
 
 @media all and (max-width: 640px) {
@@ -1103,8 +1103,8 @@ div#contact-page h1.title {
 #sidebar .subscribe-widget input[type=submit]{
 	background: $green;
 	color: #fff !important;
-	-webkit-transition: all 0.5 ease-in-out;
-	transition: all 0.5 ease-in-out;
+	-webkit-transition: all 0.5 ease-in;
+	transition: all 0.5 ease-in;
 }
 #sidebar .subscribe-widget input[type=submit]:hover{
 	opacity: 0.85;
@@ -1461,8 +1461,8 @@ div#contact-page h1.title {
 	top: 0;
 	left: 0;
 	background-size: cover !important;
-	-webkit-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in;
+	transition: all .5s ease-in;
 	/*border-radius: 25px;*/
 	overflow: hidden;
 }
@@ -1488,8 +1488,8 @@ div#contact-page h1.title {
 	background-color: rgba(76, 85, 103, 0.20);
 	text-shadow: 1px 1px 1px rgba(21, 23, 54, 0.4);
 	font-weight: 500;
-  transition: background-color .5s ease-in-out;
-  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in;
+  -webkit-transition: background-color .5s ease-in;
 }
 
 .service-wrapper .box a:hover {
@@ -1506,9 +1506,9 @@ div#contact-page h1.title {
 	text-align: center;
 	padding: 10px 5px 5px 5px;
 	min-height: 50px;
-  webkit-transition: background-color .5s ease-in-out;
-  -webkit-transition: background-color .5s ease-in-out;
-  transition: background-color .5s ease-in-out;
+  webkit-transition: background-color .5s ease-in;
+  -webkit-transition: background-color .5s ease-in;
+  transition: background-color .5s ease-in;
 }
 
 .page-template-template-services-sub-page .service-wrapper .box a div.wrapper,
@@ -1653,9 +1653,9 @@ body.home blockquote::after { float: right; }
 	text-decoration: none;
 	background-position: center left 15px;
 	border: 1px solid #ccc;
-	webkit-transition: background-color 1s ease;
-	-webkit-transition: background-color 1s ease;
-	transition: background-color 1s ease;
+	webkit-transition: background-color 1s ease-in;
+	-webkit-transition: background-color 1s ease-in;
+	transition: background-color 1s ease-in;
 }
 
 .colomat-close.faq-triclass {
@@ -1691,9 +1691,9 @@ body.home blockquote::after { float: right; }
 	background-position: left 10px center;
 	background-size: 25px;
 	padding-left: 45px !important;
-	-web-kit-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
+	-web-kit-transition: all 0.25s ease-in;
+	-webkit-transition: all 0.25s ease-in;
+	transition: all 0.25s ease-in;
 }
 
 .headphones:hover, .podcast:hover {
@@ -1727,9 +1727,9 @@ a.btn {
   font-family: Tahoma;
   font-weight: 500;
 	text-decoration: none;
-  -web-kit-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -web-kit-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
 	border-radius: 0px;
 }
 
@@ -1977,9 +1977,9 @@ input.btn.green-full.grow.btn-widget {
   margin: 1rem;
 	padding: .75rem;
   border: 1px solid #eee;
-	-web-kit-transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+	-web-kit-transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
+	transition: all .3s ease-in;
 }
 
 .sub-service-wrapper .col:hover {
@@ -2723,7 +2723,7 @@ a.promote-podcast:active {
 	/*height: 126px;*/
 	margin: 4rem 0 2.5rem;
 	box-shadow: 0px 3px 15px #ccc;
-	transition: all .3s ease-out;
+	transition: all .3s ease-in;
 }
 
 .podcast-banner:hover {
@@ -2792,7 +2792,7 @@ hr.blog {
 }
 
 ul.heateor_sss_sharing_ul li {
-  transition: all .3s ease-out;
+  transition: all .3s ease-in;
   padding: 1px !important;
 	&:hover {
 	    transform: scale(1.1);
@@ -2836,7 +2836,7 @@ ul.heateor_sss_sharing_ul li {
 		display: inline-block;
 		padding: 0px .5rem;
 		font-size: .85rem;
-		transition: all .3s ease-out;
+		transition: all .3s ease-in;
 		&:hover {
 			transform: scale(1.1);
 		}
@@ -2875,6 +2875,7 @@ ul.heateor_sss_sharing_ul li {
     margin-right: 4px;
     color: $green;
     font: 300 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+		transition: all .3s ease-in;
 }
 
 .attachment-img-related-post {
@@ -2970,6 +2971,8 @@ ul.heateor_sss_sharing_ul li {
 		li {
 			border-bottom: 1px solid #D1D6DA;
 			padding: .5rem 0;
+			transition: border-bottom .3s ease-in;
+
 			&:hover {
 				border-bottom: 1px solid $green;
 			}
@@ -3003,7 +3006,7 @@ ul.heateor_sss_sharing_ul li {
 		#quoterotator1 {
 			display: table-cell;
 			vertical-align: middle;
-			background: url(http://juliecusmariu.com/wp-content/uploads/2017/12/inspirational-quote.jpg);
+			background: url(http://juliecusmariu.com/wp-content/uploads/2018/01/Sunset-blog-quotes-optimized.jpg);
 			background-size: cover;
 			background-position: 50% 25%;
 			border-radius: 3px;
