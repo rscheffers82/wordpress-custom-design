@@ -2947,12 +2947,15 @@ ul.heateor_sss_sharing_ul li {
 		text-decoration: none;
 	}
 	h3 {
-		line-height: 1.75rem;
+		line-height: 1.5em;
+		position: relative;
 		a {
 			font: normal 18px/1.5em 'Lora', arial, sans-serif;
 			color: $green;
 			display: inline-block;
 			margin-bottom: -2rem;
+			position: absolute;
+
 		}
 	}
 }
