@@ -611,7 +611,7 @@ function socialShareButtons($atts, $content = null) {
 		'</a>' : '') .
 		'<a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn green-full" target="_blank" style="border-radius: 3px;">' .
 			'<i class="fa fa-apple"></i>' .
-			' iTunes' .
+			' Apple Podcasts' .
 		'</a>' .
 	'</div>' ;
 }

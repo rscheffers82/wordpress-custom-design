@@ -31,7 +31,7 @@ woo_post_before();
 		<?php the_title( $title_before, $title_after ); ?>
 		<div class="blogpost-details">
 			<?php if('content' == $settings['post_content'] || is_single()) {
-				// This will be printen on an individual blog post
+				// This will be printed on an individual blog post
 				echo 'By <a href="/who-is-julie-cusmariu" target="_blank">' . get_the_author() . '</a> – ';
 				echo the_date('F j, Y');
 			} ?>

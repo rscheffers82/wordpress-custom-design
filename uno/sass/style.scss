@@ -2986,9 +2986,12 @@ ul.heateor_sss_sharing_ul li {
 				}
 			}
 			img, span {
-				margin-right: .5rem;
 				display: table-cell;
 				vertical-align: middle;
+			}
+			img {
+				margin-right: .5rem;
+				max-width: inherit;
 			}
 			span {
 				font: normal .85rem/1.5em 'Lora', arial, sans-serif;
