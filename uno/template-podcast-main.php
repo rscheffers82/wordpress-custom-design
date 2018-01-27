@@ -139,24 +139,6 @@
             </div>
          </div>
        </div>
-
-       <div class="radio-show-summary">
-         <?php // echo the_field('radio_show_summary'); ?>
-         <div class="wrapper podcast-host">
-           <?php if( get_field('text_field') !== ''): ?>
-             <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
-           <?php endif; ?>
-           <div class="podcast-bio">
-             <?php echo the_field('radio_host_bio'); ?>
-           </div>
-           <div class="podcast-subscribe">
-             <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
-             <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i> Apple Podcasts</a><br>
-             <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
-             <a href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
-           </div>
-         </div>
-       </div>
  <script>
  function newsletterFocus() {
    (function() {
@@ -188,6 +170,27 @@
     wp_reset_query();
     ?>
    </div>  <!-- podcasts-wrapper -->
+
+<!-- Radio host summary -->
+<div class="radio-show-summary">
+  <?php // echo the_field('radio_show_summary'); ?>
+  <div class="wrapper podcast-host">
+    <?php if( get_field('text_field') !== ''): ?>
+      <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
+    <?php endif; ?>
+    <div class="podcast-bio">
+      <?php echo the_field('radio_host_bio'); ?>
+    </div>
+    <div class="podcast-subscribe">
+      <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
+      <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i> Apple Podcasts</a><br>
+      <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
+      <a href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
+    </div>
+  </div>
+</div>
+<!-- end Radio host summary -->
+
 
     <h2 class="header2-1" id="listen-to-archives">Heatbeat radio archives</h2>
     <div class="podcasts-wrapper">

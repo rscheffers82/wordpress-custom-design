@@ -2269,21 +2269,6 @@ body.page-template-template-podcast-main-dev section.home-section.custom-header 
 	max-width: 1200px;
 }
 
-.wrapper.details-podcast:after {
-	display: block;
-	position: absolute;
-	content: '';
-	width: 30px;
-	height: 30px;
-	bottom: -47px;
-	left: 50%;
-	margin-left: -20px;
-	background-color: #f9f9f9;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	z-index: 1;
-}
-
 section.right {
 	background-position: 50%;
 	background-size: cover;
@@ -2356,6 +2341,30 @@ section.right {
 	padding: 2rem 1.618em;
 	position: relative;
 	margin-bottom: 2rem;
+
+	&:after {
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -45rem;
+    right: -45rem;
+    background-color: #6EC095;
+    content: " ";
+	}
+	&:before {
+		display: block;
+		position: absolute;
+		content: '';
+		width: 30px;
+		height: 30px;
+		top: -15px;
+		left: calc(50% - 15px);
+		background-color: #f9f9f9;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		z-index: 1;
+	}
 }
 
 .radio-show-summary p {
