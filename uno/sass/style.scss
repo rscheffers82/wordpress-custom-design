@@ -816,7 +816,7 @@ body.post-template-default .entry img {
 	border-radius: 3px;
 }
 
-/*  PODCAST STYLES */
+/*  SECTION PODCAST STYLES */
 
 .page-template-template-podcast-main .podcasts-wrapper {
 	display: inline-block;
@@ -973,7 +973,12 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 	padding-right: 20px;
 }
 
-/* soundcloud section */
+p.subtitle {
+    margin-top: -10px;
+    font-style: italic;
+}
+
+/* SECTION soundcloud */
 
 .page-template-template-podcast-main .archives {
 	padding: 0 1.618em 40px 1.618em;
@@ -989,7 +994,7 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 }
 
 
-/* MEDIA PAGE */
+/* SECTION MEDIA PAGE */
 
 ul.medialist li {
 	float: left;
@@ -2043,9 +2048,13 @@ input.btn.green-full.grow.btn-widget {
 	text-align: center;
 }
 
-.header2-1 {
-	font: normal 28px/1.2em 'Open Sans', arial, sans-serif !important;
+// @font-face {
+//     font-family: ChunkFive;
+//     src: url("fonts/ChunkFive-Roman.otf") format("opentype");
+// }
 
+.header2-1 {
+	font: bold 28px/1.2em 'Open Sans', arial, sans-serif !important;
 }
 
 .header2-2 {
@@ -3046,4 +3055,24 @@ ul.heateor_sss_sharing_ul li {
 article aside#post-author,
 article .post-utility {
 	display: none;
+}
+
+/* SECTION POSTS */
+
+body.single-post {
+	.testimonials-list {
+		margin-top: 3rem;
+	}
+	.widget_woothemes_testimonials .quote {
+		margin-bottom: 0;
+	}
+}
+
+/* SECTION RECOMMENDED READING */
+
+body.page-id-5568 .entry p {
+  font: 300 18px/1.5em 'Lora', arial, sans-serif;
+  color: #555555;
+  float: left;
+  padding: 0 .5rem;
 }
