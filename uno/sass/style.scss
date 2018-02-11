@@ -1037,47 +1037,15 @@ ul.medialist-4 li {
 	color: inherit;
 }
 
-/* CONTACT PAGE STYLES */
+/* SECTION CONTACT PAGE STYLES */
 
-body.page-template-template-contact-php .location-twitter {
-	/*display: none;*/
-}
-
-body.page-template-template-contact .entry {
-	margin-top: 40px;
+body.page-id-3561 {
+	header h1.entry-title {
+		display: none;
+	}
 }
 
-body.page-template-template-contact-php .location-twitter {
-	padding: 1em 0 1em;
-}
 
-div#contact-page h1.title {
-  padding: 2rem 0 0 2rem;
-  margin-top: -100px;
-  color: #fff;
-}
-
-#contact-page .above-contact-form {
-	/*margin-top: 25px;*/
-}
-
-#contact-page ol.forms textarea,
-#contact-page ol.forms input.txt {
-	padding: 10px;
-	border: 1px solid #e2e6f3;
-}
-
-#contact-page ol.forms textarea:focus,
-#contact-page ol.forms input.txt:focus {
-	border: 1px solid #60DC9B;
-}
-
-#contact-page ol.forms label {
-	margin: 9px 0;
-}
-#contact-page ol.forms li:nth-child(3) label{
-	margin: 0;
-}
 
 /* Widgets */
 
