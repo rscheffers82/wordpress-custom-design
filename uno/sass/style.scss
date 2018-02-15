@@ -2277,13 +2277,23 @@ section.right {
   right: 7%;
 }
 
+.podcast-main-cta {
+	position: absolute;
+	left: calc(50% - 48px);
+	top: calc(62% - 1vw);
+	.btn {
+		font-size: 1.2rem;
+		padding: 8px 14px;
+	}
+}
+
 .podcast-main-tagline {
 	position: absolute;
-	bottom: calc(1% + 4vw);
-	right: 7%;
-	text-align: right;
-	font-family: 'Georgia', serif;
-	font-style: italic;
+  bottom: 2vw;
+  right: 7%;
+  text-align: right;
+  font-family: 'Georgia', serif;
+  font-style: italic;
 }
 
 .podcast-newsletter {
@@ -2541,7 +2551,7 @@ hr.down:after {
 @media all and (max-width: 640px) {
 	section.left {
 		width: 100%;
-	  height: calc(3rem + 11vw);
+		height: calc(7.5rem + 11vw);
 	  min-height: auto;
 	}
 	.podcast-main-title {
@@ -2554,6 +2564,15 @@ hr.down:after {
     top: calc(25% + 5vw);
     left: 10%;
 		right: auto;
+	}
+	.podcast-main-cta {
+	  position: absolute;
+	  left: 10%;
+	  bottom: 2%;
+	}
+	.podcast-main-cta .btn {
+	  font-size: 1.1rem;
+	  padding: 6px 10px;
 	}
 	.podcast-main-tagline {
 		display: none;
@@ -2875,17 +2894,21 @@ ul.heateor_sss_sharing_ul li {
 }
 
 .author-wrapper {
-	margin: 2rem 0;
+	margin: 1rem 0;
+	display: inline-block;
 }
 
 .author-image {
 	float: left;
 	margin-right: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 5px;
 }
 
 .author-description {
 	h1 { display: none; }
-	p {display: none; }
+	p:first-child, p:last-child {display: none; }
+	p { margin: 0; }
 }
 
 .nocomments {
@@ -2903,11 +2926,19 @@ ul.heateor_sss_sharing_ul li {
 }
 
 @media all and (max-width: 480px){
+	.author-description br {
+		display: none;
+	}
 	.author-image {
 	  float: none;
 	  margin: 0 auto 1.5rem auto;
 	  text-align: center;
 	  overflow: hidden;
+		border: none;
+		img {
+			padding: 5px;
+			border: 1px solid #ccc;
+		}
 	}
 	.post-meta li {
     float: left;

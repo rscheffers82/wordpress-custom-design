@@ -73,10 +73,10 @@ woo_post_before();
 
 	<div class="author-wrapper">
 		<div class="author-image">
-			<img src="<?php the_field('radio_host_image', 4237); ?>" width="250px" height="250px">
+			<img src="<?php the_field('radio_host_image', 4237); ?>" width="125px" height="125px">
 		</div>
 		<div class="author-description">
-			<p><?php the_field('radio_host_bio', 4237); ?></p>
+			<p><?php the_field('blogpost_author_bio', 4237); ?></p>
 		</div>
 	</div>
 

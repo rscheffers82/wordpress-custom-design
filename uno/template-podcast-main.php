@@ -24,15 +24,10 @@
            <section class="left">
              <h1 class='podcast-main-title'><?php the_title(); ?></h1>
              <div class="podcast-main-title-underline">a live podcast</div>
-             <div class="podcast-main-tagline">Inspiring individual<br>and global change</div>
-             <!-- <div class="podcast-main-middle">
-               <p>#motherhood</p>
-               <p>#let's create a village</p>
-             </div> -->
-             <!-- <div class="podcast-main-bottom">
-               a new series with
-               <h1 class="title">Julie Cusmariu</h1>
-             </div> -->
+             <div class="podcast-main-tagline">Inspiring individual and global change</div>
+             <div class="podcast-main-cta cta">
+               <a id="podcast-cta" class="btn brown hover grow-more" href="#cta-listen">Listen</a>
+             </div>
            </section>
            <section class="right" style="background-image:url('<?php chi_display_header(); ?>')">
            </section>
@@ -185,7 +180,7 @@
       <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
       <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i> Apple Podcasts</a><br>
       <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
-      <a href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
+      <a id="listen-to-archives" href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
     </div>
   </div>
 </div>
