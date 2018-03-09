@@ -103,7 +103,16 @@
          ?>
            <div class="podcast-guest">
              <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
-             <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
+             <div class="img-wrap">
+               <div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div>
+             </div>
+
+             <?php if(get_field('feature_two_guests') && get_field('guest2_image')) : ?>
+               <div class="img-wrap">
+                 <div class="guest-img" style="background-image: url(<?php the_field('guest2_image'); ?>)"></div>
+               </div>
+            <?php endif; ?>
+
              <p><?php the_field('weekly_topic_guest'); ?></p>
            </div>
 
