@@ -23,51 +23,20 @@ get_header(); ?>
         <div style="display:inline-block;">
           <p>Never want to miss a podcast?</p>
 
-          <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
-            <div style="display: none;">
-            <input type="hidden" name="meta_web_form_id" value="1212515379" />
-            <input type="hidden" name="meta_split_id" value="" />
-            <input type="hidden" name="listname" value="awlist4853401" />
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+          <form action="https://Juliecusmariu.us17.list-manage.com/subscribe/post?u=cb461b2264802e21da240f9e3&amp;id=a996b74875" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          		<div id="mc_embed_signup_scroll">
 
-            <input type="hidden" name="meta_adtracking" value="Listen_to_my_podcast_sign_up" />
-            <input type="hidden" name="meta_message" value="1" />
-            <input type="hidden" name="meta_required" value="email" />
-
-            <input type="hidden" name="meta_tooltip" value="" />
-            </div>
-            <input class="text" id="awf_field-94169424" type="email" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
-            <input type="submit" name="submit "class="btn pulse white" id="newsletter" value="Subscribe">
+          			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cb461b2264802e21da240f9e3_7b115a52d7" tabindex="-1" value=""></div>
+          			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn white pulse">
+          	</div>
           </form>
-          <script type="text/javascript">
-          // Special handling for facebook iOS since it cannot open new windows
-          (function() {
-              if (navigator.userAgent.indexOf('FBIOS') !== -1 || navigator.userAgent.indexOf('Twitter for iPhone') !== -1) {
-                  document.getElementById('af-form-1212515379').parentElement.removeAttribute('target');
-              }
-          })();
-          </script><script type="text/javascript">
-              <!--
-              (function() {
-                  var IE = /*@cc_on!@*/false;
-                  if (!IE) { return; }
-                  if (document.compatMode && document.compatMode == 'BackCompat') {
-                      if (document.getElementById("af-form-1212515379")) {
-                          document.getElementById("af-form-1212515379").className = 'af-form af-quirksMode';
-                      }
-                      if (document.getElementById("af-body-1212515379")) {
-                          document.getElementById("af-body-1212515379").className = "af-body inline af-quirksMode";
-                      }
-                      if (document.getElementById("af-header-1212515379")) {
-                          document.getElementById("af-header-1212515379").className = "af-header af-quirksMode";
-                      }
-                      if (document.getElementById("af-footer-1212515379")) {
-                          document.getElementById("af-footer-1212515379").className = "af-footer af-quirksMode";
-                      }
-                  }
-              })();
-              -->
-          </script>
-          <!-- /AWeber Web Form Generator 3.0.1 -->
+          </div>
+          <!--End mc_embed_signup-->
+
         </div>
       </div>
     </div>
