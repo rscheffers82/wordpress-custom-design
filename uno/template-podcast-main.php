@@ -26,7 +26,7 @@
              <div class="podcast-main-title-underline">a live podcast</div>
              <div class="podcast-main-tagline">Inspiring individual and global change</div>
              <div class="podcast-main-cta cta">
-               <a id="podcast-cta" class="btn brown hover grow-more" href="#cta-listen">Listen</a>
+               <a class="btn brown hover grow-more smooth-scroll" href="#cta-listen">Listen</a>
              </div>
            </section>
            <section class="right" style="background-image:url('<?php chi_display_header(); ?>')">
@@ -61,17 +61,14 @@
 
        <div class="wrapper details-podcast">
          <div class="podcast-time-date">
+
          <?php the_content(); ?>
 
-         <div class="podcast-player">
-           <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
-         </div>
-         <?php
-          $shortcode = '[social-share-buttons download="' . get_field('download_link') . '"]';
-          echo do_shortcode($shortcode);
-         ?>
            <div class="podcast-guest">
-             <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
+             <div class="background-container">
+               <h3>Next broadcast: <?php the_field('date_next_podcast'); ?></h3>
+               <p class="padded"><?php the_field('topic_guest_name'); ?></p>
+             </div>
              <div class="img-wrap">
                <div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div>
              </div>
@@ -128,7 +125,7 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
-    <h2 class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
+    <h2 id="motherhood" class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
     <div class="podcasts-wrapper">
     <?php
     $query = new WP_Query( 'cat=130&posts_per_page=-1' );
@@ -142,7 +139,11 @@
     }
     wp_reset_query();
     ?>
-   </div>  <!-- podcasts-wrapper -->
+    </div>  <!-- podcasts-wrapper -->
+
+    <div class="patreon-section">
+      <?php echo the_field('patreon-section'); ?>
+    </div>
 
 <!-- Radio host summary -->
 <div class="radio-show-summary">
@@ -158,14 +159,13 @@
       <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
       <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i> Apple Podcasts</a><br>
       <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
-      <a id="listen-to-archives" href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
+      <a href="#hearbeat-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep smooth-scroll">Listen to archives</a><br>
     </div>
   </div>
 </div>
 <!-- end Radio host summary -->
 
-
-    <h2 class="header2-1" id="listen-to-archives">Heatbeat radio archives</h2>
+    <h2 id="hearbeat-archives" class="header2-1">Heatbeat radio archives</h2>
     <div class="podcasts-wrapper">
     <?php
     $query = new WP_Query( 'cat=108&posts_per_page=-1' );

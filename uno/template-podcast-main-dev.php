@@ -15,7 +15,7 @@
        <div style="display: none; visibility: hidden;">
          <?php $action = (the_field('topic_guest') == "topic") ? 'discussing ' : 'featuring '; ?>
        </div>
-     	<?php woo_main_before(); ?>
+      <?php woo_main_before(); ?>
 
        <?php
        $wearelive = chi_get_header_image_url();
@@ -24,15 +24,10 @@
            <section class="left">
              <h1 class='podcast-main-title'><?php the_title(); ?></h1>
              <div class="podcast-main-title-underline">a live podcast</div>
-             <div class="podcast-main-tagline">Inspiring individual<br>and global change</div>
-             <!-- <div class="podcast-main-middle">
-               <p>#motherhood</p>
-               <p>#let's create a village</p>
-             </div> -->
-             <!-- <div class="podcast-main-bottom">
-               a new series with
-               <h1 class="title">Julie Cusmariu</h1>
-             </div> -->
+             <div class="podcast-main-tagline">Inspiring individual and global change</div>
+             <div class="podcast-main-cta cta">
+               <a id="podcast-cta" class="btn brown hover grow-more" href="#cta-listen">Listen</a>
+             </div>
            </section>
            <section class="right" style="background-image:url('<?php chi_display_header(); ?>')">
            </section>
@@ -46,68 +41,48 @@
            <div style="display:inline-block;">
              <p>Never want to miss a podcast?</p>
 
-             <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
-               <div style="display: none;">
-               <input type="hidden" name="meta_web_form_id" value="1212515379" />
-               <input type="hidden" name="meta_split_id" value="" />
-               <input type="hidden" name="listname" value="awlist4853401" />
+             <!-- Begin MailChimp Signup Form -->
+             <div id="mc_embed_signup">
+             <form action="https://Juliecusmariu.us17.list-manage.com/subscribe/post?u=cb461b2264802e21da240f9e3&amp;id=a996b74875" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
 
-               <input type="hidden" name="meta_adtracking" value="Listen_to_my_podcast_sign_up" />
-               <input type="hidden" name="meta_message" value="1" />
-               <input type="hidden" name="meta_required" value="email" />
-
-               <input type="hidden" name="meta_tooltip" value="" />
-               </div>
-               <input class="text" id="awf_field-94169424" type="email" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
-               <input type="submit" name="submit "class="btn pulse white" id="newsletter" value="Subscribe">
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cb461b2264802e21da240f9e3_7b115a52d7" tabindex="-1" value=""></div>
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn white pulse">
+              </div>
              </form>
-             <script type="text/javascript">
-             // Special handling for facebook iOS since it cannot open new windows
-             (function() {
-                 if (navigator.userAgent.indexOf('FBIOS') !== -1 || navigator.userAgent.indexOf('Twitter for iPhone') !== -1) {
-                     document.getElementById('af-form-1212515379').parentElement.removeAttribute('target');
-                 }
-             })();
-             </script><script type="text/javascript">
-                 <!--
-                 (function() {
-                     var IE = /*@cc_on!@*/false;
-                     if (!IE) { return; }
-                     if (document.compatMode && document.compatMode == 'BackCompat') {
-                         if (document.getElementById("af-form-1212515379")) {
-                             document.getElementById("af-form-1212515379").className = 'af-form af-quirksMode';
-                         }
-                         if (document.getElementById("af-body-1212515379")) {
-                             document.getElementById("af-body-1212515379").className = "af-body inline af-quirksMode";
-                         }
-                         if (document.getElementById("af-header-1212515379")) {
-                             document.getElementById("af-header-1212515379").className = "af-header af-quirksMode";
-                         }
-                         if (document.getElementById("af-footer-1212515379")) {
-                             document.getElementById("af-footer-1212515379").className = "af-footer af-quirksMode";
-                         }
-                     }
-                 })();
-                 -->
-             </script>
-             <!-- /AWeber Web Form Generator 3.0.1 -->
+             </div>
+             <!--End mc_embed_signup-->
+
            </div>
          </div>
        </div>
 
        <div class="wrapper details-podcast">
          <div class="podcast-time-date">
-         <?php the_content(); ?>
-
+           <h2><?php the_field('subtitle'); ?></h2>
          <div class="podcast-player">
            <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
          </div>
-         <?php echo do_shortcode('[Sassy_Social_Share]'); ?>
-         <a href="https://api.spreaker.com/download/episode/13277265/welcome_to_julie_in_conversation.mp3" class="btn orange-full" style="border-radius: 3px;">Download</a>
+         <?php
+          $shortcode = '[social-share-buttons download="' . get_field('download_link') . '"]';
+          echo do_shortcode($shortcode);
+         ?>
+         <?php the_content(); ?>
 
            <div class="podcast-guest">
              <p>Next: <?php the_field('date_next_podcast'); ?> : <?php the_field('topic_guest_name'); ?></p>
-             <div class="img-wrap"><div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div></div>
+             <div class="img-wrap">
+               <div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div>
+             </div>
+
+             <?php if(get_field('feature_two_guests') && get_field('guest2_image')) : ?>
+               <div class="img-wrap">
+                 <div class="guest-img" style="background-image: url(<?php the_field('guest2_image'); ?>)"></div>
+               </div>
+            <?php endif; ?>
+
              <p><?php the_field('weekly_topic_guest'); ?></p>
            </div>
 
@@ -136,25 +111,6 @@
                   }
                 } ?>
             </div>
-           <p>Stay tuned for new guest announcements for 2018</p>
-         </div>
-       </div>
-
-       <div class="radio-show-summary">
-         <?php // echo the_field('radio_show_summary'); ?>
-         <div class="wrapper podcast-host">
-           <?php if( get_field('text_field') !== ''): ?>
-             <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
-           <?php endif; ?>
-           <div class="podcast-bio">
-             <?php echo the_field('radio_host_bio'); ?>
-           </div>
-           <div class="podcast-subscribe">
-             <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
-             <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i>  iTunes</a><br>
-             <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
-             <a href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
-           </div>
          </div>
        </div>
  <script>
@@ -173,32 +129,57 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
-             <?php //woo_loop_before();
-           //  if (have_posts()) { $count = 0;
-         //      while (have_posts()) { the_post(); $count++;
-         //        woo_get_template_part( 'content', 'page' ); // Get the page content template file, contextually.
-         //      }
-       //      }
-             ?>
-             <h3 id="listen-to-archives" class="thin">Heatbeat radio archives</h3>
+    <h2 class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
+    <div class="podcasts-wrapper">
+    <?php
+    $query = new WP_Query( 'cat=130&posts_per_page=-1' );
 
-             <div class="podcasts-wrapper">
-     <?php
+    if ( $query->have_posts() ) {
+      while ( $query->have_posts() ) { $query->the_post();
+        woo_get_template_part( 'content-podcast', get_post_type() );
+      }
+    } else {
+      get_template_part( 'content', 'noposts' );
+    }
+    wp_reset_query();
+    ?>
+   </div>  <!-- podcasts-wrapper -->
+
+ <!-- Radio host summary -->
+ <div class="radio-show-summary">
+  <?php // echo the_field('radio_show_summary'); ?>
+  <div class="wrapper podcast-host">
+    <?php if( get_field('text_field') !== ''): ?>
+      <div class="podcast-image" style="background: url(<?php echo the_field('radio_host_image'); ?>)"></div>
+    <?php endif; ?>
+    <div class="podcast-bio">
+      <?php echo the_field('radio_host_bio'); ?>
+    </div>
+    <div class="podcast-subscribe">
+      <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
+      <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i> Apple Podcasts</a><br>
+      <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
+      <a id="listen-to-archives" href="#listen-to-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep">Listen to archives</a><br>
+    </div>
+  </div>
+ </div>
+ <!-- end Radio host summary -->
 
 
-     $query = new WP_Query( 'cat=108&posts_per_page=-1' );
+    <h2 class="header2-1" id="listen-to-archives">Heatbeat radio archives</h2>
+    <div class="podcasts-wrapper">
+    <?php
+    $query = new WP_Query( 'cat=108&posts_per_page=-1' );
 
-     if ( $query->have_posts() ) {
-       while ( $query->have_posts() ) { $query->the_post();
-         // woo_get_template_part(  'content-podcast', 'post' );
-         woo_get_template_part( 'content-podcast', get_post_type() );
-
-       }
-     } else {
-       get_template_part( 'content', 'noposts' );
-     }
-     wp_reset_query();
-     ?>
+    if ( $query->have_posts() ) {
+      while ( $query->have_posts() ) { $query->the_post();
+        woo_get_template_part( 'content-podcast', get_post_type() );
+      }
+    } else {
+      get_template_part( 'content', 'noposts' );
+    }
+    wp_reset_query();
+    ?>
    </div>  <!-- podcasts-wrapper -->
 
    </div>  <!-- main-sidebar-container -->
@@ -217,8 +198,8 @@
          $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
          ?>
 
-           <h1 class="title entry-title">Two series designed to support your own journey through marriage and pregnancy</h1>
-
+           <h2 class="header2-1">Listen to these two series to gain insight into your own journey through marriage, pregnancy, and birth.</h2>
+           <p class="subtitle">Join Julie, in conversation with expert guests, as she journeyed through marriage and then pregnancy and birth for the first time.<p>
            <div class="podcast-radioshows-wrapper">
              <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
                <img src=<?php echo $img_pregnancy; ?> alt="Conscious Pregnancy" />
@@ -228,7 +209,7 @@
              </a>
            </div>
 
-           <h1 class="title entry-title">What listeners are saying</h1>
+            <h2 class="header2-1">What listeners are saying</h2>
            <?php echo do_shortcode('[testimonial_view id=3]'); ?>
 
      </div><!-- /#main-sidebar-container -->
@@ -236,7 +217,7 @@
        <?php get_sidebar( 'alt' ); ?>
        </div><!-- /#content -->
 
- 		<?php woo_main_after(); ?>
+    <?php woo_main_after(); ?>
 
    </div><!-- /.content -->
 

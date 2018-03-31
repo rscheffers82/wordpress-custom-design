@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 
   $("select#cat").after("<span class='downarrow'></span>");
 
-  $("#podcast-cta, #listen-to-archives, #join-chat").on('click', function(event) {
+  $("#podcast-cta, .smooth-scroll, #join-chat").on('click', function(event) {
     event.preventDefault();   // Prevent default anchor click behavior
     var hash = this.hash;     // Store hash
     console.log('in click');
@@ -16,9 +16,6 @@ jQuery(document).ready(function($){
     }, 1500, function(){
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
-      console.log('in click, in animate');
-
     });
   });
-  console.log('outside click');
 });
