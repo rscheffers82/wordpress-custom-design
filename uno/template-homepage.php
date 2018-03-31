@@ -62,6 +62,9 @@ get_header(); ?>
      <!-- Featured blog post rendering -->
     <!-- <h3 class="elegant">From the Blog</h3> -->
     <h3 class="thin center">Some of my thoughts</h3>
+    <p class="alignright">
+      <a href="<?php echo site_url();?>/blog" class="btn green-full rounded grow">View all posts</a>
+    </p>
     <div class="homepage-blog">
     <?php
 
@@ -75,14 +78,9 @@ get_header(); ?>
       get_template_part( 'content', 'noposts' );
     }
     //woo_pagenav( $query );
-    //wp_reset_query();
+    wp_reset_query();
     ?>
-    <p>
-      <a href="<?php echo site_url();?>/blog" class="btn green-full rounded grow">View all posts</a>
-    </p>
-    <!-- <div class="button-wrapper">
-      <a href="<?php //echo site_url();?>/blog" class="woo-sc-button custom medium blog home-blog-button">View all posts</a>
-    </div> -->
+
   </div>
 
     <!-- Magazine Grid end -->
