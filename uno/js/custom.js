@@ -18,4 +18,46 @@ jQuery(document).ready(function($){
       window.location.hash = hash;
     });
   });
+
+  function addEvent(obj, evt, fn) {
+      if (obj.addEventListener) {
+          obj.addEventListener(evt, fn, false);
+      }
+      else if (obj.attachEvent) {
+          obj.attachEvent("on" + evt, fn);
+      }
+  }
+
+  // var to only show the onExitPopup once - this needs improvement for sessions (30 days etc and use cookies)
+  var popUpOnExit = false;
+
+  // Only trigger the on exit on the below pages
+  var pagesToDisplayOnExit = [
+    'page-id-8',      // Life Coaching
+    'page-id-4830',   // Intuitive Readings
+    'page-id-4355',   // Mentor Coaching
+];
+
+  // Check if the visitor is on the page to trigger the onExit event
+  pagesToDisplayOnExit.map(function(page) {
+    if ($('body').hasClass(page)) popUpOnExit = true;
+  });
+
+  // console.log('should onexit be active? ', popUpOnExit);
+
+  // Adding the event if onExit is true
+  if (popUpOnExit) addEvent(document, "mouseout", function(e) {
+    // console.log('added');
+    e = e ? e : window.event;
+    var from = e.relatedTarget || e.toElement;
+    if ((!from || from.nodeName == "HTML") && e.pageY < jQuery(window).scrollTop()) {
+        if (popUpOnExit) {
+          popUpOnExit = false;
+          $('#subscribe-to-podcast').click();
+          // add id's here for the pages we want to trigger an on exit event for.
+
+        }
+    }
+  });
+
 });

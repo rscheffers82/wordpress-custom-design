@@ -109,14 +109,7 @@
             </div>
          </div>
        </div>
- <script>
- function newsletterFocus() {
-   (function() {
-     document.getElementById("newsletter").focus();
-     document.getElementById("newsletter").select();
-   })();
- }
- </script>
+
          <!-- #content Starts -->
      <?php woo_content_before(); ?>
      <div id="content" class="col-full">
@@ -158,7 +151,7 @@
     <div class="podcast-subscribe">
       <h1 class="title" style="font-size: 2em !important;margin-top: .75rem;">Subscribe</h1>
       <a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn soft-white rounded grow" target="_blank"><i class="fa fa-apple"></i> Apple Podcasts</a><br>
-      <a class="btn soft-white rounded grow" onclick="newsletterFocus()"><i class="fa fa-envelope"></i>  Podcast news</a><br>
+      <a href="#" id="subscribe-to-podcast" class="btn soft-white rounded grow"><i class="fa fa-envelope"></i>  Podcast news</a><br>
       <a href="#hearbeat-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep smooth-scroll">Listen to archives</a><br>
     </div>
   </div>
