@@ -88,8 +88,8 @@
                 while (have_posts()) { the_post(); $count++;
                   $post_meta = get_post_meta($post->ID, 'podcast-guests', false);
 
-                    foreach($post_meta[0] as $item) { ?>
-                          <?php $img_url = wp_get_attachment_url( $item['image'][0] ); ?>
+                    foreach($post_meta[0] as $item) {
+                          $img_url = wp_get_attachment_url( $item['image'] ); ?>
 
                           <div class="guest-list">
                             <div class="img-wrap">
