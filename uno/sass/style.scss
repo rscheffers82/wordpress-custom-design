@@ -958,11 +958,6 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 	-webkit-transition: opacity .5s ease-in;
 }
 
-.patreon-section {
-	display: flex;
-	flex-flow: column nowrap;
-}
-
 @media all and (max-width: 640px) {
 	.podcast-radioshow {
 		display: block;
@@ -982,6 +977,13 @@ article.category-podcast .post-meta .categories, article.category-podcast .post-
 p.subtitle {
     margin-top: -10px;
     font-style: italic;
+}
+
+.social-share-wrapper {
+	margin-bottom: 1.3em;
+	.btn {
+		margin: 5px 0px 0px 0px;
+	}
 }
 
 /* SECTION soundcloud */
@@ -1655,9 +1657,12 @@ body.home blockquote::after { float: right; }
 
 .podcast-triclass {
 	font: 600 18px/1.5em 'Lora', arial, sans-serif;
-	color: $green;
+	color: $soft-white;
+	background-color: $green;
+	padding: 10px 15px 8px 15px;
+	border-radius: 5px;
+	margin-bottom: 20px;
 }
-
 .podcast-targclass {
 	font: normal 18px/1.5em 'Lora', arial, sans-serif
 }
@@ -2329,6 +2334,8 @@ section.right {
 	opacity: 0.5;
 }
 
+
+
 .radio-show-summary {
 	background-color: $green;
 	color: #f9f9f9;
@@ -2354,18 +2361,37 @@ section.right {
 		height: 30px;
 		top: -15px;
 		left: calc(50% - 15px);
-		background-color: #f9f9f9;
+		background-color: #ffffff;
 		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 		z-index: 1;
 	}
+	p {
+		font: 300 18px/36px 'Open Sans', arial, sans-serif;
+		margin: 0 auto;
+		color: #fafafc;
+		max-width: 1200px;
+	}
 }
 
-.radio-show-summary p {
-	font: 300 18px/36px 'Open Sans', arial, sans-serif;
-	margin: 0 auto;
-	color: #fafafc;
-	max-width: 1200px;
+.patreon-section {
+	display: flex;
+	flex-flow: column nowrap;
+	position: relative;
+	&:before {
+		position: absolute;
+    background-color: #fff;
+    content: ' ';
+    top: -2rem;
+    left: -20rem;
+    right: -20rem;
+    bottom: 0;
+    z-index: -1;
+	}
+}
+
+.podcast-header-triclass {
+	font: bold 28px/1.2em 'Open Sans', arial, sans-serif !important;
 }
 
 hr.down {
@@ -2390,6 +2416,7 @@ hr.down:after {
 .podcast-time-date {
 	display: inline-block;
   padding: 0 1.618em;
+	max-width: calc(100% - 3.236em);
 }
 
 .wrapper-player-archives {
@@ -2426,6 +2453,7 @@ hr.down:after {
 	@media all and (max-width: 640px) {
 		margin-left: auto;
 		margin-right: auto;
+		width: 100%;
 	}
 
 	header {
@@ -2511,12 +2539,6 @@ hr.down:after {
 .podcast-time-date h1 {
 	font: 300 2.6rem/1rem 'DearJoe5CASUAL', script !important;
 	padding-top: 3rem;
-}
-
-@media all and (max-width: 410px) {
-	.podcast-time-date {
-		padding: 0 1rem;
-	}
 }
 
 .podcast-join h1 span {

@@ -65,9 +65,9 @@
          <?php the_content(); ?>
 
            <div class="podcast-guest">
-             <div class="background-container">
-               <h3>Next broadcast: <?php the_field('date_next_podcast'); ?></h3>
-               <p class="padded"><?php the_field('topic_guest_name'); ?></p>
+             <div>
+               <h2 class="header2-1">Next broadcast: <?php the_field('date_next_podcast'); ?></h2>
+               <p><?php the_field('topic_guest_name'); ?></p>
              </div>
              <div class="img-wrap">
                <div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div>
