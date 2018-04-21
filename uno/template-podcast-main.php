@@ -26,7 +26,7 @@
              <div class="podcast-main-title-underline">a live podcast</div>
              <div class="podcast-main-tagline">Inspiring individual and global change</div>
              <div class="podcast-main-cta cta">
-               <a class="btn brown hover grow-more smooth-scroll" href="#cta-listen">Listen</a>
+               <a class="btn brown hover grow-more smooth-scroll podcast podcast-orange" href="#cta-listen">Listen</a>
              </div>
            </section>
            <section class="right" style="background-image:url('<?php chi_display_header(); ?>')">
