@@ -986,6 +986,34 @@ p.subtitle {
 	}
 }
 
+.podcast-listening-option-main-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+a.podcast-listen-option {
+  text-align: center;
+  margin: 0 5px 1.5rem;
+	text-decoration: none !important;
+
+	p { display: none; }
+
+  svg path {
+    fill: #70BF96;
+  }
+}
+
+.podcast-listen-name {
+  font: normal 18px/1.5em 'Lora', arial, sans-serif;
+	color: #555555;
+}
+
+
+
 /* SECTION soundcloud */
 
 .page-template-template-podcast-main .archives {

@@ -601,22 +601,93 @@ add_filter( "single_template", "get_category_post_template" ) ;
 
 function socialShareButtons($atts, $content = null) {
 	extract (shortcode_atts(array(
-		"download" => ''
+		"download" => '',
+		"apple" => 'https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252',
 	), $atts));
 	return '<div class="social-share-wrapper">' .
 		do_shortcode('[Sassy_Social_Share]') .
-		($download ? '<a href="' . $download . '" class="btn orange-full" style="border-radius: 3px; margin-right: 5px;">' .
-			'<i class="fa fa-download"></i>' .
-			' Download' .
-		'</a>' : '') .
-		'<a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn green-full" target="_blank" style="border-radius: 3px;">' .
-			'<i class="fa fa-apple"></i>' .
-			' Apple Podcasts' .
-		'</a>' .
+		($download
+			? '<a href="' . $download . '" class="btn orange-full" style="border-radius: 3px; margin-right: 5px;">' .
+					'<i class="fa fa-download"></i>' .
+						' Download' .
+				'</a>'
+			: '') .
+		($apple
+			? '<a href="' . $apple . '" class="btn green-full" target="_blank" style="border-radius: 3px;">' .
+					'<i class="fa fa-apple"></i>' .
+					' Apple Podcasts' .
+				'</a>'
+			: '') .
 	'</div>' ;
 }
 
 add_shortcode('social-share-buttons', 'socialShareButtons');
+
+function listenIcons($atts, $content = null) {
+	extract (shortcode_atts(array(
+		"download" => '#'
+	), $atts));
+	return '<div class="podcast-listening-option-main-wrapper">
+
+	  <a class="podcast-listen-option" target="_blank" href="' . $download . '">
+	    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+	      <path fill="#000000" d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+	    </svg>
+	    <div class="podcast-listen-name">Download</div>
+	  </a>
+
+  <a class="podcast-listen-option" target="_blank" href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252">
+    <svg class="podcast-listen-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path fill="#000000" d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
+    </svg>
+    <div class="podcast-listen-name">Apple</div>
+  </a>
+
+  <a class="podcast-listen-option" target="_blank" href="http://subscribeonandroid.com/www.spreaker.com/show/2727118/episodes/feed">
+    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="#000000" d="M15,5H14V4H15M10,5H9V4H10M15.53,2.16L16.84,0.85C17.03,0.66 17.03,0.34 16.84,0.14C16.64,-0.05 16.32,-0.05 16.13,0.14L14.65,1.62C13.85,1.23 12.95,1 12,1C11.04,1 10.14,1.23 9.34,1.63L7.85,0.14C7.66,-0.05 7.34,-0.05 7.15,0.14C6.95,0.34 6.95,0.66 7.15,0.85L8.46,2.16C6.97,3.26 6,5 6,7H18C18,5 17,3.25 15.53,2.16M20.5,8A1.5,1.5 0 0,0 19,9.5V16.5A1.5,1.5 0 0,0 20.5,18A1.5,1.5 0 0,0 22,16.5V9.5A1.5,1.5 0 0,0 20.5,8M3.5,8A1.5,1.5 0 0,0 2,9.5V16.5A1.5,1.5 0 0,0 3.5,18A1.5,1.5 0 0,0 5,16.5V9.5A1.5,1.5 0 0,0 3.5,8M6,18A1,1 0 0,0 7,19H8V22.5A1.5,1.5 0 0,0 9.5,24A1.5,1.5 0 0,0 11,22.5V19H13V22.5A1.5,1.5 0 0,0 14.5,24A1.5,1.5 0 0,0 16,22.5V19H17A1,1 0 0,0 18,18V8H6V18Z" />
+    </svg>
+    <div class="podcast-listen-name">Android</div>
+  </a>
+
+  <a class="podcast-listen-option" target="_blank" href="https://play.google.com/music/listen">
+    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="#000000" d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+    </svg>
+    <div class="podcast-listen-name">Google Play</div>
+  </a>
+
+  <!-- <a class="podcast-listen-option" target="_blank" href="">
+    <svg style="width:40px;height:40px;margin-bottom: -20px;" viewBox="0 0 24 24">
+        <path fill="#000000" d="M11.987 4.625h-.24v6.75h.24v-6.75zm-.497.75h-.24v5.25h.24v-5.25zm-.744 0H0v5.25h10.746v-5.25zm5.254 0h-3.005v5.25H16v-5.25zm-3.504 0h-.24v5.25h.24v-5.25z"/>
+    </svg>
+    <div class="podcast-listen-name">Stitcher</div>
+  </a> -->
+
+  <a class="podcast-listen-option" target="_blank" href="https://www.spreaker.com/download#apps_radio_mobile">
+    <svg style="width:40px;height:40px;margin-bottom: -20px;" viewBox="0 0 24 24">
+      <path fill="#F5C300" d="M9.746 0l-3.76 4.36-5.63-1.215L6.142 8.06.45 13.035l5.608-1.323L9.898 16l.473-5.734 5.28-2.322-5.31-2.22L9.75 0z" fill-rule="nonzero"/>
+    </svg>
+    <div class="podcast-listen-name">Spreaker</div>
+  </a>
+
+  <a class="podcast-listen-option" target="_blank" href="http://www.spreaker.com/show/2727118/episodes/feed">
+    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="#000000" d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z" />
+    </svg>
+    <div class="podcast-listen-name">RSS</div>
+  </a>
+
+  <!-- <a class="podcast-listen-option" target="_blank" href="">
+    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="#000000" d="M17.9,10.9C14.7,9 9.35,8.8 6.3,9.75C5.8,9.9 5.3,9.6 5.15,9.15C5,8.65 5.3,8.15 5.75,8C9.3,6.95 15.15,7.15 18.85,9.35C19.3,9.6 19.45,10.2 19.2,10.65C18.95,11 18.35,11.15 17.9,10.9M17.8,13.7C17.55,14.05 17.1,14.2 16.75,13.95C14.05,12.3 9.95,11.8 6.8,12.8C6.4,12.9 5.95,12.7 5.85,12.3C5.75,11.9 5.95,11.45 6.35,11.35C10,10.25 14.5,10.8 17.6,12.7C17.9,12.85 18.05,13.35 17.8,13.7M16.6,16.45C16.4,16.75 16.05,16.85 15.75,16.65C13.4,15.2 10.45,14.9 6.95,15.7C6.6,15.8 6.3,15.55 6.2,15.25C6.1,14.9 6.35,14.6 6.65,14.5C10.45,13.65 13.75,14 16.35,15.6C16.7,15.75 16.75,16.15 16.6,16.45M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+    </svg>
+    <div class="podcast-listen-name">Spotify</div>
+  </a> -->
+</div>';
+}
+
+add_shortcode('listen-icons', 'listenIcons');
 
 function add_category_to_single($classes) {
   if (is_single() ) {
