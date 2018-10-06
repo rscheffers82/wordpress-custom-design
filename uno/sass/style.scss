@@ -990,6 +990,43 @@ p.subtitle {
 	}
 }
 
+.podcast-listening-option-main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+a.podcast-listen-option {
+  text-align: center;
+  margin: 0 5px 1.5rem;
+	text-decoration: none !important;
+
+	p { display: none; }
+
+  svg path {
+    fill: #70BF96;
+  }
+}
+
+.podcast-listen-name {
+  font: normal 18px/1.5em 'Lora', arial, sans-serif;
+	color: #555555;
+}
+
+
+
 /* SECTION soundcloud */
 
 .page-template-template-podcast-main .archives {
@@ -1666,12 +1703,26 @@ body.home blockquote::after { float: right; }
 	padding: 10px 15px 8px 15px;
 	border-radius: 5px;
 	margin-bottom: 20px;
-}
-.podcast-targclass {
-	font: normal 18px/1.5em 'Lora', arial, sans-serif
+
+	&.colomat-close {
+		margin-bottom: 0px;
+		border-radius: 5px 5px 0 0;
+	}
 }
 
-// other styles
+.podcast-targclass {
+	font: normal 18px/1.5em 'Lora', arial, sans-serif;
+	padding-top: 20px;
+	border: 5px solid #6EC095;
+	border-top: none;
+	padding-left: 15px;
+	padding-right: 10px;
+	margin: 0;
+	border-radius: 0 0 5px 5px;
+	margin-bottom: 20px;
+}
+
+// Headphones styles
 
 .headphones, .podcast {
 	background-image: url(images/podcast-green.svg);
@@ -1698,6 +1749,10 @@ body.home blockquote::after { float: right; }
 
 .headphones-full-keep:hover, .podcast-full-keep:hover {
 	background-image: url(images/podcast-white.svg);;
+}
+
+.podcast-orange {
+  background-image: url(images/podcast-orange.svg);
 }
 
 /* ==== TEMP Styles */
@@ -2031,10 +2086,10 @@ input.btn.green-full.grow.btn-widget {
 	text-align: center;
 }
 
-// @font-face {
-//     font-family: ChunkFive;
-//     src: url("fonts/ChunkFive-Roman.otf") format("opentype");
-// }
+@font-face {
+    font-family: ChunkFive;
+    src: url("fonts/ChunkFive-Roman.otf") format("opentype");
+}
 
 .header2-1 {
 	font: bold 28px/1.2em 'Open Sans', arial, sans-serif !important;
@@ -2449,6 +2504,7 @@ hr.down:after {
 	height: 200px;
 	box-shadow: 0px -5px 15px 2px rgba(0, 0, 0, 0.35);
 	flex-flow: column nowrap;
+	letter-spacing: .75px;
 
 	@media all and (max-width: 875px) {
 			width: 70%;
@@ -2462,7 +2518,7 @@ hr.down:after {
 
 	header {
 		margin: 0;
-		background-color: #FFC107;
+		background-color: #ccc;
 		padding: .5rem;
 		font: normal 18px/1.5em 'Lora', arial, sans-serif;
 		color: #fafafc;
@@ -2482,6 +2538,9 @@ hr.down:after {
 			color: #555;
 	    margin-bottom: 5px;
 			transition: all .2s ease-out;
+			&.chunk {
+				font-family: 'ChunkFive', arial, sans-serif;
+			}
 		}
 		a:hover {
 			color: #FFC107;
@@ -3062,14 +3121,19 @@ ul.heateor_sss_sharing_ul li {
 	h3 {
 		line-height: 1.5em;
 		position: relative;
-		a {
-			font: normal 18px/1.5em 'Lora', arial, sans-serif;
-			color: $green;
-			display: inline-block;
-			margin-bottom: -2rem;
-			position: absolute;
-
-		}
+	}
+	a {
+		font: normal 18px/1.5em 'Lora', arial, sans-serif;
+		color: $green;
+		display: inline-block;
+		margin-bottom: -2rem;
+		position: absolute;
+	}
+	&.extra-margin {								/*	extra padding for link on podcast page */
+		margin-bottom: 2rem;
+	}
+	&.collapse-header-with-link.colomat-close {
+    margin-bottom: 0rem;
 	}
 }
 
