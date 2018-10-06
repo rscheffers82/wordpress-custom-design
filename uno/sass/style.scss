@@ -466,6 +466,10 @@ body.home .hero a.button:hover {
 	border: 2px solid transparent;
 }
 
+body.home .testimonial-content .wp-audio-shortcode {
+	display: none;
+}
+
 h1.entry-title,
 .page h1.title,
 h3.thin {
@@ -2512,14 +2516,16 @@ hr.down:after {
 }
 
 .podcast-guest {
-	margin: 2rem 0;
+	margin: 2rem 0 0.75rem 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .podcast-time-date .img-wrap,
 .guest-list .img-wrap {
 	padding: .5rem;
 	border: 1px solid #ccc;
-  margin: 0 1rem 1rem 0rem;
+    margin-right: 1rem;
 	display: inline-block;
 	float: left;
   background-color: #fff;
@@ -2533,6 +2539,7 @@ hr.down:after {
 	width: 7.5rem;
 	height: 7.5rem;
 	background-size: cover;
+	background-position: 50%;
 }
 
 .podcast-join h1,
