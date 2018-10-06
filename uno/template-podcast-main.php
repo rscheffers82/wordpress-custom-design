@@ -69,6 +69,7 @@
                <h2 class="header2-1">Next broadcast: <?php the_field('date_next_podcast'); ?></h2>
                <p><?php the_field('topic_guest_name'); ?></p>
              </div>
+             <div>
              <div class="img-wrap">
                <div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div>
              </div>
@@ -78,8 +79,8 @@
                  <div class="guest-img" style="background-image: url(<?php the_field('guest2_image'); ?>)"></div>
                </div>
             <?php endif; ?>
-
-             <p><?php the_field('weekly_topic_guest'); ?></p>
+             <?php the_field('weekly_topic_guest'); ?>
+             </div>
            </div>
 
             <h2 class="header2-1">Upcoming guests:</h2>
@@ -89,7 +90,7 @@
                   $post_meta = get_post_meta($post->ID, 'podcast-guests', false);
 
                     foreach($post_meta[0] as $item) {
-                          $img_url = wp_get_attachment_url( $item['image'] ); ?>
+                          $img_url = wp_get_attachment_url( $item['image'][0] ); ?>
 
                           <div class="guest-list">
                             <div class="img-wrap">
