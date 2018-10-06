@@ -601,20 +601,12 @@ add_filter( "single_template", "get_category_post_template" ) ;
 
 function socialShareButtons($atts, $content = null) {
 	extract (shortcode_atts(array(
-<<<<<<< HEAD
 		"download" => '',
 		"auto" => false
-||||||| merged common ancestors
-		"download" => ''
-=======
-		"download" => '',
-		"apple" => 'https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252',
->>>>>>> 8ab35a577f2814b875775f423581dfb5f65dd64f
 	), $atts));
 	$auto === 'true' ? true : false;
 	return '<div class="social-share-wrapper">' .
 		do_shortcode('[Sassy_Social_Share]') .
-<<<<<<< HEAD
 		($download
 			?	'<a href="' . $download . '" class="btn orange-full" style="border-radius: 3px; margin-right: 5px;">' .
 					'<i class="fa fa-download"></i>' .
@@ -631,29 +623,6 @@ function socialShareButtons($atts, $content = null) {
 			'<i class="fa fa-apple"></i>' .
 			' Apple Podcasts' .
 		'</a>' .
-||||||| merged common ancestors
-		($download ? '<a href="' . $download . '" class="btn orange-full" style="border-radius: 3px; margin-right: 5px;">' .
-			'<i class="fa fa-download"></i>' .
-			' Download' .
-		'</a>' : '') .
-		'<a href="https://itunes.apple.com/us/podcast/heart-beat-internet-radio/id310513252?mt=2" class="btn green-full" target="_blank" style="border-radius: 3px;">' .
-			'<i class="fa fa-apple"></i>' .
-			' Apple Podcasts' .
-		'</a>' .
-=======
-		($download
-			? '<a href="' . $download . '" class="btn orange-full" style="border-radius: 3px; margin-right: 5px;">' .
-					'<i class="fa fa-download"></i>' .
-						' Download' .
-				'</a>'
-			: '') .
-		($apple
-			? '<a href="' . $apple . '" class="btn green-full" target="_blank" style="border-radius: 3px;">' .
-					'<i class="fa fa-apple"></i>' .
-					' Apple Podcasts' .
-				'</a>'
-			: '') .
->>>>>>> 8ab35a577f2814b875775f423581dfb5f65dd64f
 	'</div>' ;
 }
 
