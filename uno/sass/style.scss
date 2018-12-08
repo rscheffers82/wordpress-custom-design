@@ -474,7 +474,7 @@ h1.entry-title,
 .page h1.title,
 h3.thin {
 	font-weight: 300;
-	font: 300 2.6em/2em 'DearJoe5CASUAL', script !important;
+	font: 300 2.6em/1.5em 'DearJoe5CASUAL', script !important;
 	color: #555;
 }
 
@@ -647,6 +647,15 @@ a.woo-sc-button.custom.medium.blog.home-blog-button {
 /* About page custom styles */
 .page-id-2 header {
 	display: none;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+a.btn.margin-right, button.a.btn.margin-right, input.a.btn.margin-right {
+  margin-right: 1rem;
 }
 
 
@@ -2395,7 +2404,8 @@ section.right {
 
 
 
-.radio-show-summary {
+.radio-show-summary,
+.green-full-width-box {
 	background-color: $green;
 	color: #f9f9f9;
 	padding: 2rem 1.618em;
@@ -2409,7 +2419,7 @@ section.right {
     bottom: 0;
     left: -45rem;
     right: -45rem;
-    background-color: #6EC095;
+    background-color: $green;
     content: " ";
 	}
 	&:before {
@@ -2431,6 +2441,14 @@ section.right {
 		color: #fafafc;
 		max-width: 1200px;
 	}
+	h3 {
+		color: #fafafc;
+		margin: 0.5rem 0;
+	}
+}
+
+.green-full-width-box.arrow-gray:before {
+	background-color: #f9f9f9;
 }
 
 .patreon-section {
@@ -3053,6 +3071,13 @@ ul.heateor_sss_sharing_ul li {
 	display: inline-block;
 }
 
+.author-wrapper.top-bottom-border {
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
 .author-image {
 	float: left;
 	margin-right: 1.5rem;
@@ -3235,3 +3260,24 @@ body.page-id-5568 .entry p {
   float: left;
   padding: 0 .5rem;
 }
+
+
+/* SECTION DANCE PAGE */
+.video-text-wrapper {
+  display: flex;
+  margin: 1.5rem 0;
+  .video {
+	margin-right: 2rem;
+  }
+  .text {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      max-width: 80%;
+    }
+  }
+}
+  
+  

@@ -747,3 +747,24 @@ add_shortcode('categoryposts', 'widget_postsbycategory');
 
 // Enable shortcodes in text widgets
 add_filter('widget_text', 'do_shortcode');
+
+
+function danceHost($atts, $content = null) {
+	return '<div class="author-wrapper top-bottom-border">' .
+		'<div class="author-image">' .
+			'<img src="' . get_field('dance_host_image', 6467) . '" width="125px" height="125px" style="max-height: 125px; width: auto;">' .
+		'</div>' .
+		'<div class="author-description">' .
+			'<p>' . get_field('dance_host_description', 6467) . '</p>' .
+		'</div>' .
+	'</div>';
+	//get_field('dance_event_when', 6467);
+}
+
+add_shortcode('dance-host', 'danceHost');
+
+function nextDanceEvent($atts, $content = null) {
+	return get_field('next_dance_event', 6467);
+}
+
+add_shortcode('next-dance-event', 'nextDanceEvent');
