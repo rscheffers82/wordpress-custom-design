@@ -12,14 +12,15 @@
 get_header(); ?>
 
     <?php woo_main_before(); ?>
-    <div class="video-wrapper">
+    <!-- <div class="video-wrapper">
       <iframe width="100%" height="700" src="https://www.youtube.com/embed/Z-SJpWxHW7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    </div> -->
 
 
         <!-- #content Starts -->
     <?php woo_content_before(); ?>
     <div id="content" class="col-full">
+
       <div id="main-sidebar-container">
           <!-- #main Starts -->
           <?php woo_main_before(); ?>

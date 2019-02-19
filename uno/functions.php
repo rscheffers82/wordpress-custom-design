@@ -554,8 +554,11 @@ add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 function promotePodcast($atts, $content = null) {
 	return '<a class="promote-podcast" href="/julie-conversation-wednesdays-2pm-et">' .
 	       		'<div class="podcast-banner">' .
-							'<img class="desktop" src="' . get_stylesheet_directory_uri() . '/images/podcast-promotion.jpg">' .
-							'<img class="mobile" src="' . get_stylesheet_directory_uri() . '/images/podcast-promotion-mobile.jpg">' .
+						//	'<img class="desktop" src="' . get_stylesheet_directory_uri() . '/images/podcast-promotion.jpg">' .
+						//	'<img class="mobile" src="' . get_stylesheet_directory_uri() . '/images/podcast-promotion-mobile.jpg">' .
+							'<img class="desktop" src="' . get_stylesheet_directory_uri() . '/images/voices-that-create-change.jpg">' .
+							'<img class="mobile" src="' . get_stylesheet_directory_uri() . '/images/voices-that-create-change.jpg">' .
+
 						'</div>' .
 	    	 '</a>';
 }
@@ -768,3 +771,20 @@ function nextDanceEvent($atts, $content = null) {
 }
 
 add_shortcode('next-dance-event', 'nextDanceEvent');
+
+
+// Shortcode for displaying certified logos. [certified_logos]
+// Is e.g. used on professional bio, intuitive reading, and contact page.
+function certifiedLogos($atts, $content = null) {
+	return '<div class="certified-logos-wrapper">' .
+		'<img class="certified-logo1" src="' . get_stylesheet_directory_uri() . '/images/certified-logos/acc-julie-cusmariu.png">' .
+		'<img class="certified-logo1" src="' . get_stylesheet_directory_uri() . '/images/certified-logos/CFL-Graduate-Logo.jpg">' .
+		'<img class="certified-logo1" src="' . get_stylesheet_directory_uri() . '/images/certified-logos/CMC-certification-badge-optimized.jpg">' .
+	'</div>' .
+	'<div class="certified-logos-wrapper">' .
+		'<img class="certified-logo1" src="' . get_stylesheet_directory_uri() . '/images/certified-logos/icf_logo-julie-cusmariu-small.jpg">' .
+		'<img class="certified-logo1" src="' . get_stylesheet_directory_uri() . '/images/certified-logos/ICFMemberLogo-small.png">' .
+	'</div>';
+}
+
+add_shortcode('certified_logos', 'certifiedLogos');
