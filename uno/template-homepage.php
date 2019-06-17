@@ -68,7 +68,13 @@ get_header(); ?>
     <div class="homepage-blog">
     <?php
 
-    $query = new WP_Query( 'showposts=4&cat=-108,-130' );
+    $query_args = array(
+      'showposts' => 4,
+      'post_type' => 'post',
+      'cat'=> '-108, -130, -397, -457'			// Leave out 108=heartbeat radio, 130=Motherhood, 397=Voices, 457=Mother's day Revue
+    );
+
+    $query = new WP_Query( $query_args );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
