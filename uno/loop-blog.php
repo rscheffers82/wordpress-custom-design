@@ -19,7 +19,7 @@ $paged = intval( $paged );
 
 $query_args = array(
 					'post_type' => 'post',
-					'cat'=> '-108, -130',
+					'cat'=> '-108, -130, -397, -457',			// Leave out 108=heartbeat radio, 130=Motherhood, 397=Voices
 					'paged' => $paged
 				);
 

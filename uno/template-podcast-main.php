@@ -119,6 +119,22 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
+    <h2 id="voices" class="header2-1">Previously on the series Voices That Inspire Change</h2>
+    <div class="podcasts-wrapper">
+    <?php
+    $query = new WP_Query( 'cat=397&posts_per_page=-1' );
+
+    if ( $query->have_posts() ) {
+      while ( $query->have_posts() ) { $query->the_post();
+        woo_get_template_part( 'content-podcast', get_post_type() );
+      }
+    } else {
+      get_template_part( 'content', 'noposts' );
+    }
+    wp_reset_query();
+    ?>
+    </div>  <!-- podcasts-wrapper -->
+
     <h2 id="motherhood" class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
     <div class="podcasts-wrapper">
     <?php
