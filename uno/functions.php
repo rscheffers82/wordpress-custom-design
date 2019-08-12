@@ -601,15 +601,17 @@ function get_category_post_template($single_template) {
 add_filter( "single_template", "get_category_post_template" ) ;
 
 
-
 function socialShareButtons($atts, $content = null) {
-	extract (shortcode_atts(array(
-		"download" => get_field('download_link') || '#',
-		"showDownload" => true,
-		"showPodcast" => false
-	), $atts));
-	$showDownload === 'true' ? true : false;
-	$showPodcast === 'true' ? true : false;
+	$atts = shortcode_atts( array(
+		'download' => get_field('download_link'),
+		'showdownload' => 'true',
+		'showpodcast' => 'true',
+	), $atts, 'social-share-buttons');
+
+	$download = esc_attr($atts['download']);
+	$showDownload = filter_var( $atts['showdownload'], FILTER_VALIDATE_BOOLEAN );
+	$showPodcast = filter_var( $atts['showpodcast'], FILTER_VALIDATE_BOOLEAN );
+
 	return '<div class="social-share-wrapper">' .
 		do_shortcode('[Sassy_Social_Share]') .
 		($showDownload ? '<a href="' . $download . '" class="btn orange-full" style="border-radius: 3px; margin-right: 5px;">' .
@@ -627,7 +629,7 @@ add_shortcode('social-share-buttons', 'socialShareButtons');
 
 function listenIcons($atts, $content = null) {
 	extract (shortcode_atts(array(
-		"download" => get_field('download_link') || '#'
+		"download" => get_field('download_link')
 	), $atts));
 	return '<div class="podcast-listening-option-main-wrapper">
 
