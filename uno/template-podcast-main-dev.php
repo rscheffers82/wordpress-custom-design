@@ -44,13 +44,13 @@
              <!-- Begin MailChimp Signup Form -->
              <div id="mc_embed_signup">
              <form action="https://Juliecusmariu.us17.list-manage.com/subscribe/post?u=cb461b2264802e21da240f9e3&amp;id=a996b74875" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
+             		<div id="mc_embed_signup_scroll">
 
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cb461b2264802e21da240f9e3_7b115a52d7" tabindex="-1" value=""></div>
-                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn white pulse">
-              </div>
+             			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+             			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+             			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cb461b2264802e21da240f9e3_7b115a52d7" tabindex="-1" value=""></div>
+             			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn white pulse">
+             	</div>
              </form>
              </div>
              <!--End mc_embed_signup-->
@@ -69,6 +69,7 @@
                <h2 class="header2-1">Next broadcast: <?php the_field('date_next_podcast'); ?></h2>
                <p><?php the_field('topic_guest_name'); ?></p>
              </div>
+             <div>
              <div class="img-wrap">
                <div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div>
              </div>
@@ -78,8 +79,8 @@
                  <div class="guest-img" style="background-image: url(<?php the_field('guest2_image'); ?>)"></div>
                </div>
             <?php endif; ?>
-
-             <p><?php the_field('weekly_topic_guest'); ?></p>
+             <?php the_field('weekly_topic_guest'); ?>
+             </div>
            </div>
 
             <h2 class="header2-1">Upcoming guests:</h2>
@@ -89,7 +90,7 @@
                   $post_meta = get_post_meta($post->ID, 'podcast-guests', false);
 
                     foreach($post_meta[0] as $item) {
-                          $img_url = wp_get_attachment_url( $item['image'] ); ?>
+                          $img_url = wp_get_attachment_url( $item['image'][0] ); ?>
 
                           <div class="guest-list">
                             <div class="img-wrap">
@@ -118,6 +119,22 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
+    <h2 id="voices" class="header2-1">Previously on the series Voices That Inspire Change</h2>
+    <div class="podcasts-wrapper">
+    <?php
+    $query = new WP_Query( 'cat=397&posts_per_page=-1' );
+
+    if ( $query->have_posts() ) {
+      while ( $query->have_posts() ) { $query->the_post();
+        woo_get_template_part( 'content-podcast', get_post_type() );
+      }
+    } else {
+      get_template_part( 'content', 'noposts' );
+    }
+    wp_reset_query();
+    ?>
+    </div>  <!-- podcasts-wrapper -->
+
     <h2 id="motherhood" class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
     <div class="podcasts-wrapper">
     <?php
@@ -138,8 +155,8 @@
       <?php echo the_field('patreon-section'); ?>
     </div>
 
- <!-- Radio host summary -->
- <div class="radio-show-summary">
+<!-- Radio host summary -->
+<div class="radio-show-summary">
   <?php // echo the_field('radio_show_summary'); ?>
   <div class="wrapper podcast-host">
     <?php if( get_field('text_field') !== ''): ?>
@@ -155,8 +172,8 @@
       <a href="#hearbeat-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep smooth-scroll">Listen to archives</a><br>
     </div>
   </div>
- </div>
- <!-- end Radio host summary -->
+</div>
+<!-- end Radio host summary -->
 
     <h2 id="hearbeat-archives" class="header2-1">Heatbeat radio archives</h2>
     <div class="podcasts-wrapper">
