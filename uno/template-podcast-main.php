@@ -119,7 +119,7 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
-    <h2 id="voices" class="header2-1">Previously on the series Voices That Inspire Change</h2>
+    <h2 id="voices" class="header2-1">Previously on the series Voices That Create Change</h2>
     <div class="podcasts-wrapper">
     <?php
     $query = new WP_Query( 'cat=397&posts_per_page=-1' );
