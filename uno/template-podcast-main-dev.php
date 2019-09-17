@@ -62,6 +62,26 @@
        <div class="wrapper details-podcast">
          <div class="podcast-time-date">
 
+          <h2 id="cta-listen" class="header" style="text-align: left;">
+            <span style="font-size: 18pt; text-align: left;">
+              Join Julie live Wednesdays at 11am PST / 2pm EST. Listen below.
+            </span>
+          </h2>
+          <div class="podcast__wrapper">
+            <div class="podcast__player">
+              <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
+            </div>
+            <div class="podcast__promotion-box">
+              <h4 class="podcast__promotion-box__title">Liked what you heard?</h4>
+              <section>
+                <p class="podcast__promotion-box__description">
+                  Great care went into creating this podcast. Would you like to hear more, be of support? Become a villiage member.
+                </p>
+                <a class="btn patreon rounded" href="">Become a patreon</a>
+              </section>
+            </div>
+          </div>
+
          <?php the_content(); ?>
 
            <div class="podcast-guest">
@@ -122,7 +142,7 @@
     <h2 id="voices" class="header2-1">Previously on the series Voices That Inspire Change</h2>
     <div class="podcasts-wrapper">
     <?php
-    $query = new WP_Query( 'cat=397&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=39700&posts_per_page=-1' );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -138,7 +158,7 @@
     <h2 id="motherhood" class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
     <div class="podcasts-wrapper">
     <?php
-    $query = new WP_Query( 'cat=130&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=13000&posts_per_page=-1' );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -178,7 +198,7 @@
     <h2 id="hearbeat-archives" class="header2-1">Heatbeat radio archives</h2>
     <div class="podcasts-wrapper">
     <?php
-    $query = new WP_Query( 'cat=108&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=10800&posts_per_page=-1' );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
