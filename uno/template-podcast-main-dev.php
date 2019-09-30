@@ -75,9 +75,19 @@
               <h4 class="podcast__promotion-box__title">Liked what you heard?</h4>
               <section>
                 <p class="podcast__promotion-box__description">
-                  Great care went into creating this podcast. Would you like to hear more, be of support? Become a villiage member.
+                  This is a listener-supported podcast. Support the podcast by making a one-time donation or by becoming a patron.
                 </p>
-                <a class="btn patreon rounded" href="">Become a patreon</a>
+
+                <div class="d-flex flex-align-center flex-justify-between mb-1">
+
+                  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=SZYFMB84FNTV4" target="_blank" rel="noopener">
+                    <img class="podcast__donation-image" src="https://juliecusmariu.com/wp-content/uploads/2019/09/donate-button.png">
+                  </a>
+                  <a href="http://www.patreon.com/julieinconversation" target="_blank" rel="noopener">
+                    <img class="podcast__donation-patreon" src="https://juliecusmariu.com/wp-content/uploads/2018/03/become_a_patron_button@2x.png" alt="">
+                  </a>
+                </div>
+
               </section>
             </div>
           </div>
@@ -218,13 +228,12 @@
 
        <?php get_sidebar(); ?>
 
-
          <?php
-         $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
-         $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/04/conscious-pregnancy-650wide.jpg';
+          $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
+          $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/04/conscious-pregnancy-650wide.jpg';
 
-         $link_marriage = get_site_url() . '/getting-married-consciously';
-         $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
+          $link_marriage = get_site_url() . '/getting-married-consciously';
+          $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
          ?>
 
            <h2 class="header2-1">Listen to these two series to gain insight into your own journey through marriage, pregnancy, and birth.</h2>
@@ -240,14 +249,9 @@
 
             <h2 class="header2-1">What listeners are saying</h2>
            <?php echo do_shortcode('[testimonial_view id=3]'); ?>
-
      </div><!-- /#main-sidebar-container -->
-
        <?php get_sidebar( 'alt' ); ?>
        </div><!-- /#content -->
-
     <?php woo_main_after(); ?>
-
    </div><!-- /.content -->
-
  <?php get_footer(); ?>

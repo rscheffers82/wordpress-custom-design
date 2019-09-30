@@ -2529,6 +2529,7 @@ section.right {
 	background-color: $green;
 	color: #f9f9f9;
 	padding: 2rem;
+	box-shadow: 0 0px 4px 2px #888;
 }
 
 .podcast-newsletter p {
@@ -3636,4 +3637,40 @@ input {
 
 .certified-logo2 {
 	margin: 1rem;
+}
+
+
+.d-flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-align-end {
+	align-items: flex-end;
+}
+
+.flex-align-start {
+	align-items: flex-start;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-justify-between {
+	justify-content: space-between;
+}
+
+.podcast__donation-image {
+	height: 75px;
+	width: auto;
+}
+
+.podcast__donation-patreon {
+	max-width: 200px;
+	height: auto;
+}
+
+.mb-1 {
+	margin-bottom: 0.5rem;
 }
