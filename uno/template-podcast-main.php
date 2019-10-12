@@ -24,7 +24,7 @@
            <section class="left">
              <h1 class='podcast-main-title'><?php the_title(); ?></h1>
              <div class="podcast-main-title-underline">a live podcast</div>
-             <div class="podcast-main-tagline">Inspiring individual and global change</div>
+             <div class="podcast-main-tagline">Inspiring individual and collective change</div>
              <div class="podcast-main-cta cta">
                <a class="btn brown hover grow-more smooth-scroll podcast podcast-orange" href="#cta-listen">Listen</a>
              </div>
