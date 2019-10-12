@@ -44,13 +44,13 @@
              <!-- Begin MailChimp Signup Form -->
              <div id="mc_embed_signup">
              <form action="https://Juliecusmariu.us17.list-manage.com/subscribe/post?u=cb461b2264802e21da240f9e3&amp;id=a996b74875" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
+             		<div id="mc_embed_signup_scroll">
 
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cb461b2264802e21da240f9e3_7b115a52d7" tabindex="-1" value=""></div>
-                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn white pulse">
-              </div>
+             			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+             			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+             			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cb461b2264802e21da240f9e3_7b115a52d7" tabindex="-1" value=""></div>
+             			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn white pulse">
+             	</div>
              </form>
              </div>
              <!--End mc_embed_signup-->
@@ -62,6 +62,36 @@
        <div class="wrapper details-podcast">
          <div class="podcast-time-date">
 
+          <h2 id="cta-listen" class="header" style="text-align: left;">
+            <span style="font-size: 18pt; text-align: left;">
+              Join Julie live Wednesdays at 11am PST / 2pm EST. Listen below.
+            </span>
+          </h2>
+          <div class="podcast__wrapper">
+            <div class="podcast__player">
+              <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
+            </div>
+            <div class="podcast__promotion-box">
+              <h4 class="podcast__promotion-box__title">Liked what you heard?</h4>
+              <section>
+                <p class="podcast__promotion-box__description">
+                  This is a listener-supported podcast. Support the podcast by making a one-time donation or by becoming a patron.
+                </p>
+
+                <div class="d-flex flex-align-center flex-justify-between mb-1">
+
+                  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=SZYFMB84FNTV4" target="_blank" rel="noopener">
+                    <img class="podcast__donation-image" src="https://juliecusmariu.com/wp-content/uploads/2019/09/donate-button.png">
+                  </a>
+                  <a href="http://www.patreon.com/julieinconversation" target="_blank" rel="noopener">
+                    <img class="podcast__donation-patreon" src="https://juliecusmariu.com/wp-content/uploads/2018/03/become_a_patron_button@2x.png" alt="">
+                  </a>
+                </div>
+
+              </section>
+            </div>
+          </div>
+
          <?php the_content(); ?>
 
            <div class="podcast-guest">
@@ -69,6 +99,7 @@
                <h2 class="header2-1">Next broadcast: <?php the_field('date_next_podcast'); ?></h2>
                <p><?php the_field('topic_guest_name'); ?></p>
              </div>
+             <div>
              <div class="img-wrap">
                <div class="guest-img" style="background-image: url(<?php the_field('guest_image'); ?>)"></div>
              </div>
@@ -78,8 +109,8 @@
                  <div class="guest-img" style="background-image: url(<?php the_field('guest2_image'); ?>)"></div>
                </div>
             <?php endif; ?>
-
-             <p><?php the_field('weekly_topic_guest'); ?></p>
+             <?php the_field('weekly_topic_guest'); ?>
+             </div>
            </div>
 
             <h2 class="header2-1">Upcoming guests:</h2>
@@ -89,7 +120,7 @@
                   $post_meta = get_post_meta($post->ID, 'podcast-guests', false);
 
                     foreach($post_meta[0] as $item) {
-                          $img_url = wp_get_attachment_url( $item['image'] ); ?>
+                          $img_url = wp_get_attachment_url( $item['image'][0] ); ?>
 
                           <div class="guest-list">
                             <div class="img-wrap">
@@ -118,10 +149,26 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
+    <h2 id="voices" class="header2-1">Previously on the series Voices That Inspire Change</h2>
+    <div class="podcasts-wrapper">
+    <?php
+    $query = new WP_Query( 'cat=39700&posts_per_page=-1' );
+
+    if ( $query->have_posts() ) {
+      while ( $query->have_posts() ) { $query->the_post();
+        woo_get_template_part( 'content-podcast', get_post_type() );
+      }
+    } else {
+      get_template_part( 'content', 'noposts' );
+    }
+    wp_reset_query();
+    ?>
+    </div>  <!-- podcasts-wrapper -->
+
     <h2 id="motherhood" class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
     <div class="podcasts-wrapper">
     <?php
-    $query = new WP_Query( 'cat=130&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=13000&posts_per_page=-1' );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -138,8 +185,8 @@
       <?php echo the_field('patreon-section'); ?>
     </div>
 
- <!-- Radio host summary -->
- <div class="radio-show-summary">
+<!-- Radio host summary -->
+<div class="radio-show-summary">
   <?php // echo the_field('radio_show_summary'); ?>
   <div class="wrapper podcast-host">
     <?php if( get_field('text_field') !== ''): ?>
@@ -155,13 +202,13 @@
       <a href="#hearbeat-archives" class="btn soft-white rounded grow podcast podcast-full podcast-full-keep smooth-scroll">Listen to archives</a><br>
     </div>
   </div>
- </div>
- <!-- end Radio host summary -->
+</div>
+<!-- end Radio host summary -->
 
     <h2 id="hearbeat-archives" class="header2-1">Heatbeat radio archives</h2>
     <div class="podcasts-wrapper">
     <?php
-    $query = new WP_Query( 'cat=108&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=10800&posts_per_page=-1' );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -181,13 +228,12 @@
 
        <?php get_sidebar(); ?>
 
-
          <?php
-         $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
-         $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/04/conscious-pregnancy-650wide.jpg';
+          $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
+          $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/04/conscious-pregnancy-650wide.jpg';
 
-         $link_marriage = get_site_url() . '/getting-married-consciously';
-         $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
+          $link_marriage = get_site_url() . '/getting-married-consciously';
+          $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
          ?>
 
            <h2 class="header2-1">Listen to these two series to gain insight into your own journey through marriage, pregnancy, and birth.</h2>
@@ -203,14 +249,9 @@
 
             <h2 class="header2-1">What listeners are saying</h2>
            <?php echo do_shortcode('[testimonial_view id=3]'); ?>
-
      </div><!-- /#main-sidebar-container -->
-
        <?php get_sidebar( 'alt' ); ?>
        </div><!-- /#content -->
-
     <?php woo_main_after(); ?>
-
    </div><!-- /.content -->
-
  <?php get_footer(); ?>

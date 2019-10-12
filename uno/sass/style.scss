@@ -21,6 +21,7 @@ Tags: canvas, woothemes, store, woocommerce
 $green: #6EC095;
 $soft-white: #F9F9F9;
 $orange: #FF9B2E;
+$patreon-red: rgb(231, 81, 59);
 $footer: #4C5567;
 
 /* custom colors */
@@ -2011,6 +2012,13 @@ a.orange-full:hover {
 	color: $orange !important;
 }
 
+a.patreon {
+	border-color: $patreon-red;
+	background-color: $patreon-red;
+	color: $soft-white !important;
+
+}
+
 a.soft-white {
 	border-color: #eee !important;
 	border-color: rgba(250, 250, 250, .6) !important;
@@ -2521,6 +2529,7 @@ section.right {
 	background-color: $green;
 	color: #f9f9f9;
 	padding: 2rem;
+	box-shadow: 0 0px 4px 2px #888;
 }
 
 .podcast-newsletter p {
@@ -2643,6 +2652,50 @@ hr.down:after {
 	max-width: calc(100% - 3.236em);
 }
 
+.podcast__wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.podcast__player {
+	display: flex;
+	-webkit-box-shadow: 0px -5px 15px 2px rgba(0, 0, 0, .35);
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+	width: 100%;
+
+	@media all and (min-width: 875px) {
+		width: 60%;
+	}
+}
+
+.podcast__promotion-box {
+	display: block;
+	padding: 0.5rem .75rem;
+	width: 35%;
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+	flex-flow: column nowrap;
+	letter-spacing: .75px;
+	text-align: left;
+	width: 100%;
+	margin-top: 2rem;
+
+	@media all and (min-width: 875px) {
+		width: 35%;
+		text-align: right;
+		margin-top: 0;
+	}
+}
+
+.podcast__promotion-box__title {
+	margin-top: 1rem;
+}
+
+
+
+/* Old styles -- clean up after promotion box is ready */
 .wrapper-player-archives {
 	display: flex;
 	flex-flow: row wrap;
@@ -3586,4 +3639,40 @@ input {
 
 .certified-logo2 {
 	margin: 1rem;
+}
+
+
+.d-flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-align-end {
+	align-items: flex-end;
+}
+
+.flex-align-start {
+	align-items: flex-start;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-justify-between {
+	justify-content: space-between;
+}
+
+.podcast__donation-image {
+	height: 75px;
+	width: auto;
+}
+
+.podcast__donation-patreon {
+	max-width: 200px;
+	height: auto;
+}
+
+.mb-1 {
+	margin-bottom: 0.5rem;
 }

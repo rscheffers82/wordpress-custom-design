@@ -62,6 +62,39 @@
        <div class="wrapper details-podcast">
          <div class="podcast-time-date">
 
+         <h2 id="cta-listen" class="header" style="text-align: left;">
+            <span style="font-size: 18pt; text-align: left;">
+              Join Julie live Wednesdays at 11am PST / 2pm EST. Listen below.
+            </span>
+          </h2>
+          <div class="podcast__wrapper">
+            <div class="podcast__player">
+              <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
+            </div>
+            <div class="podcast__promotion-box">
+              <?php $promotion_title = the_field('promotion_title');
+                if ($promotion_title): ?>
+                <h4 class="podcast__promotion-box__title"><?php echo $promotion_title; ?></h4>
+              <?php endif; ?>
+              <section>
+                <p class="podcast__promotion-box__description">
+                  <?php the_field('promotion_description'); ?>
+                </p>
+
+                <div class="d-flex flex-align-center flex-justify-between mb-1">
+
+                  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=SZYFMB84FNTV4" target="_blank" rel="noopener">
+                    <img class="podcast__donation-image" src="https://juliecusmariu.com/wp-content/uploads/2019/09/donate-button.png">
+                  </a>
+                  <a href="http://www.patreon.com/julieinconversation" target="_blank" rel="noopener">
+                    <img class="podcast__donation-patreon" src="https://juliecusmariu.com/wp-content/uploads/2018/03/become_a_patron_button@2x.png" alt="">
+                  </a>
+                </div>
+
+              </section>
+            </div>
+          </div>
+
          <?php the_content(); ?>
 
            <div class="podcast-guest">
