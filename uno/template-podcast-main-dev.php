@@ -9,7 +9,26 @@
  * @subpackage Template
  */
 
- get_header(); ?>
+  // Set variables for the page
+  $max_posts = 4;
+  $voices_id = 397;
+  $motherhood_id = 130;
+  $heartbeat_id = 108;
+
+  // helper function for displaying the button underneath radio show posts.
+  function display_buttons($cat_id) {
+    $category = get_category($cat_id);
+    $count = $category->category_count;
+    $slug = $category->slug;
+
+    return '<p class="aligncenter">' .
+      '<a href="/category/' . $slug . '" class="btn green rounded grow">View all posts (' . $count . ')</a>' .
+    '</p>';
+  };
+
+
+  get_header();
+?>
 
      <!-- <div id="content"> -->
        <div style="display: none; visibility: hidden;">
@@ -24,7 +43,7 @@
            <section class="left">
              <h1 class='podcast-main-title'><?php the_title(); ?></h1>
              <div class="podcast-main-title-underline">a live podcast</div>
-             <div class="podcast-main-tagline">Inspiring individual and global change</div>
+             <div class="podcast-main-tagline">Inspiring individual and collective change</div>
              <div class="podcast-main-cta cta">
                <a class="btn brown hover grow-more smooth-scroll podcast podcast-orange" href="#cta-listen">Listen</a>
              </div>
@@ -62,7 +81,7 @@
        <div class="wrapper details-podcast">
          <div class="podcast-time-date">
 
-          <h2 id="cta-listen" class="header" style="text-align: left;">
+         <h2 id="cta-listen" class="header" style="text-align: left;">
             <span style="font-size: 18pt; text-align: left;">
               Join Julie live Wednesdays at 11am PST / 2pm EST. Listen below.
             </span>
@@ -72,10 +91,13 @@
               <?php echo do_shortcode('[spreaker type=player resource="show_id=2727118" width="100%" height="200px" theme="light" playlist="false" playlist-continuous="false" autoplay="false" live-autoplay="true" chapters-image="true" hide-logo="true" hide-likes="true" hide-comments="false" hide-sharing="false"]'); ?>
             </div>
             <div class="podcast__promotion-box">
-              <h4 class="podcast__promotion-box__title">Liked what you heard?</h4>
+              <?php $promotion_title = the_field('promotion_title');
+                if ($promotion_title): ?>
+                <h4 class="podcast__promotion-box__title"><?php echo $promotion_title; ?></h4>
+              <?php endif; ?>
               <section>
                 <p class="podcast__promotion-box__description">
-                  This is a listener-supported podcast. Support the podcast by making a one-time donation or by becoming a patron.
+                  <?php the_field('promotion_description'); ?>
                 </p>
 
                 <div class="d-flex flex-align-center flex-justify-between mb-1">
@@ -149,10 +171,10 @@
            <?php woo_main_before(); ?>
            <section id="main">
 
-    <h2 id="voices" class="header2-1">Previously on the series Voices That Inspire Change</h2>
+    <h2 id="voices" class="header2-1">Previously on the series Voices That Create Change</h2>
     <div class="podcasts-wrapper">
     <?php
-    $query = new WP_Query( 'cat=39700&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=' . $voices_id . '&posts_per_page=' .  $max_posts );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -164,11 +186,12 @@
     wp_reset_query();
     ?>
     </div>  <!-- podcasts-wrapper -->
+    <?php echo display_buttons($voices_id); ?>
 
     <h2 id="motherhood" class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
     <div class="podcasts-wrapper">
     <?php
-    $query = new WP_Query( 'cat=13000&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=' . $motherhood_id . '&posts_per_page=' .  $max_posts );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -180,6 +203,7 @@
     wp_reset_query();
     ?>
     </div>  <!-- podcasts-wrapper -->
+    <?php echo display_buttons($motherhood_id); ?>
 
     <div class="patreon-section">
       <?php echo the_field('patreon-section'); ?>
@@ -208,7 +232,7 @@
     <h2 id="hearbeat-archives" class="header2-1">Heatbeat radio archives</h2>
     <div class="podcasts-wrapper">
     <?php
-    $query = new WP_Query( 'cat=10800&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=' . $heartbeat_id . '&posts_per_page=' .  $max_posts );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -220,6 +244,7 @@
     wp_reset_query();
     ?>
    </div>  <!-- podcasts-wrapper -->
+   <?php echo display_buttons($heartbeat_id); ?>
 
    </div>  <!-- main-sidebar-container -->
      <?php woo_loop_after(); ?>
@@ -229,11 +254,11 @@
        <?php get_sidebar(); ?>
 
          <?php
-          $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
-          $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/04/conscious-pregnancy-650wide.jpg';
+         $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
+         $img_pregnancy = get_site_url() . '/wp-content/uploads/2017/04/conscious-pregnancy-650wide.jpg';
 
-          $link_marriage = get_site_url() . '/getting-married-consciously';
-          $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
+         $link_marriage = get_site_url() . '/getting-married-consciously';
+         $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
          ?>
 
            <h2 class="header2-1">Listen to these two series to gain insight into your own journey through marriage, pregnancy, and birth.</h2>
@@ -249,9 +274,14 @@
 
             <h2 class="header2-1">What listeners are saying</h2>
            <?php echo do_shortcode('[testimonial_view id=3]'); ?>
+
      </div><!-- /#main-sidebar-container -->
+
        <?php get_sidebar( 'alt' ); ?>
        </div><!-- /#content -->
+
     <?php woo_main_after(); ?>
+
    </div><!-- /.content -->
+
  <?php get_footer(); ?>
