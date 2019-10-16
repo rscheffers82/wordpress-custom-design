@@ -140,7 +140,10 @@ body.custom-header #nav-container {
 	margin: 0;
 }
 
-/*Ensure the blog menu item is not highlighted when podcast and workshops categories are displayed*/
+/* Ensure the blog menu item is not highlighted on podcast, podcast archives, and workshops categories pages */
+body.category-397 #navigation ul.nav>li#menu-item-3565 a,	// voices that create change archives
+body.category-115 #navigation ul.nav>li#menu-item-3565 a,	// #motherhood archives
+body.category-108 #navigation ul.nav>li#menu-item-3565 a,	// heartbeat radio archives
 body.page-template-template-podcast-main #navigation ul.nav>li#menu-item-4415 a,
 body.page-template-template-podcast-main #navigation ul.nav>li#menu-item-3565 a,
 body.category-workshops #navigation ul.nav>li#menu-item-3565 a {
@@ -152,7 +155,7 @@ body.category-workshops #navigation ul.nav>li#menu-item-3565 a {
 	background: inherit !important;
 }
 
-/* Life coaching and intuitive reading menu background fix */
+/* Life coaching, and intuitive reading menu background fix */
 .page-id-8 #menu-item-3971 a,
 .page-id-6 #menu-item-3971 a {
 	background-color: #4c5567 !important;
@@ -165,7 +168,9 @@ body.voices-that-create-change #navigation ul.nav li#menu-item-3565 a {
 	background-color: inherit !important;
 }
 
-
+body.category-397 #menu-item-4240 a,
+body.category-115 #menu-item-4240 a,
+body.category-108 #menu-item-4240 a,
 body.podcasts #navigation ul.nav li#menu-item-4240 a,
 body.julie-in-conversation-motherhood #navigation ul.nav li#menu-item-4240 a,
 body.voices-that-create-change #navigation ul.nav li#menu-item-4240 a {
