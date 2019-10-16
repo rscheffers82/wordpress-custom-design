@@ -21,7 +21,7 @@
     $count = $category->category_count;
     $slug = $category->slug;
 
-    return '<p class="aligncenter">' .
+    return '<p class="aligncenter mb-large">' .
       '<a href="/category/' . $slug . '" class="btn green rounded grow">View all posts (' . $count . ')</a>' .
     '</p>';
   };
@@ -172,7 +172,7 @@
            <section id="main">
 
     <h2 id="voices" class="header2-1">Previously on the series Voices That Create Change</h2>
-    <div class="podcasts-wrapper">
+    <div class="podcasts-wrapper mb-3">
     <?php
     $query = new WP_Query( 'cat=' . $voices_id . '&posts_per_page=' .  $max_posts );
 
@@ -189,7 +189,7 @@
     <?php echo display_buttons($voices_id); ?>
 
     <h2 id="motherhood" class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
-    <div class="podcasts-wrapper">
+    <div class="podcasts-wrapper mb-3">
     <?php
     $query = new WP_Query( 'cat=' . $motherhood_id . '&posts_per_page=' .  $max_posts );
 
@@ -230,7 +230,7 @@
 <!-- end Radio host summary -->
 
     <h2 id="hearbeat-archives" class="header2-1">Heatbeat radio archives</h2>
-    <div class="podcasts-wrapper">
+    <div class="podcasts-wrapper mb-3">
     <?php
     $query = new WP_Query( 'cat=' . $heartbeat_id . '&posts_per_page=' .  $max_posts );
 
