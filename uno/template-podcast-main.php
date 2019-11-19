@@ -9,7 +9,26 @@
  * @subpackage Template
  */
 
- get_header(); ?>
+  // Set variables for the page
+  $max_posts = 4;
+  $voices_id = 397;
+  $motherhood_id = 130;
+  $heartbeat_id = 108;
+
+  // helper function for displaying the button underneath radio show posts.
+  function display_buttons($cat_id) {
+    $category = get_category($cat_id);
+    $count = $category->category_count;
+    $slug = $category->slug;
+
+    return '<p class="aligncenter mb-large">' .
+      '<a href="/category/' . $slug . '" class="btn green rounded grow">All guests (' . $count . ')</a>' .
+    '</p>';
+  };
+
+
+  get_header();
+?>
 
      <!-- <div id="content"> -->
        <div style="display: none; visibility: hidden;">
@@ -153,9 +172,9 @@
            <section id="main">
 
     <h2 id="voices" class="header2-1">Previously on the series Voices That Create Change</h2>
-    <div class="podcasts-wrapper">
+    <div class="podcasts-wrapper mb-3">
     <?php
-    $query = new WP_Query( 'cat=397&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=' . $voices_id . '&posts_per_page=' .  $max_posts );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -167,11 +186,12 @@
     wp_reset_query();
     ?>
     </div>  <!-- podcasts-wrapper -->
+    <?php echo display_buttons($voices_id); ?>
 
     <h2 id="motherhood" class="header2-1">Previously on the series <span>#Motherhood</span>, <span>#Let’sCreateAVillage</span></h2>
-    <div class="podcasts-wrapper">
+    <div class="podcasts-wrapper mb-3">
     <?php
-    $query = new WP_Query( 'cat=130&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=' . $motherhood_id . '&posts_per_page=' .  $max_posts );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -183,6 +203,7 @@
     wp_reset_query();
     ?>
     </div>  <!-- podcasts-wrapper -->
+    <?php echo display_buttons($motherhood_id); ?>
 
     <div class="patreon-section">
       <?php echo the_field('patreon-section'); ?>
@@ -209,9 +230,9 @@
 <!-- end Radio host summary -->
 
     <h2 id="hearbeat-archives" class="header2-1">Heatbeat radio archives</h2>
-    <div class="podcasts-wrapper">
+    <div class="podcasts-wrapper mb-3">
     <?php
-    $query = new WP_Query( 'cat=108&posts_per_page=-1' );
+    $query = new WP_Query( 'cat=' . $heartbeat_id . '&posts_per_page=' .  $max_posts );
 
     if ( $query->have_posts() ) {
       while ( $query->have_posts() ) { $query->the_post();
@@ -223,6 +244,7 @@
     wp_reset_query();
     ?>
    </div>  <!-- podcasts-wrapper -->
+   <?php echo display_buttons($heartbeat_id); ?>
 
    </div>  <!-- main-sidebar-container -->
      <?php woo_loop_after(); ?>
@@ -230,7 +252,6 @@
        <?php woo_main_after(); ?>
 
        <?php get_sidebar(); ?>
-
 
          <?php
          $link_pregnancy = get_site_url() . '/conscious-pregnancy-empowering-birth';
@@ -240,7 +261,7 @@
          $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
          ?>
 
-           <h2 class="header2-1">Listen to these two series to gain insight into your own journey through marriage, pregnancy, and birth.</h2>
+           <h2 id="conscious-pregnancy-marriage" class="header2-1">Listen to these two series to gain insight into your own journey through marriage, pregnancy, and birth.</h2>
            <p class="subtitle">Join Julie, in conversation with expert guests, as she journeyed through marriage and then pregnancy and birth for the first time.<p>
            <div class="podcast-radioshows-wrapper">
              <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>

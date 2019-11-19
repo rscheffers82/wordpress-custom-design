@@ -22,7 +22,7 @@
     $slug = $category->slug;
 
     return '<p class="aligncenter mb-large">' .
-      '<a href="/category/' . $slug . '" class="btn green rounded grow">View all posts (' . $count . ')</a>' .
+      '<a href="/category/' . $slug . '" class="btn green rounded grow">All guests (' . $count . ')</a>' .
     '</p>';
   };
 
@@ -261,7 +261,7 @@
          $img_marriage = get_site_url() . '/wp-content/uploads/2017/03/getting-married-consciously-BeyondIDo.Julie_.jpg';
          ?>
 
-           <h2 class="header2-1">Listen to these two series to gain insight into your own journey through marriage, pregnancy, and birth.</h2>
+          <h2 id="conscious-pregnancy-marriage" class="header2-1">Listen to these two series to gain insight into your own journey through marriage, pregnancy, and birth.</h2>
            <p class="subtitle">Join Julie, in conversation with expert guests, as she journeyed through marriage and then pregnancy and birth for the first time.<p>
            <div class="podcast-radioshows-wrapper">
              <a class="podcast-radioshow" href=<?php echo $link_pregnancy; ?>>
